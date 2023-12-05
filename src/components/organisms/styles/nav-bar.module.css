@@ -1,0 +1,83 @@
+._nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 20;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 50px;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+  position: fixed;
+  height: 112px;
+}
+
+._logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  width: 120px;
+  height: 40px;
+  background: url("https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Aicore-co.png");
+}
+
+._nav-container.scrolled {
+  background-color: #333;
+  box-shadow: 0 8px 24px rgba(45, 48, 58, 0.2);
+  transition: background-color 0.3s ease-in-out;
+}
+
+._container-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+._ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+}
+
+._button {
+  border: none;
+  margin-right: 20px;
+  cursor: pointer;
+  outline: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: var(--black-color-secondary);
+  box-shadow: 0 8px 24px rgba(1, 2, 5, 0.2);
+
+  font-size: 16px;
+}
+
+._link {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.6000000238418579px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+  font-family: var(--font-mono);
+}
+
+
+@media (max-width: 440px) {
+  ._ul{
+      display: none;
+  }
+
+  ._button{
+      display: none;
+  }
+}

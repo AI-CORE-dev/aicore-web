@@ -1,0 +1,52 @@
+.title {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -3.6px;
+    width: 902px;
+    margin-bottom: 32px;
+  }
+  
+  .subtitle {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    cursor: default;
+  }
+
+  .div_contact_box {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+  }
+  
+  .btn_white {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-right: 30px;
+    width: 204px;
+    height: 64px;
+    font-family: var(--font-mono);
+  }
+  
+  .btn_call {
+    color: #fff;
+    background: transparent;
+    border: none;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.6000000238418579px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+    font-family: var(--font-mono);
+  }

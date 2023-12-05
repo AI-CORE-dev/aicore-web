@@ -1,0 +1,108 @@
+._section {
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+._title {
+  font-size: 2.5vw;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.2rem;
+  color: #000;
+  cursor: default;
+  white-space: pre-line;
+  font-family: var(--font-mono);
+  padding: 2rem 4rem 1rem;
+}
+
+._container_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: var(--inner-width);
+}
+
+._margin-right {
+  margin-right: 2rem;
+}
+
+._card_client {
+  width: 390px;
+  max-width: 100%;
+  background-color: var(--white-color);
+  height: auto;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  padding: 3rem 1.65rem 3.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: var(--border-shadow);
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+._card_client:hover {
+  transform: scale(1.1);
+}
+
+._card_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+._name_client {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  letter-spacing: -0.04rem;
+  text-align: center;
+  color: var(--black-color);
+  cursor: default;
+}
+
+._name_weight {
+  margin-top: 1.5rem;
+  font-weight: 800;
+}
+
+._review_card {
+  font-family: var(--font-sub);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+  letter-spacing: -0.04rem;
+  cursor: default;
+  text-align: center;
+  color: var(--black-color);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+._value-review {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  letter-spacing: -0.04rem;
+  margin-right: 0.5rem;
+  text-align: center;
+  color: var(--black-color);
+}
+
+@media (max-width: 460px) {
+  ._title {
+    font-size: 5.5vw;
+    padding: 2rem 1rem 1rem;
+    letter-spacing: -0.1rem;
+  }
+  ._card_client {
+    width: 100%;
+    padding: 2rem 1rem 2.5rem;
+  }
+  ._margin-right {
+    margin-right: 0;
+  }
+}

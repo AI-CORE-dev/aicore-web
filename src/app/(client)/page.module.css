@@ -1,0 +1,49 @@
+._main {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+@media (max-width: 1440px) {
+
+}
+
+._div_backgroud_pink {
+  position: relative;
+  min-height: 100vh;
+  background: rgba(116, 0, 46, 0.4);
+  overflow: hidden;
+}
+
+
+._btn_retro {
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  border: solid 0.125rem #121212;
+  box-shadow: 0.25rem 0.25rem #121212;
+  transition: transform 50ms, box-shadow 50ms;
+}
+
+._btn_retro:active {
+  transform: translate(0.125rem, 0.125rem);
+  box-shadow: 0.25rem 0.25rem #121212;
+}
+
+._image_wave {
+  position: absolute;
+  left: -3px;
+  bottom: 0;
+  width: 101%;
+  height: 60%;
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSI1MTgiIHZpZXdCb3g9IjAgMCAxNDQwIDUxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBvcGFjaXR5PSIwLjkiIGQ9Ik0yIDMwNUMyIDMwNSAxMDYuMDcyIDI0NyAyMDkuMTQ0IDI0N0MzMTIuMjE1IDI0NyA1MTkuMzU5IDMwMSA3NDkuNTE5IDMwMUM5NzkuNjc5IDMwMSAxMjA2Ljg0IDAgMTQ0MiAwVjUxOEgyVjMwNVoiIGZpbGw9IiNEOTE5NjUiLz48cGF0aCBkPSJNMSAyNjVDMSAyNjUgMTI0IDIwNyAzMTQgMjA3QzUwNCAyMDcgNjE5LjUyIDI3OCA4NTAgMjc4QzEwODAuNDggMjc4IDEyMDcuNTEgMTQ4IDE0NDAgMTQ4IiBzdHJva2U9IndoaXRlIi8+PC9zdmc+)
+    no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+}
+
+
+

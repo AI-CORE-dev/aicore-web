@@ -1,0 +1,62 @@
+.wave-container {
+  background-color: #fff;
+  height: 5%;
+  width: 100%;
+}
+.wave {
+  background: #292929;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 80px 50px 80px;
+}
+
+.column {
+  /*flex: 1 1 100%;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.list{
+   display: block;
+   list-style-type: disc;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   padding-inline-start: 40px;
+}
+
+.item {
+  font-weight: 400;
+  font-size: 0.88rem;
+  line-height: 2;
+  letter-spacing: -0.4px;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  max-width: 250px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: -0.4px;
+  color: #fff;
+  margin-bottom: 0.8rem;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 0.88rem;
+  line-height: 2;
+  letter-spacing: -0.4px;
+  color: #fff;
+}
+
+@media (max-width: 460px) {
+  .wave {
+    padding: 0px 20px 0px 20px;
+  }
+  
+}
