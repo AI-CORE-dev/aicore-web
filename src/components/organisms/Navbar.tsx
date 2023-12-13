@@ -28,7 +28,9 @@ export function Navbar() {
                     {PAGES.map((page) => (
                         <li key={page.href}>
                             <Link legacyBehavior href={page.href}>
-                                <a className={styles._link}>{page.text}</a>
+                                <a className={styles._link} href={page.href}>
+                                    {page.text}
+                                </a>
                             </Link>
                         </li>
                     ))}
@@ -39,7 +41,7 @@ export function Navbar() {
 }
 
 const PAGES = [
-    { text: 'Sobre Nosotros', href: '/about' },
+    { text: 'Sobre Nosotros', href: '/about-us' },
     { text: 'Carrera', href: '/careers' },
     { text: 'Servicio', href: '/services' },
 ];

@@ -23,8 +23,8 @@ export function ClientsReview() {
                 </h2>
 
                 <ul className={styles._container_cards}>
-                    {CLIENTS.map((client, index) => (
-                        <li key={index}>
+                    {CLIENTS.map((client) => (
+                        <li key={client.id}>
                             <div className={`${styles._card_client} ${styles['_margin-right']}`}>
                                 <div className={styles._card_content}>
                                     <Image
@@ -62,6 +62,7 @@ export function ClientsReview() {
 
 const CLIENTS = [
     {
+        id: 0,
         name: 'Gonzalo Agüero',
         job: 'CEO - Founder',
         company: 'Worknmates',
@@ -70,6 +71,7 @@ const CLIENTS = [
         avatar: '/cli_worknmates.svg',
     },
     {
+        id: 1,
         name: 'Damian Schuchner',
         job: 'CEO - Founder',
         company: 'Bukest',

@@ -1,17 +1,35 @@
 import React from 'react';
 
 import { Header } from '@/components/organisms/Header';
-
-const dataHeader = {
-    title: 'Soluciones tecnológicas para desarrollar tus proyectos organizacionales interna o externamente',
-    subtitle:
-        'De manera regional acompañamos en cada paso, desde la formulación dela solución para alcanzar tus objetivos hasta la entrega delproyecto totalmente desarrollado a medida.',
-    textButton: 'Contactanos',
-    textButtonSecondary: 'Agenda una reunión de 30 minutos sin cargo con un ejecutivo de ventas',
-};
+import {
+    AboutUs,
+    InstagramFeed,
+    InstitutionalPhotos,
+    OpenPositions,
+    OurValues,
+} from '@/components/molecules';
 
 function CareersPage() {
-    return <Header />;
+    return (
+        <>
+            <Header subtitle={DH.subtitle} textButton={DH.textButton} title={DH.title} />
+
+            <main>
+                <AboutUs isCareers />
+                <OurValues />
+                <InstitutionalPhotos />
+                <OpenPositions />
+                <InstagramFeed />
+            </main>
+        </>
+    );
 }
 
 export default CareersPage;
+
+const DH = {
+    title: 'Desarrolla tu carrera profesional en AI CORE.',
+    subtitle:
+        'No somos solamente una empresa de sistemas. En AI CORE creemos y apostamos por el talento y el potencial de aquellos que conforman nuestra comunidad y nuestros proyectos.',
+    textButton: 'Conoce las vacantes',
+};
