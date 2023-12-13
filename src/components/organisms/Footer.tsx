@@ -7,7 +7,7 @@ export function Footer() {
         <footer className={styles['wave-container']}>
             <div className={styles.wave}>
                 <div className={styles.column}>
-                    {LINKS.map((redirection, index) => (
+                    {LINKS.map((redirection) => (
                         <li key={redirection.id} className={styles.item}>
                             <a
                                 className={redirection.id === 0 ? styles.title : ''}
@@ -20,11 +20,11 @@ export function Footer() {
                 </div>
 
                 <div className={styles.column}>
-                    {TECHNOLOGIES.map((tecnology, index) => (
+                    {TECHNOLOGIES.map((tecnology) => (
                         <li key={tecnology.id} className={styles.item}>
-                            <a className={tecnology.id === 0 ? styles.title : ''}>
+                            <p className={tecnology.id === 0 ? styles.title : ''}>
                                 {tecnology.title}
-                            </a>
+                            </p>
                         </li>
                     ))}
                 </div>

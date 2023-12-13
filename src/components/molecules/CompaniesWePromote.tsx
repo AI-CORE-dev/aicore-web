@@ -12,7 +12,7 @@ export function CompaniesWePromote() {
                     <ul className={styles['_tabs-list']}>
                         {TABS.map((tab) => (
                             <li key={tab.id} className={styles['_tabs-item']}>
-                                <button className={styles['_tabs-btn']}>{tab.title}</button>
+                                <p className={styles['_tabs-btn']}>{tab.title}</p>
                             </li>
                         ))}
                     </ul>
@@ -30,9 +30,9 @@ export function CompaniesWePromote() {
                                 dando métricas y reportes de los análisis. Eficientizando así el
                                 análisis y comparativa de las pólizas y reduciendo errores.
                             </p>
-                            <a className={styles['_tabs-link']} href={''}>
+                            {/*<a className={styles['_tabs-link']} href={''}>
                                 Conocé más de lo que hicimos para la industría de seguros.
-                            </a>
+                            </a>*/}
                         </div>
                         <div className={styles['_tabs-column']}>
                             <h3 className={styles['_tabs-title']} style={{ marginTop: '20px' }}>
@@ -107,7 +107,7 @@ export function CompaniesWePromote() {
                                         modelo hibrido.
                                     </blockquote>
                                 </div>
-                                <a className={styles['_btn-black']}>Caso de estudio</a>
+                                {/*<a className={styles['_btn-black']}>Caso de estudio</a>*/}
                             </div>
                         </div>
                     </div>

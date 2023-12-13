@@ -1,12 +1,7 @@
 'use client';
 
 import { Header } from '@/components/organisms/Header';
-import {
-    HowWeCanHelp,
-    ClientsReview,
-    CompaniesWePromote,
-    ScheduleCall,
-} from '@/components/molecules';
+import { HowWeCanHelp, ClientsReview, CompaniesWePromote } from '@/components/molecules';
 
 import styles from './page.module.css';
 

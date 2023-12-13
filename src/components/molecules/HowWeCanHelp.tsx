@@ -18,13 +18,13 @@ export function HowWeCanHelp() {
                 <ul className={styles._list_help}>
                     {aids.map((aid, index) => (
                         <li key={index} className={styles._item_list}>
-                            <a className={styles._container_card}>
+                            <div className={styles._container_card}>
                                 <span className={styles._container_image}>
                                     <Image alt={aid.title} height={70} src={aid.image} width={70} />
                                 </span>
                                 <h3 className={styles._title_card}>{aid.title}</h3>
                                 <p className={styles._subtitle_card}>{aid.subtitle}</p>
-                            </a>
+                            </div>
                         </li>
                     ))}
                 </ul>

@@ -1,17 +1,18 @@
 'use client';
 
 import React, { useState } from 'react';
-// import Calendar from 'react-calendar';
 
 import styles from './styles/schedule-call.module.css';
 import './styles/Calendar.css';
 
 export function ScheduleCall() {
-    const [value, setValue] = useState(new Date());
+    {
+        /*const [value, setValue] = useState(new Date());
 
     const onChange = (nextValue: Date) => {
         setValue(nextValue);
-    };
+    };*/
+    }
 
     return (
         <section className={styles._section}>

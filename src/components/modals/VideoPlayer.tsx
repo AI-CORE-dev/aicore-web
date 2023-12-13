@@ -7,15 +7,6 @@ interface IProps {
 }
 
 export function VideoPlayer({ videoId }: IProps) {
-    const opts = {
-        height: '360',
-        width: '100%',
-        playerVars: {
-            autoplay: 0,
-            origin: 'http://localhost:3000',
-        },
-    };
-
     return (
         <div className={styles._video_container}>
             <iframe
