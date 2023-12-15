@@ -29,16 +29,12 @@ function FirstTemplate() {
             </div>
             <div className={styles._image_container}>
                 <div>
-                    <img
-                        alt={'nosotros'}
-                        className={styles._image}
-                        src={'/about_us/about_us_1.jpg'}
-                    />
+                    <img alt={'nosotros'} className={styles._image} src={'/about_us/socios.jpg'} />
                 </div>
                 <div className={styles._text_container}>
                     <p className={styles._text_primary}>Socios fundadores</p>
                     <p className={`${styles._text_primary} ${styles._text_weigth}`}>
-                        Alfredo Rey, Ezequiel Maranga, Ivan Addolorato
+                        Ezequiel Maranga, Alfredo Rey, Ivan Addolorato
                     </p>
                 </div>
             </div>
@@ -87,7 +83,20 @@ interface IProps {
 export function AboutUs({ isCareers = false }: IProps) {
     return (
         <section className={styles._section}>
-            {isCareers ? <SecondTemplate /> : <FirstTemplate />}
+            {isCareers ? (
+                <SecondTemplate />
+            ) : (
+                <>
+                    <FirstTemplate />
+                    <div className={styles._container_image_word}>
+                        <img
+                            alt={'word'}
+                            className={styles._image}
+                            src={'./about_us/animacion_mundo.svg'}
+                        />
+                    </div>
+                </>
+            )}
         </section>
     );
 }

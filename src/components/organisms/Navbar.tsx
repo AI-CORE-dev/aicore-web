@@ -24,14 +24,30 @@ export function Navbar() {
             <div className={styles['_container-links']}>
                 <button className={styles._button}>Contactanos</button>
 
-                <ul className={styles._ul}>
+                <ul className={styles._list_links}>
                     {PAGES.map((page) => (
                         <li key={page.href}>
-                            <Link legacyBehavior href={page.href}>
+                            {page.id === 2 ? (
+                                <div>
+                                    {/* <button className={styles._button_services}>Servicios</button>
+                                    <ul className={styles._ul}>
+                                        {SERVICES.map((service) => (
+                                            <li key={service.href} className={styles._li}>
+                                                <a
+                                                    className={styles._link_hover}
+                                                    href={service.href}
+                                                >
+                                                    {service.text}
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul> */}
+                                </div>
+                            ) : (
                                 <a className={styles._link} href={page.href}>
                                     {page.text}
                                 </a>
-                            </Link>
+                            )}
                         </li>
                     ))}
                 </ul>
@@ -41,7 +57,14 @@ export function Navbar() {
 }
 
 const PAGES = [
-    { text: 'Sobre Nosotros', href: '/about-us' },
-    { text: 'Carrera', href: '/careers' },
-    { text: 'Servicio', href: '/services' },
+    { id: 0, text: 'Sobre Nosotros', href: '/about-us' },
+    { id: 1, text: 'Carrera', href: '/careers' },
+    { id: 2, text: 'Servicio', href: '/services' },
+];
+
+const SERVICES = [
+    { id: 0, text: 'Desarrollo de Software', href: '/services/staff-augmentation' },
+    { id: 1, text: 'Inteligencia Artificial', href: '/services/consultoria' },
+    { id: 2, text: 'Desarrollo de Software', href: '/services/MVPaaS' },
+    { id: 3, text: 'Inteligencia Artificial', href: '/services/outsourcing' },
 ];

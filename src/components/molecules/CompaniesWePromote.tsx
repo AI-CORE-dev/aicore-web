@@ -35,17 +35,13 @@ export function CompaniesWePromote() {
                             </a>*/}
                         </div>
                         <div className={styles['_tabs-column']}>
-                            <h3 className={styles['_tabs-title']} style={{ marginTop: '20px' }}>
-                                Tecnologías
-                            </h3>
+                            <h3 className={styles['_tabs-title']}>Tecnologías</h3>
                             <div>
                                 <div className={styles['_tabs-images']}>
                                     <Image
                                         alt={'react-logo'}
                                         height={100}
-                                        src={
-                                            'https://brocoders.com/static/3ca2637d12400941290ecd325ebc2739/react-logo.svg'
-                                        }
+                                        src={'/technologies/1.svg'}
                                         style={{
                                             marginRight: '60px',
                                         }}
@@ -54,9 +50,7 @@ export function CompaniesWePromote() {
                                     <Image
                                         alt={'node-logo'}
                                         height={100}
-                                        src={
-                                            'https://brocoders.com/static/4bfe740566e5cf926b847d3a8a237ffe/nodejs-logo.svg'
-                                        }
+                                        src={'/technologies/2.svg'}
                                         width={100}
                                     />
                                 </div>
@@ -64,9 +58,7 @@ export function CompaniesWePromote() {
                                     <Image
                                         alt={'react-native-logo'}
                                         height={100}
-                                        src={
-                                            'https://brocoders.com/static/be1da5e9afe5a740b012b5df5236b446/react-native-logo.svg'
-                                        }
+                                        src={'/technologies/3.svg'}
                                         style={{
                                             marginRight: '60px',
                                         }}
@@ -75,9 +67,7 @@ export function CompaniesWePromote() {
                                     <Image
                                         alt={'amazon-logo'}
                                         height={100}
-                                        src={
-                                            'https://brocoders.com/static/5e94b5e13daa4148af187124f63ce1c3/amazon-logo.svg'
-                                        }
+                                        src={'/technologies/4.svg'}
                                         width={100}
                                     />
                                 </div>

@@ -11,14 +11,12 @@ export function WaveCanvas() {
         const canvas = canvasRef.current;
 
         if (!canvas) {
-            /*console.error('Canvas element not found');*/
             return;
         }
 
         const ctx = canvas.getContext('2d');
 
         if (!ctx) {
-            /*console.error('Unable to get 2D context from canvas');*/
             return;
         }
 
@@ -52,7 +50,8 @@ export function WaveCanvas() {
             ctx.lineTo(canvas.width, canvas.height);
             ctx.lineTo(0, canvas.height);
 
-            ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
+            ctx.strokeStyle = 'rgba(0, 128, 255, 0.5)'; // Color azul con opacidad
+            ctx.fillStyle = 'rgba(0, 128, 255, 0.1)';
             ctx.fill();
             increment += wave.frequency;
             requestAnimationFrame(animate);

@@ -3,9 +3,11 @@ import React from 'react';
 import { Header } from '@/components/organisms/Header';
 import {
     AboutUs,
+    HowRetainTalent,
     InstagramFeed,
     InstitutionalPhotos,
     OpenPositions,
+    RecruimentProcess,
     OurValues,
 } from '@/components/molecules';
 
@@ -19,7 +21,9 @@ function CareersPage() {
                 <OurValues />
                 <InstitutionalPhotos />
                 <OpenPositions />
+                <HowRetainTalent />
                 <InstagramFeed />
+                <RecruimentProcess />
             </main>
         </>
     );

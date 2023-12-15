@@ -18,8 +18,8 @@
     letter-spacing: -2px;
     text-align: left;
     line-height: 120px;
-    color: #fff;
-    text-shadow: -1px -1px 0 var(--light-text-color),1px -1px 0 var(--light-text-color),-1px 1px 0 var(--light-text-color),1px 1px 0 var(--light-text-color);
+    color: var(--sky-blue-color);
+    /*text-shadow: -1px -1px 0 var(--light-text-color),1px -1px 0 var(--light-text-color),-1px 1px 0 var(--light-text-color),1px 1px 0 var(--light-text-color);*/
     cursor: default;
   }
 

@@ -6,6 +6,7 @@ function FirstChild() {
             style={{
                 display: 'flex',
                 flexDirection: 'row-reverse',
+                marginTop: '5rem',
             }}
         >
             <li key={0} className={styles._container_child}>
@@ -23,17 +24,17 @@ function FirstChild() {
                             src={'./about_us/alfred.jpg'}
                         />
                     </div>
-                    <p className={styles._ask}>
-                        ¿Cuál es el propósito de AI CORE como desarrolladora?
-                    </p>
-                    <p className={styles._answer}>
-                        En nuestro ADN está como motor de ser el mejor socio tecnológico para los
-                        proyectos de nuestros clientes, lo que implica involucramiento, compromiso y
-                        responsabilidad, no solo con la calidad sino también con los deadlines y la
-                        velocidad de respuesta. Nunca negociamos sacrificar la calidad por eso entre
-                        la enorme demanda de productos tecnológicos nuestro norte para crecer fue
-                        apostar en el talento y el compromiso.
-                    </p>
+                    <div>
+                        <p className={styles._ask}>¿Cuál es el propósito de AI CORE?</p>
+                        <p className={styles._answer}>
+                            En nuestro ADN está como motor de ser el mejor socio tecnológico para
+                            los proyectos de nuestros clientes, lo que implica involucramiento,
+                            compromiso y responsabilidad, no solo con la calidad sino también con
+                            los deadlines y la velocidad de respuesta. Nunca negociamos sacrificar
+                            la calidad por eso entre la enorme demanda de productos tecnológicos
+                            nuestro norte para crecer fue apostar en el talento y el compromiso.
+                        </p>
+                    </div>
                 </article>
             </li>
         </ul>
@@ -51,7 +52,6 @@ export function GetToKnowUsBetter() {
                         display: 'flex',
                         flexDirection: 'row',
                         flexWrap: 'wrap',
-                        justifyContent: 'space-between',
                     }}
                 >
                     {INFOFOUNDERS.map((item) => (
@@ -72,8 +72,10 @@ export function GetToKnowUsBetter() {
                                         src={item.image}
                                     />
                                 </div>
-                                <p className={styles._ask}>{item.ask}</p>
-                                <p className={styles._answer}>{item.answer}</p>
+                                <div>
+                                    <p className={styles._ask}>{item.ask}</p>
+                                    <p className={styles._answer}>{item.answer}</p>
+                                </div>
                             </article>
                         </li>
                     ))}
@@ -106,7 +108,7 @@ const INFOFOUNDERS = [
     },
     {
         id: 2,
-        name: 'Ezquiel Maranda',
+        name: 'Ezquiel Maranga',
         position: 'Co-Founder',
         employment: 'COO',
         image: './about_us/ezequiel.jpg',

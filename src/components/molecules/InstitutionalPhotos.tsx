@@ -6,16 +6,11 @@ export function InstitutionalPhotos() {
     return (
         <section className={styles._section}>
             <div className={styles._inner}>
-                <div className={styles._container_images}>
-                    {CPHOTOS.map((photo) => (
-                        <img
-                            key={photo.id}
-                            alt={photo.alt}
-                            className={styles._image}
-                            src={photo.src}
-                        />
-                    ))}
-                </div>
+                <img
+                    alt={'institutional_1'}
+                    className={styles._img}
+                    src={'./carrers/aicore_collage.svg'}
+                />
             </div>
         </section>
     );
