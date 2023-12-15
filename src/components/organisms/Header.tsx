@@ -28,7 +28,6 @@ export function Header({
             style={{ backgroundColor: !isVideo ? '#1E1E1E' : 'transparent' }}
         >
             <div className={styles._header_module}>
-                <WaveCanvas />
                 <video autoPlay loop muted playsInline className={styles._video_background}>
                     <source src={'/video_aicore.mp4'} type={'video/mp4'} />
                 </video>

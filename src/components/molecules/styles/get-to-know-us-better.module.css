@@ -103,7 +103,8 @@ width: 100%;
 
 @media (max-width: 1920px) {
   ._text {
-    font-size: 92px;
+    font-size: 200px;
+    line-height: 200px;
 
   }
 
@@ -115,7 +116,7 @@ width: 100%;
 @media (max-width: 1440px) {
   ._text {
     font-size: 92px;
-
+    line-height: 89px;
   }
 }
 

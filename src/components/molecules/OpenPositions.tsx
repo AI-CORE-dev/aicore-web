@@ -5,7 +5,7 @@ import { VideoPlayer } from '../modals/VideoPlayer';
 import styles from './styles/open-positions.module.css';
 
 export function OpenPositions() {
-    const youtubeVideoId = '657b3f96';
+    const youtubeVideoId = 'bCr1c9V8JYQ';
 
     return (
         <section className={styles._section}>
@@ -72,7 +72,7 @@ export function OpenPositions() {
                         </li>
                     </ul>
                 </div>
-                <VideoPlayer isLocal />
+                <VideoPlayer videoId={youtubeVideoId} />
             </div>
         </section>
     );

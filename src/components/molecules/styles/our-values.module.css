@@ -4,10 +4,9 @@
   }
 
   ._inner{
-    display: flex;
+
     flex-direction: column;
-    padding: 10px 50px;
-    height: 80vh;
+    height: 100vh;
   }
   
   ._text {

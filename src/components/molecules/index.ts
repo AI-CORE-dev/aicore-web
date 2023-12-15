@@ -14,9 +14,13 @@ export * from './InstagramFeed';
 
 export * from './InstitutionalPhotos';
 
+export * from './InstitutuionalVideo';
+
 export * from './OpenPositions';
 
 export * from './OurValues';
+
+export * from './PartnerShip';
 
 export * from './RecruimentProcess';
 

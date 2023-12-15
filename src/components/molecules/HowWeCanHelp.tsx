@@ -20,8 +20,14 @@ export function HowWeCanHelp() {
                         <li key={index} className={styles._item_list}>
                             <div className={styles._container_card}>
                                 <span className={styles._container_image}>
-                                    <Image alt={aid.title} height={70} src={aid.image} width={70} />
+                                    <Image
+                                        alt={aid.title}
+                                        height={170}
+                                        src={aid.image}
+                                        width={170}
+                                    />
                                 </span>
+
                                 <h3 className={styles._title_card}>{aid.title}</h3>
                                 <p className={styles._subtitle_card}>{aid.subtitle}</p>
                             </div>
@@ -37,26 +43,26 @@ const aids = [
     {
         title: 'Entra al mercado rapidamente.',
         subtitle: 'Desarrollo de MVPs - MVPaaS',
-        image: '/h_rocket.svg',
+        image: '/1.svg',
     },
     {
         title: 'Escala tu negocio con sistemas a medida.',
         subtitle: 'Outsourcing',
-        image: '/h_settings.svg',
+        image: '/2.svg',
     },
     {
         title: 'Consolidá tu departamento de IT.',
         subtitle: 'Staff Augmentation - Dedicated Teams - CTOaaS.',
-        image: '/h_peoples.svg',
+        image: '/3.svg',
     },
     {
         title: 'Comenza tu transformación tecnológica',
         subtitle: 'Consultoría.',
-        image: '/h_notes.svg',
+        image: '/4.svg',
     },
     {
         title: 'Desarrolla tu web y app o AI con nosotros.',
         subtitle: 'Boutique Development',
-        image: '/h_phone.svg',
+        image: '/5.svg',
     },
 ];

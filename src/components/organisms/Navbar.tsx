@@ -29,7 +29,7 @@ export function Navbar() {
                         <li key={page.href}>
                             {page.id === 2 ? (
                                 <div>
-                                    {/* <button className={styles._button_services}>Servicios</button>
+                                    <p className={styles._button_services}>Servicios</p>
                                     <ul className={styles._ul}>
                                         {SERVICES.map((service) => (
                                             <li key={service.href} className={styles._li}>
@@ -41,7 +41,7 @@ export function Navbar() {
                                                 </a>
                                             </li>
                                         ))}
-                                    </ul> */}
+                                    </ul>
                                 </div>
                             ) : (
                                 <a className={styles._link} href={page.href}>
@@ -63,8 +63,8 @@ const PAGES = [
 ];
 
 const SERVICES = [
-    { id: 0, text: 'Desarrollo de Software', href: '/services/staff-augmentation' },
-    { id: 1, text: 'Inteligencia Artificial', href: '/services/consultoria' },
-    { id: 2, text: 'Desarrollo de Software', href: '/services/MVPaaS' },
-    { id: 3, text: 'Inteligencia Artificial', href: '/services/outsourcing' },
+    { id: 0, text: 'Staff Augmentation', href: '/services/staff-augmentation' },
+    { id: 1, text: 'Consultoría', href: '/services/consultoria' },
+    { id: 2, text: 'MVPaaS', href: '/services/MVPaaS' },
+    { id: 3, text: 'Outsourcing', href: '/services/outsourcing' },
 ];

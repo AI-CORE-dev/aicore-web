@@ -7,77 +7,81 @@ export function CompaniesWePromote() {
     return (
         <section className={styles._section}>
             <div>
-                <div className={styles._inner}>
-                    <h2 className={styles._title}>Industrias en las que agregamos valor</h2>
-                    <ul className={styles['_tabs-list']}>
-                        {TABS.map((tab) => (
-                            <li key={tab.id} className={styles['_tabs-item']}>
-                                <p className={styles['_tabs-btn']}>{tab.title}</p>
-                            </li>
-                        ))}
+                <div className={styles._section_info}>
+                    <div className={styles._inner}>
+                        <h2 className={styles._title}>Industrias en las que agregamos valor</h2>
+                        <ul className={styles['_tabs-list']}>
+                            {TABS.map((tab) => (
+                                <li key={tab.id} className={styles['_tabs-item']}>
+                                    <p className={styles['_tabs-btn']}>{tab.title}</p>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <ul className={styles['_tabs-content']}>
+                        <li className={styles['_tabs-list']}>
+                            <div className={styles['_tabs-column']}>
+                                <h3 className={styles['_tabs-title']}>
+                                    Eficientizando el control de las pólizas de seguro
+                                </h3>
+                                <p className={styles['_tabs-text']}>
+                                    Desarrollamos para nuestro cliente Aon una aplicación con
+                                    inteligencia artificial, que interpreta las pólizas
+                                    automáticamente dando métricas y reportes de los análisis.
+                                    Eficientizando así el análisis y comparativa de las pólizas y
+                                    reduciendo errores.
+                                </p>
+                                {/*<a className={styles['_tabs-link']} href={''}>
+                                Conocé más de lo que hicimos para la industría de seguros.
+                            </a>*/}
+                            </div>
+                            <div className={styles['_tabs-column']}>
+                                <h3 className={styles['_tabs-title']}>Tecnologías</h3>
+                                <div>
+                                    <div className={styles['_tabs-images']}>
+                                        <Image
+                                            alt={'react-logo'}
+                                            height={100}
+                                            src={'/technologies/1.svg'}
+                                            style={{
+                                                marginRight: '60px',
+                                            }}
+                                            width={100}
+                                        />
+                                        <Image
+                                            alt={'node-logo'}
+                                            height={100}
+                                            src={'/technologies/2.svg'}
+                                            width={100}
+                                        />
+                                    </div>
+                                    <div className={styles['_tabs-images']}>
+                                        <Image
+                                            alt={'react-native-logo'}
+                                            height={100}
+                                            src={'/technologies/3.svg'}
+                                            style={{
+                                                marginRight: '60px',
+                                            }}
+                                            width={100}
+                                        />
+                                        <Image
+                                            alt={'amazon-logo'}
+                                            height={100}
+                                            src={'/technologies/4.svg'}
+                                            width={100}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
-                <ul className={styles['_tabs-content']}>
-                    <li className={styles['_tabs-list']}>
-                        <div className={styles['_tabs-column']}>
-                            <h3 className={styles['_tabs-title']}>
-                                Eficientizando el control de las pólizas de seguro
-                            </h3>
-                            <p className={styles['_tabs-text']}>
-                                Desarrollamos para nuestro cliente Aon una aplicación con
-                                inteligencia artificial, que interpreta las pólizas automáticamente
-                                dando métricas y reportes de los análisis. Eficientizando así el
-                                análisis y comparativa de las pólizas y reduciendo errores.
-                            </p>
-                            {/*<a className={styles['_tabs-link']} href={''}>
-                                Conocé más de lo que hicimos para la industría de seguros.
-                            </a>*/}
-                        </div>
-                        <div className={styles['_tabs-column']}>
-                            <h3 className={styles['_tabs-title']}>Tecnologías</h3>
-                            <div>
-                                <div className={styles['_tabs-images']}>
-                                    <Image
-                                        alt={'react-logo'}
-                                        height={100}
-                                        src={'/technologies/1.svg'}
-                                        style={{
-                                            marginRight: '60px',
-                                        }}
-                                        width={100}
-                                    />
-                                    <Image
-                                        alt={'node-logo'}
-                                        height={100}
-                                        src={'/technologies/2.svg'}
-                                        width={100}
-                                    />
-                                </div>
-                                <div className={styles['_tabs-images']}>
-                                    <Image
-                                        alt={'react-native-logo'}
-                                        height={100}
-                                        src={'/technologies/3.svg'}
-                                        style={{
-                                            marginRight: '60px',
-                                        }}
-                                        width={100}
-                                    />
-                                    <Image
-                                        alt={'amazon-logo'}
-                                        height={100}
-                                        src={'/technologies/4.svg'}
-                                        width={100}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-
                 <div className={styles['_slides-container']}>
-                    <div className={styles['_slide-module-bg']}>
+                    <img alt={'bg-wk'} className={styles['_slide-image']} src={'/bg_case_wm.svg'} />
+                    {/* <div className={styles['_slide-module-bg']}>
                         <div className={styles['_slide-content']}>
                             <img
                                 alt={'bg-wk'}
@@ -97,10 +101,10 @@ export function CompaniesWePromote() {
                                         modelo hibrido.
                                     </blockquote>
                                 </div>
-                                {/*<a className={styles['_btn-black']}>Caso de estudio</a>*/}
+                                <a className={styles['_btn-black']}>Caso de estudio</a>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

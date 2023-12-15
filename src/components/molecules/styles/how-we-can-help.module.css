@@ -27,7 +27,7 @@
   line-height: 1.5;
   color: var(--light-text-color);
   max-width: 100%;
-  text-align: left; /* Ahora alineado a la izquierda */
+  text-align: left;
 }
 
 ._list_help {
@@ -173,6 +173,27 @@
   width: 30px;
   height: 30px;
   margin-right: 10px;
+}
+
+@media (max-width: 1920px) {
+  ._inner {
+    padding: 120px 80px;
+  }
+
+  ._title_help {
+    font-size: 3.2vw;
+
+  }
+
+  ._subtitle_help {
+    margin-top: 30px;
+  }
+
+  ._title_card {
+    width: 100%;
+    margin-top:30px
+  }
+  
 }
 
 @media (max-width: 460px) {

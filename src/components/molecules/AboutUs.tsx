@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { VideoPlayer } from '../modals/VideoPlayer';
+
 import styles from './styles/about-us.module.css';
 
 function FirstTemplate() {
@@ -44,15 +46,15 @@ function FirstTemplate() {
 
 function SecondTemplate() {
     return (
-        <div className={styles._inner}>
+        <div className={styles._inner_second_template}>
             <p className={styles._title}>
                 En AI CORE el talento lo desarrollamos juntos en cada proyecto.
             </p>
 
             <div className={styles._info_container_second_template}>
-                <div className={styles._info_numbers}>
+                <div className={styles._info_numbers_st}>
                     {DEFINITIONS.map((definition) => (
-                        <dl key={definition.id} className={styles._dl}>
+                        <dl key={definition.id} className={styles._dl_st}>
                             <dt className={styles._dt}>{definition.title}</dt>
                             <dd className={styles._dd}>{definition.subtitle}</dd>
                         </dl>
@@ -88,12 +90,23 @@ export function AboutUs({ isCareers = false }: IProps) {
             ) : (
                 <>
                     <FirstTemplate />
+
                     <div className={styles._container_image_word}>
-                        <img
+                        <video
+                            autoPlay
+                            controls
+                            loop
+                            src={'./about_us/video_mundo.mp4'}
+                            width={'100%'}
+                        >
+                            <track kind={'captions'} label={'Spanish'} srcLang={'es'} />
+                        </video>
+
+                        {/*  <img
                             alt={'word'}
                             className={styles._image}
                             src={'./about_us/animacion_mundo.svg'}
-                        />
+                        />*/}
                     </div>
                 </>
             )}

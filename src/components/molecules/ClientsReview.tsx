@@ -8,11 +8,7 @@ import styles from './styles/client-review.module.css';
 export function ClientsReview() {
     return (
         <section className={styles._section}>
-            <div
-                style={{
-                    width: '100%',
-                }}
-            >
+            <div className={styles._inner}>
                 <h2
                     className={styles._title}
                     style={{

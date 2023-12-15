@@ -1,10 +1,13 @@
+import { PhotoContainer } from '../modals/PhotoContainer';
+
 import styles from './styles/our-values.module.css';
 
 export function OurValues() {
     return (
         <section className={styles._section}>
             <div className={styles._inner}>
-                <p className={styles._text}>Nuestros Valores</p>
+                <PhotoContainer alt={'our-values'} src={'./about_us/values/our_values.svg'} />
+                {/* <p className={styles._text}>Nuestros Valores</p>
                 <div className={styles._container_images}>
                     {CIMAGES.map((image) => (
                         <img
@@ -14,7 +17,7 @@ export function OurValues() {
                             src={image.src}
                         />
                     ))}
-                </div>
+                </div> */}
             </div>
         </section>
     );

@@ -1,7 +1,13 @@
 'use client';
 
 import { Header } from '@/components/organisms/Header';
-import { HowWeCanHelp, ClientsReview, CompaniesWePromote } from '@/components/molecules';
+import {
+    HowWeCanHelp,
+    ClientsReview,
+    CompaniesWePromote,
+    PartnerShip,
+    InstitutuionalVideo,
+} from '@/components/molecules';
 
 import styles from './page.module.css';
 
@@ -20,7 +26,9 @@ export default function Home() {
 
             <main className={styles._main}>
                 <HowWeCanHelp />
+                <InstitutuionalVideo />
                 <CompaniesWePromote />
+                <PartnerShip />
                 <ClientsReview />
             </main>
         </>

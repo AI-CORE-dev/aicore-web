@@ -31,15 +31,48 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-._button_services{
-  
+._button_services {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.6000000238418579px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+  font-family: var(--font-mono);
 }
 
-._button_services:hover + ._ul {
-  display: block;
+._button_services:hover + ._ul,
+._ul:hover {
+  display: flex;
 }
 
-._container-links { 
+._ul {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--black-color);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 8px 24px rgba(45, 48, 58, 0.2);
+  transition: background-color 0.8s ease-in-out;
+
+  position: absolute;
+  top: 62%;
+  right: 20px;
+  z-index: 1;
+
+  column-count: 2;
+  column-gap: 20px;
+}
+
+._container-links {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -50,10 +83,6 @@
   flex-direction: row;
   align-items: center;
   list-style-type: none;
-}
-
-._ul {
-  display: none;
 }
 
 ._li:hover > ._ul {
@@ -93,14 +122,12 @@
   font-family: var(--font-mono);
 }
 
-
-
 @media (max-width: 440px) {
-  ._ul{
-      display: none;
+  ._ul {
+    display: none;
   }
 
-  ._button{
-      display: none;
+  ._button {
+    display: none;
   }
 }

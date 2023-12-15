@@ -5,16 +5,17 @@ import styles from './styles/video-player.module.css';
 interface IProps {
     videoId?: string;
     isLocal?: boolean;
+    srcLocal?: string;
 }
 
-export function VideoPlayer({ videoId, isLocal }: IProps) {
+export function VideoPlayer({ videoId, isLocal, srcLocal }: IProps) {
     return (
         <div className={styles._video_container}>
             {isLocal ? (
                 <video
                     controls
                     height={'360'}
-                    src={'./carrers/videos/institucional.mp4'}
+                    src={srcLocal ? srcLocal : './carrers/videos/institucional.mp4'}
                     width={'100%'}
                 >
                     <track kind={'captions'} label={'Spanish'} srcLang={'es'} />
@@ -23,7 +24,7 @@ export function VideoPlayer({ videoId, isLocal }: IProps) {
                 <iframe
                     allowFullScreen
                     frameBorder={'0'} // Para navegadores antiguos
-                    height={'100%'}
+                    height={'600'}
                     loading={'lazy'}
                     sandbox={'allow-same-origin allow-scripts allow-popups allow-presentation'}
                     src={`https://www.youtube.com/embed/${videoId}`}
