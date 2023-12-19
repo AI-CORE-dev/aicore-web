@@ -1,0 +1,13 @@
+{
+    "misc": {
+        "verbs": {
+            "confirm": "Confirmar",
+            "cancel": "Cancelar",
+            "close": "Cerrar",
+            "accept": "Aceptar"
+        },
+        "nouns": {},
+        "adjetives": {},
+        "errors": {}
+    }
+}
