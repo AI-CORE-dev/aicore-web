@@ -1,4 +1,6 @@
-'use client';
+// 'use client';
+
+import type { SupportedLangs } from '@/lang/getDictionary';
 
 import { Header } from '@/components/organisms/Header';
 import {
@@ -8,10 +10,13 @@ import {
     PartnerShip,
     InstitutuionalVideo,
 } from '@/components/molecules';
+import { getDictionary } from '@/lang/getDictionary';
 
 import styles from './page.module.css';
 
-export default function Home() {
+export default async function Home({ params }: { params: { lang: SupportedLangs } }) {
+    const dictionary = await getDictionary(params.lang);
+
     return (
         <>
             <Header
