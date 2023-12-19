@@ -15,14 +15,14 @@ export function Navbar() {
             <Link href={'/'}>
                 <img
                     alt={'aicore-logo'}
-                    height={40}
+                    height={50}
                     src={'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Aicore-co.png'}
-                    width={120}
+                    width={150}
                 />
             </Link>
 
             <div className={styles['_container-links']}>
-                <button className={styles._button}>Contactanos</button>
+                {/* <button className={styles._button}>Contactanos</button> */}
 
                 <ul className={styles._list_links}>
                     {PAGES.map((page) => (
@@ -64,7 +64,7 @@ const PAGES = [
 
 const SERVICES = [
     { id: 0, text: 'Staff Augmentation', href: '/services/staff-augmentation' },
-    { id: 1, text: 'Consultoría', href: '/services/consultoria' },
+    { id: 1, text: 'Consultoría', href: '/services/consultancy' },
     { id: 2, text: 'MVPaaS', href: '/services/MVPaaS' },
     { id: 3, text: 'Outsourcing', href: '/services/outsourcing' },
 ];

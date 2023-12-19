@@ -14,7 +14,7 @@ import {
 function CareersPage() {
     return (
         <>
-            <Header subtitle={DH.subtitle} textButton={DH.textButton} title={DH.title} />
+            <Header isVideo subtitle={DH.subtitle} textButton={DH.textButton} title={DH.title} />
 
             <main>
                 <AboutUs isCareers />

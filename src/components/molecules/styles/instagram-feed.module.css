@@ -113,6 +113,13 @@
   padding-bottom: 100%;
 }
 
+@media (max-width:1440px) {
+  ._inner {
+    padding: 10px 80px;
+    height: 110vh;
+  }
+}
+
 @media (max-width: 460px) {
 
   ._inner {

@@ -12,6 +12,7 @@ function AboutPage() {
         <>
             <Header
                 isButtonSecondary
+                isVideo
                 subtitle={DATAHEADER.subtitle}
                 textButton={DATAHEADER.textButton}
                 textButtonSecondary={DATAHEADER.textButtonSecondary}

@@ -5,7 +5,7 @@
   z-index: 20;
   flex-direction: row;
   align-items: center;
-  padding: 0px 50px;
+  padding: 0px 90px;
   background-color: transparent;
   transition: background-color 0.3s ease-in-out;
   position: fixed;
@@ -33,7 +33,7 @@
 
 ._button_services {
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   margin-right: 20px;
   font-style: normal;
   font-weight: 500;
@@ -110,7 +110,7 @@
 
 ._link {
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   margin-right: 20px;
   font-style: normal;
   font-weight: 500;

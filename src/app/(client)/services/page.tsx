@@ -2,6 +2,10 @@ import React from 'react';
 
 import { Header } from '@/components/organisms/Header';
 
+function ServicesPage() {
+    return <Header />;
+}
+
 const dataHeader = {
     title: 'Soluciones tecnológicas para desarrollar tus proyectos organizacionales interna o externamente',
     subtitle:
@@ -9,9 +13,5 @@ const dataHeader = {
     textButton: 'Contactanos',
     textButtonSecondary: 'Agenda una reunión de 30 minutos sin cargo con un ejecutivo de ventas',
 };
-
-function ServicesPage() {
-    return <Header />;
-}
 
 export default ServicesPage;

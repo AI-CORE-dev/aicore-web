@@ -46,7 +46,6 @@ export function GetToKnowUsBetter() {
         <section className={styles._section}>
             <div className={styles._inner}>
                 <h2 className={styles._text}>Conocenos Mejor</h2>
-                <FirstChild />
                 <ul
                     style={{
                         display: 'flex',
@@ -56,15 +55,7 @@ export function GetToKnowUsBetter() {
                 >
                     {INFOFOUNDERS.map((item) => (
                         <li key={item.id} className={styles._container_article}>
-                            <article>
-                                <p className={styles._title}>{item.name}</p>
-                                <p className={`${styles._title} ${styles._position}`}>
-                                    {item.position} {item.employment}
-                                </p>
-
-                                <a className={styles._linkedin} href={item.linkedin}>
-                                    Linkedin
-                                </a>
+                            <article className={styles._article}>
                                 <div className={styles._image_container}>
                                     <img
                                         alt={item.name}
@@ -73,8 +64,19 @@ export function GetToKnowUsBetter() {
                                     />
                                 </div>
                                 <div>
-                                    <p className={styles._ask}>{item.ask}</p>
-                                    <p className={styles._answer}>{item.answer}</p>
+                                    <p className={styles._title}>{item.name}</p>
+                                    <p className={`${styles._title} ${styles._position}`}>
+                                        {item.position} {item.employment}
+                                    </p>
+
+                                    <a className={styles._linkedin} href={item.linkedin}>
+                                        Linkedin
+                                    </a>
+
+                                    <div>
+                                        <p className={styles._ask}>{item.ask}</p>
+                                        <p className={styles._answer}>{item.answer}</p>
+                                    </div>
                                 </div>
                             </article>
                         </li>
@@ -86,7 +88,7 @@ export function GetToKnowUsBetter() {
 }
 
 const INFOFOUNDERS = [
-    /* {
+    {
         id: 0,
         name: 'Alfredo Agustin Rey ',
         position: 'Co-Founder',
@@ -95,7 +97,7 @@ const INFOFOUNDERS = [
         linkedin: 'https://www.linkedin.com/in/alfredo-agust%C3%ADn-rey-9820ab36/',
         ask: '¿Cuál es el propósito de AI CORE como desarrolladora?',
         answer: 'En nuestro ADN está como motor de ser el mejor socio tecnológico para los proyectos de nuestros clientes, lo que implica involucramiento, compromiso y responsabilidad, no solo con la calidad sino también con los deadlines y la velocidad de respuesta. Nunca negociamos sacrificar la calidad por eso entre la enorme demanda de productos tecnológicos nuestro norte para crecer fue apostar en el talento y el compromiso.',
-    },*/
+    },
     {
         id: 1,
         name: 'Ivan Addolorato',

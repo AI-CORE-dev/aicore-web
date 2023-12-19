@@ -5,7 +5,7 @@
 
 ._inner {
   padding: 10px 80px;
-  height: 90vh;
+  height: 100vh;
 }
 
 ._container_text {
@@ -194,6 +194,13 @@
     margin-top:30px
   }
   
+}
+
+@media (max-width:1440px) {
+  ._inner {
+    padding: 10px 80px;
+    height: 100vh;
+  }
 }
 
 @media (max-width: 460px) {

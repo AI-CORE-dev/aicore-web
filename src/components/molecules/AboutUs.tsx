@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { VideoPlayer } from '../modals/VideoPlayer';
-
 import styles from './styles/about-us.module.css';
 
 function FirstTemplate() {
@@ -10,7 +8,7 @@ function FirstTemplate() {
             <div className={styles._info_container}>
                 <div className={styles._description}>
                     <p className={`${styles._text_margin_bottom} ${styles._text_description}`}>
-                        Brindamos un servicio integral abordando todas las etapas de desarrollo:
+                        Brindamos un servicio integeral abordando todas las etapas de desarrollo:
                         Planeamiento, ejecución, control de los recursos, optimizaciones y soporte
                         técnico con la finalidad de alcanzar los objetivos propuestos.
                     </p>

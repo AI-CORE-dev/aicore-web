@@ -38,6 +38,12 @@ export function Footer() {
                     <p className={styles.subtitle}>contacto@aicore.com</p>
                 </div>
             </div>
+            <div
+                style={{
+                    backgroundColor: 'purple',
+                    width: '100%',
+                }}
+            />
         </footer>
     );
 }

@@ -164,8 +164,25 @@
   object-fit: cover;
 }
 
-@media (max-width:1920px){
-  ._inner{}
+@media (max-width: 1920px) {
+  ._inner {
+  }
+}
+
+@media (max-width: 1440px) {
+  ._inner {
+    padding: 43px 0 100px 100px;
+  }
+
+  ._text_description {
+    font-size: 18px;
+  }
+
+  ._text_primary {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+  }
 }
 
 @media (max-width: 1024px) {
