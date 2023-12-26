@@ -340,7 +340,6 @@ export function TabsCarouselComponent() {
                                         modelo hibrido.
                                     </blockquote>
                                 </div>
-                                <a className={styles['_btn-black']}>Caso de estudio</a>
                             </div>
                         </div>
                     </div>
