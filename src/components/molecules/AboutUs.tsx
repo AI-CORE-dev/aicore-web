@@ -5,37 +5,48 @@ import styles from './styles/about-us.module.css';
 function FirstTemplate() {
     return (
         <div className={styles._inner}>
-            <div className={styles._info_container}>
-                <div className={styles._description}>
-                    <p className={`${styles._text_margin_bottom} ${styles._text_description}`}>
-                        Brindamos un servicio integeral abordando todas las etapas de desarrollo:
-                        Planeamiento, ejecución, control de los recursos, optimizaciones y soporte
-                        técnico con la finalidad de alcanzar los objetivos propuestos.
-                    </p>
-                    <p className={styles._text_description}>
-                        Tomar decisiones, resolver problemás y eficientizar procesos. Por esto
-                        contamos con:
-                    </p>
-                </div>
+            <p className={styles._title}>
+                En AI CORE el talento lo desarrollamos juntos en cada proyecto.
+            </p>
 
-                <div className={styles._info_numbers}>
-                    {DEFINITIONS.map((definition) => (
-                        <dl key={definition.id} className={styles._dl}>
-                            <dt className={styles._dt}>{definition.title}</dt>
-                            <dd className={styles._dd}>{definition.subtitle}</dd>
-                        </dl>
-                    ))}
+            <div className={styles._container_image_info}>
+                <div className={styles._info_container}>
+                    <div className={styles._description}>
+                        <p className={`${styles._text_margin_bottom} ${styles._text_description}`}>
+                            Brindamos un servicio integeral abordando todas las etapas de
+                            desarrollo: Planeamiento, ejecución, control de los recursos,
+                            optimizaciones y soporte técnico con la finalidad de alcanzar los
+                            objetivos propuestos.
+                        </p>
+                        <p className={styles._text_description}>
+                            Tomar decisiones, resolver problemás y eficientizar procesos. Por esto
+                            contamos con:
+                        </p>
+                    </div>
+
+                    <div className={styles._info_numbers}>
+                        {DEFINITIONS.map((definition) => (
+                            <dl key={definition.id} className={styles._dl}>
+                                <dt className={styles._dt}>{definition.title}</dt>
+                                <dd className={styles._dd}>{definition.subtitle}</dd>
+                            </dl>
+                        ))}
+                    </div>
                 </div>
-            </div>
-            <div className={styles._image_container}>
-                <div>
-                    <img alt={'nosotros'} className={styles._image} src={'/about_us/socios.jpg'} />
-                </div>
-                <div className={styles._text_container}>
-                    <p className={styles._text_primary}>Socios fundadores</p>
-                    <p className={`${styles._text_primary} ${styles._text_weigth}`}>
-                        Ezequiel Maranga, Alfredo Rey, Ivan Addolorato
-                    </p>
+                <div className={styles._image_container}>
+                    <div>
+                        <img
+                            alt={'nosotros'}
+                            className={styles._image}
+                            src={'/about_us/socios.jpg'}
+                        />
+                    </div>
+                    <div className={styles._text_container}>
+                        <p className={styles._text_primary}>Socios fundadores</p>
+                        <p className={`${styles._text_primary} ${styles._text_weigth}`}>
+                            Ezequiel Maranga, Alfredo Rey, Ivan Addolorato
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

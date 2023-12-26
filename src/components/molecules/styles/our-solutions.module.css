@@ -1,0 +1,8 @@
+._section{
+    position: relative;
+    background-color: var(--white-color);
+}
+
+._inner{
+    margin: 0px 100px;
+}

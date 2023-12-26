@@ -1,0 +1,40 @@
+._floating_button {
+  position: fixed;
+  right: 52px;
+  bottom: 52px;
+  background-color: var(--red-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 0;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color .3s ease-in-out;
+  font-family: DIN Pro,DIN Pro fallback,sans-serif;
+  font-size: 16px;
+  line-height: 0;
+  text-transform: uppercase;
+  z-index: 5;
+  opacity: 1;
+  transition-property: opacity,bottom,display;
+  transition-duration: .4s;
+}
+
+._floating_button_active {
+  opacity: 1;
+}
+
+._chevron {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 14px solid white; 
+}
+  
+  ._active ._chevron {
+    border-bottom: 14px solid #f0ebeb;
+  }

@@ -18,10 +18,16 @@ export * from './InstitutuionalVideo';
 
 export * from './OpenPositions';
 
+export * from './OurSolutions';
+
 export * from './OurValues';
 
 export * from './PartnerShip';
 
+export * from './Recognition';
+
 export * from './RecruimentProcess';
 
 export * from './ScheduleCall';
+
+export * from './ServicesNumbers';

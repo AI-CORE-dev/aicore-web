@@ -6,7 +6,7 @@
 
 ._inner{
   width: '100%';
-  padding: 80px 0px 0 0;
+  padding: 80px 100px 0 100px;
 }
 
 ._title {
@@ -25,19 +25,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
   max-width: var(--inner-width);
 }
 
-._margin-right {
+._margin_right {
   margin-right: 2rem;
 }
 
 ._card_client {
-  width: 390px;
+  width: 370px;
   max-width: 100%;
   background-color: var(--white-color);
-  height: 529px;
+  height: 580px;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   padding: 3rem 1.65rem 3.5rem;
   border: 1px solid var(--border-color);
@@ -60,9 +59,20 @@
 
 ._name_client {
   font-family: var(--font-mono);
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 1.3rem;
+  line-height: 1.9rem;
+  letter-spacing: -0.04rem;
+  text-align: center;
+  color: var(--black-color);
+  cursor: default;
+}
+
+._description_client {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.9rem;
   letter-spacing: -0.04rem;
   text-align: center;
   color: var(--black-color);
@@ -76,9 +86,9 @@
 
 ._review_card {
   font-family: var(--font-sub);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.2rem;
+  line-height: 1.4rem;
   letter-spacing: -0.04rem;
   max-height: 422px;
   cursor: default;
@@ -93,21 +103,19 @@
   font-family: var(--font-mono);
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.4rem;
   letter-spacing: -0.04rem;
   margin-right: 0.5rem;
-  text-align: center;
   color: var(--black-color);
 }
 
 @media (max-width: 1440px) {
   ._inner{
     width: '100%';
-    padding: 0px 0px 0 0;
+    padding: 0px 100px 0 100px;
   }
   ._title {
 
-    padding: 0rem 4rem 3rem 2rem;
+    padding: 2rem 4rem 3rem 2rem;
   }
 }
 
@@ -121,7 +129,7 @@
     width: 100%;
     padding: 2rem 1rem 2.5rem;
   }
-  ._margin-right {
+  ._margin_right {
     margin-right: 0;
   }
 }

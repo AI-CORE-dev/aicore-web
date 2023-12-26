@@ -1,4 +1,4 @@
-._nav-container {
+._nav_container {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -13,19 +13,14 @@
 }
 
 ._logo {
-  font-size: 24px;
-  font-weight: 700;
-  color: #fff;
-  font-family: var(--font-mono);
   cursor: pointer;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
   width: 120px;
   height: 40px;
-  background: url("https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Aicore-co.png");
 }
 
-._nav-container.scrolled {
+._nav_container.scrolled {
   background-color: #333;
   box-shadow: 0 8px 24px rgba(45, 48, 58, 0.2);
   transition: background-color 0.3s ease-in-out;
@@ -33,11 +28,12 @@
 
 ._button_services {
   color: #fff;
-  font-size: 20px;
+  font-size: 25px;
   margin-right: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
+  cursor: default;
   letter-spacing: -0.6000000238418579px;
   text-decoration: none;
   display: inline-block;
@@ -45,34 +41,31 @@
   font-family: var(--font-mono);
 }
 
-._button_services:hover + ._ul,
-._ul:hover {
+._button_services:hover + ._ul_services,
+._ul_services:hover {
   display: flex;
+
 }
 
-._ul {
+._ul_services {
   display: none;
-  flex-direction: column;
+  flex-wrap: wrap;
+  /*justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
   list-style-type: none;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 1);
   color: var(--black-color);
-  padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 8px 24px rgba(45, 48, 58, 0.2);
-  transition: background-color 0.8s ease-in-out;
-
+  box-shadow: 0 22px 16px hsla(0,0%,83.1%,.4);
   position: absolute;
+  width: 10%;
   top: 62%;
-  right: 20px;
+  right: 35%;
   z-index: 1;
-
-  column-count: 2;
-  column-gap: 20px;
 }
 
-._container-links {
+._container_links {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -85,33 +78,74 @@
   list-style-type: none;
 }
 
-._li:hover > ._ul {
-  display: block;
+._li {
+  /*flex-basis: calc(50%);*/
   width: 100%;
-  position: absolute;
+  position: relative;
+  padding: 0px 0px;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+._li_center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+._li:hover > ._ul_services {
+
   background-color: #333;
   box-shadow: 0 8px 24px rgba(45, 48, 58, 0.2);
-  transition: background-color 0.3s ease-in-out;
-  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 ._button {
   border: none;
-  margin-right: 20px;
+  text-transform: uppercase;
+  height: 50px;
+  font-family: var(--font-mono);
   cursor: pointer;
   outline: none;
-  padding: 15px 20px;
-  border-radius: 5px;
-  background-color: var(--black-color-secondary);
+  padding: 0px 25px;
+  border-radius: 4px;
+  background-color: var(--black-color);
   box-shadow: 0 8px 24px rgba(1, 2, 5, 0.2);
   color: #fff;
-  font-size: 16px;
+  font-size: 13px;
+  transition: color .3s ease-in-out,background-color .3s ease-in-out;
+}
+
+._button:hover {
+  background-color: #fff;
+  transition: background-color 0.3s ease-in-out;
+  color: var(--black-color);
+}
+
+._link_services {
+}
+
+._li ._link_services {
+  display: block;
+  padding: 20px 10px;
+  text-decoration: none;
+  color: var(--black-color);
+
+}
+
+._li ._link_services:hover {
+  background-color: #333;
+  color: #fff;
 }
 
 ._link {
   color: #fff;
-  font-size: 20px;
-  margin-right: 20px;
+  font-size: 25px;
+  margin-right: 30px;
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
@@ -120,14 +154,152 @@
   display: inline-block;
   transition: all 0.5s ease-in-out;
   font-family: var(--font-mono);
+  position: relative;
+  transition:
+    color 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+}
+
+._linkkk::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #3498db, #3498db, #3498db);
+  opacity: 0;
+  border-radius: 15px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+._link:hover::after {
+  opacity: 1;
+}
+
+._container_menu_burger {
+  display: none;
+}
+
+._img_logo_mobile {
+  display: none;
+}
+
+._img_logo_desktop {
+  display: flex;
+}
+
+._menu_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+._menu_links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+._cancel_icon {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+._cancel_icon::before,
+._cancel_icon::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background-color: #f6f1f1;
+}
+
+._cancel_icon::before {
+  transform: rotate(45deg);
+}
+
+._cancel_icon::after {
+  transform: rotate(-45deg);
+}
+
+@media (max-width:1440px) {
+  
+  ._nav_container {
+    padding: 0px 35px;
+  }
+
+  ._ul_services {
+    width: 15%;
+    right: 30%;
+
+  }
+  
+  ._link{
+
+    font-size: 16px;
+    margin-right: 32px;
+  }
+
+  ._button_services {
+    font-size: 16px;
+    margin-right: 32px;
+  }
 }
 
 @media (max-width: 440px) {
-  ._ul {
+  ._nav_container {
+    padding: 0 20px;
+  }
+
+  ._link {
+    font-size: 16px;
+  }
+
+  ._link_services {
+    font-size: 16px;
+  }
+
+  ._button_services {
+    font-size: 16px;
+  }
+
+  ._ul_services {
+    bakground-color: #333;
+  }
+
+  ._container_links {
     display: none;
   }
 
   ._button {
+    display: none;
+  }
+
+  ._container_menu_burger {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  ._img_logo_mobile {
+    display: flex;
+  }
+
+  ._img_logo_desktop {
     display: none;
   }
 }

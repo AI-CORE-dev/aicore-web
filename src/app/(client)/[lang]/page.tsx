@@ -1,5 +1,3 @@
-// 'use client';
-
 import type { SupportedLangs } from '@/lang/getDictionary';
 
 import { Header } from '@/components/organisms/Header';
@@ -9,10 +7,18 @@ import {
     CompaniesWePromote,
     PartnerShip,
     InstitutuionalVideo,
+    ScheduleCall,
+    Recognition,
 } from '@/components/molecules';
 import { getDictionary } from '@/lang/getDictionary';
 
 import styles from './page.module.css';
+interface HeaderData {
+    title: string;
+    subtitle: string;
+    button: string;
+    text: string;
+}
 
 export default async function Home({ params }: { params: { lang: SupportedLangs } }) {
     const dictionary = await getDictionary(params.lang);
@@ -23,10 +29,10 @@ export default async function Home({ params }: { params: { lang: SupportedLangs 
                 isButtonSecondary
                 isHome
                 isVideo
-                subtitle={DATAHEADER.subtitle}
-                textButton={DATAHEADER.textButton}
-                textButtonSecondary={DATAHEADER.textButtonSecondary}
-                title={DATAHEADER.title}
+                subtitle={dictionary.header_home.subtitle}
+                textButton={dictionary.header_home.button}
+                textButtonSecondary={dictionary.header_home.text}
+                title={dictionary.header_home.title}
             />
 
             <main className={styles._main}>
@@ -35,16 +41,9 @@ export default async function Home({ params }: { params: { lang: SupportedLangs 
                 <CompaniesWePromote />
                 <PartnerShip />
                 <ClientsReview />
+                <Recognition />
+                <ScheduleCall />
             </main>
         </>
     );
 }
-
-const DATAHEADER = {
-    title: 'Soluciones tecnológicas a medida para organizaciones que apuestan por la innovación.',
-    subtitle:
-        'Estamos acá para acompañarte como socio tecnológico a materializar tus ideas en productos, pensados y diseñados a medida para darte esa ventaja que estás buscando.',
-    textButton: 'Contactanos',
-    textButtonSecondary:
-        'Agenda una reunión de 30 minutos con nuestros desarrolladores de negocios.',
-};

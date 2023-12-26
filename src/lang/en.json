@@ -9,5 +9,20 @@
         "nouns": {},
         "adjetives": {},
         "errors": {}
+    },
+
+    "nav_bar": {
+        "home": "Home",
+        "about": "About us",
+        "career": "Careers",
+        "services": "Services",
+        "contact": "Contact"
+    },
+
+    "header_home":{
+        "title":"Tailored technological solutions for organizations that are committed to innovation.",
+        "subtitle":"We are here to accompany you as a technological partner to materialize your ideas into products, tailored and designed to give you that advantage you are looking for.",
+        "button":"Contact us",
+        "text":"Schedule a 30-minute meeting with our business developers."
     }
 }

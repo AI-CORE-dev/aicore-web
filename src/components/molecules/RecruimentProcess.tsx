@@ -31,26 +31,26 @@ const PROCESS = [
     {
         id: 0,
         title: 'Revisión de tu aplicación',
-        img: './carrers/recruiment_process/1.png',
+        img: '/carrers/recruiment_process/1.png',
     },
     {
         id: 1,
         title: 'Llamada con RRHH',
-        img: './carrers/recruiment_process/2.png',
+        img: '/carrers/recruiment_process/2.png',
     },
     {
         id: 2,
         title: 'Entrevista técnica con nuestros expertos',
-        img: './carrers/recruiment_process/3.png',
+        img: '/carrers/recruiment_process/3.png',
     },
     {
         id: 3,
         title: 'Follow up',
-        img: './carrers/recruiment_process/4.png',
+        img: '/carrers/recruiment_process/4.png',
     },
     {
         id: 4,
         title: 'Oferta formar de trabajo',
-        img: './carrers/recruiment_process/5.png',
+        img: '/carrers/recruiment_process/5.png',
     },
 ];

@@ -1,39 +1,69 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
+import { useCalendlyEventListener, InlineWidget } from 'react-calendly';
 
 import styles from './styles/schedule-call.module.css';
-import './styles/Calendar.css';
 
 export function ScheduleCall() {
-    {
-        /*const [value, setValue] = useState(new Date());
-
-    const onChange = (nextValue: Date) => {
-        setValue(nextValue);
-    };*/
-    }
+    useCalendlyEventListener({
+        onProfilePageViewed: () => console.log('onProfilePageViewed'),
+        onDateAndTimeSelected: () => console.log('onDateAndTimeSelected'),
+        onEventTypeViewed: () => console.log('onEventTypeViewed'),
+        onEventScheduled: (e) => console.log(e.data.payload),
+    });
 
     return (
         <section className={styles._section}>
-            <div>
-                <h2 className={styles._title}>Agenda una meet o envíanos un mensaje</h2>
+            <div className={styles._inner}>
+                <h2 className={styles._title}>
+                    Agenda una meet o envíanos un <br /> mensaje
+                </h2>
                 <p className={styles._subtitle}>
                     Nos encantán los desafíos, queremos ser un aliado tecnológico de impacto en tu
                     negocio.
                 </p>
 
-                <div className={styles['_container-calendar']}>
-                    <div className={styles['_box-calendar']}>
-                        {/* <Calendar
-                            className={styles._calendar}
-                locale="es-ES"
-                value={value}
-                onChange={onChange}
-                            tileClassName={styles._tile}
-                            //tileContent={({ date, view }) => view === 'month' && date.getDay() === 0 ? <p className={styles['tile-content']}>Cerrado</p> : null}
-                        /> */}
+                <div className={styles._container_profile}>
+                    <div className={`${styles._container_header} ${styles._column}`}>
+                        <div className={`${styles._circle}`}>
+                            <img
+                                alt={'fav-icon'}
+                                className={styles._img}
+                                src={
+                                    'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Favicon-Aicore.png'
+                                }
+                            />
+                        </div>
+                        <div className={styles._container_info}>
+                            <p className={styles._name_sale}>Ignacio Antón</p>
+                            <p className={styles._profession}>Business Developer</p>
+                        </div>
                     </div>
+                    <p className={`${styles._description} ${styles._column}`}>
+                        Hola! Soy Ignacio, ejecutivo de nuevos negocios en AI CORE. Agendá un
+                        espacio en mi agenda para conversar sobre tu proyecto y que podamos comenzar
+                        a aportarle valor.
+                    </p>
+                </div>
+
+                <div className={styles._container_calendar}>
+                    <div className={styles._container_top_seccion}>
+                        <div className={styles._top_section}>
+                            <h2 className={styles._top_title}>Agenda una meet</h2>
+                            <button className={styles._top_button}>Envíanos un mensaje</button>
+                        </div>
+                    </div>
+
+                    <InlineWidget
+                        pageSettings={{
+                            hideEventTypeDetails: false,
+                            hideLandingPageDetails: false,
+                            hideGdprBanner: false,
+                        }}
+                        styles={{ height: '1000px' }}
+                        url={'https://calendly.com/emiliano-caceres/test?'}
+                    />
                 </div>
             </div>
         </section>

@@ -1,5 +1,3 @@
-'use client';
-
 import { Header } from '@/components/organisms/Header';
 
 function Outsourcing() {

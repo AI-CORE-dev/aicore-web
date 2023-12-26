@@ -1,6 +1,9 @@
+'use client';
+
 import React from 'react';
 
 import styles from './styles/header.module.css';
+import { WaveCanvas } from './components/WaveCanvas';
 
 interface IProps {
     isVideo?: boolean;
@@ -19,13 +22,13 @@ export function Header({
     textButton = 'textButton',
     isButtonSecondary = false,
     textButtonSecondary = 'textButtonSecondary',
-    isHome = false,
 }: IProps) {
     return (
         <header
-            className={isHome ? styles._header_home : `${styles._header}`}
+            className={styles._header}
             style={{ backgroundColor: !isVideo ? '#1E1E1E' : 'transparent' }}
         >
+            <WaveCanvas />
             <div className={styles._header_module}>
                 <video autoPlay loop muted playsInline className={styles._video_background}>
                     <source src={'/video_aicore.mp4'} type={'video/mp4'} />

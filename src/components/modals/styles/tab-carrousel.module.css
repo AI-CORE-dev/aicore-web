@@ -1,0 +1,75 @@
+._tabs_list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 100px 0 100px;
+  width: 100%;
+  height: 250px;
+  list-style: none;
+  border: none;
+  min-height: 400px;
+}
+
+._tabs_btn {
+  background: none;
+  font-family: var(--font-mono);
+  letter-spacing: -1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3.1vw;
+  line-height: 1.2px;
+  color: var(--sky-blue-color);
+  margin-top: 15px;
+  margin-right: 10px;
+  border: none;
+  transition:
+    color 0.3s ease-in-out,
+    cursor 0.3s ease-in-out;
+  outline: none;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  cursor: pointer;
+}
+
+._carousel {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  border: none;
+  -webkit-focus-ring-color: none;
+  height: 100%;
+  overflow: hidden;
+}
+
+._tabs_btn:hover {
+  color: var(--text-emphasis);
+}
+
+._tabs_item:active {
+  color: var(--text-emphasis);
+}
+
+._tabs_btn:focus {
+  color: var(--black-color);
+}
+
+._tabs_btn:focus-visible {
+  color: var(--black-color);
+  border: none;
+  -webkit-focus-ring-color: none;
+}
+._carousel_enter_from_right {
+  transform: translateX(100%);
+}
+
+._carousel_enter_active {
+  transform: translateX(0);
+  transition: transform 500ms ease-in-out;
+}
+
+._carousel_enter_from_left {
+  transform: translateX(-100%);
+}

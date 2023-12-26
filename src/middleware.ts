@@ -22,8 +22,11 @@ export function middleware(request: NextRequest) {
     const pathnameHasLang = supportedLangs.some(
         (lang) => pathname.startsWith(`/${lang}/`) || pathname === `/${lang}`,
     );
+    const isAsset = ['.png', '.jpg', '.svg', '.ico', '.mp4', '.webp'].some((ext) =>
+        pathname.endsWith(ext),
+    );
 
-    if (pathnameHasLang) return;
+    if (pathnameHasLang || isAsset) return;
 
     const preferredLang = request.headers.get('accept-language')!;
 

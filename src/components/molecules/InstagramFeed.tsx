@@ -50,42 +50,42 @@ export function InstagramFeed() {
 const IMAGES_INSTAGRAM = [
     {
         id: 0,
-        url: './images/1.jpg',
+        url: '/images/1.jpg',
         alt: 'imagen 1',
     },
     {
         id: 1,
-        url: './images/2.jpg',
+        url: '/images/2.jpg',
         alt: 'imagen 2',
     },
     {
         id: 2,
-        url: './images/3.jpg',
+        url: '/images/3.jpg',
         alt: 'imagen 3',
     },
     {
         id: 3,
-        url: './images/4.jpg',
+        url: '/images/4.jpg',
         alt: 'imagen 4',
     },
     {
         id: 4,
-        url: './images/5.jpg',
+        url: '/images/5.jpg',
         alt: 'imagen 5',
     },
     {
         id: 5,
-        url: './images/6.jpg',
+        url: '/images/6.jpg',
         alt: 'imagen 6',
     },
     {
         id: 6,
-        url: './images/7.jpg',
+        url: '/images/7.jpg',
         alt: 'imagen 7',
     },
     {
         id: 7,
-        url: './images/8.jpg',
+        url: '/images/8.jpg',
         alt: 'imagen 8',
     },
 ];

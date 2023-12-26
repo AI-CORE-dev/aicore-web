@@ -1,5 +1,3 @@
-'use client';
-
 import React, { useRef, useEffect } from 'react';
 
 import styles from '../styles/wave-canvas.module.css';

@@ -21,31 +21,21 @@ export function ClientsReview() {
                 <ul className={styles._container_cards}>
                     {CLIENTS.map((client) => (
                         <li key={client.id}>
-                            <div className={`${styles._card_client} ${styles['_margin-right']}`}>
+                            <div className={`${styles._card_client} ${styles._margin_right}`}>
                                 <div className={styles._card_content}>
                                     <Image
                                         alt={client.name}
-                                        height={140}
+                                        height={130}
                                         src={client.avatar}
-                                        width={140}
+                                        width={130}
                                     />
 
                                     <p className={`${styles._name_client} ${styles._name_weight}`}>
                                         {client.name}
                                     </p>
-                                    <p className={styles._name_client}>{client.job}</p>
-                                    <p className={styles._name_client}>{client.company}</p>
+                                    <p className={styles._description_client}>{client.job}</p>
+                                    <p className={styles._description_client}>{client.company}</p>
                                     <p className={styles._review_card}>{client.review}</p>
-                                    <div
-                                        style={{
-                                            display: 'flex',
-                                            justifyContent: 'center',
-                                            alignItems: 'center',
-                                        }}
-                                    >
-                                        <span className={styles['_value-review']}>5.0</span>
-                                        <StartReviewSVG />
-                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -74,5 +64,15 @@ const CLIENTS = [
         review: 'Trabajamos codo a codo con AI CORE para poder reconvertirnos. Ellos fueron cruciales para nunca bajar los brazos y siempre que necesitábamos pivotear tener su apoyo tecnológico y humano.',
         score: 5,
         avatar: '/cli_bukest.svg',
+    },
+
+    {
+        id: 2,
+        name: 'Lorem Ipsum',
+        job: 'CEO - Founder',
+        company: 'Lorem',
+        review: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+        score: 5,
+        avatar: 'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Favicon-Aicore.png',
     },
 ];

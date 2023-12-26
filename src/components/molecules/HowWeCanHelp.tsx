@@ -20,11 +20,10 @@ export function HowWeCanHelp() {
                         <li key={index} className={styles._item_list}>
                             <div className={styles._container_card}>
                                 <span className={styles._container_image}>
-                                    <Image
+                                    <img
                                         alt={aid.title}
-                                        height={170}
+                                        className={styles._image}
                                         src={aid.image}
-                                        width={170}
                                     />
                                 </span>
 
