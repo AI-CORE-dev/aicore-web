@@ -1,11 +1,19 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useCalendlyEventListener, InlineWidget } from 'react-calendly';
+
+import { FormSendMessage } from '../modals';
 
 import styles from './styles/schedule-call.module.css';
 
 export function ScheduleCall() {
+    const [isFormOrCalendar, setIsFormOrCalendar] = useState(false);
+
+    const handleFormOrCalendar = () => {
+        setIsFormOrCalendar(!isFormOrCalendar);
+    };
+
     useCalendlyEventListener({
         onProfilePageViewed: () => console.log('onProfilePageViewed'),
         onDateAndTimeSelected: () => console.log('onDateAndTimeSelected'),
@@ -50,20 +58,36 @@ export function ScheduleCall() {
                 <div className={styles._container_calendar}>
                     <div className={styles._container_top_seccion}>
                         <div className={styles._top_section}>
-                            <h2 className={styles._top_title}>Agenda una meet</h2>
-                            <button className={styles._top_button}>Envíanos un mensaje</button>
+                            <h2 className={styles._top_title}>
+                                {isFormOrCalendar ? 'Envíanos un mensaje' : 'Agenda una meet'}
+                            </h2>
+                            <button className={styles._top_button} onClick={handleFormOrCalendar}>
+                                {!isFormOrCalendar ? 'Envíanos un mensaje' : 'Agenda una meet'}
+                            </button>
                         </div>
                     </div>
-
-                    <InlineWidget
-                        pageSettings={{
-                            hideEventTypeDetails: false,
-                            hideLandingPageDetails: false,
-                            hideGdprBanner: false,
+                    <div
+                        style={{
+                            width: '100%',
+                            backgroundColor: '#F5F5F5BB',
                         }}
-                        styles={{ height: '1000px' }}
-                        url={'https://calendly.com/emiliano-caceres/test?'}
-                    />
+                    >
+                        {isFormOrCalendar ? (
+                            <FormSendMessage />
+                        ) : (
+                            <InlineWidget
+                                pageSettings={{
+                                    hideEventTypeDetails: false,
+                                    hideLandingPageDetails: false,
+                                    hideGdprBanner: false,
+                                }}
+                                styles={{ height: '1000px' }}
+                                url={
+                                    'https://calendly.com/emiliano-caceres/test?hide_event_type_details=1&hide_gdpr_banner=1'
+                                }
+                            />
+                        )}
+                    </div>
                 </div>
             </div>
         </section>

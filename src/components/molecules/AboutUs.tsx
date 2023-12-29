@@ -5,10 +5,6 @@ import styles from './styles/about-us.module.css';
 function FirstTemplate() {
     return (
         <div className={styles._inner}>
-            <p className={styles._title}>
-                En AI CORE el talento lo desarrollamos juntos en cada proyecto.
-            </p>
-
             <div className={styles._container_image_info}>
                 <div className={styles._info_container}>
                     <div className={styles._description}>
@@ -105,17 +101,11 @@ export function AboutUs({ isCareers = false }: IProps) {
                             autoPlay
                             controls
                             loop
-                            src={'./about_us/video_mundo.mp4'}
+                            src={'/about_us/video_mundo.mp4'}
                             width={'100%'}
                         >
                             <track kind={'captions'} label={'Spanish'} srcLang={'es'} />
                         </video>
-
-                        {/*  <img
-                            alt={'word'}
-                            className={styles._image}
-                            src={'./about_us/animacion_mundo.svg'}
-                        />*/}
                     </div>
                 </>
             )}

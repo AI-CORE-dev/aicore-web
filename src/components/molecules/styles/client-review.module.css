@@ -25,7 +25,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: var(--inner-width);
+  align-items: center;
+
 }
 
 ._margin_right {

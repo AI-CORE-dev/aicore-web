@@ -7,7 +7,7 @@ import styles from './styles/institutional-photos.module.css';
 export function InstitutionalPhotos() {
     return (
         <section className={styles._section}>
-            <PhotoContainer alt={'AICORE'} src={'./carrers/aicore_collage.svg'} />
+            <PhotoContainer alt={'AICORE'} src={'/carrers/aicore_collage.svg'} />
         </section>
     );
 }

@@ -6,8 +6,8 @@ export function ServicesNumbers() {
     return (
         <section className={styles._section}>
             <ul className={styles._unordered_list}>
-                {CNUMBERS.map((item, index) => (
-                    <li key={index} className={styles._list_number}>
+                {CNUMBERS.map((item) => (
+                    <li key={item.id} className={styles._list_number}>
                         <span className={styles._title}>{item.title}</span>
                         <span className={styles._subtitle}>{item.subtitle}</span>
                     </li>
@@ -19,18 +19,22 @@ export function ServicesNumbers() {
 
 const CNUMBERS = [
     {
+        id: 1,
         title: '+30',
         subtitle: 'Desarrolladores',
     },
     {
+        id: 2,
         title: '1000',
         subtitle: 'Candidatos en nuestras bases',
     },
     {
+        id: 3,
         title: '7-15 días',
         subtitle: 'Para sumar talentos en tu equpo',
     },
     {
+        id: 4,
         title: '92%',
         subtitle: 'Sastisfacción de nuestros clientes',
     },

@@ -59,6 +59,9 @@
 
 ._btn_white {
   color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
   border-color: #fff;
   padding: 20px;

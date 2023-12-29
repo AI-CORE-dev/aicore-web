@@ -4,6 +4,10 @@ import {
     ClientsReview,
     GetToKnowUsBetter,
     OurValues,
+    ScheduleCall,
+    Recognition,
+    PartnerShip,
+    FeatureProjects,
 } from '@/components/molecules';
 import { Header } from '@/components/organisms/Header';
 
@@ -21,9 +25,13 @@ function AboutPage() {
             <main>
                 <AboutUs />
                 <ClientsReview />
+                <FeatureProjects />
                 <GetToKnowUsBetter />
                 <OurValues />
+                <Recognition />
                 <InstagramFeed />
+                <PartnerShip />
+                <ScheduleCall />
             </main>
         </>
     );

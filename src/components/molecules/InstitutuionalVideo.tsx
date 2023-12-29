@@ -10,7 +10,6 @@ export function InstitutuionalVideo() {
             <iframe
                 allowFullScreen
                 frameBorder={'0'} // Para navegadores antiguos
-                height={'1000'}
                 loading={'lazy'}
                 sandbox={'allow-same-origin allow-scripts allow-popups allow-presentation'}
                 src={`https://www.youtube.com/embed/${idVideo}`}
@@ -18,6 +17,7 @@ export function InstitutuionalVideo() {
                     border: 'none',
                     width: '100%',
                     flex: 1,
+                    height: '80vh',
                 }}
                 title={'video'}
                 width={'100%'}

@@ -50,9 +50,6 @@
 ._ul_services {
   display: none;
   flex-wrap: wrap;
-  /*justify-content: space-between;
-  align-items: center;
-  justify-content: center;*/
   list-style-type: none;
   background-color: rgba(255, 255, 255, 1);
   color: var(--black-color);
@@ -85,8 +82,6 @@
   padding: 0px 0px;
   display: flex;
   flex-direction: column;
-
-
 }
 
 ._li_center{
@@ -105,7 +100,10 @@
 }
 
 ._button {
+  display: flex;
   border: none;
+  justify-content: center;
+  align-items: center;
   text-transform: uppercase;
   height: 50px;
   font-family: var(--font-mono);
@@ -121,6 +119,12 @@
 }
 
 ._button:hover {
+  background-color: #fff;
+  transition: background-color 0.3s ease-in-out;
+  color: var(--black-color);
+}
+
+._button.scrolled {
   background-color: #fff;
   transition: background-color 0.3s ease-in-out;
   color: var(--black-color);

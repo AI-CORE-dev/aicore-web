@@ -4,6 +4,8 @@ export * from './ClientsReview';
 
 export * from './CompaniesWePromote';
 
+export * from './FeaturedProjects';
+
 export * from './GetToKnowUsBetter';
 
 export * from './HowRetainTalent';

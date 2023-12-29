@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 import styles from './styles/how-we-can-help.module.css';
 
@@ -16,8 +15,8 @@ export function HowWeCanHelp() {
                     </p>
                 </div>
                 <ul className={styles._list_help}>
-                    {aids.map((aid, index) => (
-                        <li key={index} className={styles._item_list}>
+                    {CAIDS.map((aid) => (
+                        <li key={aid.id} className={styles._item_list}>
                             <div className={styles._container_card}>
                                 <span className={styles._container_image}>
                                     <img
@@ -38,28 +37,33 @@ export function HowWeCanHelp() {
     );
 }
 
-const aids = [
+const CAIDS = [
     {
+        id: 0,
         title: 'Entra al mercado rapidamente.',
         subtitle: 'Desarrollo de MVPs - MVPaaS',
         image: '/1.svg',
     },
     {
+        id: 1,
         title: 'Escala tu negocio con sistemas a medida.',
         subtitle: 'Outsourcing',
         image: '/2.svg',
     },
     {
+        id: 2,
         title: 'Consolidá tu departamento de IT.',
         subtitle: 'Staff Augmentation - Dedicated Teams - CTOaaS.',
         image: '/3.svg',
     },
     {
+        id: 3,
         title: 'Comenza tu transformación tecnológica',
         subtitle: 'Consultoría.',
         image: '/4.svg',
     },
     {
+        id: 4,
         title: 'Desarrolla tu web y app o AI con nosotros.',
         subtitle: 'Boutique Development',
         image: '/5.svg',

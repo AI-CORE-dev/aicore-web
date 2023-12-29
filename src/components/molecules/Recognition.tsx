@@ -9,8 +9,8 @@ export function Recognition() {
                 <h2 className={styles._title}>Reconocimientos</h2>
 
                 <ul className={styles._unordered_list}>
-                    {CNUMBERS.map((item, index) => (
-                        <li key={index} className={styles._list_number}>
+                    {CNUMBERS.map((item) => (
+                        <li key={item.id} className={styles._list_number}>
                             <span className={styles._title}>{item.title}</span>
                             <span className={styles._subtitle}>{item.subtitle}</span>
                         </li>
@@ -18,8 +18,8 @@ export function Recognition() {
                 </ul>
 
                 <ul className={styles._unordered_list}>
-                    {CAWARDS.map((item, index) => (
-                        <li key={index} className={styles._list_number}>
+                    {CAWARDS.map((item) => (
+                        <li key={item.id} className={styles._list_number}>
                             <img alt={item.alt} className={styles._image} src={item.image} />
                         </li>
                     ))}
@@ -31,41 +31,50 @@ export function Recognition() {
 
 const CNUMBERS = [
     {
+        id: 0,
         title: '+30',
         subtitle: 'Desarrolladores',
     },
     {
-        title: '1000',
-        subtitle: 'Candidatos en nuestras bases',
+        id: 1,
+        title: '+40',
+        subtitle: 'Proyectos realizados',
     },
     {
-        title: '7-15 días',
-        subtitle: 'Para sumar talentos en tu equpo',
+        id: 2,
+        title: '15',
+        subtitle: 'Años de experiencia IT',
     },
     {
-        title: '92%',
-        subtitle: 'Sastisfacción de nuestros clientes',
+        id: 3,
+        title: '60%',
+        subtitle: 'De staff senior',
     },
 ];
 
 const CAWARDS = [
     {
+        id: 0,
         image: '/1.svg',
         alt: 'award1',
     },
     {
+        id: 1,
         image: '/2.svg',
         alt: 'award2',
     },
     {
+        id: 2,
         image: '/3.svg',
         alt: 'award3',
     },
     {
+        id: 3,
         image: '/4.svg',
         alt: 'award4',
     },
     {
+        id: 4,
         image: '/5.svg',
         alt: 'award5',
     },

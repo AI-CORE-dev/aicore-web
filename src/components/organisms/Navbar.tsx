@@ -19,9 +19,9 @@ export function Navbar() {
                 <img
                     alt={'aicore-logo'}
                     className={styles._img_logo_desktop}
-                    height={70}
+                    height={50}
                     src={'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Aicore-co.png'}
-                    width={200}
+                    width={150}
                 />
                 <img
                     alt={'fav-logo'}

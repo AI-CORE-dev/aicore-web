@@ -38,9 +38,18 @@ export function Header({
                     <h1 className={styles._title}>{title}</h1>
                     <h3 className={styles._subtitle}>{subtitle}</h3>
                     <div className={styles._div_contact_box}>
-                        <button className={styles._btn_white}>{textButton}</button>
+                        <a className={styles._btn_white} href={'/contact'}>
+                            {textButton}
+                        </a>
                         {isButtonSecondary ? (
-                            <button className={styles._btn_call}>{textButtonSecondary}</button>
+                            <a
+                                className={styles._btn_call}
+                                href={'https://calendly.com/emiliano-caceres/test'}
+                                rel={'noopener noreferrer'}
+                                target={'_blank'}
+                            >
+                                {textButtonSecondary}
+                            </a>
                         ) : null}
                     </div>
                 </div>

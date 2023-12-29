@@ -1,0 +1,117 @@
+._section {
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+._inner {
+  padding: 0 100px 0 100px;
+}
+
+._project_card {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+._project_card:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+._project_card:nth-child(4) {
+  flex-direction: row-reverse;
+  padding-bottom: 100px;
+  margin-bottom: 0;
+}
+
+._container_info {
+  width: 50%;
+  margin-left: 20px;
+}
+
+._title {
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -2px;
+  text-align: left;
+  color: var(--black-color);
+  cursor: default;
+  margin-bottom: 24px;
+}
+
+._description {
+  font-family: var(--font-sub);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  letter-spacing: -0.4000000059604645px;
+  margin-bottom: 32px;
+  color: var(--dark-color);
+  cursor: default;
+}
+
+._field_name {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  color: var(--black-color);
+  font-style: normal;
+  line-height: 26px;
+  text-align: left;
+  border: 7px solid transparent;
+  cursor: default;
+}
+
+._field_value {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.36000001430511475px;
+  color: var(--light-text-color);
+}
+
+._button_lean_more {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--red-color);
+  display: block;
+  margin-top: 32px;
+}
+
+._button_lean_more:hover {
+  color: var(--black-color);
+}
+
+._button_lean_more:hover::after {
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAyNCAyMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMSAxMC4zMTg2QzAuNDQ3NzE1IDEwLjMxODYgMCAxMC43NjYzIDAgMTEuMzE4NkMwIDExLjg3MDkgMC40NDc3MTUgMTIuMzE4NiAxIDEyLjMxODZWMTAuMzE4NlpNMjIuNSAxMS4zMTg2TDIzLjIwNzEgMTIuMDI1N0MyMy41OTc2IDExLjYzNTIgMjMuNTk3NiAxMS4wMDIgMjMuMjA3MSAxMC42MTE1TDIyLjUgMTEuMzE4NlpNMTMuMjA3MSAwLjYxMTQ5N0MxMi44MTY2IDAuMjIwOTcyIDEyLjE4MzQgMC4yMjA5NzIgMTEuNzkyOSAwLjYxMTQ5N0MxMS40MDI0IDEuMDAyMDIgMTEuNDAyNCAxLjYzNTE5IDExLjc5MjkgMi4wMjU3MUwxMy4yMDcxIDAuNjExNDk3Wk0xMS43OTI5IDIwLjYxMTVDMTEuNDAyNCAyMS4wMDIgMTEuNDAyNCAyMS42MzUyIDExLjc5MjkgMjIuMDI1N0MxMi4xODM0IDIyLjQxNjIgMTIuODE2NiAyMi40MTYyIDEzLjIwNzEgMjIuMDI1N0wxMS43OTI5IDIwLjYxMTVaTTEgMTIuMzE4NkgyMi41VjEwLjMxODZIMVYxMi4zMTg2Wk0xMS43OTI5IDIuMDI1NzFMMjEuNzkyOSAxMi4wMjU3TDIzLjIwNzEgMTAuNjExNUwxMy4yMDcxIDAuNjExNDk3TDExLjc5MjkgMi4wMjU3MVpNMjEuNzkyOSAxMC42MTE1TDExLjc5MjkgMjAuNjExNUwxMy4yMDcxIDIyLjAyNTdMMjMuMjA3MSAxMi4wMjU3TDIxLjc5MjkgMTAuNjExNVoiIGZpbGw9IiMxNDE4MUEiLz48L3N2Zz4=);
+}
+
+._button_lean_more:after {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 20px;
+  margin-left: 14px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyNCAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMSAxMEMwLjQ0NzcxNSAxMCAwIDEwLjQ0NzcgMCAxMUMwIDExLjU1MjMgMC40NDc3MTUgMTIgMSAxMlYxMFpNMjIuNSAxMUwyMy4yMDcxIDExLjcwNzFDMjMuNTk3NiAxMS4zMTY2IDIzLjU5NzYgMTAuNjgzNCAyMy4yMDcxIDEwLjI5MjlMMjIuNSAxMVpNMTMuMjA3MSAwLjI5Mjg5M0MxMi44MTY2IC0wLjA5NzYzMTEgMTIuMTgzNCAtMC4wOTc2MzExIDExLjc5MjkgMC4yOTI4OTNDMTEuNDAyNCAwLjY4MzQxNyAxMS40MDI0IDEuMzE2NTggMTEuNzkyOSAxLjcwNzExTDEzLjIwNzEgMC4yOTI4OTNaTTExLjc5MjkgMjAuMjkyOUMxMS40MDI0IDIwLjY4MzQgMTEuNDAyNCAyMS4zMTY2IDExLjc5MjkgMjEuNzA3MUMxMi4xODM0IDIyLjA5NzYgMTIuODE2NiAyMi4wOTc2IDEzLjIwNzEgMjEuNzA3MUwxMS43OTI5IDIwLjI5MjlaTTEgMTJIMjIuNVYxMEgxVjEyWk0xMS43OTI5IDEuNzA3MTFMMjEuNzkyOSAxMS43MDcxTDIzLjIwNzEgMTAuMjkyOUwxMy4yMDcxIDAuMjkyODkzTDExLjc5MjkgMS43MDcxMVpNMjEuNzkyOSAxMC4yOTI5TDExLjc5MjkgMjAuMjkyOUwxMy4yMDcxIDIxLjcwNzFMMjMuMjA3MSAxMS43MDcxTDIxLjc5MjkgMTAuMjkyOVoiIGZpbGw9IiNEOTE5NjUiLz48L3N2Zz4=);
+  position: relative;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
+  will-change: transform;
+  top: 5px;
+}

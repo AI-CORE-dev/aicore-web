@@ -14,14 +14,17 @@ function FirstChild() {
                     <p className={styles._title}>Alfredo Agustin Rey</p>
                     <p className={`${styles._title} ${styles._position}`}>Co-Founder - CEO</p>
 
-                    <a className={styles._linkedin} href={INFOFOUNDERS[0].linkedin}>
+                    <a
+                        className={styles._linkedin}
+                        href={'https://www.linkedin.com/in/alfredo-agust%C3%ADn-rey-9820ab36/'}
+                    >
                         Linkedin
                     </a>
                     <div className={styles._image_container}>
                         <img
                             alt={'Alfredo Agustin Rey'}
                             className={styles._image}
-                            src={'./about_us/alfred.jpg'}
+                            src={'/about_us/alfred.jpg'}
                         />
                     </div>
                     <div>
@@ -46,6 +49,7 @@ export function GetToKnowUsBetter() {
         <section className={styles._section}>
             <div className={styles._inner}>
                 <h2 className={styles._text}>Conocenos Mejor</h2>
+                <FirstChild />
                 <ul
                     style={{
                         display: 'flex',
@@ -56,13 +60,6 @@ export function GetToKnowUsBetter() {
                     {INFOFOUNDERS.map((item) => (
                         <li key={item.id} className={styles._container_article}>
                             <article className={styles._article}>
-                                <div className={styles._image_container}>
-                                    <img
-                                        alt={item.name}
-                                        className={styles._image}
-                                        src={item.image}
-                                    />
-                                </div>
                                 <div>
                                     <p className={styles._title}>{item.name}</p>
                                     <p className={`${styles._title} ${styles._position}`}>
@@ -72,7 +69,13 @@ export function GetToKnowUsBetter() {
                                     <a className={styles._linkedin} href={item.linkedin}>
                                         Linkedin
                                     </a>
-
+                                    <div className={styles._image_container}>
+                                        <img
+                                            alt={item.name}
+                                            className={styles._image}
+                                            src={item.image}
+                                        />
+                                    </div>
                                     <div>
                                         <p className={styles._ask}>{item.ask}</p>
                                         <p className={styles._answer}>{item.answer}</p>
@@ -88,16 +91,16 @@ export function GetToKnowUsBetter() {
 }
 
 const INFOFOUNDERS = [
-    {
-        id: 0,
-        name: 'Alfredo Agustin Rey ',
-        position: 'Co-Founder',
-        employment: 'CEO',
-        image: '/about_us/alfred.jpg',
-        linkedin: 'https://www.linkedin.com/in/alfredo-agust%C3%ADn-rey-9820ab36/',
-        ask: '¿Cuál es el propósito de AI CORE como desarrolladora?',
-        answer: 'En nuestro ADN está como motor de ser el mejor socio tecnológico para los proyectos de nuestros clientes, lo que implica involucramiento, compromiso y responsabilidad, no solo con la calidad sino también con los deadlines y la velocidad de respuesta. Nunca negociamos sacrificar la calidad por eso entre la enorme demanda de productos tecnológicos nuestro norte para crecer fue apostar en el talento y el compromiso.',
-    },
+    // {
+    //     id: 0,
+    //     name: 'Alfredo Agustin Rey ',
+    //     position: 'Co-Founder',
+    //     employment: 'CEO',
+    //     image: '/about_us/alfred.jpg',
+    //     linkedin: 'https://www.linkedin.com/in/alfredo-agust%C3%ADn-rey-9820ab36/',
+    //     ask: '¿Cuál es el propósito de AI CORE como desarrolladora?',
+    //     answer: 'En nuestro ADN está como motor de ser el mejor socio tecnológico para los proyectos de nuestros clientes, lo que implica involucramiento, compromiso y responsabilidad, no solo con la calidad sino también con los deadlines y la velocidad de respuesta. Nunca negociamos sacrificar la calidad por eso entre la enorme demanda de productos tecnológicos nuestro norte para crecer fue apostar en el talento y el compromiso.',
+    // },
     {
         id: 1,
         name: 'Ivan Addolorato',

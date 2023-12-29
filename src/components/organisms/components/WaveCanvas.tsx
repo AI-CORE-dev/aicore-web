@@ -48,8 +48,8 @@ export function WaveCanvas() {
             ctx.lineTo(canvas.width, canvas.height);
             ctx.lineTo(0, canvas.height);
 
-            ctx.strokeStyle = 'rgba(0, 128, 255, 0.5)'; // Color azul con opacidad
-            ctx.fillStyle = 'rgba(0, 128, 255, 0.1)';
+            ctx.strokeStyle = 'rgba(0, 128, 255, 0.5)';
+            ctx.fillStyle = 'rgba(0, 128, 255, 0.25)';
             ctx.fill();
             increment += wave.frequency;
             requestAnimationFrame(animate);
