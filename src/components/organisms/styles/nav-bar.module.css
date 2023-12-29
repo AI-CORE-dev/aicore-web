@@ -109,6 +109,7 @@
   font-family: var(--font-mono);
   cursor: pointer;
   outline: none;
+  text-decoration: none;
   padding: 0px 25px;
   border-radius: 4px;
   background-color: var(--black-color);
@@ -148,7 +149,7 @@
 
 ._link {
   color: #fff;
-  font-size: 25px;
+  font-size: 35px;
   margin-right: 30px;
   font-style: normal;
   font-weight: 500;
@@ -253,8 +254,7 @@
   }
   
   ._link{
-
-    font-size: 16px;
+    font-size: 25px;
     margin-right: 32px;
   }
 

@@ -4,6 +4,7 @@ import React from 'react';
 
 import styles from './styles/header.module.css';
 import { WaveCanvas } from './components/WaveCanvas';
+import { WaveCanvasWhite } from './components/WaveCanvaWhite';
 
 interface IProps {
     isVideo?: boolean;

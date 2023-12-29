@@ -59,11 +59,13 @@
 }
 
 ._first_section_link {
+    font-family: var(--font-mono);
   color: var(--red-color);
   text-transform: uppercase;
   line-height: 1.1428;
+  
   font-weight: 700;
-  font-size: 0.77rem;
+  font-size: 14px;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }

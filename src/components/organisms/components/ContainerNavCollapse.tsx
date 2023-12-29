@@ -8,7 +8,7 @@ interface IProps {
     items: { id: number; href: string; text: string }[];
 }
 
-export function ContainerNavCollapse({ id, label, items }: IProps) {
+export function ContainerNavCollapse({ label, items }: IProps) {
     return (
         <div>
             <p className={styles._button_services}>{label}</p>
