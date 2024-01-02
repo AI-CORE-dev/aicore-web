@@ -1,0 +1,9 @@
+._section{
+    position: relative;
+    background-color: #F5F5F5;
+}
+
+._inner{
+    height: 100vh;
+      background-color: #F5F5F5;
+}

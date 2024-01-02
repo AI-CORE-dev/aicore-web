@@ -1,11 +1,14 @@
+import { HomeCasesStudies, ScheduleCall } from '@/components/molecules';
 import { Header } from '@/components/organisms/Header';
 
 function CaseStudies() {
     return (
         <>
-            <Header isButtonSecondary isVideo />
+            <Header isVideo isButtonPrimary={false} />
             <main>
-                <div />
+                <HomeCasesStudies />
+
+                <ScheduleCall />
             </main>
         </>
     );

@@ -8,6 +8,8 @@ export * from './FeaturedProjects';
 
 export * from './GetToKnowUsBetter';
 
+export * from './HomeCasesStudies';
+
 export * from './HowRetainTalent';
 
 export * from './HowWeCanHelp';

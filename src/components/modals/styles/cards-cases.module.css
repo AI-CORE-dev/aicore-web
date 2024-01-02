@@ -1,0 +1,28 @@
+._list_cases{
+    margin-top:83px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+._cases_background{
+    background: linear-gradient(180deg,#129afe,#129afe 32.08%,#23398d);
+    color: #fff;
+}
+
+._logo{
+    top: 40px;
+    left: 37px;
+    height: 40px;
+    width: 230px;
+}
+
+._cases_background:before{
+    --bg-img: url(https://brocoders.com/static/48fe36e1fa3a3ea3e6155986b70a6fe1/088d9/cover.webp);
+    content: "";
+    display: inline-block;
+    position: relative;
+    padding-top: 0%;
+    width: 100%;
+    background-size: 74%!important;
+    background: url(https://brocoders.com/static/48fe36e1fa3a3ea3e6155986b70a6fe1/088d9/cover.webp) scroll no-repeat 100% 100%/cover;
+}

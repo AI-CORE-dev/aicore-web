@@ -10,6 +10,7 @@ interface IProps {
     isVideo?: boolean;
     title?: string;
     subtitle?: string;
+    isButtonPrimary?: boolean;
     textButton?: string;
     isButtonSecondary?: boolean;
     textButtonSecondary?: string;
@@ -18,8 +19,9 @@ interface IProps {
 
 export function Header({
     isVideo = false,
-    title = 'Title',
-    subtitle = 'subtitle',
+    title = 'Lorem ipsum',
+    subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    isButtonPrimary = true,
     textButton = 'textButton',
     isButtonSecondary = false,
     textButtonSecondary = 'textButtonSecondary',
@@ -39,9 +41,11 @@ export function Header({
                     <h1 className={styles._title}>{title}</h1>
                     <h3 className={styles._subtitle}>{subtitle}</h3>
                     <div className={styles._div_contact_box}>
-                        <a className={styles._btn_white} href={'/contact'}>
-                            {textButton}
-                        </a>
+                        {isButtonPrimary ? (
+                            <a className={styles._btn_white} href={'/contact'}>
+                                {textButton}
+                            </a>
+                        ) : null}
                         {isButtonSecondary ? (
                             <a
                                 className={styles._btn_call}

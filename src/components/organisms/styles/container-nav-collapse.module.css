@@ -1,6 +1,6 @@
 ._button_services {
   color: #fff;
-  font-size: 35px;
+  font-size: 25px;
   margin-right: 20px;
   font-style: normal;
   font-weight: 500;
@@ -58,6 +58,7 @@
   display: block;
   padding: 20px 10px;
   text-decoration: none;
+  font-family: var(--font-mono);
   color: var(--black-color);
 }
 
@@ -74,7 +75,7 @@
   }
 
   ._button_services {
-    font-size: 25px;
+    font-size: 20px;
     margin-right: 32px;
   }
 }
