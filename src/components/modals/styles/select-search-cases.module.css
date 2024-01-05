@@ -45,7 +45,7 @@
 }
 
 ._button:hover{
-    background: var(--red-color);
-    border-color: var(--red-color);
-    color: #fff;
+    background: var(--white-color);
+    border-color: var(--white-color);
+    color: #000;
 }

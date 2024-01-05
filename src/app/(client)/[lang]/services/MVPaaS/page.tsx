@@ -1,4 +1,10 @@
-import { ScheduleCall, WhyOptForMVP, WorkProcess } from '@/components/molecules';
+import {
+    CarouselReviewClient,
+    Recognition,
+    ScheduleCall,
+    WhyOptForMVP,
+    WorkProcess,
+} from '@/components/molecules';
 import { Header } from '@/components/organisms/Header';
 
 function MVPaaS() {
@@ -7,7 +13,10 @@ function MVPaaS() {
             <Header isButtonSecondary isHome isVideo />
             <main>
                 <WhyOptForMVP />
+                <CarouselReviewClient type />
                 <WorkProcess />
+                <CarouselReviewClient />
+                <Recognition />
                 <ScheduleCall />
             </main>
         </>

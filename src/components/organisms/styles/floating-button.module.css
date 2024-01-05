@@ -27,10 +27,13 @@
 }
 
 ._chevron {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 14px solid white; 
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  margin-top:8px;
+  border-width: 0 1.5px 1.5px 0;
+  border-style: solid;
+  border-color: white;
+  transform: rotate(-135deg);
+  display: inline-block;
 }
-  

@@ -13,12 +13,10 @@
 
 .slide {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex: 0 0 100%;
   box-sizing: border-box;
   height: 600px;
-  padding: 50px 100px 20px 100px;
+  padding: 100px 100px 20px 100px;
   text-align: center;
   background-color: #ddd;
 }
@@ -124,10 +122,141 @@
   color: var(--black-color);
 }
 
+._link{
+  color: var(--sky-blue-color);
+  text-decoration: none;
+  margin-left: 5px;
+  letter-spacing: -0.4px;
+}
+
 ._figcaption{
   text-align: left;
   font-family: var(--font-mono);
   color: var(--black-color);
   line-height: 24px;
   margin-top: 58px;
+}
+
+
+._wave_container {
+  z-index: 1;
+  top: 32%;
+  width: 100%;
+}
+
+._slides_container {
+  position: relative;
+  display: flex;
+  padding: 60px 0px 100px 100px;
+}
+
+._slide_module_bg {
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+._slide_content {
+  display: flex;
+  flex: 1;
+  overflow-x: hidden;
+}
+
+._slide_text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0px;
+}
+
+._second_section_title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 34px;
+  letter-spacing: -0.6px;
+  margin-bottom: 10px;
+  font-family: var(--font-mono);
+  color: var(--white-color);
+}
+
+._second_section_text {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  letter-spacing: -0.4px;
+  font-family: var(--font-sub);
+  color: var(--white-color);
+}
+
+._btn_black {
+  background: var(--black-color);
+  border-color: var(--black-color);
+  font-family: var(--font-mono);
+  color: #fff;
+  height: 48px;
+  width: 200px;
+  line-height: 48px;
+  font-size: 14px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: content-box;
+  border-width: 2px;
+  border-style: solid;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+}
+._btn_black:is(:hover, :focus, :active) {
+  background: #f5f5f5;
+  border-color: #fff;
+  color: var(--black-color);
+}
+
+._btn_black:after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-left: 8px;
+  bottom: 2px;
+  position: relative;
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTUuNDA1MSAxMS45OTk4QzE1LjQwNTEgMTIuMjE5OCAxNS4zMjUxIDEyLjQxOTggMTUuMTY1MSAxMi41Nzk4TDkuOTY1MTEgMTcuNTc5OEM5LjgwNTExIDE3LjcxOTggOS42MDUxIDE3Ljc5OTggOS40MDUxIDE3Ljc5OThDOS4xODUxIDE3Ljc5OTggOC45ODUwOSAxNy43MTk4IDguODI1MDkgMTcuNTU5OEM4LjUyNTA5IDE3LjIzOTggOC41MjUwOSAxNi43Mzk4IDguODQ1MDkgMTYuNDE5OEwxMy40NDUxIDExLjk5OThMOC44NDUwOSA3LjU3OTgyQzguNTI1MDkgNy4yNzk4MiA4LjUyNTA5IDYuNzU5ODMgOC44MjUwOSA2LjQzOTgzQzkuMTI1MDkgNi4xMTk4MyA5LjY0NTExIDYuMTE5ODMgOS45NjUxMSA2LjQxOTgzTDE1LjE2NTEgMTEuNDE5OEMxNS4zMjUxIDExLjU3OTggMTUuNDA1MSAxMS43Nzk4IDE1LjQwNTEgMTEuOTk5OFoiIGZpbGw9IndoaXRlIi8+PC9zdmc+)
+    scroll no-repeat 50%;
+  transition:
+    background-image 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
+}
+
+._btn_black:active:after,
+._btn_black:hover:after {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTUuNDA1MSAxMS45OTk4QzE1LjQwNTEgMTIuMjE5OCAxNS4zMjUxIDEyLjQxOTggMTUuMTY1MSAxMi41Nzk4TDkuOTY1MTEgMTcuNTc5OEM5LjgwNTExIDE3LjcxOTggOS42MDUxIDE3Ljc5OTggOS40MDUxIDE3Ljc5OThDOS4xODUxIDE3Ljc5OTggOC45ODUwOSAxNy43MTk4IDguODI1MDkgMTcuNTU5OEM4LjUyNTA5IDE3LjIzOTggOC41MjUwOSAxNi43Mzk4IDguODQ1MDkgMTYuNDE5OEwxMy40NDUxIDExLjk5OThMOC44NDUwOSA3LjU3OTgyQzguNTI1MDkgNy4yNzk4MiA4LjUyNTA5IDYuNzU5ODMgOC44MjUwOSA2LjQzOTgzQzkuMTI1MDkgNi4xMTk4MyA5LjY0NTExIDYuMTE5ODMgOS45NjUxMSA2LjQxOTgzTDE1LjE2NTEgMTEuNDE5OEMxNS4zMjUxIDExLjU3OTggMTUuNDA1MSAxMS43Nzk4IDE1LjQwNTEgMTEuOTk5OFoiIGZpbGw9IiMxNDE4MUEiLz48L3N2Zz4=);
+}
+
+._btn_black:hover:after {
+  -webkit-transform: translate3d(50%, 0, 0);
+  transform: translate3d(50%, 0, 0);
+}
+
+._pc_image {
+  object-fit: cover;
+  position: absolute;
+  object-position: center center;
+  right: 120px;
+  top: 40px;
+  z-index: 1;
+  transform: scale(1.2);
+  height: 100%;
+}
+
+.slides_second_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 100%;
+  background-color: #ffffff;
 }
