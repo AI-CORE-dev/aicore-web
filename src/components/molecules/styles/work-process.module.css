@@ -1,0 +1,113 @@
+._section {
+    position: relative;
+    background-color: #f5f5f5;
+  }
+  
+  ._inner {
+    height: 100vh;
+    padding: 0 100px;
+    padding-top: 150px;
+  }
+  
+  ._title {
+    font-size: 64px;
+    line-height: 72px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -3px;
+    color: var(--black-color);
+  }
+
+  ._module_container{
+    width: 100%;
+    margin-top: 4.44rem;
+  }
+
+  ._module_list{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+  }
+
+  ._module_item{}
+
+  ._module_btn{
+    font-size: 36px;
+    line-height: 72px;
+    background: none;
+    border: 0;
+    font-family: var(--font-mono);
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    color: var(--action-color);
+    transition: color .3s ease-in-out,cursor .3s ease-in-out;
+    outline: none;
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  ._module_btn:hover{
+    color: #afb2b8;
+    cursor: pointer;
+  }
+
+  ._module_btn::after{
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDYiIGhlaWdodD0iMzgiIHZpZXdCb3g9IjAgMCA0NiAzOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMC45OTk5OTkgMjIuMTMwNEwwLjk5OTk5OCAxNS44Njk2TDMyLjc4NyAxNS44Njk2TDIyLjUzMzEgNS40MzQ3OEwyNi44OTEgMC45OTk5OThMNDQuNTc4OSAxOUwyNi44OTEgMzdMMjIuNTMzMSAzMi41NjUyTDMyLjc4NyAyMi4xMzA0TDAuOTk5OTk5IDIyLjEzMDRaIiBzdHJva2U9IiMwMTFhODciLz48L3N2Zz4=);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    content: "";
+    display: inline-block;
+    min-width: 44px;
+    height: 36px;
+    margin-left: 32px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+._module_btn:hover::after{
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDYiIGhlaWdodD0iMzgiIHZpZXdCb3g9IjAgMCA0NiAzOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMC45OTk5OTkgMjIuMTMwNEwwLjk5OTk5OCAxNS44Njk2TDMyLjc4NyAxNS44Njk2TDIyLjUzMzEgNS40MzQ3OEwyNi44OTEgMC45OTk5OThMNDQuNTc4OSAxOUwyNi44OTEgMzdMMjIuNTMzMSAzMi41NjUyTDMyLjc4NyAyMi4xMzA0TDAuOTk5OTk5IDIyLjEzMDRaIiBzdHJva2U9IiNBRkIyQjgiLz48L3N2Zz4=);
+    -webkit-transform: translate3d(40%,0,0);
+    transform: translate3d(40%,0,0);
+}
+
+._module_btn:active{
+    color: var(--black-color);
+}
+
+._module_content{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+._module_item_li{
+    list-style-type: none;
+    display: flex;
+    transition-duration: .5s;
+    transition-property: opacity,-webkit-transform;
+    transition-property: opacity,transform;
+    transition-property: opacity,transform,-webkit-transform;
+    transition-timing-function: ease-in-out;
+}
+
+
+._tabs_item{
+    display: flex;
+    transition-duration: .5s;
+    transition-property: opacity,-webkit-transform;
+    transition-property: opacity,transform;
+    transition-property: opacity,transform,-webkit-transform;
+    transition-timing-function: ease-in-out;
+}
+
+._tabs_colum_fisrt{
+    padding-right: 100px;
+    flex: 1 1 100%;
+}
+
+
+._tabs_colum_last{
+    flex: 0 0 359px
+}

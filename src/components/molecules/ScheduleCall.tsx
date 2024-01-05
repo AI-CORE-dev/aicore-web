@@ -61,7 +61,11 @@ export function ScheduleCall() {
                             <h2 className={styles._top_title}>
                                 {isFormOrCalendar ? 'Envíanos un mensaje' : 'Agenda una meet'}
                             </h2>
-                            <button className={styles._top_button} onClick={handleFormOrCalendar}>
+                            <button
+                                className={styles._top_button}
+                                type={'button'}
+                                onClick={handleFormOrCalendar}
+                            >
                                 {!isFormOrCalendar ? 'Envíanos un mensaje' : 'Agenda una meet'}
                             </button>
                         </div>
@@ -81,7 +85,7 @@ export function ScheduleCall() {
                                     hideLandingPageDetails: false,
                                     hideGdprBanner: false,
                                 }}
-                                styles={{ height: '1000px' }}
+                                styles={{ height: '700px' }}
                                 url={
                                     'https://calendly.com/emiliano-caceres/test?hide_event_type_details=1&hide_gdpr_banner=1'
                                 }

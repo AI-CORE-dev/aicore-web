@@ -27,6 +27,7 @@
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.5.1",
     "@types/negotiator": "^0.6.3",
+    "@types/react-slick": "^0.23.13",
     "@vercel/style-guide": "^5.0.1",
     "eslint": "8.48.0",
     "eslint-config-prettier": "^9.0.0",

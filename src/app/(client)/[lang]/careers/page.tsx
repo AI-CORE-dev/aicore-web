@@ -9,6 +9,7 @@ import {
     OpenPositions,
     RecruimentProcess,
     OurValues,
+    FormPostulateNow,
 } from '@/components/molecules';
 
 function CareersPage() {
@@ -24,6 +25,7 @@ function CareersPage() {
                 <HowRetainTalent />
                 <InstagramFeed />
                 <RecruimentProcess />
+                <FormPostulateNow />
             </main>
         </>
     );

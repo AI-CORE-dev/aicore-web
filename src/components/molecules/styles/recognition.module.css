@@ -24,6 +24,7 @@
     align-items: center;
 }
 
+
 ._title{
     font-family: var(--font-mono);
     font-size: 55px;
@@ -48,6 +49,7 @@
     white-space: pre-line;
     word-break: break-word;
     max-width: 80%;
+    
 }
 
 ._image{
@@ -56,4 +58,15 @@
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
+    cursor: pointer;
+    --webkit-transform: scale(1.1);
+    --webkit-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
+
+._image:hover{
+    transform: scale(1.1);
+    --webkit-transform: scale(1.1);
+    --webkit-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
 }

@@ -4,9 +4,6 @@
   overflow: hidden;
 }
 
-@media (max-width: 1440px) {
-
-}
 
 ._div_backgroud_pink {
   position: relative;
@@ -45,5 +42,8 @@
   background-position: bottom;
 }
 
+@media (max-width: 1440px) {
+
+}
 
 

@@ -28,7 +28,9 @@ export function SelectSearchCases() {
                         <option value={''}>Industria 3</option>
                     </select>
                 </div>
-                <button className={styles._button}>Aplicar</button>
+                <button className={styles._button} type={'button'}>
+                    Aplicar
+                </button>
             </form>
         </div>
     );

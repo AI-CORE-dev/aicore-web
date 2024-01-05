@@ -1,9 +1,12 @@
-._section{
-    position: relative;
-    background-color: #F5F5F5;
+._section {
+  position: relative;
+  background-color: #f5f5f5;
 }
 
-._inner{
-    height: 100vh;
-      background-color: #F5F5F5;
+._inner {
+  background-color: #f5f5f5;
+}
+
+._inner_card {
+  padding: 0 100px;
 }

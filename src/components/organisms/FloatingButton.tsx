@@ -16,12 +16,12 @@ export function FloatingButton() {
 
     return (
         <div
-            className={`${styles.floating_button} ${
+            className={`${styles._floating_button} ${
                 scrolled ? styles._floating_button_active : ''
             }`}
             onClick={scrollToTop}
         >
-            <div className={styles.chevron} />
+            <div className={styles._chevron} />
         </div>
     );
 }

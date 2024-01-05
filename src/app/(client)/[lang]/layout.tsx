@@ -16,11 +16,10 @@ function RootLayout({ children }: { children: React.ReactNode }) {
             <body>
                 <Navbar />
                 {children}
-                <Footer />
 
-                <div style={{ position: 'absolute', backgroundColor: 'purple', zIndex: 999 }}>
-                    <FloatingButton />
-                </div>
+                <FloatingButton />
+
+                <Footer />
             </body>
         </html>
     );

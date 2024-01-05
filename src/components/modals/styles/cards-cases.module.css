@@ -4,9 +4,15 @@
     flex-wrap: wrap;
 }
 
+._li{
+    display: flex;
+}
+
 ._cases_background{
     background: linear-gradient(180deg,#129afe,#129afe 32.08%,#23398d);
     color: #fff;
+    padding: 20px;
+    height: 300px;
 }
 
 ._logo{
@@ -14,6 +20,15 @@
     left: 37px;
     height: 40px;
     width: 230px;
+}
+
+._module_item{
+    flex: 1 1 100%;
+    margin-bottom: 4rem;
+}
+
+._module_item:first-child{
+    margin-right: 15px;
 }
 
 ._cases_background:before{
@@ -25,4 +40,46 @@
     width: 100%;
     background-size: 74%!important;
     background: url(https://brocoders.com/static/48fe36e1fa3a3ea3e6155986b70a6fe1/088d9/cover.webp) scroll no-repeat 100% 100%/cover;
+}
+
+._title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 39px;
+    position: relative;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    color: var(--black-color);
+}
+
+._list_filters{
+    display: flex;
+    align-items: center;
+    -webkit-column-gap: 16px;
+    column-gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    color: var(--action-color);
+    font-family: var(--font-mono);
+    list-style-type: none;
+}
+
+._item_filter{
+    color: var(--action-color);
+    text-decoration: underline;
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+._subtitle{
+    color: var(--black-color);
+    font-size: 16px;
+    line-height: 26px;
 }

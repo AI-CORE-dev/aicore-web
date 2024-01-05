@@ -8,7 +8,9 @@ export function HomeCasesStudies() {
         <section className={styles._section}>
             <div className={styles._inner}>
                 <SelectSearchCases />
-                <CardsCases />
+                <div className={styles._inner_card}>
+                    <CardsCases />
+                </div>
             </div>
         </section>
     );

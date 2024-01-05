@@ -1,0 +1,12 @@
+.carousel-container {
+    width: 100%;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    height: 400px;
+    width: 100%;
+}

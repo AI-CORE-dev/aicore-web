@@ -1,4 +1,16 @@
-import { ServicesNumbers } from '@/components/molecules';
+import {
+    BannerContact,
+    BannerOtherTechnologies,
+    CarouselReviewClient,
+    DedicatedDevelopmentTeam,
+    ExtendYourTeam,
+    OurSolutionsForTalenGap,
+    Recognition,
+    ScheduleCall,
+    ServicesNumbers,
+    StartTechnicalAudit,
+    TypeOfWork,
+} from '@/components/molecules';
 import { Header } from '@/components/organisms/Header';
 
 function StaffAugmentation() {
@@ -8,20 +20,31 @@ function StaffAugmentation() {
                 isButtonSecondary
                 isHome
                 isVideo
-                subtitle={dataHeader.subtitle}
-                textButton={dataHeader.textButton}
-                textButtonSecondary={dataHeader.textButtonSecondary}
-                title={dataHeader.title}
+                subtitle={CDATAHEADER.subtitle}
+                textButton={CDATAHEADER.textButton}
+                textButtonSecondary={CDATAHEADER.textButtonSecondary}
+                title={CDATAHEADER.title}
             />
 
             <main>
                 <ServicesNumbers />
+                <CarouselReviewClient />
+                <OurSolutionsForTalenGap />
+                <BannerOtherTechnologies />
+                <DedicatedDevelopmentTeam />
+                <TypeOfWork />
+                <StartTechnicalAudit />
+                <ExtendYourTeam />
+                <CarouselReviewClient />
+                <Recognition />
+                <BannerContact />
+                <ScheduleCall />
             </main>
         </>
     );
 }
 
-const dataHeader = {
+const CDATAHEADER = {
     title: 'Solucionamos los gaps con los skills tecnológicos que tu proyecto necesita',
     subtitle:
         'Suma de formá rápida y sencilla perfiles para fortalecer tus proyectos, en AI CORE contamos con los especialistas y el tiempo de respuesta para sumarlos a tu equipo de inmediato.',
