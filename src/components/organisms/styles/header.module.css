@@ -3,14 +3,13 @@
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-
   justify-content: center;
   align-items: center;
 }
 
 ._header_module {
-  max-width: var(--inner-width);
   font-family: var(--font-mono);
+  padding: 0 100px;
 }
 
 ._video_background {
@@ -128,7 +127,6 @@
 
 @media (max-width: 1920px) {
   ._header_module {
-    max-width: 1640px;
     width: 100%;
   }
 
@@ -140,7 +138,6 @@
 
 @media (max-width: 1440px) {
   ._header_module {
-    max-width: var(--inner-width);
   }
 
   ._container_texts {

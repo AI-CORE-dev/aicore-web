@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import { WaveCaseOne, WaveCaseThree, WaveCaseTwo } from '@/assets/svg/case-studies';
 
@@ -12,7 +12,7 @@ interface ICarouselItem {
     type?: boolean;
 }
 
-export function CarouselReviewClient({ type = false }): ICarouselItem {
+export function CarouselReviewClient({ type = false }: ICarouselItem) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () => {
