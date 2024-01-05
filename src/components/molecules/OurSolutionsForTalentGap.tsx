@@ -4,26 +4,24 @@ export function OurSolutionsForTalenGap() {
     return (
         <section className={styles._section}>
             <div className={styles._inner}>
-                <h2 className={styles._title}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </h2>
+                <h2 className={styles._title}>Nuestra solución para tus gaps</h2>
                 <p className={styles._subtitle}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet delectus
-                    voluptatibus aliquam culpa tempora, quaerat
+                    Expandimos y complementamos tu equipo interno con nuestros desarrolladores o
+                    armamos un equipo dinámico y complementario para que consolides tu área de
+                    tecnología.
                 </p>
             </div>
 
             <div className={styles._inner}>
                 <h2 className={styles._title_gap}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sumá desarrolladores expertos para que trabajen para tu equipo y materialicen
+                    tus proyectos
                 </h2>
                 <p className={styles._subtitle_gap}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet delectus
-                    voluptatibus aliquam culpa tempora, quaerat molestias laborum assumenda mollitia
-                    fugiat maxime iusto magni quo. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Aliquid, modi pariatur? Nobis deserunt voluptatum nisi,
-                    officia aperiam ab porro sed debitis enim eveniet id temporibus, mollitia atque.
-                    Ab, rerum sed!
+                    Desde de front y back, node y react contamos con una amplia cobertura de
+                    tecnologías y especialistas listos para afrontar desafíos y aportar valor a tus
+                    proyectos, contanos lo que tienes en mente y encontramos los perfiles que mejor
+                    hagan match.
                 </p>
             </div>
 

@@ -5,11 +5,13 @@ export function BannerContact() {
         <section className={styles._section}>
             <div className={styles._inner}>
                 <div>
-                    <p className={styles._text}>Lorem ipsum dolor sit, amet consectetur</p>
+                    <p className={styles._text}>
+                        Arma tu equipo ideal con la mejor performance junto a AI CORE
+                    </p>
                     <p className={styles._secondary_text}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, adipisci nisi
-                        culpa tenetur dolores iste expedita totam suscipit voluptatum eos quas,
-                        quidem saepe consectetur nobis optio harum et ullam neque. Lorem ipsum dolor
+                        Suma talentos a tus proyectos, o bien auditalo con nosotros para determinar
+                        la causa de los posibles problemás en elcódigo que lo puedan estar generando
+                        dificultades en tu sistemas.
                     </p>
                 </div>
 
@@ -19,7 +21,7 @@ export function BannerContact() {
                     </a>
                     <p className={styles._text_or}>O</p>
                     <a className={styles._btn_black} href={'/contact'}>
-                        Solicitar Auditoria técnica
+                        Solicitar Auditoria
                     </a>
                 </div>
             </div>

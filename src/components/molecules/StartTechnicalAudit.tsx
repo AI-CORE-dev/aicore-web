@@ -13,15 +13,16 @@ export function StartTechnicalAudit() {
                 />
 
                 <div className={styles._content}>
-                    <h3 className={styles._content_title}>Lorem ipsum dolor sit amet</h3>
+                    <h3 className={styles._content_title}>Comenza con una auditoría técnica </h3>
                     <p className={styles._content_subtitle}>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quos nulla
-                        eum id nisi explicabo laudantium mollitia, tempora molestiae harum vel,
-                        dignissimos hic. Culpa maiores molestias saepe quam pariatur tempore?
+                        Revisamos tu app desde su perspectiva técnica y te proveemos de un reporte
+                        de nuestros desarrolladores seniores listo para que puedas accionar y sobre
+                        que puntos priorizar. De esta forma podes evaluar nuestras skills y decidir
+                        sobre ello si queres trabajar con nosotros sobre el proyecto.
                     </p>
                     <a className={styles._btn_text} href={'/'}>
                         {' '}
-                        Descargar reporte tecnico
+                        Descargar nuestro reporte para auditoría.
                     </a>
                     <a className={styles._btn} href={'/contact'}>
                         Solicitar una auditoria

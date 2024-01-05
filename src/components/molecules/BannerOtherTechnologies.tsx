@@ -4,11 +4,12 @@ export function BannerOtherTechnologies() {
     return (
         <section className={styles._section}>
             <div className={styles._container}>
-                <p className={styles._title}>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                <p className={styles._title}>
+                    Buscás expertos en tecnologías que no están listadas aquí?
+                </p>
                 <p className={styles._subtitle}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, omnis numquam
-                    necessitatibus veritatis sapiente similique modi nostrum animi eligendi? Sit
-                    deleniti provident numquam. Beatae tempore eaque odio quod consectetur deleniti.
+                    No te preocupes, contactanos y con nuestra base de candidatos y reclutamiento
+                    encontraremos los perfiles que estás buscando para tu proyecto.
                 </p>
                 <a className={styles._btn} href={'/contact'}>
                     Contactanos

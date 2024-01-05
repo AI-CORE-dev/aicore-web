@@ -4,14 +4,14 @@ export function DedicatedDevelopmentTeam() {
     return (
         <section className={styles._section}>
             <div className={styles._inner}>
-                <p className={styles._title}>Equipo dedicado </p>
+                <p className={styles._title}>
+                    Un equipo funcional listado para sumar a tu proyecto.
+                </p>
                 <p className={styles._subtitle}>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores fugit,
-                    similique, repudiandae unde ad consequuntur sed soluta dolorem fuga mollitia
-                    harum. Vitae nesciunt veritatis eos voluptatum vero quam exercitationem
-                    suscipit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
-                    laboriosam officia dolore, vitae sunt maxime tempora earum repellendus dolorum
-                    incidunt commodi non vel, soluta magni facere deleniti molestiae velit rerum.
+                    Si buscás un equipo listo para encarar y gestionar los proyectos que tenés en
+                    mente nosotros lo armamos a medida para tu situación, gestionado por un senior
+                    proyect manager para comenzar a encarar el proyecto de manera ágil y añadiendo
+                    el máximo valor posible.
                 </p>
 
                 <ul className={styles._ul_images}>

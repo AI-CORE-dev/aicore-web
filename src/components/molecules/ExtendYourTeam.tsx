@@ -4,13 +4,11 @@ export function ExtendYourTeam() {
     return (
         <section className={styles._section}>
             <div className={styles._inner}>
-                <h2 className={styles._title}>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                </h2>
+                <h2 className={styles._title}>Porque expandir tu equipo junto a AI CORE</h2>
                 <p className={styles._subtitle}>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non obcaecati numquam
-                    corporis quibusdam possimus adipisci quo ea exercitationem quaerat, saepe et
-                    sed? Perferendis, eveniet exercitationem nam aliquam vel eius minus!
+                    Experiencia, eficiencia y rapidez . Estos son los pilares sobre los cuales
+                    diseñamos nuestra solución de staff augmentation y lo que nos ha permitido
+                    convertirnos en aliado de grandes companias que buscan fortalecer sus equipos.
                 </p>
                 <ul className={styles._container_items}>
                     {CARG.map((item) => (
@@ -30,13 +28,13 @@ const CARG = [
         id: 0,
         title: 'Ahorrar tiempo',
         subtitle:
-            'En Argentina, se necesitan una media de 60 días para contratar ingenieros localmente. Dos meses es mucho tiempo para proyectos con plazos ajustados. Brocoders puede conseguir el talento adecuado para usted en un plazo de 7 días.',
+            'Hoy en día conseguir perfiles puntuales para proyectos de IT suele ser un proceso tedioso que puede dejar parado tus proyectos de 60 a 90 días aproximadamente. En AI CORE ponemos a disposición ese talento en 15 días.',
     },
     {
         id: 1,
-        title: 'Se Flexible',
+        title: 'Te aportamos flexibilidad',
         subtitle:
-            'A corto o largo plazo: puede contratar desarrolladores durante el tiempo que los necesite y reducir los costos de realizar contrataciones a tiempo completo. Además, podrás ampliar tu equipo cuando sea necesario.',
+            'Escala rapidamente o reducí el tamaño de tu equipo logrando mayor flexibilidad y control ante cambios en el proyecto y sus deadlines.',
     },
     {
         id: 2,
@@ -48,18 +46,18 @@ const CARG = [
         id: 3,
         title: 'Reducir costos',
         subtitle:
-            'Con nosotros, elimina los costos de contratación, capacitación, espacio de oficina, licencias de software, beneficios para empleados, incrementos de nómina y gastos logísticos. Sólo pagas por el trabajo real.',
+            'Paga solo por las horas de desarrollo y evitá incurrir en presupuestos más robustos que se desprenden de tercerizar el proyecto.',
     },
     {
         id: 4,
         title: 'Cumplir con los plazos',
         subtitle:
-            'Al contratar rápidamente y tomar el control de su personal, puede acelerar su proceso de desarrollo y cumplir con los plazos. Nuestros desarrolladores se pondrán manos a la obra tan pronto como se unan a su equipo.',
+            'Comenza de inmediato a trabajar en tu proyecto para cumplirlo en tiempo y forma de la forma más eficiente.',
     },
     {
         id: 5,
         title: 'Consigue tu propio equipo',
         subtitle:
-            'Conoce a todos los desarrolladores, se comunica con ellos directamente y gestiona su trabajo. Cubrimos todos los trámites, configuración de equipos y operaciones de nómina, y facilitamos relaciones productivas.',
+            'Generamos a medida un equipo listo para trabajar en tu proyecto y cubrirlo en su totalidad.',
     },
 ];
