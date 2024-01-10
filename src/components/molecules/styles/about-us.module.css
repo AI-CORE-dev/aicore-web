@@ -117,6 +117,7 @@
   font-size: 18px;
   line-height: 34px;
   letter-spacing: -0.6px;
+  font-family: var(--font-sub);
   color: var(--black-color);
   cursor: default;
 }

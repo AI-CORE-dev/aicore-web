@@ -14,6 +14,7 @@ export function HowWeCanHelp() {
                         optimizar proyectos tecnológicos de todo tipo.
                     </p>
                 </div>
+
                 <ul className={styles._list_help}>
                     {CAIDS.map((aid) => (
                         <li key={aid.id} className={styles._item_list}>
@@ -58,13 +59,13 @@ const CAIDS = [
     },
     {
         id: 3,
-        title: 'Comenza tu transformación tecnológica',
+        title: 'Comenza tu transformación',
         subtitle: 'Consultoría.',
         image: '/4.svg',
     },
     {
         id: 4,
-        title: 'Desarrolla tu web y app o AI con nosotros.',
+        title: 'Desarrolla tu web, app o AI.',
         subtitle: 'Boutique Development',
         image: '/5.svg',
     },

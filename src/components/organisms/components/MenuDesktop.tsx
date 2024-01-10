@@ -6,6 +6,8 @@ import styles from '../styles/nav-bar.module.css';
 import { ContainerNavCollapse } from './ContainerNavCollapse';
 
 export function MenuDesktop() {
+    const { scrolled } = useScrollNavbar();
+
     return (
         <div className={styles._container_links}>
             <ul className={styles._list_links}>
@@ -28,7 +30,12 @@ export function MenuDesktop() {
                 })}
             </ul>
 
-            <a className={styles._button} href={'/contact'}>
+            <a
+                className={
+                    scrolled ? `${styles._button} ${styles._button_scrolled}` : `${styles._button}`
+                }
+                href={'/contact'}
+            >
                 Contactanos
             </a>
         </div>

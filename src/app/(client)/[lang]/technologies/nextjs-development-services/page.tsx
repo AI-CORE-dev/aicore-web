@@ -1,14 +1,15 @@
+import { ScheduleCall } from '@/components/molecules';
 import { Header } from '@/components/organisms/Header';
 
-function Nodejs() {
+function Nextjs() {
     return (
         <>
             <Header isButtonSecondary isVideo />
             <main>
-                <div />
+                <ScheduleCall />
             </main>
         </>
     );
 }
 
-export default Nodejs;
+export default Nextjs;

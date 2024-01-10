@@ -1,28 +1,29 @@
 import styles from './styles/type-of-work.module.css';
 
-export function TypeOfWork() {
+interface IOption {
+    id: number;
+    title: string;
+}
+
+interface IProps {
+    title: string;
+    description: string;
+    options: IOption[];
+}
+
+export function TypeOfWork({ title, description, options }: IProps) {
     return (
         <section className={styles._section}>
             <div className={styles._inner}>
-                <h3 className={styles._title}>Estos son los proyectos que desarrollamos </h3>
+                <h3 className={styles._title}>{title}</h3>
                 <div className={styles._content}>
-                    <p className={styles._text}>
-                        No importa la clase de producto que estés constrendo. En AI CORE podemos
-                        desarrollar para cualquier industría, nuestros expertise reside en el
-                        desarrollo de productos a travez de metodologías ágiles logrando así
-                        flexibilidad y calidad para cumplir cualquier requisito.
-                    </p>
+                    <p className={styles._text}>{description}</p>
                     <ul className={styles._ul_options}>
-                        <li className={styles._li_option}>Desarrollo de MVPs</li>
-                        <li className={styles._li_option}>
-                            Splitting monoliths into microservices
-                        </li>
-                        <li className={styles._li_option}>Migraciones tecnológicas</li>
-                        <li className={styles._li_option}>Desarrollo de nuevas funcionalidades</li>
-                        <li className={styles._li_option}>
-                            Desarrollo de proyectos a largo plazo{' '}
-                        </li>
-                        <li className={styles._li_option}>Soporte y mantenimiento evolutivo</li>
+                        {options.map((item) => (
+                            <li key={item.id} className={styles._li_option}>
+                                {item.title}
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </div>

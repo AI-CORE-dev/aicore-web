@@ -40,7 +40,7 @@ export function WorkProcess() {
                         </li>
                     </ul>
 
-                    {/* <ul className={styles._module_content}>
+                    <ul className={styles._module_content}>
                         <li className={styles._module_item_li}>
                             <article className={styles._tabs_colum_fisrt}>
                                 <p>
@@ -180,7 +180,7 @@ export function WorkProcess() {
                             </article>
                             <div className={styles._tabs_colum_last} />
                         </li>
-                    </ul> */}
+                    </ul>
                 </div>
             </div>
         </section>

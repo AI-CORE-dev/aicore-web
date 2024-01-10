@@ -5,6 +5,8 @@
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  background-size: cover !important;
+  background: url('/aicoreBackground.jpg');
 }
 
 ._header_module {
@@ -16,10 +18,17 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  background-color: gainsboro;
   transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+}
+
+._bacgroundsize {
+
+
+
 }
 
 ._container_texts {
@@ -30,7 +39,7 @@
 }
 
 ._title {
-  font-size: 58px;
+  font-size: 64px;
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: -3.6px;
@@ -42,6 +51,7 @@
 
 ._subtitle {
   font-size: 1.7vw;
+  font-family: var(--font-sub);
   line-height: 1.5;
   margin-top: 30px;
   color: #fff;
@@ -60,14 +70,15 @@
   color: #000;
   display: flex;
   align-items: center;
+  font-weight: 600;
   justify-content: center;
   background-color: #fff;
-  padding: 20px;
+  padding: 0px 25px;
   border-radius: 5px;
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-right: 30px;
-  width: 204px;
+  width: 180px;
   height: 64px;
   cursor: pointer;
   text-transform: uppercase;
@@ -101,12 +112,11 @@
 }
 
 ._btn_call:hover {
-  color: #0b0b0b;
+  border: 1px solid #fff;
   transition: all 0.5s ease-in-out;
-  background-color: #ffffff75;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px;
-  
+
 }
 
 ._btn_call::after {
@@ -121,7 +131,7 @@
 
 ._btn_call:hover::after {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCA3LjAwMDA4VjkuMDAwMDhIMTJMNi41IDE0LjUwMDFMNy45MiAxNS45MjAxTDE1Ljg0IDguMDAwMDhMNy45MiAwLjA4MDA3ODFMNi41IDEuNTAwMDhMMTIgNy4wMDAwOEgwWiIgZmlsbD0id2hpdGUiLz48L3N2Zz4=);
-  filter: invert(100%);
+
   transition: all 0.5s ease-in-out;
 }
 
@@ -146,12 +156,12 @@
   }
 
   ._title{
-    font-size: 50px;
+    font-size: 64px;
     letter-spacing: -3.6px;
   }
 
   ._subtitle{
-    margin-top: 60px;
+    margin-top: 20px;
   }
   
   ._div_contact_box {

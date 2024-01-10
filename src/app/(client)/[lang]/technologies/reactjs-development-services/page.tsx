@@ -1,3 +1,4 @@
+import { ScheduleCall } from '@/components/molecules';
 import { Header } from '@/components/organisms/Header';
 
 function Reactjs() {
@@ -5,7 +6,7 @@ function Reactjs() {
         <>
             <Header isButtonSecondary isVideo />
             <main>
-                <div />
+                <ScheduleCall />
             </main>
         </>
     );

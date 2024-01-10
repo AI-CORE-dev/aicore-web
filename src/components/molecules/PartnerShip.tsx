@@ -9,7 +9,7 @@ export function PartnerShip() {
         <section className={styles._section}>
             <PhotoContainer alt={'partnership'} src={'/partnership.svg'} />
             <div className={styles._container}>
-                <a className={styles._btn_follow} href={'/careers'}>
+                <a className={styles._btn_follow} href={'/partnership'}>
                     Partnership
                 </a>
             </div>

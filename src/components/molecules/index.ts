@@ -16,6 +16,8 @@ export * from './ExtendYourTeam';
 
 export * from './FeaturedProjects';
 
+export * from './FaQ';
+
 export * from './FormPostulateNow';
 
 export * from './GetToKnowUsBetter';

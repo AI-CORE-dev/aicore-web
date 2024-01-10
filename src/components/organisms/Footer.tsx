@@ -73,6 +73,7 @@ export function Footer() {
                                 <a href={social.href}>
                                     <img
                                         alt={social.title}
+                                        className={styles._img}
                                         height={30}
                                         src={social.src}
                                         style={{
@@ -95,6 +96,9 @@ const LINKS = [
     { id: 1, title: 'Sobre Nosotros', href: '/about-us' },
     { id: 2, title: 'Carreras', href: '/careers' },
     { id: 3, title: 'Servicios', href: '/services' },
+    { id: 4, title: 'Industrias', href: '/industries' },
+    { id: 5, title: 'Tecnologias', href: '/technologies' },
+    { id: 6, title: 'Blog', href: '/blog' },
 ];
 
 const TECHNOLOGIES = [

@@ -10,6 +10,7 @@ export const CPAGES = [
             { id: 1, text: 'Consultoría', href: '/services/consultancy' },
             { id: 2, text: 'MVPaaS', href: '/services/MVPaaS' },
             { id: 3, text: 'Outsourcing', href: '/services/outsourcing' },
+            { id: 3, text: 'Dessarrollo Web', href: '/services/web-application-development/' },
         ],
         text: 'Servicios',
         href: '/services',
@@ -42,7 +43,7 @@ export const CPAGES = [
             { id: 3, text: 'ReactJS', href: '/technologies/reactjs-development-services' },
         ],
         text: 'Tecnologías',
-        href: '/tecnologies',
+        href: '/technologies',
     },
     { id: 6, isCollapse: false, items: [], text: 'Blog', href: '/blog' },
 ];

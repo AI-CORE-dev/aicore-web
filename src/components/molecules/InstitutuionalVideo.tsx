@@ -17,7 +17,7 @@ export function InstitutuionalVideo() {
                     border: 'none',
                     width: '100%',
                     flex: 1,
-                    height: '80vh',
+                    height: '70vh',
                 }}
                 title={'video'}
                 width={'100%'}

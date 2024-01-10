@@ -1,8 +1,8 @@
 ._floating_button {
   position: fixed;
   right: 52px;
-  bottom: 52px;
-  background-color: var(--action-color);
+  bottom: 0px;
+  background-color: #212529;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,11 +24,16 @@
 
 ._floating_button_active {
   opacity: 1;
+  bottom: 52px;
+  display: flex;
+  transition-property: opacity,bottom,display;
+  transition-duration: .4s;
+
 }
 
 ._chevron {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   text-align: center;
   margin-top:8px;
   border-width: 0 1.5px 1.5px 0;

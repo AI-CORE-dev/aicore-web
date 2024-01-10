@@ -12,7 +12,7 @@ function MVPaaS() {
         <>
             <Header isButtonSecondary isHome isVideo />
             <main>
-                <WhyOptForMVP />
+                <WhyOptForMVP isOtherPage={false} subtitle={'lorem'} title={'WhyOptForMVP'} />
                 <CarouselReviewClient type />
                 <WorkProcess />
                 <CarouselReviewClient />

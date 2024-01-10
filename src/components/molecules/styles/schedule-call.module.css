@@ -31,6 +31,7 @@
 }
 
 ._subtitle {
+  font-size: 18px;
   color: var(--light-text-color);
   font-family: var(--font-sub);
   mix-blend-mode: normal;
@@ -87,8 +88,9 @@
 
 ._name_sale {
   font-family: var(--font-mono);
-  font-size: 16px;
+  font-size: 17px;
   line-height: 26px;
+  font-weight: 500;
   letter-spacing: -0.355px;
   text-align: left;
   cursor: default;
@@ -97,15 +99,15 @@
 
 ._profession {
   font-family: var(--font-sub);
+  font-size: 13px;
   font-weight: 400;
-  color: #000;
   color: #000;
 }
 
 ._description {
   color: var(--black-color);
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 18px;
   line-height: 30px;
   letter-spacing: -0.4px;
 }

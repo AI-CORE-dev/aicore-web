@@ -3,8 +3,6 @@
 import React from 'react';
 
 import styles from './styles/header.module.css';
-import { WaveCanvas } from './components/WaveCanvas';
-
 interface IProps {
     isVideo?: boolean;
     title?: string;
@@ -30,12 +28,7 @@ export function Header({
             className={styles._header}
             style={{ backgroundColor: !isVideo ? '#1E1E1E' : 'transparent' }}
         >
-            <WaveCanvas />
             <div className={styles._header_module}>
-                <video autoPlay loop muted playsInline className={styles._video_background}>
-                    <source src={'/video_aicore.mp4'} type={'video/mp4'} />
-                </video>
-
                 <div className={styles._container_texts}>
                     <h1 className={styles._title}>{title}</h1>
                     <h3 className={styles._subtitle}>{subtitle}</h3>

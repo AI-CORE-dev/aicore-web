@@ -1,6 +1,15 @@
 import styles from './styles/start-technical-audit.module.css';
 
-export function StartTechnicalAudit() {
+interface IProps {
+    title: string;
+    subtitle: string;
+    btnText: string;
+    btnLink: string;
+    img: string;
+    alt: string;
+}
+
+export function StartTechnicalAudit({ title, subtitle, btnText, btnLink, img, alt }: IProps) {
     return (
         <section className={styles._section}>
             <div className={styles._inner}>
@@ -13,24 +22,19 @@ export function StartTechnicalAudit() {
                 />
 
                 <div className={styles._content}>
-                    <h3 className={styles._content_title}>Comenza con una auditoría técnica </h3>
-                    <p className={styles._content_subtitle}>
-                        Revisamos tu app desde su perspectiva técnica y te proveemos de un reporte
-                        de nuestros desarrolladores seniores listo para que puedas accionar y sobre
-                        que puntos priorizar. De esta forma podes evaluar nuestras skills y decidir
-                        sobre ello si queres trabajar con nosotros sobre el proyecto.
-                    </p>
+                    <h3 className={styles._content_title}>{title}</h3>
+                    <p className={styles._content_subtitle}>{subtitle}</p>
                     <a className={styles._btn_text} href={'/'}>
                         {' '}
-                        Descargar nuestro reporte para auditoría.
+                        {btnText}
                     </a>
                     <a className={styles._btn} href={'/contact'}>
-                        Solicitar una auditoria
+                        {btnLink}
                     </a>
                 </div>
 
                 <div className={styles._content_img}>
-                    <img alt={''} src={'/working-on-macbook.webp'} />
+                    <img alt={alt} src={img} />
                 </div>
             </div>
         </section>

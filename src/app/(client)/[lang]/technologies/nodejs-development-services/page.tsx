@@ -1,37 +1,23 @@
 import {
-    BannerContact,
-    BannerOtherTechnologies,
     CarouselReviewClient,
-    DedicatedDevelopmentTeam,
     ExtendYourTeam,
-    OurSolutionsForTalenGap,
-    Recognition,
+    FaQ,
     ScheduleCall,
     ServicesNumbers,
     StartTechnicalAudit,
     TypeOfWork,
 } from '@/components/molecules';
+import { OurNodeExpertise } from '@/components/molecules/technologies';
 import { Header } from '@/components/organisms/Header';
 
-function StaffAugmentation() {
+function Nodejs() {
     return (
         <>
-            <Header
-                isButtonSecondary
-                isHome
-                isVideo
-                subtitle={CDATAHEADER.subtitle}
-                textButton={CDATAHEADER.textButton}
-                textButtonSecondary={CDATAHEADER.textButtonSecondary}
-                title={CDATAHEADER.title}
-            />
-
+            <Header isButtonSecondary isVideo />
             <main>
                 <ServicesNumbers />
                 <CarouselReviewClient />
-                <OurSolutionsForTalenGap />
-                <BannerOtherTechnologies />
-                <DedicatedDevelopmentTeam />
+                <OurNodeExpertise />
                 <TypeOfWork
                     description={CTYPEOFWORK.description}
                     options={CTYPEOFWORK.options}
@@ -46,23 +32,12 @@ function StaffAugmentation() {
                     title={CSTARTTECHINALAUDIT.title}
                 />
                 <ExtendYourTeam />
-                <CarouselReviewClient />
-                <Recognition />
-                <BannerContact />
+                <FaQ />
                 <ScheduleCall />
             </main>
         </>
     );
 }
-
-const CDATAHEADER = {
-    title: 'Solucionamos los gaps con los skills tecnológicos que tu proyecto necesita',
-    subtitle:
-        'Suma de formá rápida y sencilla perfiles para fortalecer tus proyectos, en AI CORE contamos con los especialistas y el tiempo de respuesta para sumarlos a tu equipo de inmediato.',
-    textButton: 'Contactanos',
-    textButtonSecondary:
-        'Contactate con nosotros - coordina una reunión con nuestro desarrollador de negocios',
-};
 
 const CTYPEOFWORK = {
     title: 'Estos son los proyectos que desarrollamos',
@@ -98,8 +73,8 @@ const CSTARTTECHINALAUDIT = {
         'Revisamos tu app desde su perspectiva técnica y te proveemos de un reporte de nuestros desarrolladores seniores listo para que puedas accionar y sobre que puntos priorizar. De esta forma podes evaluar nuestras skills y decidir sobre ello si queres trabajar con nosotros sobre el proyecto.',
     btnText: 'Descargar nuestro reporte para auditoría.',
     btnLink: '/',
-    img: '/working-on-macbook.webp',
-    alt: '',
+    img: '/node-developer.webp',
+    alt: 'node-developer',
 };
 
-export default StaffAugmentation;
+export default Nodejs;

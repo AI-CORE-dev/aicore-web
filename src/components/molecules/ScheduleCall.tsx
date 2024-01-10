@@ -28,7 +28,7 @@ export function ScheduleCall() {
                     Agenda una meet o envíanos un <br /> mensaje
                 </h2>
                 <p className={styles._subtitle}>
-                    Nos encantán los desafíos, queremos ser un aliado tecnológico de impacto en tu
+                    Nos encantan los desafíos, queremos ser un aliado tecnológico de impacto en tu
                     negocio.
                 </p>
 

@@ -1,3 +1,4 @@
+import { ScheduleCall } from '@/components/molecules';
 import { Header } from '@/components/organisms/Header';
 
 function ReactNative() {
@@ -5,7 +6,7 @@ function ReactNative() {
         <>
             <Header isButtonSecondary isVideo />
             <main>
-                <div />
+                <ScheduleCall />
             </main>
         </>
     );

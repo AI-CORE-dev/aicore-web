@@ -22,7 +22,7 @@
 
 ._title{
     font-family: var(--font-mono);
-    font-size: 55px;
+    font-size: 70px;
     font-style: normal;
     font-weight: 700;
     line-height: 72px;
@@ -35,7 +35,7 @@
 
 ._subtitle{
     font-family: var(--font-sub);
-    font-size: 15px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 21px;
     letter-spacing: -.6px;
@@ -44,5 +44,4 @@
     cursor: default;
     white-space: pre-line;
     word-break: break-word;
-    max-width: 80%;
 }

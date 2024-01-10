@@ -126,8 +126,12 @@ export function TabsCarouselComponent() {
                         </div>
                     </li>
                 </ul>
-                <div>
-                    <span className={styles._wave_container}>{renderWaveForTab()}</span>
+                <div
+                    style={{
+                        marginTop: '50px',
+                    }}
+                >
+                    {/* <span>{renderWaveForTab()}</span> */}
                     <div
                         className={`${styles._slides_container}`}
                         style={{ backgroundColor: carouselItems.cases.color_background }}

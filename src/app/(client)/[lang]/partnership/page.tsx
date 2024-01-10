@@ -1,14 +1,15 @@
+import { ScheduleCall } from '@/components/molecules';
 import { Header } from '@/components/organisms/Header';
 
-function Nextjs() {
+function Partnership() {
     return (
         <>
             <Header isButtonSecondary isVideo />
             <main>
-                <div />
+                <ScheduleCall />
             </main>
         </>
     );
 }
 
-export default Nextjs;
+export default Partnership;

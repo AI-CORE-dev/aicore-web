@@ -114,7 +114,7 @@
   margin: 0;
   padding:5px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 ._modules_terms:hover{
@@ -131,13 +131,20 @@
 
 ._copyrigth {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 2;
   font-family: var(--font-mono);
   letter-spacing: -0.4px;
   color: #fff;
 }
 
+._img{}
+
+._img:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform .3s ease-in;
+}
 @media (max-width: 460px) {
   ._wave {
     padding: 0px 20px 0px 20px;

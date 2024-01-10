@@ -30,7 +30,7 @@ const CNUMBERS = [
     },
     {
         id: 3,
-        title: '7-15 días',
+        title: '7 días',
         subtitle: 'Para sumar talentos en tu equpo',
     },
     {
