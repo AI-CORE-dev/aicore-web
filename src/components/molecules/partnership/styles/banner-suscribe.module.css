@@ -1,0 +1,106 @@
+._section {
+    position: relative;
+    background-color: #212529;
+  }
+  
+  ._inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 96px 100px;
+  }
+  
+  ._text {
+    font-family: var(--font-mono);
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 86px;
+    text-align: left;
+    text-shadow:
+      -1px -1px 0 var(--light-text-color),
+      1px -1px 0 var(--light-text-color),
+      -1px 1px 0 var(--light-text-color),
+      1px 1px 0 var(--light-text-color);
+    cursor: default;
+    color: #fff;
+  }
+  
+  ._secondary_text {
+    color: #fff;
+    font-family: var(--font-sub);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 60px;
+    margin-bottom: 32px;
+    max-width: 800px;
+  }
+  
+  ._btn_white{
+      width: 200px;
+      color: var(--black-color);
+      background-color: #fff;
+      border-color: #fff;
+      height: 60px;
+      line-height: 60px;
+      font-size: 16px;
+      border-radius: 5px;
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      box-sizing: content-box;
+      border-width: 2px;
+      border-style: solid;
+      white-space: nowrap;
+      cursor: pointer;
+      outline: none;
+  }
+  
+  ._btn_white:hover{
+      background-color:  var(--black-color);
+      color: #fff;
+      border-color: var(--black-color);
+  }
+  
+  ._text_or{
+      color: #fff;
+      font-family: var(--font-sub);
+      font-size: 22px;
+      max-width: 551px;
+      font-weight: 400;
+      padding: 10px 0;
+      line-height: 32px;
+      letter-spacing: -0.4px;
+      text-align: center;
+  
+  }
+  
+  ._btn_black{
+      width: 200px;
+      color: #fff;
+      background-color: var(--black-color);
+      border-color: var(--black-color);
+      height: 60px;
+      line-height: 60px;
+      font-size: 16px;
+      border-radius: 5px;
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      font-family: var(--font-mono);
+      box-sizing: content-box;
+      border-width: 2px;
+      border-style: solid;
+      white-space: nowrap;
+      cursor: pointer;
+      outline: none;
+  }
+  
+  ._btn_black:hover{
+      background-color: #fff;
+      color:  var(--black-color);
+      border-color: #fff;
+  }

@@ -15,7 +15,7 @@
 
 ._title_help {
   font-family: var(--font-mono);
-  font-size: 2.5vw;
+    font-size: 60px;
   line-height: 1.2;
   font-weight: 700;
   color: var(--black-color);
@@ -193,7 +193,7 @@
   }
 
   ._title_help {
-    font-size: 3.2vw;
+      font-size: 60px;
   }
 
   ._subtitle_help {

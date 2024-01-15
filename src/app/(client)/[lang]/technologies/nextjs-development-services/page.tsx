@@ -4,7 +4,7 @@ import { Header } from '@/components/organisms/Header';
 function Nextjs() {
     return (
         <>
-            <Header isButtonSecondary isVideo />
+            <Header isButtonSecondary isVideo title={'NextJS PAGE'} />
             <main>
                 <ScheduleCall />
             </main>

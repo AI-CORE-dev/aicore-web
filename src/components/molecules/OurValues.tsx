@@ -1,3 +1,5 @@
+import React from 'react';
+
 import styles from './styles/our-values.module.css';
 
 export function OurValues() {

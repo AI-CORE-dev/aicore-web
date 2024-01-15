@@ -1,3 +1,5 @@
+import React from 'react';
+
 import {
     AboutUs,
     InstagramFeed,
@@ -24,11 +26,12 @@ function AboutPage() {
             />
             <main>
                 <AboutUs />
-                <ClientsReview />
-                <FeatureProjects />
                 <GetToKnowUsBetter />
                 <OurValues />
                 <Recognition />
+                <ClientsReview />
+                <FeatureProjects />
+
                 <InstagramFeed />
                 <PartnerShip />
                 <ScheduleCall />

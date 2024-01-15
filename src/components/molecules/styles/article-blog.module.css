@@ -1,0 +1,131 @@
+._section {
+  position: relative;
+  background-color: #fff;
+}
+
+._inner {
+  padding: 50px 100px;
+}
+
+._list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+._item {
+  flex: 0 0 48%;
+  margin-bottom: 80px;
+}
+
+._date {
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--black-color);
+}
+
+._title {
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -3px;
+  color: #111;
+  margin-bottom: 24px;
+  position: relative;
+  left: -2px;
+  vertical-align: inherit;
+    
+}
+
+._container_link{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+._item_link {
+  color: var(--gray-fourth);
+  font-size: 20px;
+  text-decoration: solid underline var(--gray-fourth);
+  line-height: 26px;
+  transition: color text-decoration 0.25s ease-in-out;
+}
+
+._item_link:hover {
+  transition: color text-decoration 0.25s ease-in-out;
+  text-decoration: solid underline var(--black-color);
+  color: var(--black-color);
+}
+
+._item_img {
+  background-color: black;
+  height: 400px;
+}
+
+._container_header {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+._img {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  object-fit: cover;
+}
+
+._circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+._container_info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+._name_sale {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+  letter-spacing: -0.355px;
+  text-align: left;
+  cursor: default;
+  color: #000;
+}
+
+._profession {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+}
+
+._link_redirec{
+  display: block;
+  color: var(--gray-fourth);
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 16px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 50px;
+  transition: color .3s ease-in-out;
+}
+
+._link_redirec:hover{
+  color: var(--black-color);
+  transition: color .3s ease-in-out;
+}

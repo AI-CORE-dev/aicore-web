@@ -1,0 +1,40 @@
+._section{
+    position: relative;
+    background-color: var(--black-secondary);
+}
+
+._inner{
+    padding: 7rem 0;
+    text-align: center;
+}
+
+._text{
+    font-size: 1.22rem;
+    line-height: 1.45;
+    color: #fff;
+    letter-spacing: -.4px;
+    margin-bottom: 1.22rem;
+}
+
+._title{
+    color: #fff;
+    font-size: 2.66rem;
+    margin-bottom: 2.66rem;
+    margin-top: 1.22rem;
+    font-weight: 700;
+}
+
+._btn{
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    box-sizing: content-box;
+    border-width: 2px;
+    border-style: solid;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+}

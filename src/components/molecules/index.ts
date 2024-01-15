@@ -1,5 +1,9 @@
 export * from './AboutUs';
 
+export * from './ArticleBlog';
+
+export * from './Awards';
+
 export * from './BannerContact';
 
 export * from './BannerOtherTechnologies';
@@ -51,6 +55,8 @@ export * from './RecruimentProcess';
 export * from './ScheduleCall';
 
 export * from './StartTechnicalAudit';
+
+export * from './SearchBlog';
 
 export * from './ServicesNumbers';
 

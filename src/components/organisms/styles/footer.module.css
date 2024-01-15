@@ -13,7 +13,7 @@
 ._container_info {
   display: flex;
   justify-content: start;
-  gap: 200px;
+  gap: 350px;
   margin-bottom: 30px;
 }
 
@@ -100,10 +100,12 @@
 ._container_terms {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 
 ._modules_terms{
-  flex-basis: 50%;
   font-family: var(--font-mono);
   align-items: start;
   justify-content: start;
@@ -114,7 +116,8 @@
   margin: 0;
   padding:5px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 16px;
+  transition: color .3s ease-in-out;
 }
 
 ._modules_terms:hover{
@@ -138,13 +141,24 @@
   color: #fff;
 }
 
-._img{}
+._img{
+  transition: transform .3s ease-in;
+}
 
 ._img:hover{
   cursor: pointer;
   transform: scale(1.2);
   transition: transform .3s ease-in;
 }
+
+@media (max-width: 1440px) {
+  ._container_info {
+
+    gap: 200px;
+
+  }
+}
+
 @media (max-width: 460px) {
   ._wave {
     padding: 0px 20px 0px 20px;

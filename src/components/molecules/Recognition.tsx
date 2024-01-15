@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { CAWARDS } from '@/helpers/consts';
+
 import styles from './styles/recognition.module.css';
 
 export function Recognition() {
@@ -49,33 +51,5 @@ const CNUMBERS = [
         id: 3,
         title: '60%',
         subtitle: 'De staff senior',
-    },
-];
-
-const CAWARDS = [
-    {
-        id: 0,
-        image: '/1.svg',
-        alt: 'award1',
-    },
-    {
-        id: 1,
-        image: '/2.svg',
-        alt: 'award2',
-    },
-    {
-        id: 2,
-        image: '/3.svg',
-        alt: 'award3',
-    },
-    {
-        id: 3,
-        image: '/4.svg',
-        alt: 'award4',
-    },
-    {
-        id: 4,
-        image: '/5.svg',
-        alt: 'award5',
     },
 ];

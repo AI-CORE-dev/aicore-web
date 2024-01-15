@@ -1,14 +1,23 @@
+import { ScheduleCall } from '@/components/molecules';
 import { Header } from '@/components/organisms/Header';
 
 function Worknmates() {
     return (
         <>
-            <Header isButtonSecondary isVideo />
+            <Header isVideo isButtonPrimary={false} title={CDATAHEADER.title} />
             <main>
-                <div />
+                <ScheduleCall />
             </main>
         </>
     );
 }
+
+const CDATAHEADER = {
+    title: 'Worknmates',
+    subtitle: '',
+    textButton: 'Contactanos',
+    textButtonSecondary:
+        'Agenda una reunión de 30 minutos sin cargo con nuestros desarrolladores de negocios.',
+};
 
 export default Worknmates;

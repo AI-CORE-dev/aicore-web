@@ -59,10 +59,18 @@ export function Footer() {
                         <a className={styles._modules_terms} href={'/privacy-policy'}>
                             Politicas de Privacidad
                         </a>
-                        <a className={styles._modules_terms} href={'/slavery-statement-policy'}>
+                        <a
+                            className={styles._modules_terms}
+                            href={'/slavery-statement-policy'}
+                            style={{ display: 'none' }}
+                        >
                             Politica de esclavitud moderna
                         </a>
-                        <a className={styles._modules_terms} href={'/supply-chain-policy'}>
+                        <a
+                            className={styles._modules_terms}
+                            href={'/supply-chain-policy'}
+                            style={{ display: 'none' }}
+                        >
                             Politica de cadena de suministros
                         </a>
                     </div>
@@ -93,22 +101,21 @@ export function Footer() {
 
 const LINKS = [
     { id: 0, title: 'Menu', href: '/' },
-    { id: 1, title: 'Sobre Nosotros', href: '/about-us' },
-    { id: 2, title: 'Carreras', href: '/careers' },
+    { id: 1, title: 'Nosotros', href: '/about-us' },
+    { id: 3, title: 'Industrias', href: '/industries' },
     { id: 3, title: 'Servicios', href: '/services' },
-    { id: 4, title: 'Industrias', href: '/industries' },
-    { id: 5, title: 'Tecnologias', href: '/technologies' },
-    { id: 6, title: 'Blog', href: '/blog' },
+    { id: 4, title: 'Tecnologias', href: '/technologies' },
+    { id: 5, title: 'Proyectos', href: '/cases-studies' },
+    { id: 6, title: 'Carreras', href: '/careers' },
+    { id: 7, title: 'Blog', href: '/blog' },
 ];
 
 const TECHNOLOGIES = [
     { id: 0, title: 'Tecnologías' },
-    { id: 1, title: 'React' },
-    { id: 2, title: 'React-Native' },
-    { id: 3, title: 'Angular' },
-    { id: 4, title: 'Node.JS' },
-    { id: 5, title: 'Next.JS' },
-    { id: 6, title: 'Nest.JS' },
+    { id: 1, title: 'Next.JS' },
+    { id: 2, title: 'Node.JS' },
+    { id: 3, title: 'React-Native' },
+    { id: 4, title: 'React' },
 ];
 
 const SOCIAL = [

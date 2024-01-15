@@ -4,14 +4,6 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 
 import { CCAROUSELITEM } from '@/helpers/consts';
-import {
-    WaveCaseFive,
-    WaveCaseFour,
-    WaveCaseOne,
-    WaveCaseSix,
-    WaveCaseThree,
-    WaveCaseTwo,
-} from '@/assets/svg/case-studies';
 
 import styles from './styles/tab-carrousel.module.css';
 
@@ -49,25 +41,6 @@ export function TabsCarouselComponent() {
 
     const filterCarrouselItems = (selectedItem: number) => {
         return CCAROUSELITEM.filter((item) => item.id === selectedItem)[0];
-    };
-
-    const renderWaveForTab = () => {
-        switch (activeTab) {
-            case 0:
-                return <WaveCaseOne />;
-            case 1:
-                return <WaveCaseTwo />;
-            case 2:
-                return <WaveCaseThree />;
-            case 3:
-                return <WaveCaseFour />;
-            case 4:
-                return <WaveCaseFive />;
-            case 5:
-                return <WaveCaseSix />;
-            default:
-                return <WaveCaseOne />;
-        }
     };
 
     const renderCarouselForTab = (carouselItems: CarouselItem) => {
@@ -126,6 +99,7 @@ export function TabsCarouselComponent() {
                         </div>
                     </li>
                 </ul>
+
                 <div
                     style={{
                         marginTop: '50px',

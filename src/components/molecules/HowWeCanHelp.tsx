@@ -18,7 +18,7 @@ export function HowWeCanHelp() {
                 <ul className={styles._list_help}>
                     {CAIDS.map((aid) => (
                         <li key={aid.id} className={styles._item_list}>
-                            <div className={styles._container_card}>
+                            <a className={styles._container_card} href={aid.redirection}>
                                 <span className={styles._container_image}>
                                     <img
                                         alt={aid.title}
@@ -29,7 +29,7 @@ export function HowWeCanHelp() {
 
                                 <h3 className={styles._title_card}>{aid.title}</h3>
                                 <p className={styles._subtitle_card}>{aid.subtitle}</p>
-                            </div>
+                            </a>
                         </li>
                     ))}
                 </ul>
@@ -41,32 +41,37 @@ export function HowWeCanHelp() {
 const CAIDS = [
     {
         id: 0,
-        title: 'Entra al mercado rapidamente.',
-        subtitle: 'Desarrollo de MVPs - MVPaaS',
-        image: '/1.svg',
-    },
-    {
-        id: 1,
-        title: 'Escala tu negocio con sistemas a medida.',
-        subtitle: 'Outsourcing',
-        image: '/2.svg',
-    },
-    {
-        id: 2,
         title: 'Consolidá tu departamento de IT.',
         subtitle: 'Staff Augmentation - Dedicated Teams - CTOaaS.',
         image: '/3.svg',
+        redirection: '/services/staff-augmentation',
     },
     {
-        id: 3,
+        id: 1,
         title: 'Comenza tu transformación',
         subtitle: 'Consultoría.',
         image: '/4.svg',
+        redirection: '/services/consultancy',
+    },
+    {
+        id: 2,
+        title: 'Desarrolla tu WEB',
+        subtitle: 'Boutique Development',
+        image: '/5.svg',
+        redirection: '/services/web-application-development',
+    },
+    {
+        id: 3,
+        title: 'Desarrolla tu APP',
+        subtitle: 'Desarrollo de MVPs - MVPaaS',
+        image: '/1.svg',
+        redirection: '/services/web-application-development',
     },
     {
         id: 4,
-        title: 'Desarrolla tu web, app o AI.',
-        subtitle: 'Boutique Development',
-        image: '/5.svg',
+        title: 'Desarrolla tu Producto',
+        subtitle: 'Outsourcing',
+        image: '/2.svg',
+        redirection: '/services/web-application-development',
     },
 ];

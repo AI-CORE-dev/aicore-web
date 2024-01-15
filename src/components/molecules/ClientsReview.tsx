@@ -1,8 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 
-import { StartReviewSVG } from '@/assets/svg';
-
 import styles from './styles/client-review.module.css';
 
 export function ClientsReview() {

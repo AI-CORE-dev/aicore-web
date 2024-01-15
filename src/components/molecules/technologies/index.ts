@@ -1,1 +1,1 @@
-export * from './OurNodeExpertise';
+export * from './OurExpertise';

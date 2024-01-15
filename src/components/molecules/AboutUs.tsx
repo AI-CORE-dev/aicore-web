@@ -96,7 +96,7 @@ export function AboutUs({ isCareers = false }: IProps) {
                 <>
                     <FirstTemplate />
 
-                    <div className={styles._container_image_word}>
+                    {/* <div className={styles._container_image_word}>
                         <video
                             autoPlay
                             controls
@@ -106,7 +106,7 @@ export function AboutUs({ isCareers = false }: IProps) {
                         >
                             <track kind={'captions'} label={'Spanish'} srcLang={'es'} />
                         </video>
-                    </div>
+                    </div> */}
                 </>
             )}
         </section>

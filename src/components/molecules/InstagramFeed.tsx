@@ -23,7 +23,12 @@ export function InstagramFeed() {
                         <p className={styles._subtitle}>168 publicaciones</p>
                     </div>
 
-                    <a className={styles._btn_follow} href={'https://www.instagram.com/aicore.ok/'}>
+                    <a
+                        className={styles._btn_follow}
+                        href={'https://www.instagram.com/aicore.ok/'}
+                        rel={'noopener'}
+                        target={'_blank'}
+                    >
                         Seguinos
                     </a>
                 </div>

@@ -6,20 +6,20 @@
   ._inner{
     padding: 10px 100px;
     flex-direction: column;
-    height: 70vh;
   }
   
   ._text {
     font-family: var(--font-mono);
-    font-size: 96px;
+    font-size: 60px;
+    color: var(--black-color);
     font-weight: 700;
     line-height: 96px;
     letter-spacing: -2px;
     text-align: left;
     line-height: 120px;
-    /*color: var(--sky-blue-color);*/
+    /*color: var(--sky-blue-color);
+    text-shadow: -1px -1px 0 var(--light-text-color),1px -1px 0 var(--light-text-color),-1px 1px 0 var(--light-text-color),1px 1px 0 var(--light-text-color);*/
     max-width: 472px;
-    text-shadow: -1px -1px 0 var(--light-text-color),1px -1px 0 var(--light-text-color),-1px 1px 0 var(--light-text-color),1px 1px 0 var(--light-text-color);
     cursor: default;
   }
 
@@ -79,7 +79,7 @@
     }
 
     ._text {
-      font-size: 92px;
+      font-size: 60px;
     }
     
   }

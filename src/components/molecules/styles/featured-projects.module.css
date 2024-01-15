@@ -4,7 +4,7 @@
 }
 
 ._inner {
-  padding: 0 100px 0 100px;
+  padding: 80px 100px;
 }
 
 ._project_card {
@@ -32,13 +32,13 @@
   font-family: var(--font-mono);
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 70px;
   line-height: 44px;
   letter-spacing: -2px;
   text-align: left;
   color: var(--black-color);
   cursor: default;
-  margin-bottom: 24px;
+  margin-bottom: 54px;
 }
 
 ._description {

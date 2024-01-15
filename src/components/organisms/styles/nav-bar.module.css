@@ -103,8 +103,8 @@
   justify-content: center;
   align-items: center;
   font-weight: 600;
-  text-transform: uppercase;
   height: 50px;
+  letter-spacing: 1.5px;
   font-family: var(--font-mono);
   cursor: pointer;
   outline: none;
@@ -114,7 +114,7 @@
   background-color: var(--black-color);
   box-shadow: 0 8px 24px rgba(1, 2, 5, 0.2);
   color: #fff;
-  font-size: 17px;
+  font-size: 25px;
   transition:
     color 0.3s ease-in-out,
     background-color 0.3s ease-in-out;
@@ -130,6 +130,12 @@
   background-color: #fff;
   transition: background-color 0.3s ease-in-out;
   color: var(--black-color);
+}
+
+._button_scrolled:hover{
+  background-color: var(--black-color);
+  transition: background-color 0.3s ease-in-out;
+  color: #fff;
 }
 
 ._link_services {
@@ -249,6 +255,10 @@
   ._ul_services {
     width: 15%;
     right: 30%;
+  }
+
+  ._button{
+    font-size: 20px;
   }
 
   ._link {

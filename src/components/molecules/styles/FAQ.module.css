@@ -1,39 +1,78 @@
-._section{
-    position: relative;
+._section {
+  position: relative;
+  background-color: var(--white-color);
 }
 
-._inner{
-    padding: 0 100px;
+._inner {
+  padding: 50px 100px;
 }
 
-._container_icon{
-    cursor: pointer;
-    margin-right: 74px;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    transition: background-color .3s ease-in-out;
-    background: transparent;
+._title {
+  font-family: var(--font-mono);
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -3px;
+  color: var(--black-color);
+  white-space: pre-line;
+  margin-bottom: 80px;
 }
 
-._container_icon:hover{
-   
+._item {
+  border-bottom: 1px solid #CED4DA;
 }
 
-._container_icon_open{
-    background: #F2F2F2 !important;
+._question {
+  color: var(--black-color);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  cursor: pointer;
 }
 
-._icon{
-    transition: -webkit-transform .3s ease-in-out;
-    transition: transform .3s ease-in-out;
-    transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
+._answer {
+  margin: 45px 0 45px 110px;
+  font-size: 16px;
+  font-family: var(--font-mono);
+  line-height: 26px;
+  letter-spacing: -0.355556px;
+  color: var(--light-text-color);
 }
 
-._container_icon_open ._icon{
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    transition: -webkit-transform .3s ease-in-out;
-    transition: transform .3s ease-in-out;
-    transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
+._container_icon {
+  cursor: pointer;
+  margin-right: 74px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+  background: transparent;
+}
+
+._container_icon:hover {
+}
+
+._container_icon_open {
+  background: #343A40 !important;
+}
+
+._icon {
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
+}
+
+._container_icon_open ._icon {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
 }

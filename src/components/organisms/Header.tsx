@@ -33,11 +33,11 @@ export function Header({
                     <h1 className={styles._title}>{title}</h1>
                     <h3 className={styles._subtitle}>{subtitle}</h3>
                     <div className={styles._div_contact_box}>
-                        {isButtonPrimary ? (
+                        {/* {isButtonPrimary ? (
                             <a className={styles._btn_white} href={'/contact'}>
                                 {textButton}
                             </a>
-                        ) : null}
+                        ) : null} */}
                         {isButtonSecondary ? (
                             <a
                                 className={styles._btn_call}

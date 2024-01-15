@@ -23,17 +23,6 @@ export function CarouselReviewClient({ type = false }: ICarouselItem) {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + 3) % 3); // aca tambien
     };
 
-    const renderWaveForTab = () => {
-        switch (currentIndex) {
-            case 0:
-                return <WaveCaseOne />;
-            case 1:
-                return <WaveCaseTwo />;
-            case 2:
-                return <WaveCaseThree />;
-        }
-    };
-
     return (
         <div className={styles.carousel}>
             <div
@@ -155,7 +144,7 @@ const CCLIENTREVIEWS2 = [
     {
         id: 0,
         cases: {
-            color_background: '#ff5500',
+            color_background: '#121113',
             title: 'Eficientizando el control de las polizas de seguros con IA para Aon.',
             subtitle:
                 '"Cuando encaramos este proyecto para Aon sabíamos que era crucial aportar una camino para interpretar diferentes formatos en los cuales se presentaban los contratos digitales con el objetivo de recopilar información crucial para la toma de desciciones."',
@@ -167,7 +156,7 @@ const CCLIENTREVIEWS2 = [
     {
         id: 1,
         cases: {
-            color_background: '#0099ff',
+            color_background: '#343A40',
             title: 'Potenciando la revolución del trabajo híbrido junto a Worknmates.',
             subtitle:
                 '"Acompañamos a Worknmates mediante nuestra solución de MVPaaS y CTOaaS en la concepción y desarrollando su marketplace de coworkings + home office market place que permite reservar espacios de trabajo a las empresas que desean implementar un modelo hibrido."',
@@ -179,7 +168,7 @@ const CCLIENTREVIEWS2 = [
     {
         id: 2,
         cases: {
-            color_background: '#5000ca',
+            color_background: '#252422',
             title: 'lorem ipsum dolor sit amet, consectetur adipiscing elit',
             subtitle:
                 'Acompañamos a Worknmates mediante nuestra solución de MVPaaS y CTOaaS en la concepción y desarrollando su marketplace de coworkings + home office market place que permite reservar espacios de trabajo a las empresas que desean implementar un modelo hibrido."',

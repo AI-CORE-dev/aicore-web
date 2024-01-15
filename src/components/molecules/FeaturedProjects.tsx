@@ -1,3 +1,5 @@
+import React from 'react';
+
 import styles from './styles/featured-projects.module.css';
 
 export function FeatureProjects() {
@@ -26,7 +28,12 @@ export function FeatureProjects() {
                             />
 
                             <div className={styles._container_info}>
-                                <h2 className={styles._title}>{project.title}</h2>
+                                <h2
+                                    className={styles._title}
+                                    style={{ fontSize: '30px', marginBottom: '24px' }}
+                                >
+                                    {project.title}
+                                </h2>
                                 <p className={styles._description}>{project.description}</p>
                                 <table>
                                     <tbody>

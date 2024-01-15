@@ -1,4 +1,5 @@
 import {
+    Awards,
     CarouselReviewClient,
     ExtendYourTeam,
     FaQ,
@@ -7,17 +8,17 @@ import {
     StartTechnicalAudit,
     TypeOfWork,
 } from '@/components/molecules';
-import { OurNodeExpertise } from '@/components/molecules/technologies';
+import { OurExpertise } from '@/components/molecules/technologies';
 import { Header } from '@/components/organisms/Header';
 
 function Nodejs() {
     return (
         <>
-            <Header isButtonSecondary isVideo />
+            <Header isButtonSecondary isVideo title={CDATAHEADER.title} />
             <main>
                 <ServicesNumbers />
                 <CarouselReviewClient />
-                <OurNodeExpertise />
+                <OurExpertise CEXPERTISE={CEXPERTISENODE} />
                 <TypeOfWork
                     description={CTYPEOFWORK.description}
                     options={CTYPEOFWORK.options}
@@ -33,11 +34,47 @@ function Nodejs() {
                 />
                 <ExtendYourTeam />
                 <FaQ />
+                <Awards />
                 <ScheduleCall />
             </main>
         </>
     );
 }
+
+const CDATAHEADER = {
+    title: 'NodeJS Development Service',
+    subtitle: '',
+    textButton: 'Contactanos',
+    textButtonSecondary:
+        'Agenda una reunión de 30 minutos sin cargo con nuestros desarrolladores de negocios.',
+};
+
+const CEXPERTISENODE = [
+    {
+        id: 0,
+        title: 'Streaming apps',
+        description:
+            'Optimize streaming content delivery to your users with the help of our Node.js developers. Leverage our expertise in building various streaming applications, including live video streaming platforms and music streaming services. Using Node.js, we allow users to download the core components first and access the rest software elements on-demand. Since the data is coming through a stream, we can process it in parallel during loading. With its streaming API, Node.js ensures efficient data streaming, reducing server and local computer overload.',
+    },
+    {
+        id: 1,
+        title: 'Real-time chats',
+        description:
+            'Optimize streaming content delivery to your users with the help of our Node.js developers. Leverage our expertise in building various streaming applications, including live video streaming platforms and music streaming services. Using Node.js, we allow users to download the core components first and access the rest software elements on-demand. Since the data is coming through a stream, we can process it in parallel during loading. With its streaming API, Node.js ensures efficient data streaming, reducing server and local computer overload.',
+    },
+    {
+        id: 2,
+        title: 'Complex SPA',
+        description:
+            'Optimize streaming content delivery to your users with the help of our Node.js developers. Leverage our expertise in building various streaming applications, including live video streaming platforms and music streaming services. Using Node.js, we allow users to download the core components first and access the rest software elements on-demand. Since the data is coming through a stream, we can process it in parallel during loading. With its streaming API, Node.js ensures efficient data streaming, reducing server and local computer overload.',
+    },
+    {
+        id: 3,
+        title: 'Collaboration tools',
+        description:
+            'Optimize streaming content delivery to your users with the help of our Node.js developers. Leverage our expertise in building various streaming applications, including live video streaming platforms and music streaming services. Using Node.js, we allow users to download the core components first and access the rest software elements on-demand. Since the data is coming through a stream, we can process it in parallel during loading. With its streaming API, Node.js ensures efficient data streaming, reducing server and local computer overload.',
+    },
+];
 
 const CTYPEOFWORK = {
     title: 'Estos son los proyectos que desarrollamos',

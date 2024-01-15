@@ -1,0 +1,38 @@
+._section{
+    position: relative;
+    background-color: var(--white-color);
+}
+
+._inner{
+    padding: 50px 100px;
+    height: 100vh;
+}
+
+._text{
+    font-family: var(--font-mono);
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -3px;
+    color: var(--black-color);
+    white-space: pre-line;
+}
+
+._container_input{
+    margin-top: 50px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #b2b5bd;
+}
+
+._input{
+    font-family: var(--font-mono);
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-size: 60px;
+    border: 0;
+    width: 100%;
+    outline: none;
+}

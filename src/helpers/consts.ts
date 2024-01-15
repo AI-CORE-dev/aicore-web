@@ -1,22 +1,7 @@
 export const CPAGES = [
-    { id: 0, isCollapse: false, items: [], text: 'Sobre Nosotros', href: '/about-us' },
-    { id: 1, isCollapse: false, items: [], text: 'Carrera', href: '/careers' },
-    { id: 2, isCollapse: false, items: [], text: 'Casos', href: '/case-studies' },
+    { id: 0, isCollapse: false, items: [], text: 'Nosotros', href: '/about-us' },
     {
-        id: 3,
-        isCollapse: true,
-        items: [
-            { id: 0, text: 'Staff Augmentation', href: '/services/staff-augmentation' },
-            { id: 1, text: 'Consultoría', href: '/services/consultancy' },
-            { id: 2, text: 'MVPaaS', href: '/services/MVPaaS' },
-            { id: 3, text: 'Outsourcing', href: '/services/outsourcing' },
-            { id: 3, text: 'Dessarrollo Web', href: '/services/web-application-development/' },
-        ],
-        text: 'Servicios',
-        href: '/services',
-    },
-    {
-        id: 4,
+        id: 1,
         isCollapse: true,
         items: [
             { id: 0, text: 'Seguros', href: '/industries/insurance' },
@@ -30,7 +15,24 @@ export const CPAGES = [
         href: '/industries',
     },
     {
-        id: 5,
+        id: 3,
+        isCollapse: true,
+        items: [
+            { id: 0, text: 'Staff Augmentation', href: '/services/staff-augmentation' },
+            { id: 1, text: 'Consultoría', href: '/services/consultancy' },
+            { id: 2, text: 'Dessarrollo Web', href: '/services/web-application-development/' },
+            { id: 3, text: 'Dessarrollo APP', href: '/services/mobile-application-development/' },
+            {
+                id: 4,
+                text: 'Dessarrollo de Producto',
+                href: '/services/product-development/',
+            },
+        ],
+        text: 'Servicios',
+        href: '/services',
+    },
+    {
+        id: 2,
         isCollapse: true,
         items: [
             { id: 2, text: 'NextJS', href: '/technologies/nextjs-development-services' },
@@ -45,7 +47,9 @@ export const CPAGES = [
         text: 'Tecnologías',
         href: '/technologies',
     },
-    { id: 6, isCollapse: false, items: [], text: 'Blog', href: '/blog' },
+    { id: 3, isCollapse: false, items: [], text: 'Proyectos', href: '/case-studies' },
+    { id: 4, isCollapse: false, items: [], text: 'Carrera', href: '/careers' },
+    { id: 5, isCollapse: false, items: [], text: 'Blog', href: '/blog' },
 ];
 
 export const CCAROUSELITEM = [
@@ -82,7 +86,7 @@ export const CCAROUSELITEM = [
             ],
         },
         cases: {
-            color_background: '#ff5500',
+            color_background: '#252422',
             title: 'Eficientizando el control de las polizas de seguros con IA para Aon.',
             subtitle:
                 '"Cuando encaramos este proyecto para Aon sabíamos que era crucial aportar una camino para interpretar diferentes formatos en los cuales se presentaban los contratos digitales con el objetivo de recopilar información crucial para la toma de desciciones."',
@@ -98,7 +102,7 @@ export const CCAROUSELITEM = [
             title: 'Eficientizando la contratación de espacios de trabajo',
             subtitle:
                 'Worknmates comenzo como un marketplace de coworkings orientado B2C, ante su necesidad pivotear y reconvertirce para orientarse ahora al B2B y asumiendo el rol de socio tecnológico reinventamos su solución, plataforma y funcionalidades rapidamente para permitirles transcicionar de la mejor manera. Gracias a esto Wokrnmates logró probar su idea en el mercado, escalarla y lograr expandirse y crecer en el mercado Latinomaericano consiguiendo asi la financiación para continuar.',
-            button: 'Conocé más de lo que hicimos para la industría de seguros.',
+            button: 'Conocé más de lo que hicimos para la industría de Booking de servicios.',
             href: '/industries/booking-of-services',
             techs: [
                 {
@@ -124,7 +128,7 @@ export const CCAROUSELITEM = [
             ],
         },
         cases: {
-            color_background: '#0099ff',
+            color_background: '#212529',
             title: 'Potenciando la revolución del trabajo híbrido junto a Worknmates.',
             subtitle:
                 '"Acompañamos a Worknmates mediante nuestra solución de MVPaaS y CTOaaS en la concepción y desarrollando su marketplace de coworkings + home office market place que permite reservar espacios de trabajo a las empresas que desean implementar un modelo hibrido."',
@@ -140,7 +144,7 @@ export const CCAROUSELITEM = [
             title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             subtitle:
                 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-            button: 'lorem lorem lorem lorem',
+            button: 'Conocé lo que hicimos para la industria de Informacion.',
             href: '/industries/information',
             techs: [
                 {
@@ -166,7 +170,7 @@ export const CCAROUSELITEM = [
             ],
         },
         cases: {
-            color_background: '#5000ca',
+            color_background: '#343A40',
             title: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             subtitle:
                 '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."',
@@ -182,7 +186,7 @@ export const CCAROUSELITEM = [
             title: 'lorem impsum dolor sit amet, consectetur adipiscing elit.',
             subtitle:
                 'loremp ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-            button: 'lorem lorem lorem lorem',
+            button: 'Conocé más en profundidad lo que hicimos para la industria de Procesamiento de Pagos.',
             href: '/industries/payment-processing',
             techs: [
                 {
@@ -208,7 +212,7 @@ export const CCAROUSELITEM = [
             ],
         },
         cases: {
-            color_background: '#e7008a',
+            color_background: '#495057',
             title: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             subtitle:
                 '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."',
@@ -224,7 +228,7 @@ export const CCAROUSELITEM = [
             title: 'lorem impsum dolor sit amet, consectetur adipiscing elit.',
             subtitle:
                 'loremp ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-            button: 'lorem lorem lorem lorem',
+            button: 'Conocé más en profundidad lo que hicimos para la industria de Salud',
             href: '/industries/health',
             techs: [
                 {
@@ -250,7 +254,7 @@ export const CCAROUSELITEM = [
             ],
         },
         cases: {
-            color_background: '#00cba9',
+            color_background: '#6C757D',
             title: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             subtitle:
                 '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."',
@@ -266,7 +270,7 @@ export const CCAROUSELITEM = [
             title: 'lorem impsum dolor sit amet, consectetur adipiscing elit.',
             subtitle:
                 'loremp ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-            button: 'lorem lorem lorem lorem',
+            button: 'Conocé más en profundidad lo que hicimos para la industria de Finanzas.',
             href: '/industries/finances',
             techs: [
                 {
@@ -292,7 +296,7 @@ export const CCAROUSELITEM = [
             ],
         },
         cases: {
-            color_background: '#ffd700',
+            color_background: '#ADB5BD',
             title: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             subtitle:
                 '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."',
@@ -300,5 +304,33 @@ export const CCAROUSELITEM = [
             src: '',
             background: '',
         },
+    },
+];
+
+export const CAWARDS = [
+    {
+        id: 0,
+        image: '/1.svg',
+        alt: 'award1',
+    },
+    {
+        id: 1,
+        image: '/2.svg',
+        alt: 'award2',
+    },
+    {
+        id: 2,
+        image: '/3.svg',
+        alt: 'award3',
+    },
+    {
+        id: 3,
+        image: '/4.svg',
+        alt: 'award4',
+    },
+    {
+        id: 4,
+        image: '/5.svg',
+        alt: 'award5',
     },
 ];

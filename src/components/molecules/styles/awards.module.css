@@ -1,0 +1,48 @@
+._section{
+    position: relative;
+    background-color: var(--white-color);
+    
+}
+
+._inner{
+    width: 100%;
+    padding: 80px 100px 0 100px;
+}
+
+._unordered_list{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    padding: 50px 0;
+}
+
+._title{
+    font-family: var(--font-mono);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -4px;
+    color: #1E1E1E;
+    margin-bottom: 18px;
+    cursor: default;
+}
+
+._image{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    cursor: pointer;
+    --webkit-transform: scale(1.1);
+    --webkit-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
+
+._image:hover{
+    transform: scale(1.1);
+    --webkit-transform: scale(1.1);
+    --webkit-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
