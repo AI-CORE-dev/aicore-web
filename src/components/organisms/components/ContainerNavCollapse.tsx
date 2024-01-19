@@ -12,7 +12,7 @@ export function ContainerNavCollapse({ label, items }: IProps) {
     return (
         <div>
             <p className={styles._button_services}>{label}</p>
-            <ul className={`${styles._ul_services}`}>
+            <ul className={styles._ul_services}>
                 {items.map((item: { href: string; text: string }) => (
                     <li key={item.href} className={styles._li}>
                         <a className={styles._link_services} href={item.href}>

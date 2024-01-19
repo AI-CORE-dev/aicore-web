@@ -11,11 +11,6 @@ interface FormState {
 export function FormPostulateNow() {
     const [state, setState] = useState<FormState>({ file: null });
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        console.log(state.file);
-    };
-
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.files) {
             setState({ file: e.target.files[0] });

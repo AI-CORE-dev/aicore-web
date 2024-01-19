@@ -32,7 +32,7 @@ export function MenuDesktop() {
 
             <a
                 className={
-                    scrolled ? `${styles._button} ${styles._button_scrolled}` : `${styles._button}`
+                    scrolled ? `${styles._button} ${styles._button_scrolled}` : styles._button
                 }
                 href={'/contact'}
             >

@@ -34,7 +34,7 @@ export function ScheduleCall() {
 
                 <div className={styles._container_profile}>
                     <div className={`${styles._container_header} ${styles._column}`}>
-                        <div className={`${styles._circle}`}>
+                        <div className={styles._circle}>
                             <img
                                 alt={'fav-icon'}
                                 className={styles._img}

@@ -39,7 +39,7 @@ export function FaQ() {
                                 className={
                                     state.activeItems[index]
                                         ? `${styles._container_icon} ${styles._container_icon_open}`
-                                        : `${styles._container_icon}`
+                                        : styles._container_icon
                                 }
                             >
                                 <svg

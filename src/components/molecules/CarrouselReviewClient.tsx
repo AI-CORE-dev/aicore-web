@@ -33,7 +33,7 @@ export function CarouselReviewClient({ type = false }: ICarouselItem) {
                     ? CCLIENTREVIEWS2.map((review) => (
                           <div key={review.id} className={styles.slides_second_section}>
                               <div
-                                  className={`${styles._slides_container}`}
+                                  className={styles._slides_container}
                                   style={{
                                       backgroundColor: review.cases.color_background,
                                   }}

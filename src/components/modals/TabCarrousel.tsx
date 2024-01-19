@@ -46,8 +46,8 @@ export function TabsCarouselComponent() {
     const renderCarouselForTab = (carouselItems: CarouselItem) => {
         return (
             <div className={styles._inner}>
-                <ul className={`${styles._first_section}`}>
-                    <li key={carouselItems.id} className={`${styles._first_section_list}`}>
+                <ul className={styles._first_section}>
+                    <li key={carouselItems.id} className={styles._first_section_list}>
                         <div className={styles._first_section_column}>
                             <h3 className={styles._first_section_title}>
                                 {carouselItems.content.title}
@@ -107,7 +107,7 @@ export function TabsCarouselComponent() {
                 >
                     {/* <span>{renderWaveForTab()}</span> */}
                     <div
-                        className={`${styles._slides_container}`}
+                        className={styles._slides_container}
                         style={{ backgroundColor: carouselItems.cases.color_background }}
                     >
                         <div className={styles._slide_module_bg}>
@@ -148,7 +148,7 @@ export function TabsCarouselComponent() {
                     const classActive =
                         tab.id === activeTab
                             ? `${styles._tabs_btn} ${styles._tabs_active}`
-                            : `${styles._tabs_btn}`;
+                            : styles._tabs_btn;
 
                     return (
                         <div

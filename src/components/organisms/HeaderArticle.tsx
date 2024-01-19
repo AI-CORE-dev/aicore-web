@@ -55,8 +55,8 @@ export function HeaderArticle() {
                                     ))}
                                 </ul>
 
-                                <div className={`${styles._container_header}`}>
-                                    <div className={`${styles._circle}`}>
+                                <div className={styles._container_header}>
+                                    <div className={styles._circle}>
                                         <img
                                             alt={'fav-icon'}
                                             className={styles._img}
