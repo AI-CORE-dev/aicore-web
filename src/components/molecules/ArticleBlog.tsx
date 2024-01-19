@@ -11,7 +11,7 @@ export function ArticleBlog() {
                                 <div className={styles._item}>
                                     <div>
                                         <div className={styles._date}>{item.date}</div>
-                                        <a href={'/'}>
+                                        <a href={'/blog/template'}>
                                             <h2 className={styles._title}>{item.title}</h2>
                                         </a>
                                     </div>
@@ -26,8 +26,8 @@ export function ArticleBlog() {
                                         ))}
                                     </ul>
 
-                                    <div className={`${styles._container_header}`}>
-                                        <div className={`${styles._circle}`}>
+                                    <div className={styles._container_header}>
+                                        <div className={styles._circle}>
                                             <img
                                                 alt={'fav-icon'}
                                                 className={styles._img}
@@ -42,13 +42,13 @@ export function ArticleBlog() {
                                         </div>
                                     </div>
 
-                                    <a className={styles._link_redirec} href={'/blog'}>
+                                    <a className={styles._link_redirec} href={'/blog/template'}>
                                         Leer post
                                     </a>
                                 </div>
 
                                 <div className={styles._item}>
-                                    <a href={'/blog'}>
+                                    <a href={'/blog/template'}>
                                         <div className={styles._item_img} />
                                     </a>
                                 </div>
@@ -70,7 +70,7 @@ const CDATAARTICLE = [
         img: 'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Favicon-Aicore.png',
         name: 'Eduardo Brizuela',
         profession: 'Ingeniero & Abogado',
-        link: '/blog',
+        link: '/blog/template',
     },
     {
         id: 1,
@@ -80,6 +80,6 @@ const CDATAARTICLE = [
         img: 'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Favicon-Aicore.png',
         name: 'Ezequiel Maranga',
         profession: 'COO',
-        link: '/blog',
+        link: '/blog/template',
     },
 ];

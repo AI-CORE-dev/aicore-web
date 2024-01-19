@@ -26,6 +26,14 @@
 
 ._btn{
     border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    padding: 1.22rem 2.44rem;
+    font-size: 1.22rem;
+    line-height: 1.45;
+    color: #fff;
+    background-color: var(--black-primary);
+    border-color: var(--black-primary);
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -38,3 +46,4 @@
     cursor: pointer;
     outline: none;
 }
+

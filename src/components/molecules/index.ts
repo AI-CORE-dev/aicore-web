@@ -1,5 +1,7 @@
 export * from './AboutUs';
 
+export * from './ArticleBody';
+
 export * from './ArticleBlog';
 
 export * from './Awards';

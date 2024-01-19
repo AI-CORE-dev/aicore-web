@@ -2,7 +2,7 @@ import { SearchBlog } from '@/components/molecules';
 import { HeaderBlog } from '@/components/organisms/HeaderBlog';
 import { NavBlog } from '@/components/organisms/NavBlog';
 
-function Blog() {
+function BlogSearch() {
     return (
         <>
             <HeaderBlog isButtonSecondary isVideo title={CDATAHEADER.title} />
@@ -23,4 +23,4 @@ const CDATAHEADER = {
         'Agenda una reunión de 30 minutos sin cargo con nuestros desarrolladores de negocios.',
 };
 
-export default Blog;
+export default BlogSearch;

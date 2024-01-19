@@ -13,7 +13,7 @@ export function BlogSection() {
                                 <div className={styles._cases_background} />
                             </a>
 
-                            <h2 className={styles._title}>
+                            <h2 className={styles._title_blog}>
                                 El futuro de la fuerza laboral: combinación de equipos internos y
                                 equipos aumentados: modelo híbrido
                             </h2>
@@ -40,7 +40,7 @@ export function BlogSection() {
                                 <div className={styles._cases_background} />
                             </a>
 
-                            <h2 className={styles._title}>
+                            <h2 className={styles._title_blog}>
                                 ¿Cuánto gastan las empresas tecnológicas en contratación?
                             </h2>
 
@@ -66,7 +66,7 @@ export function BlogSection() {
                                 <div className={styles._cases_background} />
                             </a>
 
-                            <h2 className={styles._title}>
+                            <h2 className={styles._title_blog}>
                                 Conseguir contrataciones tecnológicas con un presupuesto limitado:
                                 un plan de contratación estratégico para tiempos de incertidumbre
                             </h2>

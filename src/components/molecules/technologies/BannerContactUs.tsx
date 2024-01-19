@@ -8,7 +8,7 @@ export function BannerContactUs() {
                     Transformar ideas disruptivas en soluciones de primer nivel
                 </p>
                 <h2 className={styles._title}>
-                    Contrata a nuestros desarrolladores de React Native para crear tu aplicación
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </h2>
                 <a className={styles._btn} href={'/contact'}>
                     Estimar un proyecto

@@ -1,3 +1,7 @@
+import { CarouselReviewClient, ScheduleCall } from '@/components/molecules';
+import { BlogSection } from '@/components/molecules/BlogSection';
+import { BannerContactUs } from '@/components/molecules/technologies/BannerContactUs';
+import { WhyOptFor } from '@/components/molecules/technologies/WhyOptFor';
 import { Header } from '@/components/organisms/Header';
 
 function Information() {
@@ -5,7 +9,11 @@ function Information() {
         <>
             <Header isButtonSecondary isVideo title={CDATAHEADER.title} />
             <main>
-                <div />
+                <WhyOptFor subtitle={'subtitle'} title={'Information'} />
+                <CarouselReviewClient />
+                <BannerContactUs />
+                <BlogSection />
+                <ScheduleCall />
             </main>
         </>
     );

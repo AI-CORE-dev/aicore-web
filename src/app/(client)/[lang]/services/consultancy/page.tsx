@@ -1,9 +1,25 @@
 import { Header } from '@/components/organisms/Header';
-
-import styles from './page.module.css';
+import {
+    CarouselReviewClient,
+    Recognition,
+    ScheduleCall,
+    WhyOptForMVP,
+    WorkProcess,
+} from '@/components/molecules';
 
 function Consultancy() {
-    return <Header isButtonSecondary isHome isVideo />;
+    return (
+        <>
+            <Header isButtonSecondary isHome isVideo title={'Consultancy'} />
+            <main>
+                <WhyOptForMVP isOtherPage={false} subtitle={'lorem'} title={'Consultancy'} />
+                <CarouselReviewClient type />
+                <CarouselReviewClient />
+                <Recognition />
+                <ScheduleCall />
+            </main>
+        </>
+    );
 }
 
 export default Consultancy;
