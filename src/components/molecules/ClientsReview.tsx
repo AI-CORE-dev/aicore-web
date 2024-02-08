@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 import styles from './styles/client-review.module.css';
 
@@ -21,11 +20,10 @@ export function ClientsReview() {
                         <li key={client.id}>
                             <div className={`${styles._card_client} ${styles._margin_right}`}>
                                 <div className={styles._card_content}>
-                                    <Image
+                                    <img
                                         alt={client.name}
-                                        height={130}
+                                        className={styles._avatar}
                                         src={client.avatar}
-                                        width={130}
                                     />
 
                                     <p className={`${styles._name_client} ${styles._name_weight}`}>

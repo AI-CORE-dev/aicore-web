@@ -211,16 +211,15 @@
 
 }
 
-
 @media (max-width: 460px) {
   ._inner{
     padding: 20px 20px;
   }
 
   ._title {
-    font-size: 5.5vw;
+    font-size: 20px;
     line-height: 1;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
   }
 
   ._tabs-btn {

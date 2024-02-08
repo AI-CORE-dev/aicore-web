@@ -44,3 +44,9 @@
   transform: translate(0.125rem, 0.125rem);
   box-shadow: 0.25rem 0.25rem #121212;
 }
+
+@media (max-width:480px){
+  ._section{
+    display:none;
+  }
+}

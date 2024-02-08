@@ -42,3 +42,9 @@
   transform: rotate(-135deg);
   display: inline-block;
 }
+
+@media (max-width: 460px) {
+  ._floating_button {
+    right: 10px;
+  }
+}

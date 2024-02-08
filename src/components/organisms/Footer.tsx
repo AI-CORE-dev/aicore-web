@@ -47,6 +47,7 @@ export function Footer() {
                         <p className={styles._subtitle}>contacto@aicore.com</p>
                     </div>
                 </div>
+
                 <div className={styles._container_social}>
                     <div className={styles._container_copy}>
                         <p className={styles._copyrigth}>© 2018-2024 AI CORE.</p>

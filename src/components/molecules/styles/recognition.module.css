@@ -69,3 +69,27 @@
     --webkit-transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
 }
+
+@media (max-width:480px) {
+
+    ._inner{
+        padding: 20px 20px 0px 20px;
+    }
+
+    ._title{
+        font-size: 35px;
+        line-height: 48px;
+        letter-spacing: -2.67px;
+    }
+
+    ._subtitle{
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -.2px;
+    }
+
+    ._unordered_list{
+        padding: 20px 0;
+    }
+    
+}

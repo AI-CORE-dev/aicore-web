@@ -235,7 +235,7 @@
   }
 
   ._item_list {
-    width: 30%;
+    width: 28%;
     margin: 5px;
   }
 
@@ -247,14 +247,21 @@
     padding: 5px;
   }
 
+  ._container_card::after {
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 10px;
+  }
+
   ._container_image {
     position: relative;
     margin-bottom: 0;
   }
 
   ._image {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
   }
 

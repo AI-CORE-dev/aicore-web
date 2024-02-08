@@ -62,7 +62,6 @@
   color: var(--gray-terciary);
   text-transform: uppercase;
   line-height: 1.1428;
-
   font-weight: 700;
   font-size: 14px;
   text-decoration: none;
@@ -88,12 +87,6 @@
   background: url(data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9IjI0IiBoZWlnaHQ9IjIzIiB2aWV3Qm94PSIwIDAgMjQgMjMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgMTAuMzE4NkMwLjQ0NzcxNSAxMC4zMTg2IDAgMTAuNzY2MyAwIDExLjMxODZDMCAxMS44NzA5IDAuNDQ3NzE1IDEyLjMxODYgMSAxMi4zMTg2VjEwLjMxODZaTTIyLjUgMTEuMzE4NkwyMy4yMDcxIDEyLjAyNTdDMjMuNTk3NiAxMS42MzUyIDIzLjU5NzYgMTEuMDAyIDIzLjIwNzEgMTAuNjExNUwyMi41IDExLjMxODZaTTEzLjIwNzEgMC42MTE0OTdDMTIuODE2NiAwLjIyMDk3MiAxMi4xODM0IDAuMjIwOTcyIDExLjc5MjkgMC42MTE0OTdDMTEuNDAyNCAxLjAwMjAyIDExLjQwMjQgMS42MzUxOSAxMS43OTI5IDIuMDI1NzFMMTMuMjA3MSAwLjYxMTQ5N1pNMTEuNzkyOSAyMC42MTE1QzExLjQwMjQgMjEuMDAyIDExLjQwMjQgMjEuNjM1MiAxMS43OTI5IDIyLjAyNTdDMTIuMTgzNCAyMi40MTYyIDEyLjgxNjYgMjIuNDE2MiAxMy4yMDcxIDIyLjAyNTdMMTEuNzkyOSAyMC42MTE1Wk0xIDEyLjMxODZIMjIuNVYxMC4zMTg2SDFWMTIuMzE4NlpNMTEuNzkyOSAyLjAyNTcxTDIxLjc5MjkgMTIuMDI1N0wyMy4yMDcxIDEwLjYxMTVMMTMuMjA3MSAwLjYxMTQ5N0wxMS43OTI5IDIuMDI1NzFaTTIxLjc5MjkgMTAuNjExNUwxMS43OTI5IDIwLjYxMTVMMTMuMjA3MSAyMi4wMjU3TDIzLjIwNzEgMTIuMDI1N0wyMS43OTI5IDEwLjYxMTVaIiBmaWxsPSIjNkM3NTdEIi8+PC9zdmc+)
     scroll no-repeat 50% / contain;
   position: relative;
-  transition:
-    color 0.3s ease-in-out,
-    -webkit-transform 0.3s ease-in-out;
-  transition:
-    transform 0.3s ease-in-out,
-    color 0.3s ease-in-out;
   transition:
     transform 0.3s ease-in-out,
     color 0.3s ease-in-out,
@@ -339,5 +332,75 @@
   100% {
     -webkit-transform: translateX(-100px);
     transform: translateX(-100px);
+  }
+}
+
+
+@media (max-width: 460px) {
+  ._first_section_column{
+    padding: 20px 20px 0px 20px;
+  }
+
+  ._tabs_list{
+    padding: 20px 20px 0 20px;
+  }
+
+  ._tabs_btn{
+    font-size: 4.5vw;
+    margin-right: 20px;
+  }
+
+  ._first_section_title{
+    font-size: 5vw;
+  }
+
+  ._first_section_list{
+    margin-top: 0px;
+  }
+
+  ._first_section_text{
+    font-size: 3.5vw;
+  }
+
+  ._first_section_link{
+    font-size: 3vw;
+  }
+
+  ._first_section_link:after {
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    top: 2px;
+  }
+
+  ._slides_container{
+    padding: 20px 20px 20px 20px;
+  }
+
+  ._second_section_title{
+    font-size: 5vw;
+  }
+  ._second_section_text{
+    font-size: 3.5vw;
+  }
+
+  ._slide_text{
+    width: 100%;
+  }
+
+  ._btn_black{
+    width: 150px;
+    font-size: 3vw;
+  }
+
+  ._btn_black:after {
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    bottom: 1px;
+  }
+
+  ._pc_image{
+    display: none;
   }
 }
