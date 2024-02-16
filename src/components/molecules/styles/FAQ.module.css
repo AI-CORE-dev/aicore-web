@@ -76,3 +76,31 @@
     transform 0.3s ease-in-out,
     -webkit-transform 0.3s ease-in-out;
 }
+
+
+@media (max-width:460px){
+  ._inner{
+    padding: 50px 20px;
+  }
+  ._title{
+    font-size: 40px;
+    line-height: 48px;
+  }
+  ._question{
+    font-size: 18px;
+    line-height: 28px;
+  }
+  ._answer{
+    margin: 45px 0 45px 20px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  ._container_icon{
+    margin-right: 16px;
+  }
+  ._container_icon_open{
+    margin-right: 16px;
+  }
+
+
+}

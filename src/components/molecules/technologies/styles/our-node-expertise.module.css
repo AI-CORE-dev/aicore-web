@@ -49,3 +49,25 @@
     letter-spacing: -.4px;
     color: var(--black-color);
 }
+
+@media (max-width:460px){
+    ._inner{
+        padding: 50px 20px;
+    }
+    ._title{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    ._subtitle{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    ._title_list{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    ._description{
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
