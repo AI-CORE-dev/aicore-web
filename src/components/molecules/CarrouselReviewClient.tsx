@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import { WaveCaseOne, WaveCaseThree, WaveCaseTwo } from '@/assets/svg/case-studies';
+import { CCLIENTREVIEWS, CCLIENTREVIEWS2 } from '@/helpers/consts';
 
 import { StartReviewSVG } from '../../assets/svg/StartReview';
 
@@ -73,7 +73,11 @@ export function CarouselReviewClient({ type = false }: ICarouselItem) {
                               <blockquote>
                                   <figure>
                                       <div>
-                                          <img alt={''} src={review.avatar} />
+                                          <img
+                                              alt={''}
+                                              className={styles._container_avatar}
+                                              src={review.avatar}
+                                          />
                                       </div>
                                       <div />
                                   </figure>
@@ -106,75 +110,3 @@ export function CarouselReviewClient({ type = false }: ICarouselItem) {
         </div>
     );
 }
-
-const CCLIENTREVIEWS = [
-    {
-        id: 0,
-        avatar: '/1.svg',
-        title: 'Empresa 1',
-        description:
-            ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatemullam harum fuga at quos atque temporibus perferendis distinctioinventore. Laborum debitis, nobis quis placeat repudiandae harum minusrerum? Fuga, culpa. Lorem ipsum, dolor sit amet consectetur adipisicingelit. Rem laboriosam id non magnam odit obcaecati ducimus temporibusquaerat alias harum! Quibusdam similique sapiente a aperiam, aliquamautem vel culpa ducimus?',
-        employee: 'Jeff Bezos',
-        position: 'Ceo & founder',
-        href: '/',
-    },
-    {
-        id: 1,
-        avatar: '/2.svg',
-        title: 'Empresa 2',
-        description:
-            ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatemullam harum fuga at quos atque temporibus perferendis distinctioinventore. Laborum debitis, nobis quis placeat repudiandae harum minusrerum? Fuga, culpa. Lorem ipsum, dolor sit amet consectetur adipisicingelit. Rem laboriosam id non magnam odit obcaecati ducimus temporibusquaerat alias harum! Quibusdam similique sapiente a aperiam, aliquamautem vel culpa ducimus?',
-        employee: 'Jeff Bezos 2',
-        position: 'Product Manager',
-        href: '/',
-    },
-    {
-        id: 2,
-        avatar: '/3.svg',
-        title: 'Empresa 3',
-        description:
-            ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatemullam harum fuga at quos atque temporibus perferendis distinctioinventore. Laborum debitis, nobis quis placeat repudiandae harum minusrerum? Fuga, culpa. Lorem ipsum, dolor sit amet consectetur adipisicingelit. Rem laboriosam id non magnam odit obcaecati ducimus temporibusquaerat alias harum! Quibusdam similique sapiente a aperiam, aliquamautem vel culpa ducimus?',
-        employee: 'Jeff Bezos 3',
-        position: 'Ceo & founder',
-        href: '/',
-    },
-];
-
-const CCLIENTREVIEWS2 = [
-    {
-        id: 0,
-        cases: {
-            color_background: '#121113',
-            title: 'Eficientizando el control de las polizas de seguros con IA para Aon.',
-            subtitle:
-                '"Cuando encaramos este proyecto para Aon sabíamos que era crucial aportar una camino para interpretar diferentes formatos en los cuales se presentaban los contratos digitales con el objetivo de recopilar información crucial para la toma de desciciones."',
-            cofounder: 'AON',
-            src: '/bg_img.png',
-            background: '',
-        },
-    },
-    {
-        id: 1,
-        cases: {
-            color_background: '#343A40',
-            title: 'Potenciando la revolución del trabajo híbrido junto a Worknmates.',
-            subtitle:
-                '"Acompañamos a Worknmates mediante nuestra solución de MVPaaS y CTOaaS en la concepción y desarrollando su marketplace de coworkings + home office market place que permite reservar espacios de trabajo a las empresas que desean implementar un modelo hibrido."',
-            cofounder: 'Gonzalo Agüero',
-            src: '/bg_img.png',
-            background: '',
-        },
-    },
-    {
-        id: 2,
-        cases: {
-            color_background: '#252422',
-            title: 'lorem ipsum dolor sit amet, consectetur adipiscing elit',
-            subtitle:
-                'Acompañamos a Worknmates mediante nuestra solución de MVPaaS y CTOaaS en la concepción y desarrollando su marketplace de coworkings + home office market place que permite reservar espacios de trabajo a las empresas que desean implementar un modelo hibrido."',
-            cofounder: 'lorem ipsum',
-            src: '',
-            background: '',
-        },
-    },
-];

@@ -6,6 +6,12 @@
   padding: 40px 100px 0px 100px;
 }
 
+._list_container_articles{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 ._container_article {
   width: calc(33%);
   padding: 0px 10px;
@@ -137,5 +143,27 @@
 @media (max-width: 1366px) {
   ._text {
     font-size: 60px;
+  }
+}
+
+@media (max-width:460px){
+  ._inner{
+    padding: 10px 20px 0px 20px;
+  }
+
+  ._text{
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+
+  ._list_container_articles{
+    display: flex;
+    flex-direction: column;
+  }
+
+  ._container_article {
+    width: 100%;
+    padding: 0px 0px;
   }
 }

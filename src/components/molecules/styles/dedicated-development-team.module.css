@@ -52,3 +52,19 @@
     letter-spacing: -.6000000238418579px;
     text-align: center;
 }
+
+@media (max-width:460px) {
+    ._section{
+        padding: 50px 0;
+    }
+    ._inner{
+        padding: 0px 20px;
+    }
+    ._ul_images{
+        padding: 50px 10px;
+    }
+    ._list_image{
+        flex-basis: 100%;
+    }
+    
+}

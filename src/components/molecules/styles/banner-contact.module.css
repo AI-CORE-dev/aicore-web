@@ -1,6 +1,6 @@
 ._section {
   position: relative;
-  background-color: rgba(111, 36, 181, 0.886);
+  background-color: rgba(4, 1, 7, 0.886);
 }
 
 ._inner {
@@ -103,4 +103,32 @@
     background-color: #fff;
     color:  var(--black-color);
     border-color: #fff;
+}
+
+@media (max-width:460px){
+    ._inner {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+    ._text {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    ._secondary_text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    ._btn_white{
+        margin-top: 30px;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+    }
+    ._btn_black{
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+    }
 }

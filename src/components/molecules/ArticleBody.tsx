@@ -9,6 +9,7 @@ import {
     EmotionValue4,
     EmotionValue5,
 } from '@/assets/svg/rating';
+import { CVALUES } from '@/helpers/consts';
 
 import styles from './styles/article-body.module.css';
 
@@ -214,31 +215,3 @@ export function ArticleBody() {
         </section>
     );
 }
-
-const CVALUES = [
-    {
-        id: 0,
-        value: 0,
-        active: false,
-    },
-    {
-        id: 1,
-        value: 1,
-        active: false,
-    },
-    {
-        id: 2,
-        value: 2,
-        active: false,
-    },
-    {
-        id: 3,
-        value: 3,
-        active: false,
-    },
-    {
-        id: 4,
-        value: 4,
-        active: false,
-    },
-];

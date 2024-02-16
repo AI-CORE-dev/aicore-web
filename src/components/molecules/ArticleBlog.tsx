@@ -1,3 +1,5 @@
+import { CDATAARTICLE } from '@/helpers/consts';
+
 import styles from './styles/article-blog.module.css';
 
 export function ArticleBlog() {
@@ -60,26 +62,3 @@ export function ArticleBlog() {
         </section>
     );
 }
-
-const CDATAARTICLE = [
-    {
-        id: 0,
-        title: 'El futuro de la fuerza laboral: combinación de equipos internos y equipos aumentados: modelo híbrido',
-        date: '2024-01-08',
-        category: ['Augmentation', 'Web Development'],
-        img: 'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Favicon-Aicore.png',
-        name: 'Eduardo Brizuela',
-        profession: 'Ingeniero & Abogado',
-        link: '/blog/template',
-    },
-    {
-        id: 1,
-        title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor, nisl eget',
-        date: '2024-03-04',
-        category: ['Consulting', 'App Development'],
-        img: 'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Favicon-Aicore.png',
-        name: 'Ezequiel Maranga',
-        profession: 'COO',
-        link: '/blog/template',
-    },
-];

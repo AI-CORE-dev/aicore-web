@@ -157,7 +157,6 @@
 @media (max-width: 460px) {
   ._header_module {
     padding: var(--inner-padding-side-phone);
-    margin: calc(30vh - 95px) auto 0;
   }
 
   ._container_texts {
@@ -166,7 +165,7 @@
   }
 
   ._title {
-    font-size: 30px;
+    font-size: 42px;
     letter-spacing: -2.6px;
   }
   ._subtitle {

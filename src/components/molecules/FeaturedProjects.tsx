@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { CPROJECTS } from '@/helpers/consts';
+
 import styles from './styles/featured-projects.module.css';
 
 export function FeatureProjects() {
@@ -93,54 +95,3 @@ export function FeatureProjects() {
         </section>
     );
 }
-
-const CPROJECTS = [
-    {
-        id: 0,
-        videoUrl: 'https://www.youtube.com/embed/7e90gBu4pas',
-        title: 'Aon',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio assumenda repellendus cumque blanditiis? Ex blanditiis vitae amet modi, hic odit voluptatem sit eos nisi expedita voluptate sunt quaerat laborum dicta.',
-        industry: 'Seguros',
-        location: 'Estados Unidos',
-        technologies: ['nodejs', 'react', 'amazon'],
-        team: '7 specialists (PM, Designer, QA, Frontend, Backend, DevOps)',
-        href: '/',
-    },
-    {
-        id: 1,
-        videoUrl: 'https://www.youtube.com/embed/7e90gBu4pas',
-        title: 'Bukest',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio assumenda repellendus cumque blanditiis? Ex blanditiis vitae amet modi, hic odit voluptatem sit eos nisi expedita voluptate sunt quaerat laborum dicta.',
-        industry: 'Booking de servicios',
-        location: 'Argentina',
-        technologies: ['nodejs', 'react', 'amazon'],
-        team: '7 specialists (PM, Designer, QA, Frontend, Backend, DevOps)',
-        href: '/',
-    },
-    {
-        id: 2,
-        videoUrl: 'https://www.youtube.com/embed/7e90gBu4pas',
-        title: 'Worknmates',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio assumenda repellendus cumque blanditiis? Ex blanditiis vitae amet modi, hic odit voluptatem sit eos nisi expedita voluptate sunt quaerat laborum dicta.',
-        industry: 'Booking de servicios',
-        location: 'Estados Unidos',
-        technologies: ['nodejs', 'react', 'amazon'],
-        team: '7 specialists (PM, Designer, QA, Frontend, Backend, DevOps)',
-        href: '/',
-    },
-    {
-        id: 3,
-        videoUrl: 'https://www.youtube.com/embed/7e90gBu4pas',
-        title: 'Fiserv',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio assumenda repellendus cumque blanditiis? Ex blanditiis vitae amet modi, hic odit voluptatem sit eos nisi expedita voluptate sunt quaerat laborum dicta.',
-        industry: 'Seguros',
-        location: 'Estados Unidos',
-        technologies: ['nodejs', 'react', 'amazon'],
-        team: '7 specialists (PM, Designer, QA, Frontend, Backend, DevOps)',
-        href: '/',
-    },
-];

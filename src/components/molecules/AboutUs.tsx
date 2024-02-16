@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { CDEFINITIONS } from '@/helpers/consts';
+
 import styles from './styles/about-us.module.css';
 
 function FirstTemplate() {
@@ -21,7 +23,7 @@ function FirstTemplate() {
                     </div>
 
                     <div className={styles._info_numbers}>
-                        {DEFINITIONS.map((definition) => (
+                        {CDEFINITIONS.map((definition) => (
                             <dl key={definition.id} className={styles._dl}>
                                 <dt className={styles._dt}>{definition.title}</dt>
                                 <dd className={styles._dd}>{definition.subtitle}</dd>
@@ -58,7 +60,7 @@ function SecondTemplate() {
 
             <div className={styles._info_container_second_template}>
                 <div className={styles._info_numbers_st}>
-                    {DEFINITIONS.map((definition) => (
+                    {CDEFINITIONS.map((definition) => (
                         <dl key={definition.id} className={styles._dl_st}>
                             <dt className={styles._dt}>{definition.title}</dt>
                             <dd className={styles._dd}>{definition.subtitle}</dd>
@@ -90,48 +92,7 @@ interface IProps {
 export function AboutUs({ isCareers = false }: IProps) {
     return (
         <section className={styles._section}>
-            {isCareers ? (
-                <SecondTemplate />
-            ) : (
-                <>
-                    <FirstTemplate />
-
-                    {/* <div className={styles._container_image_word}>
-                        <video
-                            autoPlay
-                            controls
-                            loop
-                            src={'/about_us/video_mundo.mp4'}
-                            width={'100%'}
-                        >
-                            <track kind={'captions'} label={'Spanish'} srcLang={'es'} />
-                        </video>
-                    </div> */}
-                </>
-            )}
+            {!isCareers ? <SecondTemplate /> : <FirstTemplate />}
         </section>
     );
 }
-
-const DEFINITIONS = [
-    {
-        id: 0,
-        title: '+30',
-        subtitle: 'Desarrolladores',
-    },
-    {
-        id: 1,
-        title: '+40',
-        subtitle: 'Proyectos realizados',
-    },
-    {
-        id: 2,
-        title: '15',
-        subtitle: 'Años de experiencia IT',
-    },
-    {
-        id: 3,
-        title: '60%',
-        subtitle: 'De staff senior',
-    },
-];

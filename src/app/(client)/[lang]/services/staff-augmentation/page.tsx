@@ -97,7 +97,7 @@ const CSTARTTECHINALAUDIT = {
     subtitle:
         'Revisamos tu app desde su perspectiva técnica y te proveemos de un reporte de nuestros desarrolladores seniores listo para que puedas accionar y sobre que puntos priorizar. De esta forma podes evaluar nuestras skills y decidir sobre ello si queres trabajar con nosotros sobre el proyecto.',
     btnText: 'Descargar nuestro reporte para auditoría.',
-    btnLink: '/',
+    btnLink: 'Contactanos',
     img: '/working-on-macbook.webp',
     alt: '',
 };

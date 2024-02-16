@@ -14,7 +14,10 @@ function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang={'en'}>
             <body>
+                {/*<ChangeLang />*/}
+
                 <Navbar />
+
                 {children}
 
                 <FloatingButton />

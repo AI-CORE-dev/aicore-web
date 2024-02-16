@@ -97,13 +97,19 @@
   gap: 20px;
 }
 
+._container_langs_button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 ._button {
   display: flex;
   border: none;
   justify-content: center;
   align-items: center;
   font-weight: 600;
-  height: 50px;
+  height: 60px;
   letter-spacing: 1.5px;
   font-family: var(--font-mono);
   cursor: pointer;
@@ -274,6 +280,7 @@
 
 @media (max-width: 440px) {
   ._nav_container {
+    height: 92px;
     padding: 0 20px;
   }
 

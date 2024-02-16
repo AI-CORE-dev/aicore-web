@@ -1,3 +1,5 @@
+import { CARG } from '@/helpers/consts';
+
 import styles from './styles/extend-your-team.module.css';
 
 export function ExtendYourTeam() {
@@ -22,42 +24,3 @@ export function ExtendYourTeam() {
         </section>
     );
 }
-
-const CARG = [
-    {
-        id: 0,
-        title: 'Ahorrar tiempo',
-        subtitle:
-            'Hoy en día conseguir perfiles puntuales para proyectos de IT suele ser un proceso tedioso que puede dejar parado tus proyectos de 60 a 90 días aproximadamente. En AI CORE ponemos a disposición ese talento en 15 días.',
-    },
-    {
-        id: 1,
-        title: 'Te aportamos flexibilidad',
-        subtitle:
-            'Escala rapidamente o reducí el tamaño de tu equipo logrando mayor flexibilidad y control ante cambios en el proyecto y sus deadlines.',
-    },
-    {
-        id: 2,
-        title: 'Elige lo mejor',
-        subtitle:
-            'Según sus requisitos, le proporcionamos los candidatos más relevantes para que los revise. Puedes hacer tu propia investigación y entrevistar a cada candidato para asegurarte de que se ajusten a tu proyecto.',
-    },
-    {
-        id: 3,
-        title: 'Reducir costos',
-        subtitle:
-            'Paga solo por las horas de desarrollo y evitá incurrir en presupuestos más robustos que se desprenden de tercerizar el proyecto.',
-    },
-    {
-        id: 4,
-        title: 'Cumplir con los plazos',
-        subtitle:
-            'Comenza de inmediato a trabajar en tu proyecto para cumplirlo en tiempo y forma de la forma más eficiente.',
-    },
-    {
-        id: 5,
-        title: 'Consigue tu propio equipo',
-        subtitle:
-            'Generamos a medida un equipo listo para trabajar en tu proyecto y cubrirlo en su totalidad.',
-    },
-];

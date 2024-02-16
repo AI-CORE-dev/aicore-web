@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  padding-top: 30px;
 }
 
 ._circle {
@@ -70,7 +70,9 @@
   border-radius: 0.25rem;
   border: solid 0.125rem #121212;
   box-shadow: 0.25rem 0.25rem #121212;
-  transition: transform 50ms, box-shadow 50ms;
+  transition:
+    transform 50ms,
+    box-shadow 50ms;
 }
 
 ._btn_follow:active {
@@ -114,7 +116,7 @@
   padding-bottom: 100%;
 }
 
-@media (max-width:1440px) {
+@media (max-width: 1440px) {
   ._inner {
     padding: 10px 80px;
     height: 110vh;
@@ -122,7 +124,6 @@
 }
 
 @media (max-width: 460px) {
-
   ._inner {
     padding: 0px;
     height: 150vh;
@@ -131,7 +132,13 @@
   ._container_header_insta {
     flex-direction: column;
   }
+
+  ._container_info_insta{
+    margin-top:10px
+  }
+
   ._btn_follow {
+    margin-top:20px;
     margin-left: 0px;
   }
   ._list_image {

@@ -1,5 +1,6 @@
 import { CPAGES } from '@/helpers/consts';
 import { useScrollNavbar } from '@/hooks/useScrollNavbar';
+import { LanguajeFlags } from '@/components/atoms/LanguageFlags';
 
 import styles from '../styles/nav-bar.module.css';
 
@@ -30,14 +31,18 @@ export function MenuDesktop() {
                 })}
             </ul>
 
-            <a
-                className={
-                    scrolled ? `${styles._button} ${styles._button_scrolled}` : styles._button
-                }
-                href={'/contact'}
-            >
-                Contactanos
-            </a>
+            <div className={styles._container_langs_button}>
+                <a
+                    className={
+                        scrolled ? `${styles._button} ${styles._button_scrolled}` : styles._button
+                    }
+                    href={'/contact'}
+                >
+                    Contactanos
+                </a>
+
+                <LanguajeFlags />
+            </div>
         </div>
     );
 }

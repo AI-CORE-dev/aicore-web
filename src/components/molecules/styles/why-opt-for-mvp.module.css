@@ -76,3 +76,26 @@
     padding-top: 50px;
   }
 }
+
+@media (max-width: 460px) {
+  ._inner {
+    padding: 50px 20px;
+  }
+  ._title {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  ._subtitle {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  ._item_list {
+    flex: 0 1 100%;
+  }
+  ._item_list_se {
+    flex: 0 1 100%;
+  }
+  ._list {
+    justify-content: center;
+  }
+}
