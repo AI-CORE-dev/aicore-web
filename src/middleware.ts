@@ -6,7 +6,7 @@ import Negotiator from 'negotiator';
 
 const supportedLangs: SupportedLangs[] = ['es', 'en'];
 
-function getLang(preferredLang: string): string {
+export function getLang(preferredLang: string): string {
     const requestedLang = new Negotiator({
         headers: { 'accept-language': preferredLang },
     }).languages();

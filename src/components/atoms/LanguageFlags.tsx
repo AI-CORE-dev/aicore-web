@@ -1,6 +1,8 @@
+import type { NextRequest } from 'next/server';
+
 import styles from '../organisms/styles/change-lang.module.css';
 
-export function LanguajeFlags() {
+export function LanguajeFlags(request: NextRequest) {
     return (
         <div className={styles._container}>
             <a className={styles._container_img} href={'/es'}>

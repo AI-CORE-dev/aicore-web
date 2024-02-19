@@ -10,11 +10,7 @@ export function OpenPositions() {
     return (
         <section className={styles._section}>
             <div className={styles._inner}>
-                <div
-                    style={{
-                        padding: '40px 40px 40px 40px',
-                    }}
-                >
+                <div className={styles._container_info}>
                     <h2 className={styles._title}>Posiciones abiertas para aplicar</h2>
                     <ul className={styles._list_positions}>
                         <li className={styles._list_item}>
@@ -38,8 +34,20 @@ export function OpenPositions() {
                                                 fillRule={'evenodd'}
                                             />
                                         </svg>
-                                        <ul style={{ maxWidth: '250px', marginRight: '35px' }}>
-                                            <li style={{ color: 'var(--black-color)' }}>
+                                        <ul
+                                            style={{
+                                                maxWidth: '250px',
+                                                marginRight: '35px',
+
+                                                listStyle: 'none',
+                                            }}
+                                        >
+                                            <li
+                                                style={{
+                                                    color: 'var(--black-color)',
+                                                    fontFamily: 'var(--font-mono)',
+                                                }}
+                                            >
                                                 +2 años de experiencia
                                             </li>
                                         </ul>
@@ -60,7 +68,12 @@ export function OpenPositions() {
                                                 fillRule={'evenodd'}
                                             />
                                         </svg>
-                                        <ul>
+                                        <ul
+                                            style={{
+                                                listStyle: 'none',
+                                                fontFamily: 'var(--font-mono)',
+                                            }}
+                                        >
                                             <li style={{ color: 'var(--black-color)' }}>
                                                 Argentina - Remoto
                                             </li>

@@ -24,5 +24,16 @@
   object-fit: cover;
 }
 
+@media (max-width: 460px){
+  ._section{
+    display: none;
+  }
+
+  ._image {
+    width: 50%;
+    height: 100%;
+  }
+}
+
 
 

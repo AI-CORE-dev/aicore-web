@@ -10,3 +10,9 @@
 ._inner_card {
   padding: 0 100px;
 }
+
+@media (max-width: 460px) {
+  ._inner_card {
+    padding: 0 20px;
+  }
+}

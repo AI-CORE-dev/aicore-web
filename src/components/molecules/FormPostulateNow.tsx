@@ -21,10 +21,10 @@ export function FormPostulateNow() {
         <section className={styles._section}>
             <div className={styles._inner}>
                 <p className={styles._title}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Siempre estamos buscando grandes talentos y personas ambiciosas.
                 </p>
                 <div className={styles._container_texts}>
-                    <p className={styles._subtitle}>Lorem ipsum dolor sit</p>
+                    <p className={styles._subtitle}>Contacto</p>
                     <a
                         className={`${styles._subtitle} ${styles._link}`}
                         href={'mailto:contacto@aicore.com'}
@@ -32,9 +32,11 @@ export function FormPostulateNow() {
                         contacto@aicore.com
                     </a>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nulla
-                    mollitia dolores, atque cum inventore quasi, corrupti tenetur nostrum eius modi.
+                <p className={styles._text}>
+                    Siempre buscamos conectarnos con personas que quieran hacer el mejor trabajo de
+                    sus vidas con marcas interesantes. Si está interesado en trabajar con nosotros o
+                    en obtener más información, envíenos una nota, un enlace al portafolio o un
+                    currículum.
                 </p>
                 <form action={''}>
                     <div>

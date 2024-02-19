@@ -7,6 +7,7 @@ export function RecruimentProcess() {
         <section className={styles._section}>
             <div className={styles._inner}>
                 <h2 className={styles._title}>Proceso de reclutamiento:</h2>
+
                 <ul className={styles._ul}>
                     {PROCESS.map((process) => (
                         <li key={process.id} className={styles._card}>

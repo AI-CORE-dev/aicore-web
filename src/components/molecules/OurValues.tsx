@@ -6,8 +6,8 @@ export function OurValues() {
     return (
         <section className={styles._section}>
             <div className={styles._inner}>
-                {/* <PhotoContainer alt={'our-values'} src={'/about_us/values/our_values.svg'} /> */}
                 <p className={styles._text}>Nuestros Valores</p>
+
                 <div className={styles._container_images}>
                     {CIMAGES.map((image) => (
                         <img

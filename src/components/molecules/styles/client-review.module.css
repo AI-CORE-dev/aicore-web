@@ -25,7 +25,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
+  list-style: none;
 }
 
 ._margin_right {
@@ -113,12 +113,6 @@
   color: var(--black-color);
 }
 
-@media (max-width: 1440px) {
-  ._inner{
-    width: '100%';
-    padding: 0px 100px 0 100px;
-  }
-}
 
 @media (max-width: 460px) {
   ._inner{
