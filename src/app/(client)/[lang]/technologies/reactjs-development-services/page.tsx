@@ -32,8 +32,12 @@ function Reactjs() {
                     subtitle={CSTARTTECHINALAUDIT.subtitle}
                     title={CSTARTTECHINALAUDIT.title}
                 />
-                <ExtendYourTeam />
-                <FaQ />
+                <ExtendYourTeam
+                    description={CEXTENDYOURTEAM.description}
+                    options={CEXTENDYOURTEAM.options}
+                    title={CEXTENDYOURTEAM.title}
+                />
+                <FaQ CFAQ={CFAQ} />
                 <Awards />
                 <ScheduleCall />
             </main>
@@ -113,5 +117,68 @@ const CSTARTTECHINALAUDIT = {
     img: '/node-developer.webp',
     alt: 'node-developer',
 };
+
+const CEXTENDYOURTEAM = {
+    title: 'Extendé tu equipo',
+    description:
+        'Suma de formá rápida y sencilla perfiles para fortalecer tus proyectos, en AI CORE contamos con los especialistas y el tiempo de respuesta para sumarlos a tu equipo de inmediato.',
+    options: [
+        {
+            id: 0,
+            title: 'Desarrollador Fullstack',
+            subtitle: 'Desarrollador Fullstack con experiencia en React y Node.js.',
+        },
+        {
+            id: 1,
+            title: 'Desarrollador Frontend',
+            subtitle: 'Desarrollador Frontend con experiencia en React.',
+        },
+        {
+            id: 2,
+            title: 'Desarrollador Backend',
+            subtitle: 'Desarrollador Backend con experiencia en Node.js.',
+        },
+        {
+            id: 3,
+            title: 'Desarrollador Móvil',
+            subtitle: 'Desarrollador Móvil con experiencia en React Native.',
+        },
+        {
+            id: 4,
+            title: 'Desarrollador de QA',
+            subtitle: 'Desarrollador de QA con experiencia en testing de aplicaciones.',
+        },
+    ],
+};
+
+const CFAQ = [
+    {
+        id: 0,
+        question: '¿Qué es Node.js y por qué es adecuado para el desarrollo web?',
+        answer: 'Node.js es un tiempo de ejecución de JavaScript integrado en el motor V8 de Chrome. Permite a los desarrolladores ejecutar JavaScript en el lado del servidor, lo que lo hace ideal para el desarrollo web. Node.js proporciona alta escalabilidad, manejo eficiente de solicitudes simultáneas y un rico ecosistema de bibliotecas y marcos.',
+    },
+    {
+        id: 1,
+        question: '¿Qué ventajas tiene utilizar Node.js?',
+        answer: 'Gracias a Node.js, los equipos de desarrollo mejoran el rendimiento con menos gasto. La tecnología agrupa todas las solicitudes entrantes en un solo proceso en lugar de establecer muchas. Si alguna conexión queda inactiva, Node.js pasa a otra y ejecuta el código en el mismo hilo. En consecuencia, un proceso utiliza menos memoria que varios. Más aún, Node.js está escrito con JavaScript, por lo que resulta amigable para los especialistas de front-end.',
+    },
+    {
+        id: 2,
+        question:
+            '¿Cómo puede beneficiar mi proyecto o negocio la contratación de desarrolladores de Node.js?',
+        answer: 'Contratar desarrolladores de Node.js aporta numerosos beneficios. Poseen experiencia en la creación de aplicaciones web escalables, sistemas de chat en tiempo real, aplicaciones de transmisión, SPA complejos, API y más. Su conocimiento de JavaScript y Node.js les permite ofrecer soluciones rápidas y confiables, mejorar el rendimiento y brindar una experiencia de usuario excepcional.',
+    },
+    {
+        id: 3,
+        question:
+            '¿Tiene ejemplos de proyectos exitosos con los que hayan trabajado sus desarrolladores de Node.js?',
+        answer: 'Hemos entregado con éxito proyectos para varios clientes en diversas industrias, como comercio electrónico, atención médica, finanzas, marketing y más. Los ejemplos incluyen el desarrollo de aplicaciones de chat en tiempo real, la creación de API escalables y la creación de aplicaciones web eficientes que hayan recibido comentarios positivos de los usuarios.',
+    },
+    {
+        id: 4,
+        question: '¿Qué empresas utilizan Node.js?',
+        answer: 'Gigantes como Facebook, Google, Amazon y LinkedIn eligieron Node.js para construir sus plataformas. Funciona bien para cualquier aplicación en tiempo real, proporcionando transmisión de video, intercambio de archivos y aplicaciones de red intensivas. Node.js ayuda a las empresas a minimizar sus gastos. LinkedIn redujo seriamente el número de sus servidores de 30 a 3 después de pasar a Node.js.',
+    },
+];
 
 export default Reactjs;

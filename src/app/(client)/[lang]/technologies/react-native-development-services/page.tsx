@@ -18,7 +18,6 @@ function ReactNative() {
                 <CarouselReviewClient type />
                 <Recognition />
                 <BannerContactUs />
-                <FaQ />
                 <BlogSection />
                 <ScheduleCall />
             </main>
