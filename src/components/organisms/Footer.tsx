@@ -43,8 +43,8 @@ export function Footer() {
 
                     <div className={styles._column}>
                         <p className={styles._title}>Conversemos</p>
-                        <p className={styles._subtitle}>+123456789</p>
-                        <p className={styles._subtitle}>contacto@aicore.com</p>
+                        <p className={styles._subtitle}>+54-9-11-3071-7173</p>
+                        <p className={styles._subtitle}>contacto@aicore.com.ar</p>
                     </div>
                 </div>
 

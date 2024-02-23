@@ -129,3 +129,36 @@
   color: var(--black-color);
   transition: color .3s ease-in-out;
 }
+
+
+@media (max-width:460px){
+  ._inner {
+    padding: 50px 20px;
+  }
+  ._item {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+  ._title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  ._container_info {
+    margin-left: 10px;
+  }
+  ._circle {
+    width: 60px;
+    height: 60px;
+  }
+  ._name_sale {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  ._profession {
+    font-size: 16px;
+  }
+  ._link_redirec{
+    font-size: 18px;
+    margin-top: 25px;
+  }
+}

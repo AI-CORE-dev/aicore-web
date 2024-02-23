@@ -36,3 +36,18 @@
     width: 100%;
     outline: none;
 }
+
+@media (max-width:460px){
+    ._inner{
+        padding: 50px 20px;
+    }
+
+    ._text{
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    ._input{
+        font-size: 20px;
+    }
+}

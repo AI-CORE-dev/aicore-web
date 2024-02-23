@@ -13,7 +13,7 @@ interface FAQState {
     activeItems: boolean[];
 }
 
-export function FaQ() {
+export function FaQ({ CFAQ }: { CFAQ: FAQItem[] }) {
     const [state, setState] = useState<FAQState>({
         activeItems: Array<boolean>(CFAQ.length).fill(false),
     });
@@ -72,31 +72,3 @@ export function FaQ() {
         </section>
     );
 }
-
-const CFAQ: FAQItem[] = [
-    {
-        id: 0,
-        question: '¿Qué es Netflix?',
-        answer: 'Netflix es un servicio de transmisión que ofrece una amplia variedad de programas de televisión, películas, anime, documentales y más en miles de dispositivos conectados a Internet.',
-    },
-    {
-        id: 1,
-        question: '¿Qué es Amazon?',
-        answer: 'Amazon es una empresa multinacional de tecnología y comercio electrónico con sede en Seattle, Washington.',
-    },
-    {
-        id: 2,
-        question: '¿Qué es Spotify?',
-        answer: 'Spotify es un servicio de transmisión de música digital que te brinda acceso a millones de canciones, podcasts y videos de artistas de todo el mundo.',
-    },
-    {
-        id: 3,
-        question: '¿Qué es Netflix?',
-        answer: 'Netflix es un servicio de transmisión que ofrece una amplia variedad de programas de televisión, películas, anime, documentales y más en miles de dispositivos conectados a Internet.',
-    },
-    {
-        id: 4,
-        question: '¿Qué es Amazon?',
-        answer: 'Amazon es una empresa multinacional de tecnología y comercio electrónico con sede en Seattle, Washington.',
-    },
-];

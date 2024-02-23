@@ -17,27 +17,26 @@ export function ArticleBody() {
     return (
         <section className={styles._section}>
             <div className={styles._inner}>
-                <div>
+                <div className={styles._container_info}>
                     <div className={styles._text_time}>14 min</div>
-                    <div>
-                        <div style={{ display: 'flex', flexDirection: 'column' }}>
-                            <button className={styles._btn} type={'button'}>
-                                <span
-                                    className={`${styles._share_module} ${styles._share_module_fb}`}
-                                />
-                            </button>
-                            <button className={styles._btn} type={'button'}>
-                                <span
-                                    className={`${styles._share_module} ${styles._share_module_li}`}
-                                />
-                            </button>
-                            <button className={styles._btn} type={'button'}>
-                                {' '}
-                                <span
-                                    className={`${styles._share_module} ${styles._share_module_tw}`}
-                                />
-                            </button>
-                        </div>
+
+                    <div className={styles._container_redes}>
+                        <button className={styles._btn} type={'button'}>
+                            <span
+                                className={`${styles._share_module} ${styles._share_module_fb}`}
+                            />
+                        </button>
+                        <button className={styles._btn} type={'button'}>
+                            <span
+                                className={`${styles._share_module} ${styles._share_module_li}`}
+                            />
+                        </button>
+                        <button className={styles._btn} type={'button'}>
+                            {' '}
+                            <span
+                                className={`${styles._share_module} ${styles._share_module_tw}`}
+                            />
+                        </button>
                     </div>
                 </div>
 

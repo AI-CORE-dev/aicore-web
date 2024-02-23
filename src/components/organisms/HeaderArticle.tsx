@@ -4,17 +4,7 @@ export function HeaderArticle() {
     return (
         <header className={styles._header}>
             <div>
-                <div
-                    style={{
-                        opacity: 1,
-                        display: 'flex',
-                        flexDirection: 'column',
-                        backgroundColor: 'rgb(0, 0, 0, 0.7)',
-                        height: '100vh',
-                        padding: '150px 0px 50px 100px',
-                        justifyContent: 'space-between',
-                    }}
-                >
+                <div className={styles._background_blur}>
                     <ul className={styles._container_links}>
                         {CLINKS.map((link) => (
                             <li key={link.id}>

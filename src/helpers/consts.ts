@@ -20,10 +20,8 @@ export const CPAGES = [
         items: [
             { id: 0, text: 'Staff Augmentation', href: '/services/staff-augmentation' },
             { id: 1, text: 'Consultoría', href: '/services/consultancy' },
-            { id: 2, text: 'Dessarrollo Web', href: '/services/web-application-development/' },
-            { id: 3, text: 'Dessarrollo APP', href: '/services/mobile-application-development/' },
             {
-                id: 4,
+                id: 2,
                 text: 'Dessarrollo de Producto',
                 href: '/services/product-development/',
             },
@@ -35,7 +33,6 @@ export const CPAGES = [
         id: 2,
         isCollapse: true,
         items: [
-            { id: 2, text: 'NextJS', href: '/technologies/nextjs-development-services' },
             { id: 1, text: 'NodeJS', href: '/technologies/nodejs-development-services' },
             {
                 id: 0,

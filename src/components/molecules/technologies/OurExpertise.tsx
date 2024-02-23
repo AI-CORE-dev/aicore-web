@@ -10,9 +10,10 @@ export function OurExpertise({ CEXPERTISE }: { CEXPERTISE: IProps[] }) {
     return (
         <section className={styles._section}>
             <div className={styles._inner}>
-                <h2 className={styles._title}>Nuestra experiencia</h2>
+                <h2 className={styles._title}>Somos expertos en Node.js</h2>
                 <p className={styles._subtitle}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. dolor sit amet
+                    Fortalece tu equipo interno con nuestros especialistas o incorpora un equipo
+                    multifuncional diseñado para desarrollar tus proyectos.
                 </p>
 
                 <ul>

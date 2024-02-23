@@ -80,7 +80,7 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 460px) {
   ._link_services {
     font-size: 16px;
   }
@@ -91,5 +91,8 @@
 
   ._ul_services {
     bakground-color: #333;
+    width: 100%;
   }
+
+
 }

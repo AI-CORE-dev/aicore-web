@@ -1,11 +1,25 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 
 import { VideoPlayer } from '../modals/VideoPlayer';
+import { Modal } from '../modals/ModalStructure';
 
 import styles from './styles/open-positions.module.css';
+import { ModalOpenPositions } from './ModalOpenPositions';
 
 export function OpenPositions() {
     const youtubeVideoId = 'bCr1c9V8JYQ';
+
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const openModal = () => {
+        setModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setModalOpen(false);
+    };
 
     return (
         <section className={styles._section}>
@@ -14,8 +28,11 @@ export function OpenPositions() {
                     <h2 className={styles._title}>Posiciones abiertas para aplicar</h2>
                     <ul className={styles._list_positions}>
                         <li className={styles._list_item}>
-                            <div>
-                                <p className={styles._name_position}>JR Business Analyst</p>
+                            <div style={{ width: '100%' }} onClick={openModal}>
+                                <div className={styles._header}>
+                                    <p className={styles._name_position}>JR Business Analyst</p>
+                                    <p className={styles._see_more}>Mas info</p>
+                                </div>
                                 <p className={styles._name_position_short}>JR BA</p>
                                 <div className={styles._info}>
                                     <div className={styles._container_row}>
@@ -38,7 +55,6 @@ export function OpenPositions() {
                                             style={{
                                                 maxWidth: '250px',
                                                 marginRight: '35px',
-
                                                 listStyle: 'none',
                                             }}
                                         >
@@ -46,9 +62,11 @@ export function OpenPositions() {
                                                 style={{
                                                     color: 'var(--black-color)',
                                                     fontFamily: 'var(--font-mono)',
+                                                    marginLeft: '5px',
+                                                    fontWeight: '600',
                                                 }}
                                             >
-                                                +2 años de experiencia
+                                                <p>+2 años de experiencia</p>
                                             </li>
                                         </ul>
                                     </div>
@@ -74,7 +92,13 @@ export function OpenPositions() {
                                                 fontFamily: 'var(--font-mono)',
                                             }}
                                         >
-                                            <li style={{ color: 'var(--black-color)' }}>
+                                            <li
+                                                style={{
+                                                    color: 'var(--black-color)',
+                                                    marginLeft: '5px',
+                                                    fontWeight: '600',
+                                                }}
+                                            >
                                                 Argentina - Remoto
                                             </li>
                                         </ul>
@@ -86,6 +110,12 @@ export function OpenPositions() {
                     </ul>
                 </div>
                 <VideoPlayer videoId={youtubeVideoId} />
+
+                {modalOpen ? (
+                    <Modal isOpen={modalOpen} onClose={closeModal}>
+                        <ModalOpenPositions />
+                    </Modal>
+                ) : null}
             </div>
         </section>
     );
