@@ -7,7 +7,7 @@
   background: #292929;
   display: flex;
   flex-direction: column;
-  padding: 30px 100px 0px 100px;
+  padding: 0px 100px 0px 100px;
 }
 
 ._container_info {
@@ -90,7 +90,7 @@
   align-items: center;
   width: 100%;
   margin-bottom: 30px;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 ._container_copy{

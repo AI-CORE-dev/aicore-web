@@ -24,9 +24,7 @@ export function ScheduleCall() {
     return (
         <section className={styles._section}>
             <div className={styles._inner}>
-                <h2 className={styles._title}>
-                    Agenda una meet o envíanos un <br /> mensaje
-                </h2>
+                <h2 className={styles._title}>Agenda una meet o envíanos un mensaje</h2>
                 <p className={styles._subtitle}>
                     Nos encantan los desafíos, queremos ser un aliado tecnológico de impacto en tu
                     negocio.

@@ -6,7 +6,7 @@ export function Footer() {
     return (
         <footer className={styles._wave_container}>
             <div className={styles._wave}>
-                <div className={styles._container_info}>
+                <div className={styles._container_info} style={{ display: 'none' }}>
                     <div className={styles._column}>
                         {LINKS.map((redirection) => (
                             <li key={redirection.id} className={styles._item}>
@@ -36,7 +36,7 @@ export function Footer() {
                         ))}
                     </div>
 
-                    <div className={styles._column}>
+                    <div className={styles._column} style={{ display: 'none' }}>
                         <p className={styles._title}>Oficinas</p>
                         <p className={styles._subtitle}>Calle falsa 123</p>
                     </div>
@@ -50,7 +50,7 @@ export function Footer() {
 
                 <div className={styles._container_social}>
                     <div className={styles._container_copy}>
-                        <p className={styles._copyrigth}>© 2018-2024 AI CORE.</p>
+                        <p className={styles._copyrigth}>© 2024 AI CORE.</p>
                     </div>
 
                     <div className={styles._container_terms}>
@@ -60,6 +60,7 @@ export function Footer() {
                         <a className={styles._modules_terms} href={'/privacy-policy'}>
                             Politicas de Privacidad
                         </a>
+
                         <a
                             className={styles._modules_terms}
                             href={'/slavery-statement-policy'}
@@ -77,22 +78,25 @@ export function Footer() {
                     </div>
 
                     <div className={styles._container_icon}>
-                        {SOCIAL.map((social) => (
-                            <span key={social.id}>
-                                <a href={social.href}>
-                                    <img
-                                        alt={social.title}
-                                        className={styles._img}
-                                        height={30}
-                                        src={social.src}
-                                        style={{
-                                            marginRight: social.id === 6 ? 0 : 20,
-                                        }}
-                                        width={30}
-                                    />
-                                </a>
-                            </span>
-                        ))}
+                        {SOCIAL.map(
+                            (social) =>
+                                social.active && (
+                                    <span key={social.id}>
+                                        <a href={social.href}>
+                                            <img
+                                                alt={social.title}
+                                                className={styles._img}
+                                                height={30}
+                                                src={social.src}
+                                                style={{
+                                                    marginRight: social.id === 6 ? 0 : 20,
+                                                }}
+                                                width={30}
+                                            />
+                                        </a>
+                                    </span>
+                                ),
+                        )}
                     </div>
                 </div>
             </div>
@@ -125,31 +129,36 @@ const SOCIAL = [
         title: 'Facebook',
         href: 'https://www.facebook.com/aicore.ok',
         src: '/footer/1.png',
+        active: false,
     },
     {
         id: 1,
         title: 'Github',
         href: '',
         src: '/footer/2.png',
+        active: false,
     },
     {
         id: 2,
         title: 'Linkedin',
         href: 'https://www.linkedin.com/company/aicore-ok',
         src: '/footer/3.png',
+        active: true,
     },
-    { id: 3, title: 'Behance', href: '', src: '/footer/4.png' },
+    { id: 3, title: 'Behance', href: '', src: '/footer/4.png', active: false },
     {
         id: 4,
         title: 'Instagram',
         href: 'https://www.instagram.com/aicore.ok/',
         src: '/footer/5.png',
+        active: true,
     },
-    { id: 5, title: 'Twitter', href: '', src: '/footer/6.png' },
+    { id: 5, title: 'Twitter', href: '', src: '/footer/6.png', active: false },
     {
         id: 6,
         title: 'Medium',
         href: '',
         src: '/footer/7.png',
+        active: false,
     },
 ];

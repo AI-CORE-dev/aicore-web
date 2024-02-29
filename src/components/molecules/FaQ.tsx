@@ -3,6 +3,11 @@
 import React, { useState } from 'react';
 
 import styles from './styles/FAQ.module.css';
+
+interface FAQProps {
+    title?: string;
+    CFAQ: FAQItem[];
+}
 interface FAQItem {
     id: number;
     question: string;
@@ -13,7 +18,7 @@ interface FAQState {
     activeItems: boolean[];
 }
 
-export function FaQ({ CFAQ }: { CFAQ: FAQItem[] }) {
+export function FaQ({ title = 'Preguntas y respuestas', CFAQ }: FAQProps) {
     const [state, setState] = useState<FAQState>({
         activeItems: Array<boolean>(CFAQ.length).fill(false),
     });
@@ -31,7 +36,7 @@ export function FaQ({ CFAQ }: { CFAQ: FAQItem[] }) {
     return (
         <section className={styles._section}>
             <div className={styles._inner}>
-                <h4 className={styles._title}>Preguntas y respuestas</h4>
+                <h4 className={styles._title}>{title}</h4>
                 {CFAQ.map((item, index) => (
                     <div key={item.id} className={styles._item} onClick={() => handleClick(index)}>
                         <div style={{ display: 'flex', margin: '25px 0' }}>

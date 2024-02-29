@@ -65,7 +65,6 @@
   line-height: 96px;
   margin-bottom: 80px;
   color: var(--black-color);
-  max-width: calc(50.66667% - 30px);
   cursor: default;
 }
 

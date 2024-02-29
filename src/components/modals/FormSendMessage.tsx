@@ -47,7 +47,7 @@ export function FormSendMessage() {
                     </label>
                     <textarea className={styles._input} id={'message'} name={'message'} />
                 </div>
-                <div className={styles._radio}>
+                <div className={styles._radio} style={{ display: 'none' }}>
                     <label className={styles._label} htmlFor={'check'}>
                         Necesitas nuestro DNA?
                     </label>
