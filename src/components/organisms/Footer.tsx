@@ -53,6 +53,11 @@ export function Footer() {
                         <p className={styles._copyrigth}>© 2024 AI CORE.</p>
                     </div>
 
+                    <div className={styles._container_info_contact}>
+                        <p className={styles._contact}>+54-9-11-3071-7173</p>
+                        <p className={styles._contact}>contacto@aicore.com.ar</p>
+                    </div>
+
                     <div className={styles._container_terms}>
                         <a className={styles._modules_terms} href={'/terms-of-use'}>
                             Terminos y Condiciones

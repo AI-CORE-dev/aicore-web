@@ -20,7 +20,7 @@ const CDATAHEADER = {
         'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labre et dolore magna aliqua.',
     textButton: 'Contactanos',
     textButtonSecondary:
-        'Agenda una reunión de 30 minutos sin cargo con nuestros desarrolladores de negocios.',
+        'Agenda una reunión de 30 minutos con nuestros desarrolladores de negocios.',
 };
 
 export default BlogSearch;

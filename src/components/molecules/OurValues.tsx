@@ -30,11 +30,11 @@ const CIMAGES = [
     },
     {
         id: 1,
-        src: '/about_us/values/2.svg',
+        src: '/about_us/values/3.svg',
     },
     {
         id: 2,
-        src: '/about_us/values/3.svg',
+        src: '/about_us/values/2.svg',
     },
     {
         id: 3,

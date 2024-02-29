@@ -11,7 +11,7 @@ const dataHeader = {
     subtitle:
         'De manera regional acompañamos en cada paso, desde la formulación dela solución para alcanzar tus objetivos hasta la entrega delproyecto totalmente desarrollado a medida.',
     textButton: 'Contactanos',
-    textButtonSecondary: 'Agenda una reunión de 30 minutos sin cargo con un ejecutivo de ventas',
+    textButtonSecondary: 'Agenda una reunión de 30 minutos con un ejecutivo de ventas',
 };
 
 export default ServicesPage;

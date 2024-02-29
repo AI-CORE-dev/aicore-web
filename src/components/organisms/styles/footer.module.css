@@ -94,13 +94,12 @@
 }
 
 ._container_copy{
-  width: 25%;
+
 }
 
 ._container_terms {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+
   justify-content: space-around;
   align-items: center;
 }
@@ -137,6 +136,28 @@
   font-family: var(--font-mono);
   letter-spacing: -0.4px;
   color: #fff;
+}
+
+._container_info_contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+._contact {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2;
+  margin-right: 20px;
+  font-family: var(--font-mono);
+  letter-spacing: -0.4px;
+  color: #fff;
+  transition: transform .3s ease-in-out;
+}
+
+._contact:hover {
+  transform: translateY(-8px);
+  transition: all .3s ease-in;
 }
 
 ._img{

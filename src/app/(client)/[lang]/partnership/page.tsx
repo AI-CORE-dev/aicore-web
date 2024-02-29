@@ -26,7 +26,7 @@ const CDATAHEADER = {
     subtitle: '',
     textButton: 'Contactanos',
     textButtonSecondary:
-        'Agenda una reunión de 30 minutos sin cargo con nuestros desarrolladores de negocios.',
+        'Agenda una reunión de 30 minutos con nuestros desarrolladores de negocios.',
 };
 
 export default PartnershipPage;

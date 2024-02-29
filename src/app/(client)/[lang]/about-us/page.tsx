@@ -48,5 +48,5 @@ const DATAHEADER = {
         'Desde el día uno asumimos el proyecto como nuestro y lo desarrollamos mientras damos apoyo y consultoría para que logres obtener de la ventaja.',
     textButton: 'Contactanos',
     textButtonSecondary:
-        'Agenda una reunión de 30 minutos sin cargo con nuestros desarrolladores de negocios.',
+        'Agenda una reunión de 30 minutos con nuestros desarrolladores de negocios.',
 };

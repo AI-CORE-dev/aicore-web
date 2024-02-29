@@ -34,7 +34,6 @@
 ._list_help {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   position: relative;
   list-style: none;
   z-index: 2;
@@ -214,7 +213,6 @@
 @media (max-width: 460px) {
   ._inner {
     margin: 0;
-    height: 100vh;
   }
 
   ._container_text {

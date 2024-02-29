@@ -2,6 +2,8 @@
 
 import React from 'react';
 
+import { useScrollNavbar } from '@/hooks/useScrollNavbar';
+
 import styles from './styles/header.module.css';
 interface IProps {
     isVideo?: boolean;
@@ -23,6 +25,8 @@ export function Header({
     isButtonSecondary = false,
     textButtonSecondary = 'textButtonSecondary',
 }: IProps) {
+    const { scrolled } = useScrollNavbar();
+
     return (
         <header
             className={styles._header}
@@ -33,20 +37,29 @@ export function Header({
                     <h1 className={styles._title}>{title}</h1>
                     <h3 className={styles._subtitle}>{subtitle}</h3>
                     <div className={styles._div_contact_box}>
-                        {/* {isButtonPrimary ? (
-                            <a className={styles._btn_white} href={'/contact'}>
+                        {isButtonPrimary ? (
+                            <a
+                                className={
+                                    scrolled
+                                        ? `${styles._btn_call} ${styles._btn_call_hvr}`
+                                        : styles._btn_call
+                                }
+                                href={'/contact'}
+                            >
                                 {textButton}
                             </a>
-                        ) : null} */}
+                        ) : null}
                         {isButtonSecondary ? (
-                            <a
-                                className={styles._btn_call}
-                                href={'https://calendly.com/emiliano-caceres/test'}
+                            <p
+                                className={styles._text_description}
+                                /*
+                                 href={'https://calendly.com/emiliano-caceres/test'}
                                 rel={'noopener noreferrer'}
                                 target={'_blank'}
+                                */
                             >
                                 {textButtonSecondary}
-                            </a>
+                            </p>
                         ) : null}
                     </div>
                 </div>
