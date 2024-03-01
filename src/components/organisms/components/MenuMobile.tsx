@@ -8,10 +8,10 @@ import styles from '../styles/nav-bar.module.css';
 import { ContainerNavCollapse } from './ContainerNavCollapse';
 
 export function MenuMobile() {
-    const [isMenuOpen, setMenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const handleBurgerClick = () => {
-        setMenuOpen(!isMenuOpen);
+        setIsMenuOpen(!isMenuOpen);
     };
 
     return (

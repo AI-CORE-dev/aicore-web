@@ -15,6 +15,13 @@ export function LanguageSelector() {
         return localStorage.getItem('selectedLanguage') || 'es';
     });
 
+    //     if (typeof localStorage !== 'undefined') {
+    //         return localStorage.getItem('selectedLanguage') || 'es';
+    //     } else {
+    //         return 'es'; // o cualquier otro idioma por defecto
+    //     }
+    // });
+
     const languages: Languages[] = [
         { code: 'es', flag: 'es', desc: 'esp' },
         { code: 'en', flag: 'en', desc: 'eng' },
