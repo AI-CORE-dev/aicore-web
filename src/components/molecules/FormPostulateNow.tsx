@@ -76,7 +76,7 @@ export function FormPostulateNow() {
                     en obtener más información, envíenos una nota, un enlace al portafolio o un
                     currículum.
                 </p>
-                <form onSubmit={(e: React.FormEvent<HTMLFormElement>) => handleSubmit(e)}>
+                <form>
                     <div>
                         <div className={styles._container_input}>
                             <label className={styles._label} htmlFor={'name'}>

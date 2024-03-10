@@ -1,25 +1,24 @@
 'use client';
 
-import React, { useState } from 'react';
-import { useCalendlyEventListener, InlineWidget } from 'react-calendly';
+import React from 'react';
 
 import { FormSendMessage } from '../modals';
 
 import styles from './styles/schedule-call.module.css';
 
 export function ScheduleCall() {
-    const [isFormOrCalendar, setIsFormOrCalendar] = useState(false);
+    // const [isFormOrCalendar, setIsFormOrCalendar] = useState(false);
 
-    const handleFormOrCalendar = () => {
-        setIsFormOrCalendar(!isFormOrCalendar);
-    };
+    // const handleFormOrCalendar = () => {
+    //     setIsFormOrCalendar(!isFormOrCalendar);
+    // };
 
-    useCalendlyEventListener({
-        onProfilePageViewed: () => console.log('onProfilePageViewed'),
-        onDateAndTimeSelected: () => console.log('onDateAndTimeSelected'),
-        onEventTypeViewed: () => console.log('onEventTypeViewed'),
-        onEventScheduled: (e) => console.log(e.data.payload),
-    });
+    // useCalendlyEventListener({
+    //     onProfilePageViewed: () => console.log('onProfilePageViewed'),
+    //     onDateAndTimeSelected: () => console.log('onDateAndTimeSelected'),
+    //     onEventTypeViewed: () => console.log('onEventTypeViewed'),
+    //     onEventScheduled: (e) => console.log(e.data.payload),
+    // });
 
     return (
         <section className={styles._section}>
@@ -56,9 +55,7 @@ export function ScheduleCall() {
                 <div className={styles._container_calendar}>
                     <div className={styles._container_top_seccion}>
                         <div className={styles._top_section}>
-                            <h2 className={styles._top_title}>
-                                {isFormOrCalendar ? 'Envíanos un mensaje' : 'Agenda una meet'}
-                            </h2>
+                            <h2 className={styles._top_title}>Envíanos un mensaje</h2>
                             {/* <button
                                 className={styles._top_button}
                                 type={'button'}
