@@ -57,13 +57,13 @@ export function FeatureProjects() {
                                                 <ul>
                                                     <li>
                                                         <img
-                                                            alt={'react'}
+                                                            alt={'node'}
                                                             src={
                                                                 'https://brocoders.com/static/6228000327bdcbad0cdcdc3016895c64/node-js-logo.svg'
                                                             }
                                                         />
                                                         <img
-                                                            alt={'react'}
+                                                            alt={'amazon'}
                                                             src={
                                                                 'https://brocoders.com/static/62243934ffd392447ffd8fd0777d717e/amazon-logo.svg'
                                                             }

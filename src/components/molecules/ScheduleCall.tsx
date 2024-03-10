@@ -24,10 +24,10 @@ export function ScheduleCall() {
     return (
         <section className={styles._section}>
             <div className={styles._inner}>
-                <h2 className={styles._title}>Agenda una meet o envíanos un mensaje</h2>
+                <h2 className={styles._title}>Contactate con nuestro Business Developer.</h2>
                 <p className={styles._subtitle}>
-                    Nos encantan los desafíos, queremos ser un aliado tecnológico de impacto en tu
-                    negocio.
+                    En AI CORE nos encantan los desafíos, queremos ser un aliado tecnológico para
+                    tus proyectos
                 </p>
 
                 <div className={styles._container_profile}>
@@ -47,9 +47,9 @@ export function ScheduleCall() {
                         </div>
                     </div>
                     <p className={`${styles._description} ${styles._column}`}>
-                        Hola! Soy Ignacio, ejecutivo de nuevos negocios en AI CORE. Agendá un
-                        espacio en mi agenda para conversar sobre tu proyecto y que podamos comenzar
-                        a aportarle valor.
+                        Hola! Soy Ignacio, ejecutivo de nuevos negocios en AI CORE. Envíame un
+                        mensaje para conversar sobre tu proyecto y así podamos comenzar a aportarle
+                        valor.
                     </p>
                 </div>
 
@@ -59,13 +59,13 @@ export function ScheduleCall() {
                             <h2 className={styles._top_title}>
                                 {isFormOrCalendar ? 'Envíanos un mensaje' : 'Agenda una meet'}
                             </h2>
-                            <button
+                            {/* <button
                                 className={styles._top_button}
                                 type={'button'}
                                 onClick={handleFormOrCalendar}
                             >
                                 {!isFormOrCalendar ? 'Envíanos un mensaje' : 'Agenda una meet'}
-                            </button>
+                            </button> */}
                         </div>
                     </div>
                     <div
@@ -74,7 +74,8 @@ export function ScheduleCall() {
                             backgroundColor: '#F5F5F5BB',
                         }}
                     >
-                        {isFormOrCalendar ? (
+                        <FormSendMessage />
+                        {/* {isFormOrCalendar ? (
                             <FormSendMessage />
                         ) : (
                             <InlineWidget
@@ -88,7 +89,7 @@ export function ScheduleCall() {
                                     'https://calendly.com/emiliano-caceres/test?hide_event_type_details=1&hide_gdpr_banner=1'
                                 }
                             />
-                        )}
+                        )} */}
                     </div>
                 </div>
             </div>

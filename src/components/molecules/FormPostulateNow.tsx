@@ -17,6 +17,44 @@ export function FormPostulateNow() {
         }
     };
 
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        const formData = new FormData();
+
+        const name = (e.currentTarget.name as unknown as HTMLInputElement).value;
+        const email = (e.currentTarget.email as HTMLInputElement).value;
+        const position = (e.currentTarget.position as HTMLSelectElement).value;
+        const message = (e.currentTarget.message as HTMLTextAreaElement).value;
+
+        formData.append('name', name);
+        formData.append('email', email);
+        formData.append('position', position);
+        formData.append('message', message);
+
+        // Verificación de nulidad y tipo de state.file
+        if (state.file instanceof File) {
+            formData.append('file', state.file);
+        }
+
+        try {
+            const response = await fetch('http://localhost:3000/api/submit', {
+                method: 'POST',
+                body: formData,
+            });
+
+            console.log('response:', response);
+
+            if (response.ok) {
+                console.log('Formulario enviado exitosamente');
+            } else {
+                console.error('Error al enviar el formulario');
+            }
+        } catch (error) {
+            console.error('Error al enviar el formulario!!!:', error);
+        }
+    };
+
     return (
         <section className={styles._section}>
             <div className={styles._inner}>
@@ -38,7 +76,7 @@ export function FormPostulateNow() {
                     en obtener más información, envíenos una nota, un enlace al portafolio o un
                     currículum.
                 </p>
-                <form action={''}>
+                <form onSubmit={(e: React.FormEvent<HTMLFormElement>) => handleSubmit(e)}>
                     <div>
                         <div className={styles._container_input}>
                             <label className={styles._label} htmlFor={'name'}>
