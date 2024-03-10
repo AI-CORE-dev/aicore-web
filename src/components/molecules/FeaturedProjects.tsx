@@ -13,7 +13,24 @@ export function FeatureProjects() {
                 <ul>
                     {CPROJECTS.map((project) => (
                         <li key={project.id} className={styles._project_card}>
-                            <iframe
+                            <div
+                                style={{
+                                    width: '50%',
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    backgroundColor: 'gray',
+                                }}
+                            >
+                                <img
+                                    alt={'fav-icon'}
+                                    className={styles._img}
+                                    src={
+                                        'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Favicon-Aicore.png'
+                                    }
+                                />
+                            </div>
+                            {/* <iframe
                                 allowFullScreen
                                 height={'400px'}
                                 loading={'lazy'}
@@ -27,7 +44,7 @@ export function FeatureProjects() {
                                     width: '100%',
                                 }}
                                 title={'video'}
-                            />
+                            /> */}
 
                             <div className={styles._container_info}>
                                 <h2
