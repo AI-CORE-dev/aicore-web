@@ -1,3 +1,7 @@
+'use client';
+
+import { handleScroll } from '@/helpers/handleScrolSchedule';
+
 import styles from './styles/banner-contact-us.module.css';
 
 export function BannerContactUs() {
@@ -8,9 +12,9 @@ export function BannerContactUs() {
                     Si estos son tus objetivos, agenda una reunión con nosotros para dar el primer
                     paso en tu procesos de transformación digital.
                 </h2>
-                <a className={styles._btn} href={'/contact'}>
+                <button className={styles._btn} type={'button'} onClick={handleScroll}>
                     Contactanos
-                </a>
+                </button>
             </div>
         </section>
     );

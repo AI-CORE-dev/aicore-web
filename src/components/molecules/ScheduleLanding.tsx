@@ -70,7 +70,7 @@ export function SchedulleLanding() {
     };
 
     return (
-        <div className={styles._section}>
+        <section className={styles._section} id={'schedule'}>
             <form className={styles._form} onSubmit={handleSubmit}>
                 <h2 className={styles._title}>Contactanos para coordinar una reunión</h2>
                 <div className={styles._inner}>
@@ -289,6 +289,6 @@ export function SchedulleLanding() {
                     </div>
                 </div>
             </form>
-        </div>
+        </section>
     );
 }

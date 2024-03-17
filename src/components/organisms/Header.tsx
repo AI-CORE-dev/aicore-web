@@ -3,6 +3,7 @@
 import React from 'react';
 
 import { useScrollNavbar } from '@/hooks/useScrollNavbar';
+import { handleScroll } from '@/helpers/handleScrolSchedule';
 
 import styles from './styles/header.module.css';
 interface IProps {
@@ -38,16 +39,17 @@ export function Header({
                     <h3 className={styles._subtitle}>{subtitle}</h3>
                     <div className={styles._div_contact_box}>
                         {isButtonPrimary ? (
-                            <a
+                            <button
                                 className={
                                     scrolled
                                         ? `${styles._btn_call} ${styles._btn_call_hvr}`
                                         : styles._btn_call
                                 }
-                                href={'/contact'}
+                                type={'button'}
+                                onClick={handleScroll}
                             >
                                 {textButton}
-                            </a>
+                            </button>
                         ) : null}
                         {isButtonSecondary ? (
                             <p
