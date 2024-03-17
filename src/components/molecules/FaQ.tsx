@@ -20,7 +20,7 @@ interface FAQState {
 
 export function FaQ({ title = 'Preguntas y respuestas', CFAQ }: FAQProps) {
     const [state, setState] = useState<FAQState>({
-        activeItems: Array<boolean>(CFAQ.length).fill(false),
+        activeItems: Array<boolean>(CFAQ.length).fill(true),
     });
 
     const handleClick = (index: number) => {

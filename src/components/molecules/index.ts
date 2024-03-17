@@ -40,6 +40,8 @@ export * from './InstitutionalPhotos';
 
 export * from './InstitutuionalVideo';
 
+export * from './ListTechnologies';
+
 export * from './OpenPositions';
 
 export * from './OurSolutions';
@@ -56,11 +58,15 @@ export * from './RecruimentProcess';
 
 export * from './ScheduleCall';
 
+export * from './ScheduleLanding';
+
 export * from './StartTechnicalAudit';
 
 export * from './SearchBlog';
 
 export * from './ServicesNumbers';
+
+export * from './SliderLogos';
 
 export * from './TypeOfWork';
 

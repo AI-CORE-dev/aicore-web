@@ -4,7 +4,7 @@
 }
 
 ._inner{
-    padding: 7rem 0;
+    padding: 100px 40px;
     text-align: center;
 }
 
@@ -18,10 +18,13 @@
 
 ._title{
     color: #fff;
-    font-size: 2.66rem;
+    font-size: 40px;
     margin-bottom: 2.66rem;
     margin-top: 1.22rem;
     font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -.4px;
+    text-align: center;
 }
 
 ._btn{

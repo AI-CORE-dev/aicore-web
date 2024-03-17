@@ -27,7 +27,7 @@
   color: var(--black-color);
   font-family: var(--font-mono);
   font-weight: 700;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 32px;
   letter-spacing: -0.6px;
   cursor: pointer;
@@ -35,7 +35,7 @@
 
 ._answer {
   margin: 45px 0 45px 110px;
-  font-size: 16px;
+  font-size: 20px;
   font-family: var(--font-mono);
   line-height: 26px;
   letter-spacing: -0.355556px;

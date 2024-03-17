@@ -7,11 +7,12 @@ export function HowWeCanHelp() {
         <section className={styles._section}>
             <div className={styles._inner}>
                 <div className={styles._container_text}>
-                    <h2 className={styles._title_help}>¿Cómo podemos ayudar a tu organización?</h2>
+                    <h2 className={styles._title_help}>
+                        ¿Por que incorporar un desarrollo a medida?
+                    </h2>
                     <p className={styles._subtitle_help}>
                         Trabajamos codo a codo con organizaciones que buscan generar valor mediante
-                        la tecnología… somos expertos en definir, desarrollar, lanzar, integrar y
-                        optimizar proyectos tecnológicos de todo tipo.
+                        sistemas a medidas, estás son las razones por las cuales podría interesarte:
                     </p>
                 </div>
 
@@ -26,8 +27,6 @@ export function HowWeCanHelp() {
                                         src={aid.image}
                                     />
                                 </span>
-
-                                <h3 className={styles._title_card}>{aid.title}</h3>
                                 <p className={styles._subtitle_card}>{aid.subtitle}</p>
                             </a>
                         </li>
@@ -42,35 +41,35 @@ const CAIDS = [
     {
         id: 0,
         title: 'Consolidá tu departamento de IT.',
-        subtitle: 'Staff Augmentation - Dedicated Teams - CTOaaS.',
+        subtitle: 'Buscás reducir costos operativos y automatizar tareas repetitivas y manuales.',
         image: '/3.svg',
         redirection: '/services/staff-augmentation',
     },
     {
         id: 1,
         title: 'Comenza tu transformación',
-        subtitle: 'Consultoría.',
+        subtitle: 'Queres contar con información clave en tiempo real para la toma de decisiones.',
         image: '/4.svg',
         redirection: '/services/consultancy',
     },
     {
         id: 2,
         title: 'Desarrolla tu WEB',
-        subtitle: 'Boutique Development',
+        subtitle: 'Necesitas una mayor eficiencia para competir en el mercado actual.',
         image: '/5.svg',
         redirection: '/services/web-application-development',
     },
     {
         id: 3,
         title: 'Desarrolla tu APP',
-        subtitle: 'Desarrollo de MVPs - MVPaaS',
+        subtitle: 'Deseas simplificar procesos complejos que involucran varios sistemas actuales',
         image: '/1.svg',
         redirection: '/services/web-application-development',
     },
     {
         id: 4,
         title: 'Desarrolla tu Producto',
-        subtitle: 'Outsourcing',
+        subtitle: 'Queres ser más adaptable y flexible a las necesidades de tus clientes.',
         image: '/2.svg',
         redirection: '/services/web-application-development',
     },

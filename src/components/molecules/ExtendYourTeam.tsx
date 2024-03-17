@@ -10,16 +10,15 @@ interface IOption {
 
 interface IProps {
     title: string;
-    description: string;
+
     options: IOption[];
 }
 
-export function ExtendYourTeam({ title = '', description = '', options = [] }: IProps) {
+export function ExtendYourTeam({ title = '', options = [] }: IProps) {
     return (
         <section className={styles._section}>
             <div className={styles._inner}>
                 <h2 className={styles._title}>{title}</h2>
-                <p className={styles._subtitle}>{description}</p>
                 <ul className={styles._container_items}>
                     {options.map((item) => (
                         <li key={item.id} className={styles._list_item}>
