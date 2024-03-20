@@ -1,5 +1,3 @@
-import { LanguajeFlags } from '../atoms/LanguageFlags';
-
 import styles from './styles/change-lang.module.css';
 
 export function ChangeLang() {
@@ -13,8 +11,6 @@ export function ChangeLang() {
                     src={'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Aicore-co.png'}
                     width={150}
                 />
-
-                <LanguajeFlags />
             </div>
         </section>
     );
