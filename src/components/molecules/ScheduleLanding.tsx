@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/no-misused-promises */
 'use client';
 
 import type { ChangeEvent, FormEvent } from 'react';
 
-import react, { useState } from 'react';
+import React, { useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 import styles from './styles/schedulle-landing.module.css';
 
@@ -32,6 +34,16 @@ const initialFormData: FormData = {
 
 export function SchedulleLanding() {
     const [formData, setFormData] = useState<FormData>(initialFormData);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    const [modalMessage, setModalMessage] = useState('');
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
+    const [captchaValue, setCaptchaValue] = useState<string | null>(null);
+
+    const handleCaptchaChange = (value: string | null) => {
+        setCaptchaValue(value);
+    };
 
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
         const { name, value, type } = e.target;
@@ -49,10 +61,39 @@ export function SchedulleLanding() {
         });
     };
 
-    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        console.log(formData);
+        setIsSubmitting(true);
+        try {
+            const response = await fetch('/api/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            console.log('🚀 ~ handleSubmit ~ response:', response);
+
+            if (response.ok) {
+                setModalMessage('¡Formulario enviado con éxito!');
+                setFormData(initialFormData);
+            } else {
+                setModalMessage('Error al enviar el formulario. Por favor, inténtalo de nuevo.');
+                console.error('Error al enviar el formulario123:', response.statusText);
+            }
+        } catch (error) {
+            console.error('Error al enviar el formularioCATCH:', error);
+            setModalMessage('Error al enviar el formulario. Por favor, inténtalo de nuevo.');
+        } finally {
+            setIsModalVisible(true);
+            setIsSubmitting(false);
+        }
+    };
+
+    const onClose = () => {
+        setIsModalVisible(false);
     };
 
     const isFormValid = (): boolean => {
@@ -278,14 +319,32 @@ export function SchedulleLanding() {
                             <option value={'mail'}>Mail</option>
                         </select>
                     </div>
+                    <ReCAPTCHA
+                        sitekey={'6Ldoep8pAAAAAIQ_UvjMptVn205wrHf--seLv9L3'}
+                        onChange={handleCaptchaChange}
+                    />
                     <div className={styles._container_button}>
                         <button
                             className={styles._button}
-                            disabled={!isFormValid()}
+                            disabled={!isFormValid() || isSubmitting}
                             type={'submit'}
                         >
-                            Enviar
+                            {isSubmitting ? 'Enviando...' : 'Enviar'}
                         </button>
+                    </div>
+                    <div
+                        className={`${styles._modalOverlay} ${isModalVisible && styles._modalOpen}`}
+                    >
+                        <div className={styles._modalContent}>
+                            <button
+                                className={styles._closeButton}
+                                type={'button'}
+                                onClick={onClose}
+                            >
+                                &times;
+                            </button>
+                            <p className={styles._modalMessage}>{modalMessage}</p>
+                        </div>
                     </div>
                 </div>
             </form>

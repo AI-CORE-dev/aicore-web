@@ -29,20 +29,20 @@ const CTECHNOLOGIES = [
         src: '/tecnologias/angular.svg',
     },
     {
-        id: 2,
-        src: '/tecnologias/azure.svg',
-    },
-    {
-        id: 3,
-        src: '/tecnologias/java.svg',
-    },
-    {
         id: 4,
         src: '/tecnologias/kotlin.svg',
     },
     {
         id: 5,
         src: '/tecnologias/mongoDB.svg',
+    },
+    {
+        id: 2,
+        src: '/tecnologias/azure.svg',
+    },
+    {
+        id: 3,
+        src: '/tecnologias/java.svg',
     },
     {
         id: 6,
