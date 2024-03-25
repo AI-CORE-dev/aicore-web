@@ -8,7 +8,7 @@
 }
 
 ._slider ._slider_track {
-  animation: scroll 20s linear infinite;
+  animation: scroll 35s linear infinite;
   display: flex;
   width: calc(250px * 14);
 }
@@ -30,13 +30,5 @@
 ._img {
   height: 100px;
   width: 250px;
-  margin: 20px 50px;
-}
-
-._img:nth-child(6) {
-  filter: contrast(0.2);
-}
-
-._img:nth-child(13) {
-  filter: contrast(0.2);
+  margin: 20px 20px;
 }

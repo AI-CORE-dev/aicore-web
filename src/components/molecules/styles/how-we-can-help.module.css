@@ -49,7 +49,6 @@
   display: list-item;
   text-align: -webkit-match-parent;
   text-align: left;
-  cursor: pointer;
 }
 
 ._item_list:after,

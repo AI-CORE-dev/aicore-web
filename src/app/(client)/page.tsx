@@ -18,9 +18,6 @@ export default async function Home() {
     return (
         <>
             <Header
-                isButtonSecondary
-                isHome
-                isVideo
                 subtitle={CDATAHEADER.subtitle}
                 textButton={CDATAHEADER.textButton}
                 textButtonSecondary={CDATAHEADER.textButtonSecondary}
@@ -43,15 +40,15 @@ export default async function Home() {
 }
 
 const CDATAHEADER = {
-    title: 'Potencia tus ventajas competitivas con nuestros desarrollos a medida.',
+    title: 'Reduci tus costos operativos y conta con información en tiempo real con un desarrollo a medida para tu empresa.',
     subtitle:
-        'Aumenta tu productividad agilizando tus operaciones clave y contá con información en tiempo real.',
+        'Somos especialistas en automatizar procesos con IA y desarrollar aplicaciones que agilizan y dan eficiencia a tus operaciones.',
     textButton: 'Contactanos',
     textButtonSecondary: 'Contanos tu proyecto.',
 };
 
 const CEXTENDYOURTEAM = {
-    title: '¿Que podemos aportarle a tu modelo de negocio?',
+    title: '¿Qué podemos aportarle a tu modelo de negocio?',
     options: [
         {
             id: 0,

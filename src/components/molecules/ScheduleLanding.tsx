@@ -3,7 +3,7 @@
 
 import type { ChangeEvent, FormEvent } from 'react';
 
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 import styles from './styles/schedulle-landing.module.css';
@@ -18,6 +18,7 @@ interface FormData {
     presupuesto: string;
     urgencia: string;
     contacto: string;
+    token?: string;
 }
 
 const initialFormData: FormData = {
@@ -30,6 +31,7 @@ const initialFormData: FormData = {
     presupuesto: '',
     urgencia: '',
     contacto: '',
+    token: '',
 };
 
 export function SchedulleLanding() {
@@ -40,6 +42,7 @@ export function SchedulleLanding() {
     const [isModalVisible, setIsModalVisible] = useState(false);
 
     const [captchaValue, setCaptchaValue] = useState<string | null>(null);
+    const [captchaKey, setCaptchaKey] = useState(0);
 
     const handleCaptchaChange = (value: string | null) => {
         setCaptchaValue(value);
@@ -65,6 +68,15 @@ export function SchedulleLanding() {
         e.preventDefault();
 
         setIsSubmitting(true);
+
+        if (!captchaValue) {
+            setModalMessage('Por favor, completa el captcha.');
+            setIsModalVisible(true);
+            setIsSubmitting(false);
+
+            return;
+        }
+
         try {
             const response = await fetch('/api/submit', {
                 method: 'POST',
@@ -89,6 +101,8 @@ export function SchedulleLanding() {
         } finally {
             setIsModalVisible(true);
             setIsSubmitting(false);
+            setCaptchaValue(null);
+            setCaptchaKey((prevKey) => prevKey + 1);
         }
     };
 
@@ -129,13 +143,7 @@ export function SchedulleLanding() {
                             onChange={handleChange}
                         />
                     </div>
-                    <div
-                        style={{
-                            display: 'flex',
-                            width: '100%',
-                            justifyContent: 'space-between',
-                        }}
-                    >
+                    <div className={styles._row}>
                         <div
                             className={styles._container_input}
                             style={{ width: '100%', marginRight: '20px' }}
@@ -169,13 +177,7 @@ export function SchedulleLanding() {
                             />
                         </div>
                     </div>
-                    <div
-                        style={{
-                            display: 'flex',
-                            width: '100%',
-                            justifyContent: 'space-between',
-                        }}
-                    >
+                    <div className={styles._row}>
                         <div
                             className={styles._container_input}
                             style={{ width: '100%', marginRight: '20px' }}
@@ -209,13 +211,7 @@ export function SchedulleLanding() {
                             />
                         </div>
                     </div>
-                    <div
-                        style={{
-                            display: 'flex',
-                            width: '100%',
-                            justifyContent: 'space-between',
-                        }}
-                    >
+                    <div className={styles._row}>
                         <div
                             className={styles._container_input}
                             style={{ width: '100%', marginRight: '20px' }}
@@ -260,69 +256,58 @@ export function SchedulleLanding() {
                             </select>
                         </div>
                     </div>
-                    <div className={styles._container_input}>
-                        <label className={styles._label} htmlFor={'urgencia'}>
-                            Urgencia
-                        </label>
-                        <div>
-                            <input
-                                id={'urgencia1'}
-                                name={'urgencia'}
-                                type={'radio'}
-                                value={'idea'}
-                                onChange={handleChange}
-                            />
-                            <label className={styles._option} htmlFor={'urgencia1'}>
-                                Es solo una idea
-                            </label>
-                        </div>
-                        <div>
-                            <input
-                                id={'urgencia2'}
-                                name={'urgencia'}
-                                type={'radio'}
-                                value={'explorar'}
-                                onChange={handleChange}
-                            />
-                            <label className={styles._option} htmlFor={'urgencia2'}>
-                                Quiero explorar la posibilidad
-                            </label>
-                        </div>
-                        <div>
-                            <input
-                                id={'urgencia3'}
-                                name={'urgencia'}
-                                type={'radio'}
-                                value={'inmediato'}
-                                onChange={handleChange}
-                            />
-                            <label className={styles._option} htmlFor={'urgencia3'}>
-                                Necesito incorporar un sistema a medida de inmediato
-                            </label>
-                        </div>
-                    </div>
-                    <div className={styles._container_input}>
-                        <label className={styles._label} htmlFor={'contacto'}>
-                            Prefiere ser contactado por
-                        </label>
-                        <select
-                            required
-                            className={styles._select}
-                            id={'contacto'}
-                            name={'contacto'}
-                            value={formData.contacto}
-                            onChange={handleChange}
+                    <div className={styles._row}>
+                        <div
+                            className={styles._container_input}
+                            style={{ width: '100%', marginRight: '20px' }}
                         >
-                            <option value={''}>Selecciona una opción</option>
-                            <option value={'whatsapp'}>Whatsapp</option>
-                            <option value={'llamada'}>Llamada telefónica</option>
-                            <option value={'mail'}>Mail</option>
-                        </select>
+                            <label className={styles._label} htmlFor={'urgencia'}>
+                                Urgencia
+                            </label>
+                            <select
+                                required
+                                className={styles._select}
+                                id={'urgencia'}
+                                name={'urgencia'}
+                                value={formData.urgencia}
+                                onChange={handleChange}
+                            >
+                                <option value={''}>Selecciona una opción</option>
+                                <option value={'idea'}>Es solo una idea</option>
+                                <option value={'posibilidad'}>
+                                    Quiero explorar la posibilidad
+                                </option>
+                                <option value={'inmediato'}>
+                                    Necesito incorporar un sistema a medida de inmediato
+                                </option>
+                            </select>
+                        </div>
+                        <div className={styles._container_input}>
+                            <label className={styles._label} htmlFor={'contacto'}>
+                                Prefiere ser contactado por
+                            </label>
+                            <select
+                                required
+                                className={styles._select}
+                                id={'contacto'}
+                                name={'contacto'}
+                                value={formData.contacto}
+                                onChange={handleChange}
+                            >
+                                <option value={''}>Selecciona una opción</option>
+                                <option value={'whatsapp'}>Whatsapp</option>
+                                <option value={'llamada'}>Llamada telefónica</option>
+                                <option value={'mail'}>Mail</option>
+                            </select>
+                        </div>
                     </div>
-                    <ReCAPTCHA
-                        sitekey={'6Ldoep8pAAAAAIQ_UvjMptVn205wrHf--seLv9L3'}
-                        onChange={handleCaptchaChange}
-                    />
+                    <div className={styles._containerCaptcha}>
+                        <ReCAPTCHA
+                            key={captchaKey}
+                            sitekey={'6Ldoep8pAAAAAIQ_UvjMptVn205wrHf--seLv9L3'}
+                            onChange={handleCaptchaChange}
+                        />
+                    </div>
                     <div className={styles._container_button}>
                         <button
                             className={styles._button}

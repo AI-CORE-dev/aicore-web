@@ -19,7 +19,7 @@ export function HowWeCanHelp() {
                 <ul className={styles._list_help}>
                     {CAIDS.map((aid) => (
                         <li key={aid.id} className={styles._item_list}>
-                            <a className={styles._container_card} href={aid.redirection}>
+                            <div className={styles._container_card}>
                                 <span className={styles._container_image}>
                                     <img
                                         alt={aid.title}
@@ -28,7 +28,7 @@ export function HowWeCanHelp() {
                                     />
                                 </span>
                                 <p className={styles._subtitle_card}>{aid.subtitle}</p>
-                            </a>
+                            </div>
                         </li>
                     ))}
                 </ul>

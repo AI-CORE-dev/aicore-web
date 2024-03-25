@@ -24,15 +24,15 @@ export function SliderLogos() {
 const CIMAGES = [
     {
         id: 0,
-        src: '/logos/aon.svg',
+        src: '/logos/ameiz.svg',
     },
     {
         id: 1,
-        src: '/logos/Biofingertips.png',
+        src: '/logos/bukest.svg',
     },
     {
         id: 2,
-        src: '/logos/bukest.svg',
+        src: '/logos/offi.svg',
     },
     {
         id: 3,
@@ -40,42 +40,66 @@ const CIMAGES = [
     },
     {
         id: 4,
-        src: '/logos/Kinsu.png',
+        src: '/logos/sodtrack.svg',
     },
     {
         id: 5,
-        src: '/logos/OFFI.png',
+        src: '/logos/Kinsu.svg',
     },
     {
         id: 6,
-        src: '/logos/SportyRoom.png',
-    },
-    {
-        id: 7,
-        src: '/logos/aon.svg',
-    },
-    {
-        id: 8,
         src: '/logos/Biofingertips.png',
     },
     {
+        id: 7,
+        src: '/logos/santamaria.svg',
+    },
+    {
+        id: 8,
+        src: '/logos/aon.svg',
+    },
+    {
         id: 9,
-        src: '/logos/bukest.svg',
+        src: '/logos/sportyroom.svg',
     },
     {
         id: 10,
-        src: '/logos/Fiserv.svg',
+        src: '/logos/aon.svg',
     },
     {
         id: 11,
-        src: '/logos/Kinsu.png',
+        src: '/logos/Biofingertips.png',
     },
     {
         id: 12,
-        src: '/logos/OFFI.png',
+        src: '/logos/bukest.svg',
     },
     {
         id: 13,
-        src: '/logos/SportyRoom.png',
+        src: '/logos/Fiserv.svg',
+    },
+    {
+        id: 14,
+        src: '/logos/Kinsu.svg',
+    },
+    {
+        id: 15,
+        src: '/logos/ameiz.svg',
+    },
+    {
+        id: 16,
+        src: '/logos/offi.svg',
+    },
+    {
+        id: 17,
+        src: '/logos/santamaria.svg',
+    },
+    {
+        id: 18,
+        src: '/logos/sodtrack.svg',
+    },
+    {
+        id: 19,
+        src: '/logos/sportyroom.svg',
     },
 ];

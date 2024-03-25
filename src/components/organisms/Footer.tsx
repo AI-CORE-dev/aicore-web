@@ -6,80 +6,9 @@ export function Footer() {
     return (
         <footer className={styles._wave_container}>
             <div className={styles._wave}>
-                <div className={styles._container_info} style={{ display: 'none' }}>
-                    <div className={styles._column}>
-                        {LINKS.map((redirection) => (
-                            <li key={redirection.id} className={styles._item}>
-                                <a
-                                    className={
-                                        redirection.id === 0 ? styles._title : styles._redirections
-                                    }
-                                    href={redirection.href}
-                                >
-                                    {redirection.title}
-                                </a>
-                            </li>
-                        ))}
-                    </div>
-
-                    <div className={styles._column}>
-                        {TECHNOLOGIES.map((tecnology) => (
-                            <li key={tecnology.id} className={styles._item}>
-                                <p
-                                    className={
-                                        tecnology.id === 0 ? styles._title : styles._redirections
-                                    }
-                                >
-                                    {tecnology.title}
-                                </p>
-                            </li>
-                        ))}
-                    </div>
-
-                    <div className={styles._column} style={{ display: 'none' }}>
-                        <p className={styles._title}>Oficinas</p>
-                        <p className={styles._subtitle}>Calle falsa 123</p>
-                    </div>
-
-                    <div className={styles._column}>
-                        <p className={styles._title}>Conversemos</p>
-                        <p className={styles._subtitle}>+54-9-11-3071-7173</p>
-                        <p className={styles._subtitle}>contacto@aicore.com.ar</p>
-                    </div>
-                </div>
-
                 <div className={styles._container_social}>
                     <div className={styles._container_copy}>
                         <p className={styles._copyrigth}>© 2024 AI CORE.</p>
-                    </div>
-
-                    <div className={styles._container_info_contact}>
-                        <p className={styles._contact}>+54-9-11-3071-7173</p>
-                        <p className={styles._contact}>contacto@aicore.com.ar</p>
-                    </div>
-
-                    <div className={styles._container_terms}>
-                        <a className={styles._modules_terms} href={'/terms-of-use'}>
-                            Terminos y Condiciones
-                        </a>
-                        <a className={styles._modules_terms} href={'/privacy-policy'}>
-                            Politicas de Privacidad
-                        </a>
-
-                        <a
-                            className={styles._modules_terms}
-                            href={'/slavery-statement-policy'}
-                            style={{ display: 'none' }}
-                        >
-                            Politica de esclavitud moderna
-                        </a>
-                        <a
-                            className={styles._modules_terms}
-                            href={'/supply-chain-policy'}
-                            style={{ display: 'none' }}
-                        >
-                            Politica de cadena de suministros
-                        </a>
                     </div>
 
                     <div className={styles._container_icon}>

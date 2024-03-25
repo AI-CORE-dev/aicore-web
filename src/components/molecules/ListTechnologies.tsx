@@ -33,25 +33,10 @@ const CTECHNOLOGIES = [
         src: '/tecnologias/kotlin.svg',
     },
     {
-        id: 5,
-        src: '/tecnologias/mongoDB.svg',
-    },
-    {
-        id: 2,
-        src: '/tecnologias/azure.svg',
-    },
-    {
-        id: 3,
-        src: '/tecnologias/java.svg',
-    },
-    {
-        id: 6,
-        src: '/tecnologias/MySQL.svg',
-    },
-    {
         id: 7,
         src: '/tecnologias/nestjs.svg',
     },
+
     {
         id: 8,
         src: '/tecnologias/nodejs.svg',
@@ -62,7 +47,7 @@ const CTECHNOLOGIES = [
     },
     {
         id: 10,
-        src: '/tecnologias/python.svg',
+        src: '/tecnologias/nextjs.svg',
     },
     {
         id: 11,
@@ -79,5 +64,25 @@ const CTECHNOLOGIES = [
     {
         id: 15,
         src: '/tecnologias/swift.svg',
+    },
+    {
+        id: 15,
+        src: '/tecnologias/python.svg',
+    },
+    {
+        id: 5,
+        src: '/tecnologias/mongoDB.svg',
+    },
+    {
+        id: 2,
+        src: '/tecnologias/azure.svg',
+    },
+    {
+        id: 3,
+        src: '/tecnologias/java.svg',
+    },
+    {
+        id: 6,
+        src: '/tecnologias/MySQL.svg',
     },
 ];

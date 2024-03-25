@@ -9,6 +9,8 @@
   background: url("/aicoreBackground.jpg");
 }
 
+
+
 ._header_module {
   font-family: var(--font-mono);
   padding: 0 100px;
@@ -139,6 +141,34 @@
   cursor: default;
   margin-left: 20px;
 }
+
+.show_animation h1,
+.show_animation h3,
+.show_animation button,
+.show_animation p {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.show_animation h1,
+.show_animation h3 {
+  transition-delay: 0.3s; /* Pequeño retraso para que los títulos aparezcan después de los botones */
+}
+
+.show_animation button,
+.show_animation p {
+  transition-delay: 0.6s; /* Pequeño retraso para que los botones aparezcan después de los títulos */
+}
+
+.show_animation h1,
+.show_animation h3,
+.show_animation button,
+.show_animation p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 @media (max-width: 1920px) {
   ._header_module {
