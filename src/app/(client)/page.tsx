@@ -40,7 +40,7 @@ export default async function Home() {
 }
 
 const CDATAHEADER = {
-    title: 'Reduci tus costos operativos y conta con información en tiempo real con un desarrollo a medida para tu empresa.',
+    title: 'Reduce tus costos operativos y conta con información en tiempo real con un desarrollo a medida para tu empresa.',
     subtitle:
         'Somos especialistas en automatizar procesos con IA y desarrollar aplicaciones que agilizan y dan eficiencia a tus operaciones.',
     textButton: 'Contactanos',
@@ -72,14 +72,14 @@ const CEXTENDYOURTEAM = {
             id: 3,
             title: 'Integración a tus sistemas actuales',
             subtitle:
-                ' No es necesario tirar tu inversión por la basura ni comenzar de 0, nuestros desarrollos a medida se integran con tus sistemas actuales, eficientizando puntos claves, recolectando los datos existentes y potenciando su uso.',
+                ' No es necesario tirar tu inversión por la basura ni comenzar de cero, nuestros desarrollos a medida se integran con tus sistemas actuales, eficientizando puntos claves, recolectando los datos existentes y potenciando su uso.',
         },
 
         {
             id: 4,
             title: 'Seguridad',
             subtitle:
-                'Hacemos foco en la seguridad y la privacidad de tu información para mitigar cualquier tipo de riesgo cibernetico o brecha.',
+                'Hacemos foco en la seguridad y la privacidad de tu información para mitigar cualquier tipo de riesgo cibernético o brecha.',
         },
 
         {

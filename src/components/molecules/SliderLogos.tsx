@@ -63,43 +63,43 @@ const CIMAGES = [
         src: '/logos/sportyroom.svg',
     },
     {
-        id: 10,
-        src: '/logos/aon.svg',
-    },
-    {
-        id: 11,
-        src: '/logos/Biofingertips.png',
-    },
-    {
-        id: 12,
-        src: '/logos/bukest.svg',
-    },
-    {
-        id: 13,
-        src: '/logos/Fiserv.svg',
-    },
-    {
-        id: 14,
-        src: '/logos/Kinsu.svg',
-    },
-    {
-        id: 15,
+        id: 0,
         src: '/logos/ameiz.svg',
     },
     {
-        id: 16,
+        id: 1,
+        src: '/logos/bukest.svg',
+    },
+    {
+        id: 2,
         src: '/logos/offi.svg',
     },
     {
-        id: 17,
-        src: '/logos/santamaria.svg',
+        id: 3,
+        src: '/logos/Fiserv.svg',
     },
     {
-        id: 18,
+        id: 4,
         src: '/logos/sodtrack.svg',
     },
     {
-        id: 19,
+        id: 5,
+        src: '/logos/Kinsu.svg',
+    },
+    {
+        id: 6,
+        src: '/logos/Biofingertips.png',
+    },
+    {
+        id: 7,
+        src: '/logos/santamaria.svg',
+    },
+    {
+        id: 8,
+        src: '/logos/aon.svg',
+    },
+    {
+        id: 9,
         src: '/logos/sportyroom.svg',
     },
 ];

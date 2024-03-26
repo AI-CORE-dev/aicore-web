@@ -8,11 +8,11 @@ export function HowWeCanHelp() {
             <div className={styles._inner}>
                 <div className={styles._container_text}>
                     <h2 className={styles._title_help}>
-                        ¿Por que incorporar un desarrollo a medida?
+                        ¿Por qué incorporar un desarrollo a medida?
                     </h2>
                     <p className={styles._subtitle_help}>
                         Trabajamos codo a codo con organizaciones que buscan generar valor mediante
-                        sistemas a medidas, estás son las razones por las cuales podría interesarte:
+                        sistemas a medida, estas son las razones por las cuales podría interesarte:
                     </p>
                 </div>
 
@@ -48,7 +48,7 @@ const CAIDS = [
     {
         id: 1,
         title: 'Comenza tu transformación',
-        subtitle: 'Queres contar con información clave en tiempo real para la toma de decisiones.',
+        subtitle: 'Quieres contar con información clave en tiempo real para la toma de decisiones.',
         image: '/4.svg',
         redirection: '/services/consultancy',
     },
@@ -69,7 +69,7 @@ const CAIDS = [
     {
         id: 4,
         title: 'Desarrolla tu Producto',
-        subtitle: 'Queres ser más adaptable y flexible a las necesidades de tus clientes.',
+        subtitle: 'Quieres ser más adaptable y flexible a las necesidades de tus clientes.',
         image: '/2.svg',
         redirection: '/services/web-application-development',
     },
