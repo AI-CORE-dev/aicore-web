@@ -17,43 +17,43 @@ export function FormPostulateNow() {
         }
     };
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+    // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    //     e.preventDefault();
 
-        const formData = new FormData();
+    //     const formData = new FormData();
 
-        const name = (e.currentTarget.name as unknown as HTMLInputElement).value;
-        const email = (e.currentTarget.email as HTMLInputElement).value;
-        const position = (e.currentTarget.position as HTMLSelectElement).value;
-        const message = (e.currentTarget.message as HTMLTextAreaElement).value;
+    //     const name = (e.currentTarget.name as unknown as HTMLInputElement).value;
+    //     const email = (e.currentTarget.email as HTMLInputElement).value;
+    //     const position = (e.currentTarget.position as HTMLSelectElement).value;
+    //     const message = (e.currentTarget.message as HTMLTextAreaElement).value;
 
-        formData.append('name', name);
-        formData.append('email', email);
-        formData.append('position', position);
-        formData.append('message', message);
+    //     formData.append('name', name);
+    //     formData.append('email', email);
+    //     formData.append('position', position);
+    //     formData.append('message', message);
 
-        // Verificación de nulidad y tipo de state.file
-        if (state.file instanceof File) {
-            formData.append('file', state.file);
-        }
+    //     // Verificación de nulidad y tipo de state.file
+    //     if (state.file instanceof File) {
+    //         formData.append('file', state.file);
+    //     }
 
-        try {
-            const response = await fetch('http://localhost:3000/api/submit', {
-                method: 'POST',
-                body: formData,
-            });
+    //     try {
+    //         const response = await fetch('http://localhost:3000/api/submit', {
+    //             method: 'POST',
+    //             body: formData,
+    //         });
 
-            console.log('response:', response);
+    //         console.log('response:', response);
 
-            if (response.ok) {
-                console.log('Formulario enviado exitosamente');
-            } else {
-                console.error('Error al enviar el formulario');
-            }
-        } catch (error) {
-            console.error('Error al enviar el formulario!!!:', error);
-        }
-    };
+    //         if (response.ok) {
+    //             console.log('Formulario enviado exitosamente');
+    //         } else {
+    //             console.error('Error al enviar el formulario');
+    //         }
+    //     } catch (error) {
+    //         console.error('Error al enviar el formulario!!!:', error);
+    //     }
+    // };
 
     return (
         <section className={styles._section}>

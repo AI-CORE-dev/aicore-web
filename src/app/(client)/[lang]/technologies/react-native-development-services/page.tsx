@@ -1,4 +1,4 @@
-import { CarouselReviewClient, FaQ, Recognition, ScheduleCall } from '@/components/molecules';
+import { CarouselReviewClient, Recognition, ScheduleCall } from '@/components/molecules';
 import { BlogSection } from '@/components/molecules/BlogSection';
 import { BannerContactUs } from '@/components/molecules/technologies/BannerContactUs';
 import { WhyOptFor } from '@/components/molecules/technologies/WhyOptFor';

@@ -4,7 +4,6 @@ import {
     Recognition,
     ScheduleCall,
     WhyOptForMVP,
-    WorkProcess,
 } from '@/components/molecules';
 
 function Consultancy() {

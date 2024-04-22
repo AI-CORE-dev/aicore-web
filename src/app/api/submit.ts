@@ -5,7 +5,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         try {
             res.status(200).json({ message: 'Formulario enviado con éxito' });
         } catch (error) {
-            console.error('Error al procesar el formulario:', error);
             res.status(500).json({ error: 'Error interno del servidor' });
         }
     } else {

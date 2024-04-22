@@ -15,16 +15,7 @@ import { getDictionary } from '@/lang/getDictionary';
 import styles from './page.module.css';
 
 export default async function Home({ params }: { params: { lang: SupportedLangs } }) {
-    // const { lang } = params;
-
-    // const isValidLang = ['es', 'en'].includes(lang);
-    // const selectedLang = isValidLang ? lang : 'es';
-
     const dictionary = await getDictionary(params.lang);
-
-    // if (!dictionary) {
-    //     console.log('Error loading dictionary');
-    // }
 
     return (
         <>

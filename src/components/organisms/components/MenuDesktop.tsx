@@ -1,6 +1,5 @@
 import { CPAGES } from '@/helpers/consts';
 import { useScrollNavbar } from '@/hooks/useScrollNavbar';
-import { LanguajeFlags } from '@/components/atoms/LanguageFlags';
 import { LanguageSelector } from '@/components/modals/LenguageSelector';
 
 import styles from '../styles/nav-bar.module.css';

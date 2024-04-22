@@ -1,5 +1,3 @@
-import { CARG } from '@/helpers/consts';
-
 import styles from './styles/extend-your-team.module.css';
 
 interface IOption {

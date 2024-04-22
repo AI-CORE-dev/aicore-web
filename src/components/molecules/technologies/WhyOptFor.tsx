@@ -61,30 +61,3 @@ export function WhyOptFor({ title = 'title', subtitle = 'subtitle' }: IProps) {
         </section>
     );
 }
-
-const CTEXTS = [
-    {
-        id: 0,
-        title: 'Boosted Time-to-Market',
-        subtitle:
-            'Reach the market in a blink with a fully-functioning prototype and find out whether your concept is viable and is in demand in the first place. Keep track of the latest trends and satisfy your target audience’s needs with a fast and agile-driven MVP.',
-    },
-    {
-        id: 1,
-        title: 'Early Adopters',
-        subtitle:
-            'Use an MVP and build some bridges with your potential clients to get in-depth feedback. Find out their pain points through surveys and interviews to end up with a successful, user-friendly product.',
-    },
-    {
-        id: 2,
-        title: 'Cost-Efficient Strategy',
-        subtitle:
-            'Based on the full-fledged business analysis, we define and prioritize only those functions that really matter. That said, we spend less time on the development and build an MVP with a limited scope of core features, thus saving your money.',
-    },
-    {
-        id: 3,
-        title: 'Streamlined Investment',
-        subtitle:
-            'Come up with our results-driven MVP to acquire early users and gain product traction, thus increasing your chances to catch the eye of potential investors. Show them your business idea they can evaluate and “touch”.',
-    },
-];

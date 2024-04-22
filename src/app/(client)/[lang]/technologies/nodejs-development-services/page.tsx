@@ -8,7 +8,6 @@ import {
     StartTechnicalAudit,
     TypeOfWork,
 } from '@/components/molecules';
-import { OurExpertise } from '@/components/molecules/technologies';
 import { Header } from '@/components/organisms/Header';
 
 function Nodejs() {
@@ -59,33 +58,6 @@ const CDATAHEADER = {
     textButton: 'Contactanos',
     textButtonSecondary: 'Contactanos para sumar desarrolladores de Node.js a tu equipo',
 };
-
-const CEXPERTISENODE = [
-    {
-        id: 0,
-        title: 'Apps para streaming',
-        description:
-            'Brinda una experiencia perfecta en la entrega de contenido vía streaming para tus usuarios con el expertise de nuestros desarrolladores Node.js. Apalancate en nuestra amplia trayectoria en la creación de aplicaciones de transmisión, incluidas plataformas de transmisión de video en vivo y servicios de transmisión de música. Al utilizar Node.js, permitimos a los usuarios descargar primero los componentes principales y acceder al resto de los elementos del software bajo demanda. Dado que los datos provienen de una secuencia, podemos procesarlos en paralelo durante la carga. Con su API de transmisión, Node.js garantiza una transmisión de datos eficiente, reduciendo la sobrecarga del servidor y de la computadora local.',
-    },
-    {
-        id: 1,
-        title: 'Chats en tiempo real',
-        description:
-            'Node.js, con su enfoque asincrónico y basado en eventos, es una excelente opción para crear chats en tiempo real, que se han vuelto necesarios para las necesidades de comunicación y la eficiencia empresarial. Nuestros desarrolladores de Node.js se especializan en crear aplicaciones de chat en tiempo real para garantizar una comunicación fluida en tiempo real y una respuesta rápida del usuario. Utilizamos una amplia gama de tecnologías y bibliotecas de Node.js para garantizar una funcionalidad de chat confiable: Socket.IO, Express.js, Redis, MongoDB, WebSockets, Pusher, Sails.js, Feather.js y otros. Podemos combinar y personalizar estas tecnologías para cumplir con los requisitos específicos de su chat en tiempo real, plataforma de mensajería, atención al cliente en vivo o chatbots.',
-    },
-    {
-        id: 2,
-        title: 'SPA complejo',
-        description:
-            'Emplee a nuestros desarrolladores para manejar Node.js como backend para aplicaciones de página única (SPA). Con Node.js, se beneficia del uso de un único lenguaje (JavaScript) para todo el proyecto, la capacidad de compartir código y estructura de datos entre las aplicaciones frontend y backend, y el potencial de renderizado del lado del servidor. Además, Node.js maneja de manera eficiente solicitudes simultáneas de clientes y cargas de trabajo pesadas de entrada/salida. Hemos implementado con éxito proyectos en diversas industrias, como Agritech, Martech, PropTech, EdTech, Fintech, Fitness & Healthcare, Ride-sharing, Foodtech, Gestión de eventos, Reclutamiento y Recursos Humanos y Comercio electrónico. Somos competentes en la integración de la lógica del lado del servidor con la interfaz del lado del cliente y ofrecemos SPA complejos escalables de alta calidad.',
-    },
-    {
-        id: 3,
-        title: 'Herramientas de colaboración',
-        description:
-            'La colaboración en tiempo real es una característica crucial de las aplicaciones modernas. Ya sea que necesite aplicaciones de coworking, plataformas de gestión de proyectos, herramientas de videoconferencia/audio o soluciones colaborativas de edición de documentos, nuestros desarrolladores de Node.js tienen la experiencia para crear sólidas herramientas de colaboración en tiempo real. Node.js es ideal para crear herramientas de colaboración debido a su arquitectura asincrónica y API basada en eventos. Las aplicaciones de colaboración generan múltiples eventos y solicitudes de E/S a la vez, por lo que Node.js utiliza WebSockets y Event API para evitar bloqueos del servidor, lo que garantiza una entrega eficiente de datos en tiempo real.',
-    },
-];
 
 const CTYPEOFWORK = {
     title: '¿Para que proyectos nos buscan?',
