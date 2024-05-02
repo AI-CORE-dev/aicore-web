@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ScheduleCall } from '@/components/molecules';
+import { SchedulleCall } from '@/components/molecules';
 
 export default function Contact() {
     return (
@@ -9,7 +9,7 @@ export default function Contact() {
                 marginTop: '100px',
             }}
         >
-            <ScheduleCall />
+            <SchedulleCall />
         </main>
     );
 }

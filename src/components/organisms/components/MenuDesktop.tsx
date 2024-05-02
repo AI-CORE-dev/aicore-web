@@ -1,6 +1,5 @@
 import { CPAGES } from '@/helpers/consts';
 import { useScrollNavbar } from '@/hooks/useScrollNavbar';
-import { LanguageSelector } from '@/components/modals/LenguageSelector';
 
 import styles from '../styles/nav-bar.module.css';
 
@@ -40,7 +39,7 @@ export function MenuDesktop() {
                 >
                     Contactanos
                 </a>
-                <LanguageSelector />
+                {/* <LanguageSelector /> */}
             </div>
         </div>
     );

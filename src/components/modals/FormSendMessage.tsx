@@ -25,6 +25,7 @@ export function FormSendMessage() {
     });
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        console.log('Formulario enviado:', formData);
         e.preventDefault();
     };
 

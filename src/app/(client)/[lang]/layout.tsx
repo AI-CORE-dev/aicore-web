@@ -6,8 +6,19 @@ import { Footer } from '@/components/organisms/Footer';
 import { FloatingButton } from '@/components/organisms/FloatingButton';
 
 export const metadata: Metadata = {
-    title: 'Aicore-web',
+    title: 'Aicore - IT Specialists',
     description: 'Pagina web aicore',
+    icons: [
+        {
+            url: '/favicon.ico',
+            media: '(prefers-color-scheme: light)',
+        },
+        /*FIXME: AGREGAR FAV ICON NEGRO*/
+        {
+            url: '/favicon.ico',
+            media: '(prefers-color-scheme: dark)',
+        },
+    ],
 };
 
 function RootLayout({ children }: { children: React.ReactNode }) {

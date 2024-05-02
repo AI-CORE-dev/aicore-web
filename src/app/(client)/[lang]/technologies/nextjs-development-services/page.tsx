@@ -1,4 +1,4 @@
-import { ScheduleCall } from '@/components/molecules';
+import { SchedulleCall } from '@/components/molecules';
 import { Header } from '@/components/organisms/Header';
 
 function Nextjs() {
@@ -6,7 +6,7 @@ function Nextjs() {
         <>
             <Header isButtonSecondary isVideo title={'NextJS PAGE'} />
             <main>
-                <ScheduleCall />
+                <SchedulleCall />
             </main>
         </>
     );

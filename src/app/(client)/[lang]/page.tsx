@@ -4,11 +4,10 @@ import { Header } from '@/components/organisms/Header';
 import {
     HowWeCanHelp,
     ClientsReview,
-    CompaniesWePromote,
     PartnerShip,
     InstitutuionalVideo,
-    ScheduleCall,
     Recognition,
+    SchedulleCall,
 } from '@/components/molecules';
 import { getDictionary } from '@/lang/getDictionary';
 
@@ -30,14 +29,47 @@ export default async function Home({ params }: { params: { lang: SupportedLangs 
             />
 
             <main className={styles._main}>
-                <HowWeCanHelp />
-                <InstitutuionalVideo />
-                <CompaniesWePromote />
+                <HowWeCanHelp
+                    cards={HOWCANHELP.cards}
+                    subtitle={HOWCANHELP.subtitle}
+                    title={HOWCANHELP.title}
+                />
+                <InstitutuionalVideo idVideo={'_yg7X-w_Uhs'} />
                 <PartnerShip />
                 <ClientsReview />
                 <Recognition />
-                <ScheduleCall />
+                <SchedulleCall />
             </main>
         </>
     );
 }
+
+const HOWCANHELP = {
+    id: 0,
+    title: '¿Cómo podemos ayudar a tu organización?',
+    subtitle:
+        'Trabajamos codo a codo con organizaciones que buscan generar valor mediante la tecnología… somos expertos en definir, desarrollar, lanzar, integrar y optimizar proyectos tecnológicos de todo tipo.',
+    cards: [
+        {
+            id: 2,
+            title: 'Consultoria',
+            subtitle: 'Te acompañamos en tu proceso de transformación tecnologica.',
+            image: '/howcanhelp/1.svg',
+            redirection: '/services/web-application-development',
+        },
+        {
+            id: 0,
+            title: 'IT - Staff Augmentation',
+            subtitle: 'Adicioná especialistas a tus equipos y escala tu capacidad de desarrollo.',
+            image: '/howcanhelp/2.svg',
+            redirection: '/services/staff-augmentation',
+        },
+        {
+            id: 4,
+            title: 'Outsourcing',
+            subtitle: 'Desarrollá con nosotros tus productos digitales y proyectos tecnologícos.',
+            image: '/howcanhelp/3.svg',
+            redirection: '/services/web-application-development',
+        },
+    ],
+};

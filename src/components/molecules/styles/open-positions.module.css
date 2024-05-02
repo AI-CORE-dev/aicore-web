@@ -4,7 +4,6 @@
 }
 
 ._inner {
-  height: 100vh;
   padding: 20px 100px;
 }
 
@@ -92,7 +91,7 @@
   align-items: flex-start;
   border-radius: 8px;
   list-style: none;
-  cursor: pointer;
+  cursor: default;
 }
 
 ._list_item:hover {

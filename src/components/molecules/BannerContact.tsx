@@ -14,16 +14,6 @@ export function BannerContact() {
                         dificultades en tu sistemas.
                     </p>
                 </div>
-
-                <div>
-                    <a className={styles._btn_white} href={'/contact'}>
-                        Contratanos
-                    </a>
-                    <p className={styles._text_or}>O</p>
-                    <a className={styles._btn_black} href={'/contact'}>
-                        Solicitar Auditoria
-                    </a>
-                </div>
             </div>
         </section>
     );

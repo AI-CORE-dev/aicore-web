@@ -1,4 +1,11 @@
-import { Recognition, ScheduleCall, WhyOptForMVP } from '@/components/molecules';
+import {
+    HowRetainTalent,
+    HowWeCanHelp,
+    Recognition,
+    SchedulleCall,
+    TextsInfo,
+    WhyOptForMVP,
+} from '@/components/molecules';
 import { Header } from '@/components/organisms/Header';
 
 function ProductDevelopment() {
@@ -15,6 +22,7 @@ function ProductDevelopment() {
             />
 
             <main>
+                <HowRetainTalent CARDS={CARDS} isTitle={false} title={'¿Qué te ofrecemos?'} />
                 <WhyOptForMVP
                     isOtherPage
                     subtitle={
@@ -22,21 +30,115 @@ function ProductDevelopment() {
                     }
                     title={'¿Qué te ofrecemos?'}
                 />
+                <HowWeCanHelp cards={HOWCANHELP.cards} title={HOWCANHELP.title} />
+                <TextsInfo texts={TEXTS} />
                 <Recognition />
 
-                <ScheduleCall />
+                <SchedulleCall />
             </main>
         </>
     );
 }
 
 const CDATAHEADER = {
-    title: 'Desarrollo Tu Producto',
+    title: 'Desarrollamos a medida tu proyecto utilizando las últimas tecnologías del mercado y las mejores prácticas',
     subtitle:
-        'Contamos con expertos con más de 15 años de experiencia en el desarrollo de aplicaciones web. Con un enfoque boutique traducimos tu vision a una aplicación web personalizada y sin perder ningun detalle que agregue valor.',
+        'Materializa tus ideas e innova para ganar competitividad mediante nuestro servicios de Outsourcing',
     textButton: 'Desarrolla tu web',
     textButtonSecondary:
         'Agenda una reunión de 30 minutos con nuestros desarrolladores de negocios.',
+};
+
+const CARDS = [
+    {
+        id: 0,
+        title: 'Aplicaciones web y móviles.',
+        img: '/services/howretaintalent/1.svg',
+        text: '',
+    },
+    {
+        id: 1,
+        title: 'Automatización de procesos',
+        img: '/services/howretaintalent/2.svg',
+        text: '',
+    },
+    {
+        id: 2,
+        title: 'Softwares a medida',
+        img: '/services/howretaintalent/3.svg',
+        text: '',
+    },
+    {
+        id: 3,
+        title: 'Desarrollo de MVPs',
+        img: '/services/howretaintalent/4.svg',
+        text: '',
+    },
+    {
+        id: 4,
+        title: 'Inteligencia Artificial (IA)',
+        img: '/services/howretaintalent/5.svg',
+        text: '',
+    },
+    {
+        id: 5,
+        title: 'Integraciones y APIs',
+        img: '/services/howretaintalent/6.svg',
+        text: '',
+    },
+];
+
+const TEXTS = [
+    {
+        id: 0,
+        title: '¿Buscas un desarrollo ágil y rápido?',
+        subtitle:
+            'En AI CORE adoptamos metodologías ágiles como Scrum y Kanban para garantizar la entrega rápida y continua sin descuidar la calidad del desarrollo.',
+    },
+    {
+        id: 1,
+        title: '¿Buscás un aliado que te ayude en el diseño de tu solución?',
+        subtitle:
+            'En AI CORE acompañamos a nuestros clientes en el proceso de transformación digital, asistiendo en la gestión de requerimientos y planificación de proyectos.',
+    },
+    {
+        id: 2,
+        title: 'Escala tu producto y continua agregando valor a tus usuarios.',
+        subtitle:
+            'Somos expertos en escalar productos existentes, corregir errores y sumar nuevas funcionalidades para atraer a tu solución  nuevos usuarios, ganar mercado y mejorar la experiencia de uso.',
+    },
+    {
+        id: 3,
+        title: 'Agregá valor a tu solución mediante integraciones de terceros y APIs.',
+        subtitle:
+            'Integramos servicios de terceros a tu solución aportando funcionalidades de forma rápida y evitando costos innecesarios.',
+    },
+];
+
+const HOWCANHELP = {
+    title: '¿Cómo es nuestro proceso?',
+    cards: [
+        {
+            id: 0,
+            title: 'Relevamiento de necesidades y requerimientos',
+            image: '/howcanhelp/1.svg',
+        },
+        {
+            id: 1,
+            title: 'Diseño del equipo',
+            image: '/howcanhelp/2.svg',
+        },
+        {
+            id: 2,
+            title: 'Diseño y presentación de prototipos.',
+            image: '/howcanhelp/3.svg',
+        },
+        {
+            id: 3,
+            title: 'Reportes y demos semanales.',
+            image: '/howcanhelp/3.svg',
+        },
+    ],
 };
 
 export default ProductDevelopment;

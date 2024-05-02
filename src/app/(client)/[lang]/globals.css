@@ -128,7 +128,7 @@ a {
 }
 
 
-h1, h2, h3, h4, p, td {
+h1, h2, h3, h4, p, td, strong {
   font-family: var(--font-mono);
 }
 

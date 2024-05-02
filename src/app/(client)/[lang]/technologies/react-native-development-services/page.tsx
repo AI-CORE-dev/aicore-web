@@ -1,4 +1,4 @@
-import { CarouselReviewClient, Recognition, ScheduleCall } from '@/components/molecules';
+import { CarouselReviewClient, Recognition, SchedulleCall } from '@/components/molecules';
 import { BlogSection } from '@/components/molecules/BlogSection';
 import { BannerContactUs } from '@/components/molecules/technologies/BannerContactUs';
 import { WhyOptFor } from '@/components/molecules/technologies/WhyOptFor';
@@ -19,7 +19,7 @@ function ReactNative() {
                 <Recognition />
                 <BannerContactUs />
                 <BlogSection />
-                <ScheduleCall />
+                <SchedulleCall />
             </main>
         </>
     );

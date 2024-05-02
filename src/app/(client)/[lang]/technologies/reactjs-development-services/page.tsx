@@ -3,7 +3,7 @@ import {
     CarouselReviewClient,
     ExtendYourTeam,
     FaQ,
-    ScheduleCall,
+    SchedulleCall,
     ServicesNumbers,
     StartTechnicalAudit,
     TypeOfWork,
@@ -39,7 +39,7 @@ function Reactjs() {
                 />
                 <FaQ CFAQ={CFAQ} />
                 <Awards />
-                <ScheduleCall />
+                <SchedulleCall />
             </main>
         </>
     );

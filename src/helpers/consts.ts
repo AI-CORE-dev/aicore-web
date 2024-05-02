@@ -1,19 +1,19 @@
 export const CPAGES = [
     { id: 0, isCollapse: false, items: [], text: 'Nosotros', href: '/about-us' },
-    {
-        id: 1,
-        isCollapse: true,
-        items: [
-            { id: 0, text: 'Seguros', href: '/industries/insurance' },
-            { id: 1, text: 'Booking de Servicios', href: '/industries/booking-of-services' },
-            { id: 2, text: 'Informacion', href: '/industries/information' },
-            { id: 3, text: 'Procesamiento de Pagos', href: '/industries/payment-processing' },
-            { id: 4, text: 'Salud', href: '/industries/health' },
-            { id: 5, text: 'Finanzas', href: '/industries/finances' },
-        ],
-        text: 'Industrias',
-        href: '/industries',
-    },
+    // {
+    //     id: 1,
+    //     isCollapse: true,
+    //     items: [
+    //         { id: 0, text: 'Seguros', href: '/industries/insurance' },
+    //         { id: 1, text: 'Booking de Servicios', href: '/industries/booking-of-services' },
+    //         { id: 2, text: 'Informacion', href: '/industries/information' },
+    //         { id: 3, text: 'Procesamiento de Pagos', href: '/industries/payment-processing' },
+    //         { id: 4, text: 'Salud', href: '/industries/health' },
+    //         { id: 5, text: 'Finanzas', href: '/industries/finances' },
+    //     ],
+    //     text: 'Industrias',
+    //     href: '/industries',
+    // },
     {
         id: 3,
         isCollapse: true,
@@ -21,10 +21,15 @@ export const CPAGES = [
             { id: 0, text: 'Staff Augmentation', href: '/services/staff-augmentation' },
             { id: 1, text: 'Consultoría', href: '/services/consultancy' },
             {
-                id: 2,
-                text: 'Dessarrollo de Producto',
+                id: 3,
+                text: 'Outsourcing',
                 href: '/services/product-development/',
             },
+            // {
+            //     id: 2,
+            //     text: 'AR & VR',
+            //     href: '/services/product-development/',
+            // },
         ],
         text: 'Servicios',
         href: '/services',
@@ -34,17 +39,17 @@ export const CPAGES = [
         isCollapse: true,
         items: [
             { id: 1, text: 'NodeJS', href: '/technologies/nodejs-development-services' },
-            {
-                id: 0,
-                text: 'React Native',
-                href: '/technologies/react-native-development-services',
-            },
-            { id: 3, text: 'ReactJS', href: '/technologies/reactjs-development-services' },
+            // {
+            //     id: 0,
+            //     text: 'React Native',
+            //     href: '/technologies/react-native-development-services',
+            // },
+            // { id: 3, text: 'ReactJS', href: '/technologies/reactjs-development-services' },
         ],
         text: 'Tecnologías',
         href: '/technologies',
     },
-    { id: 3, isCollapse: false, items: [], text: 'Proyectos', href: '/case-studies' },
+    // { id: 3, isCollapse: false, items: [], text: 'Proyectos', href: '/case-studies' },
     { id: 4, isCollapse: false, items: [], text: 'Carrera', href: '/careers' },
     { id: 5, isCollapse: false, items: [], text: 'Blog', href: '/blog' },
 ];
@@ -307,28 +312,66 @@ export const CCAROUSELITEM = [
 export const CAWARDS = [
     {
         id: 0,
-        image: '/1.svg',
+        image: '/about_us/numberAicore/1.svg',
         alt: 'award1',
     },
     {
         id: 1,
-        image: '/2.svg',
+        image: '/about_us/numberAicore/2.svg',
         alt: 'award2',
     },
     {
         id: 2,
-        image: '/3.svg',
+        image: '/about_us/numberAicore/3.svg',
         alt: 'award3',
     },
     {
         id: 3,
-        image: '/4.svg',
+        image: '/about_us/numberAicore/4.svg',
         alt: 'award4',
     },
+];
+
+export const CNUMBERS = [
     {
-        id: 4,
-        image: '/5.svg',
-        alt: 'award5',
+        id: 0,
+        title: '+30',
+        subtitle: 'Desarrolladores',
+        img: {
+            id: 0,
+            image: '/about_us/numberAicore/1.svg',
+            alt: 'award1',
+        },
+    },
+    {
+        id: 1,
+        title: '+40',
+        subtitle: 'Proyectos realizados',
+        img: {
+            id: 1,
+            image: '/about_us/numberAicore/2.svg',
+            alt: 'award2',
+        },
+    },
+    {
+        id: 2,
+        title: '15',
+        subtitle: 'Años de experiencia IT',
+        img: {
+            id: 2,
+            image: '/about_us/numberAicore/3.svg',
+            alt: 'award3',
+        },
+    },
+    {
+        id: 3,
+        title: '60%',
+        subtitle: 'De staff senior',
+        img: {
+            id: 3,
+            image: '/about_us/numberAicore/4.svg',
+            alt: 'award4',
+        },
     },
 ];
 
@@ -391,22 +434,12 @@ export const CINFOFOUNDERS = [
 export const CDATAARTICLE = [
     {
         id: 0,
-        title: 'El futuro de la fuerza laboral: combinación de equipos internos y equipos aumentados: modelo híbrido',
-        date: '2024-01-08',
-        category: ['Augmentation', 'Web Development'],
+        title: 'Shift Left Testing - Concepto y desafíos clave',
+        date: '2021-12-04',
+        category: ['Outsourcing'],
         img: 'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Favicon-Aicore.png',
-        name: 'Eduardo Brizuela',
-        profession: 'Ingeniero & Abogado',
-        link: '/blog/template',
-    },
-    {
-        id: 1,
-        title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor, nisl eget',
-        date: '2024-03-04',
-        category: ['Consulting', 'App Development'],
-        img: 'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Favicon-Aicore.png',
-        name: 'Ezequiel Maranga',
-        profession: 'COO',
+        name: 'Alfredo Agustin Rey',
+        profession: 'Ingeniero en Informatica',
         link: '/blog/template',
     },
 ];

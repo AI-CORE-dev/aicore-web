@@ -1,7 +1,4 @@
-
-  ._video_container {
-
-    width: 100%;
-
-    
-  }
+._video_container {
+  width: 100%;
+  border-radius: 10px;
+}

@@ -5,7 +5,7 @@ export function BannerOtherTechnologies() {
         <section className={styles._section}>
             <div className={styles._container}>
                 <p className={styles._title}>
-                    Buscás expertos en tecnologías que no están listadas aquí?
+                    ¿Buscás expertos en tecnologías que no están listadas aquí?
                 </p>
                 <p className={styles._subtitle}>
                     No te preocupes, contactanos y con nuestra base de candidatos y reclutamiento

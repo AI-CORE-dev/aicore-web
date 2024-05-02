@@ -101,9 +101,9 @@ export function FeatureProjects() {
                                         </tr>
                                     </tbody>
                                 </table>
-                                <a className={styles._button_lean_more} href={'/'}>
+                                {/* <a className={styles._button_lean_more} href={'/'}>
                                     Leer mas
-                                </a>
+                                </a> */}
                             </div>
                         </li>
                     ))}

@@ -16,6 +16,9 @@ export function VideoPlayer({ videoId, isLocal, srcLocal }: IProps) {
                     controls
                     height={'360'}
                     src={srcLocal ? srcLocal : './carrers/videos/institucional.mp4'}
+                    style={{
+                        borderRadius: '10px',
+                    }}
                     width={'100%'}
                 >
                     <track kind={'captions'} label={'Spanish'} srcLang={'es'} />
@@ -29,7 +32,7 @@ export function VideoPlayer({ videoId, isLocal, srcLocal }: IProps) {
                     sandbox={'allow-same-origin allow-scripts allow-popups allow-presentation'}
                     src={`https://www.youtube.com/embed/${videoId}`}
                     style={{
-                        border: 'none',
+                        borderRadius: '10px',
                         width: '100%',
                         flex: 1,
                     }}

@@ -6,7 +6,7 @@ function Blog() {
     return (
         <>
             <HeaderBlog isButtonSecondary isVideo title={CDATAHEADER.title} />
-            <NavBlog />
+            {/* <NavBlog /> */}
             <main>
                 <ArticleBlog />
             </main>

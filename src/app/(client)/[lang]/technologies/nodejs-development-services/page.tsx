@@ -1,9 +1,8 @@
 import {
-    Awards,
-    CarouselReviewClient,
     ExtendYourTeam,
     FaQ,
-    ScheduleCall,
+    Recognition,
+    SchedulleCall,
     ServicesNumbers,
     StartTechnicalAudit,
     TypeOfWork,
@@ -17,12 +16,12 @@ function Nodejs() {
                 isButtonSecondary
                 isVideo
                 subtitle={CDATAHEADER.subtitle}
+                textButton={CDATAHEADER.textButton}
                 textButtonSecondary={CDATAHEADER.textButtonSecondary}
                 title={CDATAHEADER.title}
             />
             <main>
                 <ServicesNumbers />
-                <CarouselReviewClient />
                 <FaQ CFAQ={CFAQNODE} title={'Somos expertos en Node.js'} />
 
                 <TypeOfWork
@@ -44,8 +43,8 @@ function Nodejs() {
                     title={CEXTENDYOURTEAM.title}
                 />
                 <FaQ CFAQ={CFAQ} />
-                <Awards />
-                <ScheduleCall />
+                <Recognition />
+                <SchedulleCall />
             </main>
         </>
     );
@@ -93,7 +92,7 @@ const CSTARTTECHINALAUDIT = {
         'Teniendo a AI CORE como tu socio tecnológico apoyándote en tus desarrollos de Node.js la calidad de tu producto está garantizada. Incorpora a nuestros desarrolladores especializados y evalúa su experiencia mediante CVs detallados y transparentes.Te ayudamos a ampliar tus equipos con especialistas en modalidad remota. Nuestros desarrolladores de Node.js cuentan con experiencia demostrable a la hora de aportar calidad a tus proyectos y adaptarse a tus necesidades. Ofrecemos beneficios sobre la subcontratación para cuidar tu budget sin descuidar la calidad técnica.',
     btnText: 'RECIBI EL CV DE NUESTROS ESPECIALISTAS EN NODE.JS',
     btnLink: 'SOLICITA DESARROLLADORES',
-    img: '/node-developer.webp',
+    img: '/service-staff.jpg',
     alt: 'node-developer',
 };
 

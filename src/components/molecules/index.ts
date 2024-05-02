@@ -62,6 +62,8 @@ export * from './SearchBlog';
 
 export * from './ServicesNumbers';
 
+export * from './TextsInfo';
+
 export * from './TypeOfWork';
 
 export * from './WhyOptForMVP';

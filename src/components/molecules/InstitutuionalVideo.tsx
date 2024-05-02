@@ -2,9 +2,11 @@ import React from 'react';
 
 import styles from './styles/institutional-video.module.css';
 
-export function InstitutuionalVideo() {
-    const idVideo = 'vLpWT6ojenA';
+interface IProps {
+    idVideo: string;
+}
 
+export function InstitutuionalVideo({ idVideo = '_yg7X-w_Uhs' }: IProps) {
     return (
         <section className={styles._section}>
             <iframe

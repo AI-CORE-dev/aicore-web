@@ -6,21 +6,21 @@
 ._inner {
   display: flex;
   align-items: center;
-  padding: 96px 165px;
+  padding: 100px 100px;
 }
 
 ._text {
   font-family: var(--font-mono);
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 700;
-  line-height: 86px;
-  text-align: left;
+  line-height: 66px;
   text-shadow:
     -1px -1px 0 var(--light-text-color),
     1px -1px 0 var(--light-text-color),
     -1px 1px 0 var(--light-text-color),
     1px 1px 0 var(--light-text-color);
   cursor: default;
+  text-align: center;
   color: #fff;
 }
 
@@ -28,107 +28,104 @@
   color: #fff;
   font-family: var(--font-sub);
   font-size: 22px;
-  max-width: 551px;
   font-weight: 400;
   line-height: 32px;
   margin-top: 20px;
   letter-spacing: -0.4px;
-  text-align: left;
 }
 
-._btn_white{
-    width: 200px;
-    color: var(--black-color);
-    background-color: #fff;
-    border-color: #fff;
-    height: 60px;
-    line-height: 60px;
+._btn_white {
+  width: 200px;
+  color: var(--black-color);
+  background-color: #fff;
+  border-color: #fff;
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  box-sizing: content-box;
+  border-width: 2px;
+  border-style: solid;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+}
+
+._btn_white:hover {
+  background-color: var(--black-color);
+  color: #fff;
+  border-color: var(--black-color);
+}
+
+._text_or {
+  color: #fff;
+  font-family: var(--font-sub);
+  font-size: 22px;
+  max-width: 551px;
+  font-weight: 400;
+  padding: 10px 0;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  text-align: center;
+}
+
+._btn_black {
+  width: 200px;
+  color: #fff;
+  background-color: var(--black-color);
+  border-color: var(--black-color);
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  box-sizing: content-box;
+  border-width: 2px;
+  border-style: solid;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+}
+
+._btn_black:hover {
+  background-color: #fff;
+  color: var(--black-color);
+  border-color: #fff;
+}
+
+@media (max-width: 460px) {
+  ._inner {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+  ._text {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  ._secondary_text {
     font-size: 16px;
-    border-radius: 5px;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    font-family: var(--font-mono);
-    text-transform: uppercase;
-    box-sizing: content-box;
-    border-width: 2px;
-    border-style: solid;
-    white-space: nowrap;
-    cursor: pointer;
-    outline: none;
-}
-
-._btn_white:hover{
-    background-color:  var(--black-color);
-    color: #fff;
-    border-color: var(--black-color);
-}
-
-._text_or{
-    color: #fff;
-    font-family: var(--font-sub);
-    font-size: 22px;
-    max-width: 551px;
-    font-weight: 400;
-    padding: 10px 0;
-    line-height: 32px;
-    letter-spacing: -0.4px;
-    text-align: center;
-
-}
-
-._btn_black{
-    width: 200px;
-    color: #fff;
-    background-color: var(--black-color);
-    border-color: var(--black-color);
-    height: 60px;
-    line-height: 60px;
-    font-size: 16px;
-    border-radius: 5px;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    font-family: var(--font-mono);
-    text-transform: uppercase;
-    box-sizing: content-box;
-    border-width: 2px;
-    border-style: solid;
-    white-space: nowrap;
-    cursor: pointer;
-    outline: none;
-}
-
-._btn_black:hover{
-    background-color: #fff;
-    color:  var(--black-color);
-    border-color: #fff;
-}
-
-@media (max-width:460px){
-    ._inner {
-        flex-direction: column;
-        padding: 50px 20px;
-    }
-    ._text {
-        font-size: 40px;
-        line-height: 46px;
-    }
-    ._secondary_text {
-        font-size: 16px;
-        line-height: 26px;
-    }
-    ._btn_white{
-        margin-top: 30px;
-        width: 150px;
-        height: 50px;
-        line-height: 50px;
-        font-size: 14px;
-    }
-    ._btn_black{
-        width: 150px;
-        height: 50px;
-        line-height: 50px;
-        font-size: 14px;
-    }
+    line-height: 26px;
+  }
+  ._btn_white {
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+  }
+  ._btn_black {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+  }
 }

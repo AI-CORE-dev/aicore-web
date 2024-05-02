@@ -90,11 +90,11 @@ const CLINKS = [
 const CDATAARTICLE = [
     {
         id: 0,
-        title: 'El futuro de la fuerza laboral: combinación de equipos internos y equipos aumentados: modelo híbrido',
-        date: '2024-01-08',
-        category: ['Tag 1', 'Tag 2', 'Tag 3'],
+        title: '¿Qué es Shift Left Testing?',
+        date: '2021-04-12',
+        category: ['TESTING'],
         img: 'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Favicon-Aicore.png',
-        name: 'Usuario 1',
-        profession: 'Profesion',
+        name: 'Alfredo Agustin Rey',
+        profession: 'Ingeniero en Informatica',
     },
 ];

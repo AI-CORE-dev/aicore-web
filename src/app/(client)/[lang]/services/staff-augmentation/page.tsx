@@ -6,7 +6,7 @@ import {
     ExtendYourTeam,
     OurSolutionsForTalenGap,
     Recognition,
-    ScheduleCall,
+    SchedulleCall,
     ServicesNumbers,
     StartTechnicalAudit,
     TypeOfWork,
@@ -28,7 +28,7 @@ function StaffAugmentation() {
 
             <main>
                 <ServicesNumbers />
-                <CarouselReviewClient />
+
                 <OurSolutionsForTalenGap />
                 <BannerOtherTechnologies />
                 <DedicatedDevelopmentTeam />
@@ -50,10 +50,9 @@ function StaffAugmentation() {
                     options={CEXTENDYOURTEAM.options}
                     title={CEXTENDYOURTEAM.title}
                 />
-                <CarouselReviewClient />
                 <Recognition />
                 <BannerContact />
-                <ScheduleCall />
+                <SchedulleCall />
             </main>
         </>
     );
@@ -99,10 +98,10 @@ const CTYPEOFWORK = {
 const CSTARTTECHINALAUDIT = {
     title: 'Comenza con una auditoría técnica',
     subtitle:
-        'Revisamos tu app desde su perspectiva técnica y te proveemos de un reporte de nuestros desarrolladores seniores listo para que puedas accionar y sobre que puntos priorizar. De esta forma podes evaluar nuestras skills y decidir sobre ello si queres trabajar con nosotros sobre el proyecto.',
+        'Revisamos tu app desde su perspectiva técnica y te proveemos de un reporte de nuestros desarrolladores senior listo para que puedas accionar y priorizar. De esta forma podes evaluar nuestras skills y decidir sobre ello si queres trabajar con nosotros.',
     btnText: 'Descargar nuestro reporte para auditoría.',
     btnLink: 'Contactanos',
-    img: '/working-on-macbook.webp',
+    img: '/service-staff.jpg',
     alt: '',
 };
 

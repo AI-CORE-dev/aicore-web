@@ -94,7 +94,7 @@
 }
 
 ._container_copy{
-
+  width: 30%;
 }
 
 ._container_terms {
@@ -138,6 +138,14 @@
   color: #fff;
 }
 
+.__copyrigth_text{
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 2;
+  font-family: var(--font-mono);
+  letter-spacing: -0.4px;
+  color: #fff;
+}
 ._container_info_contact {
   display: flex;
   flex-direction: row;

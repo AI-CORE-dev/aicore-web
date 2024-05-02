@@ -28,10 +28,9 @@ export function OpenPositions() {
                     <h2 className={styles._title}>Posiciones abiertas para aplicar</h2>
                     <ul className={styles._list_positions}>
                         <li className={styles._list_item}>
-                            <div style={{ width: '100%' }} onClick={openModal}>
+                            <div style={{ width: '100%' }}>
                                 <div className={styles._header}>
                                     <p className={styles._name_position}>JR Business Analyst</p>
-                                    <p className={styles._see_more}>Mas info</p>
                                 </div>
                                 <p className={styles._name_position_short}>JR BA</p>
                                 <div className={styles._info}>
@@ -109,7 +108,7 @@ export function OpenPositions() {
                         </li>
                     </ul>
                 </div>
-                <VideoPlayer videoId={youtubeVideoId} />
+                {/* <VideoPlayer videoId={youtubeVideoId} /> */}
 
                 {modalOpen ? (
                     <Modal isOpen={modalOpen} onClose={closeModal}>

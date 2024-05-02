@@ -6,12 +6,15 @@ import {
     ClientsReview,
     GetToKnowUsBetter,
     OurValues,
-    ScheduleCall,
     Recognition,
     PartnerShip,
     FeatureProjects,
+    SchedulleCall,
+    InstitutuionalVideo,
 } from '@/components/molecules';
 import { Header } from '@/components/organisms/Header';
+
+import styles from './about.module.css';
 
 function AboutPage() {
     return (
@@ -26,15 +29,15 @@ function AboutPage() {
             />
             <main>
                 <AboutUs />
+                <InstitutuionalVideo idVideo={'CdSaMoBIPmc'} />
                 <GetToKnowUsBetter />
                 <OurValues />
                 <Recognition />
                 <ClientsReview />
-                <FeatureProjects />
-
+                {/* <FeatureProjects /> */}
                 <InstagramFeed />
                 <PartnerShip />
-                <ScheduleCall />
+                <SchedulleCall />
             </main>
         </>
     );

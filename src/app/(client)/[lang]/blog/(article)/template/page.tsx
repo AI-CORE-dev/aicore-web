@@ -8,7 +8,7 @@ function BlogArticle() {
             <HeaderArticle />
             <main>
                 <ArticleBody />
-                <BlogSection />
+                {/* <BlogSection /> */}
             </main>
         </>
     );

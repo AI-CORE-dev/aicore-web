@@ -25,17 +25,17 @@ const CNUMBERS = [
     },
     {
         id: 2,
-        title: '1000',
+        title: '+1000',
         subtitle: 'Candidatos en nuestras bases',
     },
     {
         id: 3,
-        title: '7 días',
-        subtitle: 'Para sumar talentos en tu equpo',
+        title: '15 días',
+        subtitle: 'Para sumar talentos en tu equipo',
     },
     {
         id: 4,
-        title: '92%',
+        title: '98%',
         subtitle: 'Sastisfacción de nuestros clientes',
     },
 ];
