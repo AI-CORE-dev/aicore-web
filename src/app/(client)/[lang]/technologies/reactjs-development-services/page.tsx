@@ -1,6 +1,4 @@
 import {
-    Awards,
-    CarouselReviewClient,
     ExtendYourTeam,
     FaQ,
     SchedulleCall,
@@ -14,10 +12,16 @@ import { Header } from '@/components/organisms/Header';
 function Reactjs() {
     return (
         <>
-            <Header isButtonSecondary isVideo title={CDATAHEADER.title} />
+            <Header
+                isButtonSecondary
+                isVideo
+                subtitle={CDATAHEADER.subtitle}
+                textButton={CDATAHEADER.textButton}
+                textButtonSecondary={CDATAHEADER.textButtonSecondary}
+                title={CDATAHEADER.title}
+            />
             <main>
-                <ServicesNumbers />
-                <CarouselReviewClient />
+                <ServicesNumbers CNUMBERS={CNUMBERS} />
                 <OurExpertise CEXPERTISE={CEXPERTISEREACT} />
                 <TypeOfWork
                     description={CTYPEOFWORK.description}
@@ -38,7 +42,6 @@ function Reactjs() {
                     title={CEXTENDYOURTEAM.title}
                 />
                 <FaQ CFAQ={CFAQ} />
-                <Awards />
                 <SchedulleCall />
             </main>
         </>
@@ -46,107 +49,130 @@ function Reactjs() {
 }
 
 const CDATAHEADER = {
-    title: 'React Development Service',
-    subtitle: '',
+    title: 'Sumá a nuestros expertos en React.js',
+    subtitle:
+        '¡Aplicaciones web y mobile de primera con React.js! Productos digitales escalables y con el mejor rendimiento, diseñados cuidadosamente para entregar la mejor experiencia de usuario posible y perfecta para fidelizar a los exigentes usuarios de hoy en día.',
     textButton: 'Contactanos',
-    textButtonSecondary:
-        'Agenda una reunión de 30 minutos con nuestros desarrolladores de negocios.',
+    textButtonSecondary: '',
 };
 
 const CEXPERTISEREACT = [
     {
         id: 0,
-        title: 'Streaming apps',
+        title: 'Nuestra Experiencia en React.js',
         description:
-            'Optimize streaming content delivery to your users with the help of our Node.js developers. Leverage our expertise in building various streaming applications, including live video streaming platforms and music streaming services. Using Node.js, we allow users to download the core components first and access the rest software elements on-demand. Since the data is coming through a stream, we can process it in parallel during loading. With its streaming API, Node.js ensures efficient data streaming, reducing server and local computer overload.',
+            'Potencia tu equipo interno con nuestros desarrolladores y garantiza productos digitales alineados con las últimas tendencias y mejores prácticas del mercado.',
     },
     {
         id: 1,
-        title: 'Real-time chats',
+        title: 'Aplicaciones Web Progresivas (PWA)',
         description:
-            'Optimize streaming content delivery to your users with the help of our Node.js developers. Leverage our expertise in building various streaming applications, including live video streaming platforms and music streaming services. Using Node.js, we allow users to download the core components first and access the rest software elements on-demand. Since the data is coming through a stream, we can process it in parallel during loading. With its streaming API, Node.js ensures efficient data streaming, reducing server and local computer overload.',
+            'React.js es clave para desarrollar PWAs, asegurando experiencias similares a aplicaciones accesibles directamente desde navegadores web. Con especialistas en React.js de tu lado desarrollar PWA rápidas y confiables que funcionen perfectamente en todos los dispositivos es posible en tiempo record.            ',
     },
     {
         id: 2,
-        title: 'Complex SPA',
+        title: 'Herramientas de Visualización de Datos',
         description:
-            'Optimize streaming content delivery to your users with the help of our Node.js developers. Leverage our expertise in building various streaming applications, including live video streaming platforms and music streaming services. Using Node.js, we allow users to download the core components first and access the rest software elements on-demand. Since the data is coming through a stream, we can process it in parallel during loading. With its streaming API, Node.js ensures efficient data streaming, reducing server and local computer overload.',
+            'Contar con talento en React.js te permite contar con una amplia gama de opciones y bibliotecas para crear cuadros, gráficos y paneles. A través de nuestra experiencia transformamos datos en impresionantes representaciones visuales utilizando bibliotecas como D3.js, Victory, Chart.js, entre otras.',
     },
     {
         id: 3,
-        title: 'Collaboration tools',
+        title: 'Marketplaces',
         description:
-            'Optimize streaming content delivery to your users with the help of our Node.js developers. Leverage our expertise in building various streaming applications, including live video streaming platforms and music streaming services. Using Node.js, we allow users to download the core components first and access the rest software elements on-demand. Since the data is coming through a stream, we can process it in parallel during loading. With its streaming API, Node.js ensures efficient data streaming, reducing server and local computer overload.',
+            'Apoyándonos en React.js, creamos interfaces dinámicas que facilitan interacciones fluidas entre compradores y vendedores. Una de las claves para crear un marketplaces sólido y seguro con características como autenticación de usuarios, listado de productos, funcionalidad de búsqueda y gestión de transacciones.',
+    },
+    {
+        id: 4,
+        title: 'Desarrollo de E-commerce',
+        description:
+            'Creamos soluciones rápidas, escalables y compatibles con SEO para que tu E-commerce entregue una experiencia de compra excepcional.',
+    },
+    {
+        id: 5,
+        title: 'Desarrollo de Aplicaciones Multiplataforma',
+        description:
+            'Utilizando React Native, ayudamos a las empresas a crear aplicaciones móviles nativas multiplataforma y a ampliar su presencia digital.',
     },
 ];
 
 const CTYPEOFWORK = {
-    title: 'Estos son los proyectos que desarrollamos',
+    title: 'Tu socio tecnológico para materializar todo tipo de proyectos',
     description:
-        'No importa la clase de producto que estés constrendo. En AI CORE podemos desarrollar para cualquier industría, nuestros expertise reside en el desarrollo de productos a travez de metodologías ágiles logrando así flexibilidad y calidad para cumplir cualquier requisito.',
+        'Contanos el alcance del producto a materializar que nosotros ponemos el 100% de nuestras skills para entregarte las mejores:',
     options: [
         {
             id: 0,
-            title: 'Desarrollo de MVPs',
+            title: 'Aplicaciones web y móviles.',
         },
         {
             id: 1,
-            title: 'Migraciones tecnológicas',
+            title: 'Interfaces que enamoran y una user experience intuitiva (UI/UX).',
         },
         {
             id: 2,
-            title: 'Desarrollo de nuevas funcionalidades',
+            title: 'Aplicaciones de una sola página (SPAs).',
         },
         {
             id: 3,
-            title: 'Desarrollo de proyectos a largo plazo',
+            title: 'Integraciones con sistemas backend y APIs',
         },
         {
             id: 4,
-            title: 'Soporte y mantenimiento evolutivo',
+            title: 'Desarrollos basado en componentes',
         },
     ],
 };
 
 const CSTARTTECHINALAUDIT = {
-    title: 'Comenza con una auditoría técnica',
+    title: 'Contá con desarrolladores de React.js en tu próximo proyecto',
     subtitle:
-        'Revisamos tu app desde su perspectiva técnica y te proveemos de un reporte de nuestros desarrolladores seniores listo para que puedas accionar y sobre que puntos priorizar. De esta forma podes evaluar nuestras skills y decidir sobre ello si queres trabajar con nosotros sobre el proyecto.',
-    btnText: 'Descargar nuestro reporte para auditoría.',
-    btnLink: '/',
-    img: '/node-developer.webp',
-    alt: 'node-developer',
+        'Accede al talento AI CORE en React.js. Evalúa su experiencia mediante CV detallados y transparentes, para identificar a los candidatos más adecuados Aprovecha los beneficios de nuestra solución de Staff Augmentation para ampliar su equipo con especialistas mediante modalidad remota y escalar tus capacidades internas en desarrollo.',
+    btnText: 'SOLICITA DESARROLLADORES',
+    btnLink: 'SOLICITA DESARROLLADORES',
+    img: '/service-staff.jpg',
+    alt: 'react-developer',
 };
 
 const CEXTENDYOURTEAM = {
-    title: 'Extendé tu equipo',
+    title: '¿Por qué sumar expertos en React.js?',
     description:
-        'Suma de formá rápida y sencilla perfiles para fortalecer tus proyectos, en AI CORE contamos con los especialistas y el tiempo de respuesta para sumarlos a tu equipo de inmediato.',
+        'Potencia tus desarrollos con nuestra experiencia. Nuestros servicios de staffing están pensandos para darte escalabilidad inmediata para que empieces a ver los resultados que estás buscando.',
     options: [
         {
             id: 0,
-            title: 'Desarrollador Fullstack',
-            subtitle: 'Desarrollador Fullstack con experiencia en React y Node.js.',
+            title: 'Es rápido',
+            subtitle:
+                'Escala tu equipo con nuestros desarrolladores de forma inmediata. La contratación de desarrolladores suele tardar en promedio de 2 meses. Evita retrasos en proyectos, AI CORE pone a disposición talento en tan solo 15 días.',
         },
         {
             id: 1,
-            title: 'Desarrollador Frontend',
-            subtitle: 'Desarrollador Frontend con experiencia en React.',
+            title: 'Es flexible',
+            subtitle:
+                'Ya sea que necesites fuerza de desarrollo a corto o largo plazo, nuestros desarrolladores de Node.js pueden sumarse a tu proyecto de forma rápida, por el tiempo que requieras y evitando los costos de la contratación de tiempo completo. ¡BOOM! Escalabilidad para tus proyectos.',
         },
         {
             id: 2,
-            title: 'Desarrollador Backend',
-            subtitle: 'Desarrollador Backend con experiencia en Node.js.',
+            title: 'Es transparente',
+            subtitle:
+                'El talento es clave y todos queremos elegir a los mejores en su campo… Pero nunca había sido tan fácil. Comenzamos con una reunión exploratoria para aclarar los detalles de tu proyecto y comprender sus requerimientos. Luego te presentamos nuestro top mejores candidatos para que puedas evaluarlos y entrevistarlos personalmente.',
         },
         {
             id: 3,
-            title: 'Desarrollador Móvil',
-            subtitle: 'Desarrollador Móvil con experiencia en React Native.',
+            title: 'Cuida tu budget',
+            subtitle:
+                'Nuestra solución de staffing es ideal para empresas que buscan cuidar su presupuesto sin descuidar la calidad de sus desarrollos. Al sumar a nuestros desarrolladores eliminas los gastos de contratación, capacitación, espacio de oficina, facturas de servicios, licencias de software, beneficios para empleados, equipos, incrementos de nómina y costos logísticos y la lista sigue y sigue. En AI CORE pagas por el tiempo de trabajo real dedicado a tu proyecto.',
         },
         {
             id: 4,
-            title: 'Desarrollador de QA',
-            subtitle: 'Desarrollador de QA con experiencia en testing de aplicaciones.',
+            title: 'Se adapta a tus deadlines',
+            subtitle:
+                'Cumpli con los plazos de tus proyectos, por más desafiantes que sean. Sumá talento y gestionalo como una pieza más de tu equipo. Nuestro staff sabe lo que hace y en AI CORE somos expertos en sumar talento a nuevos proyectos y que comiencen a trabajar de forma rápida adaptándose a tu equipo.',
+        },
+        {
+            id: 5,
+            title: 'Se potencia tu equipo',
+            subtitle:
+                'Nuestros especialistas se integran con tu equipo para colaborar y generar sinergias desde el minuto 1 y  durante todo el proceso de desarrollo. Tu comunicación con ellos es directa para que puedas asignar prioridades y gestionar su tiempo en tu proyecto. Nosotros nos encargamos de todo el papeleo para que tu proyecto despegue.',
         },
     ],
 };
@@ -154,30 +180,51 @@ const CEXTENDYOURTEAM = {
 const CFAQ = [
     {
         id: 0,
-        question: '¿Qué es Node.js y por qué es adecuado para el desarrollo web?',
-        answer: 'Node.js es un tiempo de ejecución de JavaScript integrado en el motor V8 de Chrome. Permite a los desarrolladores ejecutar JavaScript en el lado del servidor, lo que lo hace ideal para el desarrollo web. Node.js proporciona alta escalabilidad, manejo eficiente de solicitudes simultáneas y un rico ecosistema de bibliotecas y marcos.',
+        question: '¿Cuándo se introdujo React.js?',
+        answer: 'Facebook compartió React.js en JSConf US en mayo de 2013. Al principio, la comunidad de desarrollo no lo aceptó, ya que preferían colocar el markup y el código JavaScript en el mismo archivo. Sin embargo, nuevas empresas como Netflix y Airbnb eligen React.js para desarrollar sus productos. Destacando su enfoque centrado en componentes.',
     },
     {
         id: 1,
-        question: '¿Qué ventajas tiene utilizar Node.js?',
-        answer: 'Gracias a Node.js, los equipos de desarrollo mejoran el rendimiento con menos gasto. La tecnología agrupa todas las solicitudes entrantes en un solo proceso en lugar de establecer muchas. Si alguna conexión queda inactiva, Node.js pasa a otra y ejecuta el código en el mismo hilo. En consecuencia, un proceso utiliza menos memoria que varios. Más aún, Node.js está escrito con JavaScript, por lo que resulta amigable para los especialistas de front-end.',
+        question: '¿Es React.js un framework?',
+        answer: 'Los creadores de React.js presentan a React.js como una biblioteca, no un framework. Sin embargo, parece ser tan poderoso como uno. React.js se ocupa de construir una estructura de componentes de UI, ayudándote a administrar de manera eficiente en lo que sea que estás trabajando.',
     },
     {
         id: 2,
-        question:
-            '¿Cómo puede beneficiar mi proyecto o negocio la contratación de desarrolladores de Node.js?',
-        answer: 'Contratar desarrolladores de Node.js aporta numerosos beneficios. Poseen experiencia en la creación de aplicaciones web escalables, sistemas de chat en tiempo real, aplicaciones de transmisión, SPA complejos, API y más. Su conocimiento de JavaScript y Node.js les permite ofrecer soluciones rápidas y confiables, mejorar el rendimiento y brindar una experiencia de usuario excepcional.',
+        question: '¿En qué casos se utiliza React.js?',
+        answer: 'No hay restricciones para su uso, pero es clave contar con un sólido conocimiento de JavaScript y aplicaciones de página única (SPA). Los desarrolladores utilizan React.js por su facilidad de uso y las experiencias de usuario que ofrece, siendo relativamente rápido de aprender para quienes ya dominan JavaScript.',
     },
     {
         id: 3,
-        question:
-            '¿Tiene ejemplos de proyectos exitosos con los que hayan trabajado sus desarrolladores de Node.js?',
-        answer: 'Hemos entregado con éxito proyectos para varios clientes en diversas industrias, como comercio electrónico, atención médica, finanzas, marketing y más. Los ejemplos incluyen el desarrollo de aplicaciones de chat en tiempo real, la creación de API escalables y la creación de aplicaciones web eficientes que hayan recibido comentarios positivos de los usuarios.',
+        question: '¿Por qué conviene utilizar React.js?',
+        answer: 'Esta biblioteca es una referente en mejores prácticas, facilita el trabajo con componentes de UI y minimiza la carga del navegador mediante su DOM virtual. Además, promueve la reutilización de código, acelerando el proceso de desarrollo.',
     },
     {
         id: 4,
-        question: '¿Qué empresas utilizan Node.js?',
-        answer: 'Gigantes como Facebook, Google, Amazon y LinkedIn eligieron Node.js para construir sus plataformas. Funciona bien para cualquier aplicación en tiempo real, proporcionando transmisión de video, intercambio de archivos y aplicaciones de red intensivas. Node.js ayuda a las empresas a minimizar sus gastos. LinkedIn redujo seriamente el número de sus servidores de 30 a 3 después de pasar a Node.js.',
+        question: '¿Qué empresas utilizan React.js?',
+        answer: 'Grandes empresas como Asana y Dropbox, así como también muchas startups, lo eligen por su capacidad para brindar acciones rápidas del usuario en navegadores y su flexibilidad para adaptarse a cambios de prioridades a la hora de desarrollar. Su estabilidad es otro punto fuerte, ya que las actualizaciones no afectan al código existente.',
+    },
+];
+
+const CNUMBERS = [
+    {
+        id: 1,
+        title: '+30',
+        subtitle: 'Desarrolladores',
+    },
+    {
+        id: 2,
+        title: '+10000',
+        subtitle: 'Candidatos en nuestras bases',
+    },
+    {
+        id: 3,
+        title: '15 días',
+        subtitle: 'Para sumar talentos a tu equipo',
+    },
+    {
+        id: 4,
+        title: '+50',
+        subtitle: 'Proyectos potenciados',
     },
 ];
 

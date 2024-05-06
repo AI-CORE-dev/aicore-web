@@ -86,17 +86,15 @@ export function SchedulleCall() {
                 body: JSON.stringify(formData),
             });
 
-            console.log('🚀 ~ handleSubmit ~ response:', response);
-
             if (response.ok) {
                 setModalMessage('¡Formulario enviado con éxito!');
                 setFormData(initialFormData);
             } else {
                 setModalMessage('Error al enviar el formulario. Por favor, inténtalo de nuevo.');
-                console.error('Error al enviar el formulario123:', response.statusText);
+                //console.error('Error al enviar el formulario123:', response.statusText);
             }
         } catch (error) {
-            console.error('Error al enviar el formularioCATCH:', error);
+            //console.error('Error al enviar el formularioCATCH:', error);
             setModalMessage('Error al enviar el formulario. Por favor, inténtalo de nuevo.');
         } finally {
             setIsModalVisible(true);

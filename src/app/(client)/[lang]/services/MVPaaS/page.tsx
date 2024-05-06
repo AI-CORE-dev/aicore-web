@@ -1,7 +1,7 @@
 import {
     CarouselReviewClient,
     Recognition,
-    ScheduleCall,
+    SchedulleCall,
     WhyOptForMVP,
     WorkProcess,
 } from '@/components/molecules';
@@ -17,7 +17,7 @@ function MVPaaS() {
                 <WorkProcess />
                 <CarouselReviewClient />
                 <Recognition />
-                <ScheduleCall />
+                <SchedulleCall />
             </main>
         </>
     );

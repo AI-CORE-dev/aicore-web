@@ -1,4 +1,4 @@
-import { HomeCasesStudies, ScheduleCall } from '@/components/molecules';
+import { HomeCasesStudies, SchedulleCall } from '@/components/molecules';
 import { Header } from '@/components/organisms/Header';
 
 function CaseStudies() {
@@ -8,7 +8,7 @@ function CaseStudies() {
             <main>
                 <HomeCasesStudies />
 
-                <ScheduleCall />
+                <SchedulleCall />
             </main>
         </>
     );

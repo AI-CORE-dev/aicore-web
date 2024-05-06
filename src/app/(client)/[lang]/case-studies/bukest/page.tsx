@@ -1,4 +1,4 @@
-import { ScheduleCall } from '@/components/molecules';
+import { SchedulleCall } from '@/components/molecules';
 import { Header } from '@/components/organisms/Header';
 
 function Bukest() {
@@ -6,7 +6,7 @@ function Bukest() {
         <>
             <Header isVideo isButtonPrimary={false} title={CDATAHEADER.title} />
             <main>
-                <ScheduleCall />
+                <SchedulleCall />
             </main>
         </>
     );

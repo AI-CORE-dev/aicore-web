@@ -2,7 +2,15 @@ import React from 'react';
 
 import styles from './styles/services-number.module.css';
 
-export function ServicesNumbers() {
+interface IProps {
+    CNUMBERS: {
+        id: number;
+        title: string;
+        subtitle: string;
+    }[];
+}
+
+export function ServicesNumbers({ CNUMBERS }: IProps) {
     return (
         <section className={styles._section}>
             <ul className={styles._unordered_list}>
@@ -16,26 +24,3 @@ export function ServicesNumbers() {
         </section>
     );
 }
-
-const CNUMBERS = [
-    {
-        id: 1,
-        title: '+30',
-        subtitle: 'Desarrolladores',
-    },
-    {
-        id: 2,
-        title: '+1000',
-        subtitle: 'Candidatos en nuestras bases',
-    },
-    {
-        id: 3,
-        title: '15 días',
-        subtitle: 'Para sumar talentos en tu equipo',
-    },
-    {
-        id: 4,
-        title: '98%',
-        subtitle: 'Sastisfacción de nuestros clientes',
-    },
-];

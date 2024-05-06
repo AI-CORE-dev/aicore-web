@@ -1,7 +1,6 @@
 import {
     BannerContact,
     BannerOtherTechnologies,
-    CarouselReviewClient,
     DedicatedDevelopmentTeam,
     ExtendYourTeam,
     OurSolutionsForTalenGap,
@@ -27,7 +26,7 @@ function StaffAugmentation() {
             />
 
             <main>
-                <ServicesNumbers />
+                <ServicesNumbers CNUMBERS={CNUMBERS} />
 
                 <OurSolutionsForTalenGap />
                 <BannerOtherTechnologies />
@@ -148,5 +147,28 @@ const CEXTENDYOURTEAM = {
         },
     ],
 };
+
+const CNUMBERS = [
+    {
+        id: 1,
+        title: '+30',
+        subtitle: 'Desarrolladores',
+    },
+    {
+        id: 2,
+        title: '+1000',
+        subtitle: 'Candidatos en nuestras bases',
+    },
+    {
+        id: 3,
+        title: '15 días',
+        subtitle: 'Para sumar talentos en tu equipo',
+    },
+    {
+        id: 4,
+        title: '98%',
+        subtitle: 'Sastisfacción de nuestros clientes',
+    },
+];
 
 export default StaffAugmentation;

@@ -1,10 +1,5 @@
 import { Header } from '@/components/organisms/Header';
-import {
-    CarouselReviewClient,
-    Recognition,
-    SchedulleCall,
-    WhyOptForMVP,
-} from '@/components/molecules';
+import { Recognition, SchedulleCall, WhyOptForMVP } from '@/components/molecules';
 
 function Consultancy() {
     return (

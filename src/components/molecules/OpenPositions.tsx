@@ -2,20 +2,13 @@
 
 import React, { useState } from 'react';
 
-import { VideoPlayer } from '../modals/VideoPlayer';
 import { Modal } from '../modals/ModalStructure';
 
 import styles from './styles/open-positions.module.css';
 import { ModalOpenPositions } from './ModalOpenPositions';
 
 export function OpenPositions() {
-    const youtubeVideoId = 'bCr1c9V8JYQ';
-
     const [modalOpen, setModalOpen] = useState(false);
-
-    const openModal = () => {
-        setModalOpen(true);
-    };
 
     const closeModal = () => {
         setModalOpen(false);

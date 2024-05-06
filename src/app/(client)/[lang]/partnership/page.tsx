@@ -1,4 +1,4 @@
-import { ScheduleCall } from '@/components/molecules';
+import { SchedulleCall } from '@/components/molecules';
 import { BannerSuscribe } from '@/components/molecules/partnership/BannerSuscribe';
 import { LetsProgressTogether } from '@/components/molecules/partnership/LetsProgressTogether';
 import { PartnerComment } from '@/components/molecules/partnership/PartnerComment';
@@ -15,7 +15,7 @@ function PartnershipPage() {
                 <PartnerComment />
                 <PartnerReview isTitle={false} />
                 <BannerSuscribe />
-                <ScheduleCall />
+                <SchedulleCall />
             </main>
         </>
     );

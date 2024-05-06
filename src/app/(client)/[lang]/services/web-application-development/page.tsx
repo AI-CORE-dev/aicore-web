@@ -1,4 +1,4 @@
-import { Recognition, ScheduleCall, WhyOptForMVP } from '@/components/molecules';
+import { Recognition, SchedulleCall, WhyOptForMVP } from '@/components/molecules';
 import { Header } from '@/components/organisms/Header';
 
 function WebAplicationDevelopment() {
@@ -24,7 +24,7 @@ function WebAplicationDevelopment() {
                 />
                 <Recognition />
 
-                <ScheduleCall />
+                <SchedulleCall />
             </main>
         </>
     );

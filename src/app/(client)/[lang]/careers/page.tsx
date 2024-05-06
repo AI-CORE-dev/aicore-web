@@ -9,7 +9,6 @@ import {
     OpenPositions,
     RecruimentProcess,
     OurValues,
-    FormPostulateNow,
     SchedulleCall,
 } from '@/components/molecules';
 

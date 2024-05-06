@@ -1,6 +1,5 @@
 import { ArticleBlog } from '@/components/molecules';
 import { HeaderBlog } from '@/components/organisms/HeaderBlog';
-import { NavBlog } from '@/components/organisms/NavBlog';
 
 function Blog() {
     return (

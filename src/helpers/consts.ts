@@ -39,12 +39,12 @@ export const CPAGES = [
         isCollapse: true,
         items: [
             { id: 1, text: 'NodeJS', href: '/technologies/nodejs-development-services' },
-            // {
-            //     id: 0,
-            //     text: 'React Native',
-            //     href: '/technologies/react-native-development-services',
-            // },
-            // { id: 3, text: 'ReactJS', href: '/technologies/reactjs-development-services' },
+            {
+                id: 0,
+                text: 'React Native',
+                href: '/technologies/react-native-development-services',
+            },
+            { id: 3, text: 'ReactJS', href: '/technologies/reactjs-development-services' },
         ],
         text: 'Tecnologías',
         href: '/technologies',

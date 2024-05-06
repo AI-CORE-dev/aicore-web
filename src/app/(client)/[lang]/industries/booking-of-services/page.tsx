@@ -1,6 +1,5 @@
-import { CarouselReviewClient, ScheduleCall } from '@/components/molecules';
+import { CarouselReviewClient, SchedulleCall } from '@/components/molecules';
 import { BlogSection } from '@/components/molecules/BlogSection';
-import { BannerContactUs } from '@/components/molecules/technologies/BannerContactUs';
 import { WhyOptFor } from '@/components/molecules/technologies/WhyOptFor';
 import { Header } from '@/components/organisms/Header';
 
@@ -11,9 +10,8 @@ function BookingOfServices() {
             <main>
                 <WhyOptFor subtitle={'subtitle'} title={'BookingOfServices'} />
                 <CarouselReviewClient />
-                <BannerContactUs />
                 <BlogSection />
-                <ScheduleCall />
+                <SchedulleCall />
             </main>
         </>
     );

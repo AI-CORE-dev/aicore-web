@@ -8,13 +8,10 @@ import {
     OurValues,
     Recognition,
     PartnerShip,
-    FeatureProjects,
     SchedulleCall,
     InstitutuionalVideo,
 } from '@/components/molecules';
 import { Header } from '@/components/organisms/Header';
-
-import styles from './about.module.css';
 
 function AboutPage() {
     return (
