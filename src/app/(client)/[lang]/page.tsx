@@ -1,5 +1,3 @@
-import type { SupportedLangs } from '@/lang/getDictionary';
-
 import { Header } from '@/components/organisms/Header';
 import {
     HowWeCanHelp,
@@ -13,8 +11,8 @@ import { getDictionary } from '@/lang/getDictionary';
 
 import styles from './page.module.css';
 
-export default async function Home({ params }: { params: { lang: SupportedLangs } }) {
-    const dictionary = await getDictionary(params.lang);
+export default async function Home() {
+    const dictionary = await getDictionary('es');
 
     return (
         <>
@@ -55,7 +53,7 @@ const HOWCANHELP = {
             title: 'Consultoria',
             subtitle: 'Te acompañamos en tu proceso de transformación tecnologica.',
             image: '/howcanhelp/1.svg',
-            redirection: '/services/web-application-development',
+            redirection: '/services/consultancy',
         },
         {
             id: 0,
@@ -69,7 +67,7 @@ const HOWCANHELP = {
             title: 'Outsourcing',
             subtitle: 'Desarrollá con nosotros tus productos digitales y proyectos tecnologícos.',
             image: '/howcanhelp/3.svg',
-            redirection: '/services/web-application-development',
+            redirection: '/services/product-development',
         },
     ],
 };

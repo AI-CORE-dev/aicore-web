@@ -1,12 +1,12 @@
+/* eslint-disable import/no-default-export */
 import type { NextRequest } from 'next/server';
-import type { SupportedLangs } from '@/lang/getDictionary';
 
 import { match } from '@formatjs/intl-localematcher';
 import Negotiator from 'negotiator';
 
-const supportedLangs: SupportedLangs[] = ['es', 'en'];
+import { supportedLangs } from '@/lang/getDictionary';
 
-export function getLang(preferredLang: string): string {
+function getLang(preferredLang: string): string {
     const requestedLang = new Negotiator({
         headers: { 'accept-language': preferredLang },
     }).languages();
@@ -22,7 +22,7 @@ export function middleware(request: NextRequest) {
     const pathnameHasLang = supportedLangs.some(
         (lang) => pathname.startsWith(`/${lang}/`) || pathname === `/${lang}`,
     );
-    const isAsset = ['.png', '.jpg', '.svg', '.ico', '.mp4', '.webp'].some((ext) =>
+    const isAsset = ['.png', '.jpg', '.svg', '.ico', '.mp3', '.mp4', '.webp'].some((ext) =>
         pathname.endsWith(ext),
     );
 

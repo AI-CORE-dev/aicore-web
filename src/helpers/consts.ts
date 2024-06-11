@@ -336,7 +336,7 @@ export const CNUMBERS = [
     {
         id: 0,
         title: '+30',
-        subtitle: 'Desarrolladores',
+        subtitle: 'Desarrolladores expertos',
         img: {
             id: 0,
             image: '/about_us/numberAicore/1.svg',
@@ -366,7 +366,7 @@ export const CNUMBERS = [
     {
         id: 3,
         title: '60%',
-        subtitle: 'De staff senior',
+        subtitle: 'De nuestro staff senior',
         img: {
             id: 3,
             image: '/about_us/numberAicore/4.svg',
@@ -409,16 +409,16 @@ export const CINFOFOUNDERS = [
         ask: '¿Cuál es el propósito de AI CORE como desarrolladora?',
         answer: 'En nuestro ADN está como motor de ser el mejor socio tecnológico para los proyectos de nuestros clientes, lo que implica involucramiento, compromiso y responsabilidad, no solo con la calidad sino también con los deadlines y la velocidad de respuesta. Nunca negociamos sacrificar la calidad por eso entre la enorme demanda de productos tecnológicos nuestro norte para crecer fue apostar en el talento y el compromiso.',
     },
-    {
-        id: 1,
-        name: 'Ivan Addolorato',
-        position: 'Co-Founder',
-        employment: 'CTO',
-        image: '/about_us/coco.jpg',
-        linkedin: 'https://www.linkedin.com/in/ivan-addolorato-070ab8224/',
-        ask: '¿Que te hace sentir orgulloso de  AI CORE? ',
-        answer: 'No olvidarnos de disfrutar! Es un camino lleno de desafíos, en el corto y en largo plazo pero nunca nos olvidamos de que esto es lo que disfrutamos, el dia a dia con el equipo y el empuje por dar el mejor delivery y la satisfacción para los proyectos de nuestros clientes.',
-    },
+    // {
+    //     id: 1,
+    //     name: 'Ivan Addolorato',
+    //     position: 'Co-Founder',
+    //     employment: 'CTO',
+    //     image: '/about_us/coco.jpg',
+    //     linkedin: 'https://www.linkedin.com/in/ivan-addolorato-070ab8224/',
+    //     ask: '¿Que te hace sentir orgulloso de  AI CORE? ',
+    //     answer: 'No olvidarnos de disfrutar! Es un camino lleno de desafíos, en el corto y en largo plazo pero nunca nos olvidamos de que esto es lo que disfrutamos, el dia a dia con el equipo y el empuje por dar el mejor delivery y la satisfacción para los proyectos de nuestros clientes.',
+    // },
     {
         id: 2,
         name: 'Ezquiel Maranga',
@@ -552,7 +552,7 @@ export const CCLIENTS = [
         company: 'Worknmates',
         review: '"Siempre valoramos mucho es su involucramiento como usuarios de nuestra solución. Eso es fundamental porque obtenemos feedback de ellos, su visión sobre el negocio, su apoyo en cada momento del camino de llevar adelante una start up."',
         score: 5,
-        avatar: '/cli_worknmates.svg',
+        avatar: '/client_review/cli_worknmates.svg',
     },
     {
         id: 1,
@@ -561,17 +561,17 @@ export const CCLIENTS = [
         company: 'Bukest',
         review: '"Trabajamos codo a codo con AI CORE para poder reconvertirnos. Ellos fueron cruciales para nunca bajar los brazos y siempre que necesitábamos pivotear tener su apoyo tecnológico y humano."',
         score: 5,
-        avatar: '/cli_bukest.svg',
+        avatar: '/client_review/cli_bukest.svg',
     },
 
     {
         id: 2,
-        name: 'Lorem Ipsum',
-        job: 'CEO - Founder',
-        company: 'Lorem',
-        review: '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."',
+        name: 'Hans Hanckes',
+        job: 'CEO & CTO',
+        company: 'Sodtrack',
+        review: '"Desarrollamos nuestra plataforma junto a/ AI CORE. En el proyecto destacó su velocidad de respuestas y calidad en sus entregas. Siempre hubo alguien del equipo brindado al seguimiento para garantizar que nuestras expectativas se cumplan."',
         score: 5,
-        avatar: 'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Favicon-Aicore.png',
+        avatar: '/client_review/cli_sportyroom.svg',
     },
 ];
 

@@ -15,7 +15,7 @@ export function Navbar() {
     return (
         <nav className={`${styles._nav_container} ${scrolled ? styles.scrolled : ''}`}>
             <Link href={'/'}>
-                {/*!!!!!!!*/}
+                {/*FIXME*/}
                 <img
                     alt={'aicore-logo'}
                     className={styles._img_logo_desktop}

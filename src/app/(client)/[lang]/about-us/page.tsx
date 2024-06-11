@@ -43,9 +43,9 @@ function AboutPage() {
 export default AboutPage;
 
 const DATAHEADER = {
-    title: 'Somos más que un proveedor - somos el aliado tecnológico que tu organización necesita',
+    title: 'Somos más que un proveedor - somos el aliado tecnológico que tu organización necesita.',
     subtitle:
-        'Desde el día uno asumimos el proyecto como nuestro y lo desarrollamos mientras damos apoyo y consultoría para que logres obtener de la ventaja.',
+        'Desde el día uno asumimos tu proyecto como nuestro y ponemos a disposición nuestro talento y experiencia para que logres esa ventaja que estás buscando en el mercado.',
     textButton: 'Contactanos',
     textButtonSecondary:
         'Agenda una reunión de 30 minutos con nuestros desarrolladores de negocios.',

@@ -1,24 +1,29 @@
-import 'server-only';
+import type { PathInto } from '@/types/utility-types.type';
 
-const dictionaries = {
-    en: () => import('./en.json').then((module) => module.default),
+const DEFAULT_LANG: TSupportedLangs = 'es';
+
+export const dictionaries = {
     es: () => import('./es.json').then((module) => module.default),
 };
 
-export type SupportedLangs = keyof typeof dictionaries;
+export type TSupportedLangs = keyof typeof dictionaries;
 
-export const getDictionary = (lang: SupportedLangs) => {
-    return dictionaries[lang]();
+export const supportedLangs = Object.keys(dictionaries) as TSupportedLangs[];
+
+export const getDictionary = async (lang: TSupportedLangs = DEFAULT_LANG) => {
+    const dictionary = await dictionaries[lang]();
+
+    return dictionary;
 };
 
-// export const getDictionary = async (lang: SupportedLangs) => {
-//     try {
-//         const modul = await dictionaries[lang]();
+//
+// Helper types
+//
 
-//         return modul;
-//     } catch (error) {
-//         console.error(`Error loading dictionary for lang '${lang}':`, error);
+export type i18nKeysMap = Awaited<ReturnType<(typeof dictionaries)[typeof DEFAULT_LANG]>>;
 
-//         return null;
-//     }
-// };
+export type i18nKeys = PathInto<i18nKeysMap>;
+
+type TDataKeysMap = Awaited<ReturnType<(typeof dictionaries)[keyof typeof dictionaries]>>; //['data'];
+
+export type TDataKeys = keyof TDataKeysMap;

@@ -12,16 +12,27 @@ export function Recognition() {
 
                 <ul className={styles._unordered_list}>
                     {CNUMBERS.map((item) => (
-                        <li key={item.id} className={styles._list_number}>
-                            <span className={styles._title}>{item.title}</span>
-                            <span className={styles._subtitle}>{item.subtitle}</span>
-
-                            <img
-                                alt={item.img.alt}
-                                className={styles._image}
-                                src={item.img.image}
-                            />
-                        </li>
+                        <div
+                            key={item.id}
+                            style={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center',
+                                justifyContent: 'space-between',
+                            }}
+                        >
+                            <li className={styles._list_number}>
+                                <span className={styles._title}>{item.title}</span>
+                                <span className={styles._subtitle}>{item.subtitle}</span>
+                            </li>
+                            <li>
+                                <img
+                                    alt={item.img.alt}
+                                    className={styles._image}
+                                    src={item.img.image}
+                                />
+                            </li>
+                        </div>
                     ))}
                 </ul>
             </div>
