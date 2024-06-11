@@ -65,8 +65,9 @@
 }
 
 ._item_img {
-  background-color: black;
   height: 400px;
+  max-width: 100%;
+  border:none;
 }
 
 ._container_header {

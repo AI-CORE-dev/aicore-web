@@ -14,6 +14,7 @@ interface FormData {
     mail: string;
     celular: string;
     empresa: string;
+    mensaje: string;
     //tamañoEmpresa: string;
     //presupuesto: string;
     //urgencia: string;
@@ -27,6 +28,7 @@ const initialFormData: FormData = {
     mail: '',
     celular: '',
     empresa: '',
+    mensaje: '',
     //tamañoEmpresa: '',
     //presupuesto: '',
     //urgencia: '',
@@ -115,6 +117,7 @@ export function SchedulleCall() {
             formData.mail.trim() !== '' &&
             formData.celular.trim() !== '' &&
             formData.empresa.trim() !== '' &&
+            formData.mensaje.trim() !== '' &&
             //formData.tamañoEmpresa.trim() !== '' &&
             //formData.presupuesto.trim() !== '' &&
             //formData.urgencia.trim() !== '' &&
@@ -209,77 +212,7 @@ export function SchedulleCall() {
                             />
                         </div>
                     </div>
-                    {/* <div className={styles._row}>
-                        <div
-                            className={styles._container_input}
-                            style={{ width: '100%', marginRight: '20px' }}
-                        >
-                            <label className={styles._label} htmlFor={'tamañoEmpresa'}>
-                                Tamaño de la empresa
-                            </label>
-                            <select
-                                required
-                                className={styles._select}
-                                id={'tamañoEmpresa'}
-                                name={'tamañoEmpresa'}
-                                value={formData.tamañoEmpresa}
-                                onChange={handleChange}
-                            >
-                                <option value={''}>Selecciona una opción</option>
-                                <option value={'1-10'}>1 - 10</option>
-                                <option value={'11-50'}>11 - 50</option>
-                                <option value={'51-200'}>51 - 200</option>
-                                <option value={'201-500'}>201 - 500</option>
-                                <option value={'500-1000'}>500 - 1000</option>
-                                <option value={'+1000'}>+1000</option>
-                            </select>
-                        </div>
-                        <div className={styles._container_input} style={{ width: '100%' }}>
-                            <label className={styles._label} htmlFor={'presupuesto'}>
-                                Presupuesto Aproximado
-                            </label>
-                            <select
-                                required
-                                className={styles._select}
-                                id={'presupuesto'}
-                                name={'presupuesto'}
-                                value={formData.presupuesto}
-                                onChange={handleChange}
-                            >
-                                <option value={''}>Selecciona una opción</option>
-                                <option value={'<10000'}>Menos de U$D 10.000</option>
-                                <option value={'10000-25000'}>Entre U$D 10.000 y U$D 25.000</option>
-                                <option value={'25000-50000'}>Entre U$D 25.000 y U$D 50.000</option>
-                                <option value={'>50000'}>Más de U$D 50.000</option>
-                            </select>
-                        </div>
-                    </div> */}
                     <div className={styles._row}>
-                        {/* <div
-                            className={styles._container_input}
-                            style={{ width: '100%', marginRight: '20px' }}
-                        >
-                            <label className={styles._label} htmlFor={'urgencia'}>
-                                Urgencia
-                            </label>
-                            <select
-                                required
-                                className={styles._select}
-                                id={'urgencia'}
-                                name={'urgencia'}
-                                value={formData.urgencia}
-                                onChange={handleChange}
-                            >
-                                <option value={''}>Selecciona una opción</option>
-                                <option value={'idea'}>Es solo una idea</option>
-                                <option value={'posibilidad'}>
-                                    Quiero explorar la posibilidad
-                                </option>
-                                <option value={'inmediato'}>
-                                    Necesito incorporar un sistema a medida de inmediato
-                                </option>
-                            </select>
-                        </div> */}
                         <div className={styles._container_input}>
                             <label className={styles._label} htmlFor={'contacto'}>
                                 Prefiere ser contactado por
@@ -298,6 +231,21 @@ export function SchedulleCall() {
                                 <option value={'mail'}>Mail</option>
                             </select>
                         </div>
+                    </div>
+
+                    <div className={styles._container_input}>
+                        <label className={styles._label} htmlFor={'mensaje'}>
+                            Motivo
+                        </label>
+                        <input
+                            required
+                            className={styles._input_text}
+                            id={'mensaje'}
+                            name={'mensaje'}
+                            type={'text'}
+                            value={formData.mensaje}
+                            onChange={handleChange}
+                        />
                     </div>
                     <div className={styles._containerCaptcha}>
                         <ReCAPTCHA

@@ -26,7 +26,12 @@ export function GetToKnowUsBetter() {
                                         {item.position} {item.employment}
                                     </p>
 
-                                    <a className={styles._linkedin} href={item.linkedin}>
+                                    <a
+                                        className={styles._linkedin}
+                                        href={item.linkedin}
+                                        rel={'noopener noreferrer'}
+                                        target={'_blank'}
+                                    >
                                         Linkedin
                                     </a>
                                     <div className={styles._image_container} />

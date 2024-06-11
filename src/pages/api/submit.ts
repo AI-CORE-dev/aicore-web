@@ -15,6 +15,7 @@ interface FormData {
     mail: string;
     celular: string;
     empresa: string;
+    mensaje?: string;
     //tamañoEmpresa: string;
     //presupuesto: string;
     //urgencia: string;
@@ -29,6 +30,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
             mail,
             celular,
             empresa,
+            mensaje,
             //tamañoEmpresa,
             //presupuesto,
             //urgencia,
@@ -45,7 +47,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
         const mailOptions: nodemailer.SendMailOptions = {
             from: mail,
-            to: 'ezequiel.maranga@aicore.com.ar',
+            to: 'contacto@aicore.com.ar',
             subject: 'Nuevo contacto desde el sitio web de Aicore',
             html: `
                 <p>Nombre: ${nombre}</p>
@@ -54,6 +56,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
                 <p>Celular: ${celular}</p>
                 <p>Empresa: ${empresa}</p>
                 <p>Contacto: ${contacto}</p>
+                <p>Motivo: ${mensaje}</p>
             `,
         };
 

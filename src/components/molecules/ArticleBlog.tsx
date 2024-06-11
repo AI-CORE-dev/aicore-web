@@ -44,14 +44,27 @@ export function ArticleBlog() {
                                         </div>
                                     </div>
 
-                                    <a className={styles._link_redirec} href={'/blog/template'}>
+                                    <a
+                                        className={styles._link_redirec}
+                                        href={'/blog/template'}
+                                        rel={'noopener noreferrer'}
+                                        target={'_blank'}
+                                    >
                                         Leer post
                                     </a>
                                 </div>
 
                                 <div className={styles._item}>
-                                    <a href={'/blog/template'}>
-                                        <div className={styles._item_img} />
+                                    <a
+                                        href={'/blog/template'}
+                                        rel={'noopener noreferrer'}
+                                        target={'_blank'}
+                                    >
+                                        <img
+                                            alt={'portada'}
+                                            className={styles._item_img}
+                                            src={'/blog/portada_articulo.svg'}
+                                        />
                                     </a>
                                 </div>
                             </div>

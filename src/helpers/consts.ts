@@ -569,7 +569,7 @@ export const CCLIENTS = [
         name: 'Hans Hanckes',
         job: 'CEO & CTO',
         company: 'Sodtrack',
-        review: '"Desarrollamos nuestra plataforma junto a/ AI CORE. En el proyecto destacó su velocidad de respuestas y calidad en sus entregas. Siempre hubo alguien del equipo brindado al seguimiento para garantizar que nuestras expectativas se cumplan."',
+        review: '"Desarrollamos nuestra plataforma junto a AI CORE. En el proyecto destacó su velocidad de respuestas y calidad en sus entregas. Siempre hubo alguien del equipo brindado al seguimiento para garantizar que nuestras expectativas se cumplan."',
         score: 5,
         avatar: '/client_review/cli_sportyroom.svg',
     },

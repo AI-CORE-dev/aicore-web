@@ -20,7 +20,7 @@ export function ArticleBody() {
                 <div className={styles._container_info}>
                     <div className={styles._text_time}>7 min</div>
 
-                    <div className={styles._container_redes}>
+                    {/* <div className={styles._container_redes}>
                         <button className={styles._btn} type={'button'}>
                             <span
                                 className={`${styles._share_module} ${styles._share_module_fb}`}
@@ -37,7 +37,7 @@ export function ArticleBody() {
                                 className={`${styles._share_module} ${styles._share_module_tw}`}
                             />
                         </button>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className={styles._container_text}>
@@ -198,11 +198,19 @@ export function ArticleBody() {
             <div className={styles._container_reviews}>
                 <div style={{ display: 'flex' }}>
                     <div className={styles._circle_rating}>4.2</div>
-                    <div>
+                    <div
+                        style={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'center',
+                        }}
+                    >
                         <div className={styles._title_rating}>
                             Gracias por leer, dejanos tu opinion
                         </div>
-                        <div className={styles._rating}>3985 opiniones</div>
+                        {/* <div className={styles._rating} style={{ display: 'none' }}>
+                            3985 opiniones
+                        </div> */}
                     </div>
                 </div>
 
