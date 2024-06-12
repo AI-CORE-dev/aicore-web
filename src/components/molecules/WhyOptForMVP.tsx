@@ -88,9 +88,8 @@ export function WhyOptForMVP({
                         <li className={styles._item_list}>
                             <h4 className={styles._tile}>Desarrolla tus ventajas competitivas.</h4>
                             <p className={styles._text}>
-                                Desarrollate con confianza, te garantizamos sistemas seguros y
-                                confiables para proteger tus datos a la vez que permitimos
-                                operaciones digitales fluidas.
+                                Apoyate en nuestra experiencia en tecnología para aumentar tu
+                                competitividad en el mercado
                             </p>
                         </li>
 
@@ -99,8 +98,9 @@ export function WhyOptForMVP({
                                 Infraestructura y seguridad informática.
                             </h4>
                             <p className={styles._text}>
-                                Sumergí a tu usuario en una experiencia inmersiva para conectar con
-                                tu producto y tu marca como nunca antes
+                                Desarrollate con confianza, te garantizamos sistemas seguros y
+                                confiables para proteger tus datos a la vez que permitimos
+                                operaciones digitales fluidas.
                             </p>
                         </li>
                     </ul>

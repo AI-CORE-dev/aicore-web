@@ -14,7 +14,7 @@ interface IProps {
 
 export function HeaderBlog({
     title = 'Lorem ipsum',
-    subtitle = 'Conoce nuestros aprendizajes e insigths recolectado a lo largo de nuestro camino como IT Specialists. ',
+    subtitle = 'Conoce nuestros aprendizajes e insights recolectados a lo largo de nuestro camino como IT Specialists.',
 }: IProps) {
     return (
         <header className={styles._header}>

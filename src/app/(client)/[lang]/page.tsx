@@ -50,7 +50,7 @@ const HOWCANHELP = {
     cards: [
         {
             id: 2,
-            title: 'Consultoria',
+            title: 'Consultoría',
             subtitle: 'Te acompañamos en tu proceso de transformación tecnológica.',
             image: '/howcanhelp/1.svg',
             redirection: '/services/consultancy',
