@@ -26,7 +26,7 @@ function ProductDevelopment() {
                 <WhyOptForMVP
                     isOtherPage
                     subtitle={
-                        'Trabajamos con metodologías agiles, lo que nos permite construir aplicaciones de todo tipo, desde plataformas de redes sociales hasta un marketplace. AI CORE ofrece un desarrollo a medida de aplicaciones webs con un equipo de expertos en distintas disciplinas para asegurar un producto que garantice al usuario una experiencia única.'
+                        'Trabajamos con metodologías ágiles, lo que nos permite construir aplicaciones de todo tipo, desde plataformas de redes sociales hasta un marketplace. AI CORE ofrece un desarrollo a medida de aplicaciones webs con un equipo de expertos en distintas disciplinas para asegurar un producto que garantice al usuario una experiencia única.'
                     }
                     title={'¿Qué te ofrecemos?'}
                 />

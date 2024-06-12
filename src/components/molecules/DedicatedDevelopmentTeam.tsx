@@ -10,7 +10,7 @@ export function DedicatedDevelopmentTeam() {
                 <p className={styles._subtitle}>
                     Si buscás un equipo listo para encarar y gestionar los proyectos que tenés en
                     mente nosotros lo armamos a medida para tu situación, gestionado por un senior
-                    proyect manager para comenzar a encarar el proyecto de manera ágil y añadiendo
+                    project manager para comenzar a encarar el proyecto de manera ágil y añadiendo
                     el máximo valor posible.
                 </p>
 

@@ -8,7 +8,7 @@ function Consultancy() {
                 isHome
                 isVideo
                 subtitle={
-                    'Tenemos la experiencia que buscás para brindar consultoría sobre empresas empresas que buscán comenzar su camino de transformación tecnológica.'
+                    'Tenemos la experiencia que buscás para brindar consultoría sobre empresas empresas que buscan comenzar su camino de transformación tecnológica.'
                 }
                 textButton={'Contáctanos'}
                 title={'Consultoría IT'}

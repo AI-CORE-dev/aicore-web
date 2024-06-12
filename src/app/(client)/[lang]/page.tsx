@@ -46,12 +46,12 @@ const HOWCANHELP = {
     id: 0,
     title: '¿Cómo podemos ayudar a tu organización?',
     subtitle:
-        'Trabajamos codo a codo con organizaciones que buscan generar valor mediante la tecnología… somos expertos en definir, desarrollar, lanzar, integrar y optimizar proyectos tecnológicos de todo tipo.',
+        'Trabajamos codo a codo con organizaciones que buscan generar valor mediante la tecnología… Somos expertos en definir, desarrollar, lanzar, integrar y optimizar proyectos tecnológicos de todo tipo.',
     cards: [
         {
             id: 2,
             title: 'Consultoria',
-            subtitle: 'Te acompañamos en tu proceso de transformación tecnologica.',
+            subtitle: 'Te acompañamos en tu proceso de transformación tecnológica.',
             image: '/howcanhelp/1.svg',
             redirection: '/services/consultancy',
         },
@@ -65,7 +65,7 @@ const HOWCANHELP = {
         {
             id: 4,
             title: 'Outsourcing',
-            subtitle: 'Desarrollá con nosotros tus productos digitales y proyectos tecnologícos.',
+            subtitle: 'Desarrolla con nosotros tus productos digitales y proyectos tecnológicos.',
             image: '/howcanhelp/3.svg',
             redirection: '/services/product-development',
         },

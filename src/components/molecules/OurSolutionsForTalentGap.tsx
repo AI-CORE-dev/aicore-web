@@ -18,9 +18,9 @@ export function OurSolutionsForTalenGap() {
                     tus proyectos
                 </h2>
                 <p className={styles._subtitle_gap}>
-                    Desde de front y back, node y react contamos con una amplia cobertura de
+                    Sea para front o back, node o react contamos con una amplia cobertura de
                     tecnologías y especialistas listos para afrontar desafíos y aportar valor a tus
-                    proyectos, contanos lo que tienes en mente y encontramos los perfiles que mejor
+                    proyectos, cuéntanos lo que tienes en mente y encontramos los perfiles que mejor
                     hagan match.
                 </p>
             </div>

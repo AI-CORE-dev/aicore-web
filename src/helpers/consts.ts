@@ -427,7 +427,7 @@ export const CINFOFOUNDERS = [
         image: '/about_us/ezequiel.jpg',
         linkedin: 'https://www.linkedin.com/in/ezequiel-maranga-20b61921/',
         ask: '¿Cuál es la filosofía de trabajo de AI CORE?',
-        answer: 'AI CORE esta formado por distintos perfiles, con diferentes visiones y backgrounds, pensamos nuestros equipos de esta forma para lograr enriquecer cada proyecto y generar sinergías entre nuestros colaboradores.',
+        answer: 'AI CORE está formado por distintos perfiles, con diferentes visiones y backgrounds, pensamos nuestros equipos de esta forma para lograr enriquecer cada proyecto y generar sinergías entre nuestros colaboradores.',
     },
 ];
 
@@ -549,8 +549,8 @@ export const CCLIENTS = [
         id: 0,
         name: 'Gonzalo Agüero',
         job: 'CEO - Founder',
-        company: 'Worknmates',
-        review: '"Siempre valoramos mucho su involucramiento como usuarios de nuestra solución. Eso es fundamental porque obtenemos feedback de ellos, su visión sobre el negocio, su apoyo en cada momento del camino de llevar adelante una start up."',
+        company: 'OFFi',
+        review: '"Siempre valoramos mucho su involucramiento como usuarios de nuestra solución. Eso es fundamental porque obtenemos feedback de ellos, su visión sobre el negocio, su apoyo en cada momento del camino de llevar adelante una startup."',
         score: 5,
         avatar: '/client_review/cli_worknmates.svg',
     },

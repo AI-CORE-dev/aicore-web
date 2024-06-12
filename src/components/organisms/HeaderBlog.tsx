@@ -35,7 +35,7 @@ export function HeaderBlog({
                                 }}
                             >
                                 <label className={styles._label} htmlFor={'searchInput'}>
-                                    Mantengase al tanto
+                                    Manténgase al tanto
                                 </label>
                                 <div
                                     style={{

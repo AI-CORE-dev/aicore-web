@@ -60,7 +60,7 @@ function StaffAugmentation() {
 const CDATAHEADER = {
     title: 'Solucionamos los gaps con los skills tecnológicos que tu proyecto necesita',
     subtitle:
-        'Suma de formá rápida y sencilla perfiles para fortalecer tus proyectos, en AI CORE contamos con los especialistas y el tiempo de respuesta para sumarlos a tu equipo de inmediato.',
+        'Suma de forma rápida y sencilla perfiles para fortalecer tus proyectos, en AI CORE contamos con los especialistas y el tiempo de respuesta para sumarlos a tu equipo de inmediato.',
     textButton: 'Contactanos',
     textButtonSecondary:
         'Contactate con nosotros - coordina una reunión con nuestro desarrollador de negocios',
@@ -69,7 +69,7 @@ const CDATAHEADER = {
 const CTYPEOFWORK = {
     title: 'Estos son los proyectos que desarrollamos',
     description:
-        'No importa la clase de producto que estés constrendo. En AI CORE podemos desarrollar para cualquier industría, nuestros expertise reside en el desarrollo de productos a travez de metodologías ágiles logrando así flexibilidad y calidad para cumplir cualquier requisito.',
+        'No importa la clase de producto que estés construyendo. En AI CORE podemos desarrollar para cualquier industria, nuestros expertise reside en el desarrollo de productos a través de metodologías ágiles logrando así flexibilidad y calidad para cumplir cualquier requisito.',
     options: [
         {
             id: 0,
@@ -107,7 +107,7 @@ const CSTARTTECHINALAUDIT = {
 const CEXTENDYOURTEAM = {
     title: '¿Por qué expandir tu equipo con nuestros especialistas?',
     description:
-        'Potencia tus desarrollos con nuestra experiencia para obtener la escalabilidad, rentabilidad, rapidez, y resultados que estas buscando. Nuestros desarrolladores de Node.js aportan soluciones de red escalables, incluido el desarrollo completo, aplicaciones móviles multiplataforma y desarrollo de API. Elegi a AI CORE como tu socio tecnológico.',
+        'Potencia tus desarrollos con nuestra experiencia para obtener la escalabilidad, rentabilidad, rapidez, y resultados que estás buscando. Nuestros desarrolladores de Node.js aportan soluciones de red escalables, incluido el desarrollo completo, aplicaciones móviles multiplataforma y desarrollo de API. Elegí a AI CORE como tu socio tecnológico.',
     options: [
         {
             id: 0,
@@ -117,7 +117,7 @@ const CEXTENDYOURTEAM = {
         },
         {
             id: 1,
-            title: 'Es mas flexible',
+            title: 'Es más flexible',
             subtitle:
                 'Ya sea que necesite soporte a corto o largo plazo, contrate a nuestros desarrolladores de Node.js por el período que se adapte a sus necesidades y elimine el costo de la contratación a tiempo completo. No dude en ampliar su equipo cuando sea necesario y garantizar la adaptabilidad del proyecto.',
         },
@@ -131,7 +131,7 @@ const CEXTENDYOURTEAM = {
             id: 3,
             title: 'Reduces costos',
             subtitle:
-                'Asociarse con una empresa subcontratada le brinda la ventaja de reducir costos. Al contratar a nuestros desarrolladores de Node.js, elimina los gastos de contratación, capacitación del personal, espacio de oficina, facturas de energía, licencias de software, beneficios para empleados, incrementos de nómina y costos logísticos. Sólo paga por el trabajo real por proyecto.',
+                'Asociarse con AI CORE como aliado de Staffing le brinda la ventaja de reducir costos. Al contratar a nuestros desarrolladores de Node.js, eliminamos los gastos de contratación, capacitación del personal, espacio de oficina, facturas de energía, licencias de software, beneficios para empleados, incrementos de nómina y costos logísticos. Sólo paga por el trabajo real por proyecto.',
         },
         {
             id: 4,
@@ -167,7 +167,7 @@ const CNUMBERS = [
     {
         id: 4,
         title: '98%',
-        subtitle: 'Sastisfacción de nuestros clientes',
+        subtitle: 'Satisfacción de nuestros clientes',
     },
 ];
 

@@ -45,19 +45,19 @@ const CARDS = [
         id: 0,
         title: 'Formación continua',
         img: '/carrers/retain_talents/1.png',
-        text: 'Clases de ingles, reintegros en tu formación, plan de carrera personalizado, participación en conferencias, eventos y seminarios.',
+        text: 'Clases de inglés, reintegros en tu formación, plan de carrera personalizado, participación en conferencias, eventos y seminarios.',
     },
     {
         id: 1,
         title: 'Aprende haciendo',
         img: '/carrers/retain_talents/2.png',
-        text: 'Trabaja codo a codo con nuestros seniors developers absorbiendo las mejores prácticas del mercado en las ultimas tecnologías utilizadas para el desarrollo de productos.',
+        text: 'Trabaja codo a codo con nuestros seniors developers absorbiendo las mejores prácticas del mercado en las últimas tecnologías utilizadas para el desarrollo de productos.',
     },
     {
         id: 2,
         title: 'Vida saludable',
         img: '/carrers/retain_talents/3.png',
-        text: 'Ofrecemos aplicaciónes de bienestar y deporte para que puedas entrenar, cuidar tus hábitos y obra social prepaga para concentrarte en tu salud.',
+        text: 'Ofrecemos aplicaciones de bienestar y deporte para que puedas entrenar, cuidar tus hábitos y obra social prepaga para concentrarte en tu salud.',
     },
     {
         id: 3,

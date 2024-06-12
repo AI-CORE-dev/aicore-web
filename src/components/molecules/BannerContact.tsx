@@ -10,8 +10,8 @@ export function BannerContact() {
                     </p>
                     <p className={styles._secondary_text}>
                         Suma talentos a tus proyectos, o bien auditalo con nosotros para determinar
-                        la causa de los posibles problemás en elcódigo que lo puedan estar generando
-                        dificultades en tu sistemas.
+                        la causa de los posibles problemas en el código que lo puedan estar
+                        generando dificultades en tu sistemas.
                     </p>
                 </div>
             </div>

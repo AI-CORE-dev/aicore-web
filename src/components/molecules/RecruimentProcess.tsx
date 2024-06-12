@@ -51,7 +51,7 @@ const PROCESS = [
     },
     {
         id: 4,
-        title: 'Oferta formar de trabajo',
+        title: 'Oferta formal de trabajo',
         img: '/carrers/recruiment_process/5.png',
     },
 ];
