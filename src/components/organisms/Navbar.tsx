@@ -20,14 +20,14 @@ export function Navbar() {
                     alt={'aicore-logo'}
                     className={styles._img_logo_desktop}
                     height={50}
-                    src={'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Aicore-co.png'}
+                    src={'/images/Logo-Aicore-co.png'}
                     width={150}
                 />
                 <img
                     alt={'fav-logo'}
                     className={styles._img_logo_mobile}
                     height={50}
-                    src={'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Favicon-Aicore.png'}
+                    src={'/images/Logo-Favicon-Aicore.png'}
                     width={50}
                 />
             </Link>

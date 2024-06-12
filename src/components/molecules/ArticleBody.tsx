@@ -121,10 +121,7 @@ export function ArticleBody() {
                         reconocer y satisfacer las necesidades y expectativas de los usuarios
                         finales desde una etapa temprana, nuestra encuesta resalta otros problemas.
                     </p>
-                    <img
-                        alt={'img_blog'}
-                        src={'https://gestionit.com.ar/wp-content/uploads/2020/05/fig1.png'}
-                    />
+                    <img alt={'img_blog'} src={'/images/fig1.png'} />
 
                     <h2 className={styles._text}>
                         El auge de las pruebas basadas en modelos (MBT)
