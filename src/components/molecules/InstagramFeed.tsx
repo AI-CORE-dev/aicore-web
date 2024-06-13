@@ -12,9 +12,7 @@ export function InstagramFeed() {
                         <img
                             alt={'fav-icon'}
                             className={styles._img}
-                            src={
-                                'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Favicon-Aicore.png'
-                            }
+                            src={'/images/Logo-Favicon-Aicore.png'}
                         />
                     </div>
 

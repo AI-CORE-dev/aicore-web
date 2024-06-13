@@ -10,7 +10,7 @@ export function ChangeLang() {
                     alt={'aicore-logo'}
                     className={styles._img_logo_desktop}
                     height={50}
-                    src={'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Aicore-co.png'}
+                    src={'/images/Logo-Aicore-co.png'}
                     width={150}
                 />
 

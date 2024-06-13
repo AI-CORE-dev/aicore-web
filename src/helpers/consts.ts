@@ -437,7 +437,7 @@ export const CDATAARTICLE = [
         title: 'Shift Left Testing - Concepto y desafíos clave',
         date: '2021-12-04',
         category: ['Outsourcing'],
-        img: 'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Favicon-Aicore.png',
+        img: '/images/Logo-Favicon-Aicore.png',
         name: 'Alfredo Agustin Rey',
         profession: 'Ingeniero en Informatica',
         link: '/blog/template',

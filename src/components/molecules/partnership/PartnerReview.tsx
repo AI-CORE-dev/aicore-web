@@ -36,9 +36,7 @@ export function PartnerReview({ isTitle = true }: IProps) {
                             <img
                                 alt={'aicore-logo'}
                                 className={styles._logo}
-                                src={
-                                    'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Aicore-co.png'
-                                }
+                                src={'/images/Logo-Aicore-co.png'}
                             />
                         </div>
                     </div>

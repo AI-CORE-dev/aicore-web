@@ -44,9 +44,7 @@ export function HeaderArticle() {
                                     <img
                                         alt={'fav-icon'}
                                         className={styles._img}
-                                        src={
-                                            'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Favicon-Aicore.png'
-                                        }
+                                        src={'/images/Logo-Favicon-Aicore.png'}
                                     />
                                 </div>
                                 <div className={styles._container_info}>
@@ -86,7 +84,7 @@ const CDATAARTICLE = [
         title: '¿Qué es Shift Left Testing?',
         date: '2021-04-12',
         category: ['TESTING'],
-        img: 'https://aicore.com.ar/wp-content/uploads/2021/05/Logo-Favicon-Aicore.png',
+        img: '/images/Logo-Favicon-Aicore.png',
         name: 'Alfredo Agustin Rey',
         profession: 'Ingeniero en Informatica',
     },

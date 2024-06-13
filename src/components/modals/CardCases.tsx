@@ -10,9 +10,7 @@ export function CardsCases() {
                             <img
                                 alt={'img'}
                                 className={styles._logo}
-                                src={
-                                    'https://aicore.com.ar/wp-content/uploads/2021/05/cliente-worknmates.jpg'
-                                }
+                                src={'/images/cliente-worknmates.jpg'}
                             />
                         </div>
                     </a>
@@ -41,9 +39,7 @@ export function CardsCases() {
                             <img
                                 alt={'img'}
                                 className={styles._logo}
-                                src={
-                                    'https://aicore.com.ar/wp-content/uploads/2022/07/Bukest-g.png'
-                                }
+                                src={'/images/Bukest-g.png'}
                             />
                         </div>
                     </a>
