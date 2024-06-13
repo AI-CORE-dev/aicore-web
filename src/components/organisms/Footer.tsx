@@ -25,7 +25,7 @@ export function Footer() {
                             Terminos y Condiciones
                         </a>
                         <a className={styles._modules_terms} href={'/privacy-policy'}>
-                            Politicas de Privacidad
+                            Políticas de Privacidad
                         </a>
                     </div>
 

@@ -105,45 +105,45 @@ const CSTARTTECHINALAUDIT = {
 };
 
 const CEXTENDYOURTEAM = {
-    title: '¿Por qué expandir tu equipo con nuestros especialistas?',
+    title: '¿Por qué expandir tu equipo con talentos AI CORE?',
     description:
-        'Potencia tus desarrollos con nuestra experiencia para obtener la escalabilidad, rentabilidad, rapidez, y resultados que estás buscando. Nuestros desarrolladores de Node.js aportan soluciones de red escalables, incluido el desarrollo completo, aplicaciones móviles multiplataforma y desarrollo de API. Elegí a AI CORE como tu socio tecnológico.',
+        'Potencia tus desarrollos con nuestra experiencia para ganar la escalabilidad, rentabilidad, rapidez, y resultados que estás buscando. Nuestros desarrolladores aportan soluciones de para todo tipo de proyectos que involucren desarrollo de aplicaciones web y móviles.',
     options: [
         {
             id: 0,
-            title: 'Tarda menos',
+            title: 'Tardá menos',
             subtitle:
-                'Amplíe su equipo con nuestros desarrolladores de Node.js y ahorre un tiempo precioso. La contratación de ingenieros locales en EE. UU. suele tardar una media de 2 meses. Puede causar un retraso significativo en proyectos con plazos ajustados. En Brocoders, proporcionamos el talento backend adecuado en tan solo 7 días.',
+                'Amplía tu equipo con nuestros desarrolladores y ahorra un tiempo y recursos en tus proyectos. La contratación de especialistas en TI suele tardar una media de 2 meses. Esto puede causar un retraso importante en tus proyectos con plazos ajustados. En AI CORE, proporcionamos el talento que buscás en tan sólo 15 días.',
         },
         {
             id: 1,
             title: 'Es más flexible',
             subtitle:
-                'Ya sea que necesite soporte a corto o largo plazo, contrate a nuestros desarrolladores de Node.js por el período que se adapte a sus necesidades y elimine el costo de la contratación a tiempo completo. No dude en ampliar su equipo cuando sea necesario y garantizar la adaptabilidad del proyecto.',
+                'Ya sea que necesites soporte a corto o largo plazo, contratá a nuestros desarrolladores por el período que tus proyectos requieran y reducí al mismo tiempo el costo asociado a la contratación a tiempo completo. Escala tu equipo de manera inmediata cuando sea necesario y garantiza la adaptabilidad del proyecto ante cualquier imprevisto.',
         },
         {
             id: 2,
-            title: 'Sumas expertos',
+            title: 'Sumá expertos',
             subtitle:
-                'Queremos elegir la mejor opción para los desarrolladores de Node.js para su equipo. Comencemos con una reunión para aclarar los detalles del proyecto y comprender sus requisitos únicos. Luego le presentamos candidatos calificados para que pueda examinarlos y entrevistarlos personalmente. Seleccione la combinación perfecta para su proyecto y formaremos rápidamente su equipo eficiente.',
+                'Siempre queremos elegir el mejor talento para sumar a nuestros equipos. En AI CORE comenzamos con una reunión exploratoria para aclarar los detalles del proyecto y comprender sus requisitos y características únicas. Luego te presentamos los mejores candidatos calificados para que puedas examinarlos y entrevistarlos personalmente. Seleccioná la combinación de talentos para tu proyecto que nosotros rápidamente ensamblamos un equipo eficiente y funcional para ponerlo a disposición para tu proyecto.',
         },
         {
             id: 3,
-            title: 'Reduces costos',
+            title: 'Reducción de costos',
             subtitle:
-                'Asociarse con AI CORE como aliado de Staffing le brinda la ventaja de reducir costos. Al contratar a nuestros desarrolladores de Node.js, eliminamos los gastos de contratación, capacitación del personal, espacio de oficina, facturas de energía, licencias de software, beneficios para empleados, incrementos de nómina y costos logísticos. Sólo paga por el trabajo real por proyecto.',
+                'Asociarse con AI CORE como aliado de Staffing te va a brindar la ventaja de reducir costos. Al contratar a nuestros desarrolladores, eliminamos los gastos de contratación, capacitación de personal, espacio de oficina, facturas de energía, licencias de software, beneficios para empleados, incrementos de nómina y costos logísticos. Sólo pagás por el trabajo real que nuestro talento aporta a tu proyecto.',
         },
         {
             id: 4,
-            title: 'Cumplis con tus deadlines',
+            title: 'Cumplí con tus deadlines',
             subtitle:
-                'Con nuestro equipo de desarrolladores de Node.js, puedes cumplir fácilmente con los plazos del proyecto. Puede contratar y supervisar empleados rápidamente para acelerar el proceso de desarrollo. Nuestros desarrolladores están listos para comenzar tan pronto como se unan a su equipo.',
+                'Con nuestro equipo de desarrolladores vas a lograr cumplir fácilmente con los plazos de tu proyecto. Podés contratar y supervisar a nuestro staff rápidamente para acelerar el proceso de desarrollo. Nuestros desarrolladores ya están listos para comenzar a sumar valor tan pronto como se unan a su equipo.',
         },
         {
             id: 5,
-            title: 'Potencias tu equipo',
+            title: 'Potencia a tu equipo',
             subtitle:
-                'Nuestros especialistas en Node.js se integran con tu equipo y se enfocan en generar colaboración y sinergia durante todo el proceso de desarrollo. Tu comunicación con ellos es  directa y gestionas la carga de trabajo y horas de cada desarrollador. Nosotros nos encargamos de todo el papeleo, el diseño del equipo y las operaciones de nómina, permitiéndote enfocarte en una gestión eficiente.',
+                'Nuestros especialistas se integran con tu equipo actual sin problema y se enfocan en generar resultados, colaboración y sinergia durante todo el proceso de desarrollo. Tu comunicación con ellos es directa y gestionas la carga de trabajo y horas de cada desarrollador. Nosotros nos encargamos de todo el papeleo, el diseño del equipo y las operaciones de nómina, permitiéndote enfocar todo tu tiempo en una gestión eficiente.',
         },
     ],
 };

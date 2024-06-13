@@ -79,23 +79,23 @@ export function WhyOptForMVP({
                         <li className={styles._item_list}>
                             <h4 className={styles._tile}>Potencia las áreas de tu empresa</h4>
                             <p className={styles._text}>
-                                Aplicamos nuestro conocimiento en su empresa para encontrar
+                                Aplicamos nuestro conocimiento en tu empresa para encontrar
                                 soluciones técnicas que favorezcan la ejecución estratégica de sus
                                 objetivos comerciales, productivos y de negocio.
                             </p>
                         </li>
 
                         <li className={styles._item_list}>
-                            <h4 className={styles._tile}>Desarrolla tus ventajas competitivas.</h4>
+                            <h4 className={styles._tile}>Desarrolla tus ventajas competitivas</h4>
                             <p className={styles._text}>
                                 Apoyate en nuestra experiencia en tecnología para aumentar tu
-                                competitividad en el mercado
+                                competitividad en el mercado.
                             </p>
                         </li>
 
                         <li className={styles._item_list}>
                             <h4 className={styles._tile}>
-                                Infraestructura y seguridad informática.
+                                Infraestructura y seguridad informática
                             </h4>
                             <p className={styles._text}>
                                 Desarrollate con confianza, te garantizamos sistemas seguros y

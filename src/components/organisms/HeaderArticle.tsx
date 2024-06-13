@@ -76,7 +76,7 @@ const CLINKS = [
     {
         id: 2,
         href: '/blog',
-        text: 'Articulos',
+        text: 'Artículos',
     },
 ];
 
