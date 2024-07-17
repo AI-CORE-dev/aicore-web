@@ -28,7 +28,7 @@ export function WaveCanvasWhite() {
             frequency: 0.05,
             direction: 1,
         };
-        let increment = wave.frequency;
+        //let increment = wave.frequency;
 
         function animate() {
             if (!canvas || !ctx) {
@@ -56,7 +56,7 @@ export function WaveCanvasWhite() {
             ctx.lineWidth = 1;
             ctx.setLineDash([1, 1]);
             ctx.fill();
-            increment += wave.frequency;
+            //increment += wave.frequency;
             requestAnimationFrame(animate);
         }
 

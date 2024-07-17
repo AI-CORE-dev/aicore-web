@@ -8,6 +8,7 @@ import {
     SchedulleCall,
 } from '@/components/molecules';
 import { getDictionary } from '@/lang/getDictionary';
+import { BannerPolo } from '@/components/molecules/BannerPolo';
 
 import styles from './page.module.css';
 
@@ -36,6 +37,7 @@ export default async function Home() {
                 <PartnerShip />
                 <ClientsReview />
                 <Recognition />
+                <BannerPolo />
                 <SchedulleCall />
             </main>
         </>

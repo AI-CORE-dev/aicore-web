@@ -11,8 +11,8 @@ export function TextsInfo({ texts }: IProps) {
     return (
         <section className={styles._section}>
             <div className={styles._inner}>
-                {texts.map((text, index) => (
-                    <div key={index}>
+                {texts.map((text) => (
+                    <div key={text.title}>
                         <h2 className={styles._title}>{text.title}</h2>
                         <p className={styles._subtitle}>{text.subtitle}</p>
                     </div>

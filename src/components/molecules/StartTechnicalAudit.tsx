@@ -9,7 +9,7 @@ interface IProps {
     alt: string;
 }
 
-export function StartTechnicalAudit({ title, subtitle, btnText, btnLink, img, alt }: IProps) {
+export function StartTechnicalAudit({ title, subtitle, btnLink, img, alt }: IProps) {
     return (
         <section className={styles._section}>
             <div className={styles._inner}>

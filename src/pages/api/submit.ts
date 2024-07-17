@@ -61,18 +61,15 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         };
 
         // Enviar el correo electrónico
-        transporter.sendMail(
-            mailOptions,
-            (error: Error | null, info: nodemailer.SentMessageInfo) => {
-                if (error) {
-                    console.error('Error al enviar el correo electrónico:', error);
-                    res.status(500).json({ error: 'Error interno del servidor' });
-                } else {
-                    console.log('Correo electrónico enviado:', info.response);
-                    res.status(200).json({ success: true });
-                }
-            },
-        );
+        transporter.sendMail(mailOptions, (error: Error | null) => {
+            if (error) {
+                // console.error('Error al enviar el correo electrónico:', error);
+                res.status(500).json({ error: 'Error interno del servidor' });
+            } else {
+                //console.log('Correo electrónico enviado:', info.response);
+                res.status(200).json({ success: true });
+            }
+        });
     } else {
         res.status(405).json({ error: 'Método no permitido' });
     }
@@ -87,6 +84,6 @@ export const config = {
 };
 
 export function onError(error: any, req: NextApiRequest, res: NextApiResponse) {
-    console.error('Error al manejar la solicitud:', error);
+    //console.error('Error al manejar la solicitud:', error);
     res.status(500).json({ error: 'Error interno del servidor' });
 }

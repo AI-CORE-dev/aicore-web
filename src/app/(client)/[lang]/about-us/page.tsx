@@ -12,6 +12,7 @@ import {
     InstitutuionalVideo,
 } from '@/components/molecules';
 import { Header } from '@/components/organisms/Header';
+import { BannerPolo } from '@/components/molecules/BannerPolo';
 
 function AboutPage() {
     return (
@@ -34,6 +35,7 @@ function AboutPage() {
                 {/* <FeatureProjects /> */}
                 <InstagramFeed />
                 <PartnerShip />
+                <BannerPolo />
                 <SchedulleCall />
             </main>
         </>

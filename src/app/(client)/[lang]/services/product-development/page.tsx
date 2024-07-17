@@ -53,37 +53,37 @@ const CARDS = [
     {
         id: 0,
         title: 'Aplicaciones web y móviles.',
-        img: '/services/howretaintalent/1.svg',
+        img: '/services/product_development/Aplicaciones_web_y_móviles.svg',
         text: '',
     },
     {
         id: 1,
         title: 'Automatización de procesos',
-        img: '/services/howretaintalent/2.svg',
+        img: '/services/product_development/Automatización_de_procesos.svg',
         text: '',
     },
     {
         id: 2,
         title: 'Softwares a medida',
-        img: '/services/howretaintalent/3.svg',
+        img: '/services/product_development/Softwares_a_medida.svg',
         text: '',
     },
     {
         id: 3,
         title: 'Desarrollo de MVPs',
-        img: '/services/howretaintalent/4.svg',
+        img: '/services/product_development/MVPs.svg',
         text: '',
     },
     {
         id: 4,
         title: 'Inteligencia Artificial (IA)',
-        img: '/services/howretaintalent/5.svg',
+        img: '/services/product_development/Inteligencia_Artificial_(IA).svg',
         text: '',
     },
     {
         id: 5,
         title: 'Integraciones y APIs',
-        img: '/services/howretaintalent/6.svg',
+        img: '/services/product_development/Integraciones_y_APIs.svg',
         text: '',
     },
 ];

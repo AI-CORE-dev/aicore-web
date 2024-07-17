@@ -1,0 +1,16 @@
+._section {
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+._inner {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+@media (max-width: 460px) {
+  ._inner {
+    flex-direction: column;
+  }
+}
