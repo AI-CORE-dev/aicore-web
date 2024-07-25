@@ -49,7 +49,7 @@ export const CPAGES = [
         text: 'Tecnologías',
         href: '/technologies',
     },
-    // { id: 3, isCollapse: false, items: [], text: 'Proyectos', href: '/case-studies' },
+    //{ id: 3, isCollapse: false, items: [], text: 'Proyectos', href: '/case-studies' },
     { id: 4, isCollapse: false, items: [], text: 'Carrera', href: '/careers' },
     { id: 5, isCollapse: false, items: [], text: 'Blog', href: '/blog' },
 ];

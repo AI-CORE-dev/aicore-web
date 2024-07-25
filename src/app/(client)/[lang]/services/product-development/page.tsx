@@ -121,22 +121,22 @@ const HOWCANHELP = {
         {
             id: 0,
             title: 'Relevamiento de necesidades y requerimientos',
-            image: '/howcanhelp/1.svg',
+            image: '/services/outsourcing/Relevamiento_de_Necesidades.svg',
         },
         {
             id: 1,
             title: 'Diseño del equipo',
-            image: '/howcanhelp/2.svg',
+            image: '/services/outsourcing/Diseño_de_Equipos.svg',
         },
         {
             id: 2,
             title: 'Diseño y presentación de prototipos.',
-            image: '/howcanhelp/3.svg',
+            image: '/services/outsourcing/Diseño_y_presentación_de_prototipos.svg',
         },
         {
             id: 3,
             title: 'Reportes y demos semanales.',
-            image: '/howcanhelp/3.svg',
+            image: '/services/outsourcing/Reporter_y_Demos_semanales.svg',
         },
     ],
 };

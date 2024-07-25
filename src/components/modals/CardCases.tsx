@@ -10,7 +10,7 @@ export function CardsCases() {
                             <img
                                 alt={'img'}
                                 className={styles._logo}
-                                src={'/images/cliente-worknmates.jpg'}
+                                src={'/cases/sodtrack/caratula-sodtrack.svg'}
                             />
                         </div>
                     </a>
@@ -39,12 +39,12 @@ export function CardsCases() {
                             <img
                                 alt={'img'}
                                 className={styles._logo}
-                                src={'/images/Bukest-g.png'}
+                                src={'/cases/bukest/caratula-bukest.svg'}
                             />
                         </div>
                     </a>
 
-                    <h2 className={styles._title}>Bukest</h2>
+                    <h2 className={styles._title}>Un marketplace de servicios que vino a patear el tablero.</h2>
 
                     <ul className={styles._list_filters}>
                         <li className={styles._item_filter}>React</li>
@@ -53,13 +53,7 @@ export function CardsCases() {
                         <li className={styles._item_filter}>Booking de Servicios</li>
                     </ul>
                     <p className={styles._subtitle}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque fuga aliquid
-                        cum molestiae mollitia, atque voluptate asperiores voluptatibus officiis
-                        ipsa, autem impedit pariatur? Eveniet porro architecto sint cumque id
-                        possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-                        repellat tempora nam quos maxime ipsum quasi iure, molestiae nisi, ab
-                        blanditiis beatae quaerat sint aspernatur magnam minus tenetur corrupti
-                        obcaecati.
+                    Conoce cómo en AI CORE materializamos esta plataforma de venta y contratación de servicios para la innovadora startup Argentina Bukest.
                     </p>
                 </div>
             </li>
