@@ -41,7 +41,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
             service: 'Gmail',
             auth: {
                 user: 'ezequiel.maranga@aicore.com.ar',
-                pass: 'rqia kjim zqow uqyy',
+                pass: 'xxxxx',
             },
         });
 
